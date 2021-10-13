@@ -1,6 +1,7 @@
 # Cours XML-TEI
 
-Ce *repository* constitue un dépôt pour le contenu pédagogique du cours XML TEI du M2 Technologies Numériques Appliquées à l'Histoire à l'École des chartes (2021/2022). Ce cours est largement inspiré des [supports fournis par Ariane Pinche dans ce *repository*](https://github.com/ArianePinche/coursTNAH_XML-TEI).
+Ce *repository* constitue un dépôt pour le contenu pédagogique du cours XML TEI du M2 Technologies Numériques Appliquées à l'Histoire à l'École des chartes (2021/2022).
+Ce cours est largement inspiré des [supports fournis par Ariane Pinche dans ce *repository*](https://github.com/ArianePinche/coursTNAH_XML-TEI).
 
 ## Programme du cours
 
