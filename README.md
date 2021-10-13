@@ -42,13 +42,15 @@ Ce *repository* constitue un dépôt pour le contenu pédagogique du cours XML T
 ## Ressources en ligne
 
 - PINCHE, Ariane, [Cours TNAH XML-TEI](https://github.com/ArianePinche/coursTNAH_XML-TEI) ;
+- Alsacreation, [XML en quelques mots](https://www.alsacreations.com/article/lire/609-XML-en-quelques-mots.html) ;
 - BURGHART, Marjorie, PIERAZZO, Elena et al., [*Online course: Digital Scholarly Editions: Manuscripts, Texts, and TEI Encoding – Digital Editing of Medieval Manuscripts*](https://www.digitalmanuscripts.eu/digital-editing-of-medieval-texts-a-textbook/) ;
 - CHATEAU, Emmanuel, [L'encodage des textes](http://www.desgodets.net/edition-des-cours/model), Cours de Desgodets, 2012 ;
-- JOLIVET, Vincent, [Cours XML-TEI](https://github.com/architexte/cours-TEI) ;
-- Alsacreation, [XML en quelques mots](https://www.alsacreations.com/article/lire/609-XML-en-quelques-mots.html) ;
+- CONSENTIN, Magali, [Cours XML](http://magali.contensin.free.fr/html/XML/index.php), 2007 ;
 - *Digital Scholarly Editions*, [Manuscripts, Texts and TEI Encoding](https://www.youtube.com/playlist?list=PL77mHK9JuenN9NXeXQbVcUORz7HZk-9Pv) ;
 - HAWKINS, Kevin S., [Introduction to the TEI Header](http://www.ultraslavonic.info/intro-to-tei-header/) ;
+- JOLIVET, Vincent, [Cours XML-TEI](https://github.com/architexte/cours-TEI) ;
 - Les Bibliothèques Virtuelles Humanistes, [Manuel d’encodage XML-TEI Renaissance et temps modernes (Imprimés - manuscrits)](http://www.bvh.univ-tours.fr/XML-TEI/index.asp) ;
+- Master MIAGE Université de Nantes, [Ingénierie XML : concepts de base](https://miage.univ-nantes.fr/miage/D2X1/chapitre_presentation/chapitre.htm) ;
 - [*TEI by Example*](https://teibyexample.org/TBE.htm) ;
 - [*TEI guidelines*](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/index.html) ;
 - W3School, [*XML Tutorial*](https://www.w3schools.com/xml/default.asp) ;
