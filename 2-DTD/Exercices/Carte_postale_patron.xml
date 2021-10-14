@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<objet type="cartePostale"> 
+    <face type="recto" facs=""/>
+    <face type="verso" facs="">
+        <zone type="en-tête">
+            <zone type="legende" rend="centre haut"></zone>
+            <zone type="timbre" rend="x"></zone>
+            <zone type="tamponPoste" rend="x"></zone>
+        </zone>
+        <zone type="message">
+            <paragraphe></paragraphe>
+            <salutation>
+            <formulePolitesse></formulePolitesse>
+            <signature></signature>
+            </salutation>
+        </zone>
+        <zone type="destinataire">
+            <adresse>
+                <nom type="destinataire"/>
+                <rue></rue>
+                <ville></ville>
+            </adresse>
+        </zone>
+    </face>
+</objet>
