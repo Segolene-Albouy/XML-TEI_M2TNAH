@@ -10,15 +10,15 @@ Ce cours est largement inspiré des [supports fournis par Ariane Pinche dans ce 
 | 13 octobre  | 9h-11h      | Encoder le texte : les langages à balises                          |
 | 18 octobre  | 15h30-17h30 | Contraindre le XML : la *Document Type Definition*                 |
 | 25 octobre  | 15h30-17h30 | Décrire les documents patrimoniaux : la *Text Encoding Initiative* |
-| 1 novembre  | 15h30-17h30 | Anatomie d'un document TEI : parties et composants                 |
-| 15 novembre | 15h30-17h30 | Les TEI *guidelines* : modules, modèles, macros, etc.              |
-| 22 novembre | 15h30-17h30 | Localisation dans le document : XPath                              |
-| 29 novembre | 15h30-17h30 | Éditer un texte : initiation à l’édition scientifique              |
-| 6 décembre  | 15h30-17h30 | Éditer un texte : description des sources manuscrites              |
-| 13 décembre | 15h30-17h30 | Éditer un texte : encodage d'une édition critique                  |
-| 3 janvier   | 15h30-17h30 | Les schémas XML : initiation à l'ODD                               |
-| 10 janvier  | 15h30-17h30 | Les schémas XML : ODD personnalisations avancées                   |
-| 17 janvier  | 15h30-17h30 | Les schémas XML : Mise en pratique                                 |
+| 15 novembre | 15h30-17h30 | Anatomie d'un document TEI : parties et composants                 |
+| 22 novembre | 15h30-17h30 | Les TEI *guidelines* : modules, modèles, macros, etc.              |
+| 29 novembre | 15h30-17h30 | Localisation dans le document : XPath                              |
+| 6 décembre  | 15h30-17h30 | Éditer un texte : initiation à l’édition scientifique              |
+| 13 décembre | 15h30-17h30 | Éditer un texte : description des sources manuscrites              |
+| 3 janvier   | 15h30-17h30 | Éditer un texte : encodage d'une édition critique                  |
+| 10 janvier  | 15h30-17h30 | Les schémas XML : initiation à l'ODD                               |
+| 17 janvier  | 15h30-17h30 | Les schémas XML : ODD personnalisations avancées                   |
+| 24 janvier  | 15h30-17h30 | Les schémas XML : Mise en pratique                                 |
 
 ## Évaluation
 
@@ -36,7 +36,7 @@ Ce cours est largement inspiré des [supports fournis par Ariane Pinche dans ce 
 		- Présenter en introduction votre projet et ses exploitations possibles (/3) ;
 		- Documenter le fonctionnement de votre encodage et vos choix de balises (/3). 
 
-**Date de rendu** : au plus tard le 24 janvier.
+**Date de rendu** : au plus tard le 31 janvier.
 
 # Pour aller plus loin
 
