@@ -45,7 +45,11 @@ Ce cours est largement inspiré des [supports fournis par Ariane Pinche dans ce 
 - PINCHE, Ariane, [Cours TNAH XML-TEI](https://github.com/ArianePinche/coursTNAH_XML-TEI) ;
 - Alsacreation, [XML en quelques mots](https://www.alsacreations.com/article/lire/609-XML-en-quelques-mots.html) ;
 - BURGHART, Marjorie, PIERAZZO, Elena et al., [*Online course: Digital Scholarly Editions: Manuscripts, Texts, and TEI Encoding – Digital Editing of Medieval Manuscripts*](https://www.digitalmanuscripts.eu/digital-editing-of-medieval-texts-a-textbook/) ;
-- CHATEAU, Emmanuel, [L'encodage des textes](http://www.desgodets.net/edition-des-cours/model), Cours de Desgodets, 2012 ;
+- BURNARD, Lou, [Comment maîtriser le tigre TEI](https://cahier.hypotheses.org/files/2018/08/ODD-diapos.pdf) ;
+- BURGHART, Marjorie, [Éditer des sources historiques en ligne grâce à XML – Un guide pratique](http://mutec.huma-num.fr/sites/www.mutec-shs.fr/files/Guide%20Editer%20des%20sources%20historiques%20%20gr%C3%A2ce%20a%20XML.pdf) ;
+- BURGHART, Marjorie, PIERAZZO, Elena et al., [*Online course: Digital Scholarly Editions: Manuscripts, Texts, and TEI Encoding – Digital Editing of Medieval Manuscripts*](https://www.digitalmanuscripts.eu/digital-editing-of-medieval-texts-a-textbook/) ;
+- CAMPS, Jean-Baptiste, [Structuration des données et des documents : balisage XML](https://halshs.archives-ouvertes.fr/cel-01706530) ;
+- CHATEAU, Emmanuel, [L'encodage des textes](http://www.desgodets.net/edition-des-cours/model), Cours de Desgodets, 2012 ;
 - CONSENTIN, Magali, [Cours XML](http://magali.contensin.free.fr/html/XML/index.php), 2007 ;
 - *Digital Scholarly Editions*, [Manuscripts, Texts and TEI Encoding](https://www.youtube.com/playlist?list=PL77mHK9JuenN9NXeXQbVcUORz7HZk-9Pv) ;
 - HAWKINS, Kevin S., [Introduction to the TEI Header](http://www.ultraslavonic.info/intro-to-tei-header/) ;
@@ -82,6 +86,7 @@ Ce cours est largement inspiré des [supports fournis par Ariane Pinche dans ce 
 - [L’année 1437 dans la pratique de Pierre Christofle](http://elec.enc.sorbonne.fr/christofle/index.html), notaire du Châtelet d'Orléans ;
 - [Les éditions électroniques de l’École nationale des chartes](http://www.chartes.psl.eu/fr/rubrique-publications/eitions-electroniques) ;
 - [*Perseus Digital Library*](http://www.perseus.tufts.edu/hopper/) ;
+- [TEI project page](https://tei-c.org/activities/projects/) ;
 - [*The Shelley-Godwin Archive*](http://shelleygodwinarchive.org/sc/oxford/frankenstein/volume/i/#/p1/mode/rdg).
 
 ## Outils
