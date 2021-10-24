@@ -57,6 +57,7 @@ Ce cours est largement inspiré des [supports fournis par Ariane Pinche dans ce 
 - Les Bibliothèques Virtuelles Humanistes, [Manuel d’encodage XML-TEI Renaissance et temps modernes (Imprimés - manuscrits)](http://www.bvh.univ-tours.fr/XML-TEI/index.asp) ;
 - Master MIAGE Université de Nantes, [Ingénierie XML : concepts de base](https://miage.univ-nantes.fr/miage/D2X1/chapitre_presentation/chapitre.htm) ;
 - [*TEI by Example*](https://teibyexample.org/TBE.htm) ;
+- [*TEI GitHub repository*](https://github.com/TEIC/TEI) ;
 - [*TEI guidelines*](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/index.html) ;
 - W3School, [*XML Tutorial*](https://www.w3schools.com/xml/default.asp) ;
 - W3School, [*XPath Tutorial*](https://www.w3schools.com/xml/xpath_intro.asp) ;
