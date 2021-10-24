@@ -91,6 +91,9 @@ Ce cours est largement inspiré des [supports fournis par Ariane Pinche dans ce 
 
 ## Outils
 
+- [Développements, outils et réflexions logicielles de l'École des chartes](http://developpements.enc.sorbonne.fr/) ;
+- [Tutoriel pour générer une ODD avec ODDbyExample](http://teic.github.io/TCW/howtoGenerate-fr.html) ;
+- [Roma](https://romabeta.tei-c.org/) ;
 - [TEI Critical Apparatus Toolbox](http://teicat.huma-num.fr/) ;
 - [XPath tester](https://extendsclass.com/xpath-tester.html).
 
