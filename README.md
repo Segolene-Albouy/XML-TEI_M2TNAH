@@ -46,6 +46,7 @@ Ce cours est largement inspiré des [supports fournis par Ariane Pinche dans ce 
 - Alsacreation, [XML en quelques mots](https://www.alsacreations.com/article/lire/609-XML-en-quelques-mots.html) ;
 - BURGHART, Marjorie, PIERAZZO, Elena et al., [*Online course: Digital Scholarly Editions: Manuscripts, Texts, and TEI Encoding – Digital Editing of Medieval Manuscripts*](https://www.digitalmanuscripts.eu/digital-editing-of-medieval-texts-a-textbook/) ;
 - BURNARD, Lou, [Comment maîtriser le tigre TEI](https://cahier.hypotheses.org/files/2018/08/ODD-diapos.pdf) ;
+- BURNARD, Lou, [La Text Encoding Initiative (TEI) C'est quoi ?](https://docasie.cnrs.fr/wp-content/uploads/PresentationPPT/DocAsie2013/DocAsie2013_LouBurnard_TEI.pdf) ;
 - BURGHART, Marjorie, [Éditer des sources historiques en ligne grâce à XML – Un guide pratique](http://mutec.huma-num.fr/sites/www.mutec-shs.fr/files/Guide%20Editer%20des%20sources%20historiques%20%20gr%C3%A2ce%20a%20XML.pdf) ;
 - BURGHART, Marjorie, PIERAZZO, Elena et al., [*Online course: Digital Scholarly Editions: Manuscripts, Texts, and TEI Encoding – Digital Editing of Medieval Manuscripts*](https://www.digitalmanuscripts.eu/digital-editing-of-medieval-texts-a-textbook/) ;
 - CAMPS, Jean-Baptiste, [Structuration des données et des documents : balisage XML](https://halshs.archives-ouvertes.fr/cel-01706530) ;
