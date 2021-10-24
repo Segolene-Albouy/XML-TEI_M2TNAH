@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<lettre>
+    <ouverture>
+        <locuteur nom="Valmont">LE VICOMTE DE VALMONT</locuteur> 
+        AU 
+        <destinataire nom="Danceny">CHEVALIER DANCENY</destinataire>
+    </ouverture>
+    <paragraphe>Si vos affaires ne vont pas toujours aussi vite que vous le voudriez, mon ami, ce
+        n'est pas tout à fait à moi qu'il faut vous en prendre. J'ai ici plus d'un obstacle à
+        vaincre. La vigilance et la sévérité de <nomPersonnage>Madame de Volanges</nomPersonnage> ne
+        sont pas les seuls ; votre jeune amie m'en oppose aussi quelques-uns. Soit froideur ou
+        timidité, elle ne fait pas toujours ce que je lui conseille; et je crois cependant savoir
+        mieux qu'elle ce qu'il faut faire.</paragraphe>
+    <paragraphe>J'avois trouvé un moyen simple, commode et sûr de lui remettre vos lettres, et même
+        de faciliter, par la suite, les entrevues que vous désirez ; mais je n'ai pu la décider à
+        s'en servir. J'en suis d'autant plus affligé, que je n'en vois pas d'autre pour vous rap-
+        procher d'elle ; et que même pour votre correspon- dance, je crains sans cesse de nous
+        compromettre tous trois. Or, vous jugez que je ne veux ni courir ce risque-là, ni vous y
+        exposer l'un et l'autre.</paragraphe>
+    <paragraphe>Je serois pourtant vraiment peiné que le peu de confiance de votre petite amie,
+        m'empêchât de vous être utile ; peut-être feriez-vous bien de lui en écrire. Voyez ce que
+        vous voulez faire, c'est à vous seul de décider ; car ce n'est pas assez de servir ses amis,
+        il faut encore les servir à leur manière. Ce pourroit être aussi une façon de plus, de vous
+        assurer de ses sentimens pour vous ; car la femme qui garde une volonté à elle, n'aime pas
+        autant qu'elle le dit.</paragraphe>
+    <paragraphe>Ce n'est pas que je soupçonne votre maîtresse d'inconstance ; mais elle est bien
+        jeune ; elle a grand' peur de sa maman, qui, comme vous le savez, ne cherche qu'à vous nuire ; 
+        et peut-être seroit-il dan- gereux de rester trop longtems sans l'occuper de vous. N'allez
+        pas cependant vous inquiéter à un certain point, de ce que je vous dis-là. Je n'ai dans le
+        fond nulle raison de méfiance; c'est uniquement la sollicitude de l'amitié.</paragraphe>
+    <paragraphe>Je ne vous écris pas plus longuement, parce que j'ai bien aussi quelques affaires
+        pour mon compte. Je ne suis pas aussi avancé que vous : mais j'aime autant, et cela console;
+        et quand je ne réussirois pas pour moi, si je parviens à vous être utile, je trouverai que
+        j'ai bien employé mon tems. Adieu, mon ami.</paragraphe>
+    <closule>
+        <salutation>Adieu, mon ami.</salutation>
+        <lieu>Au château de...</lieu> ce <date>26 septembre 17**</date>. 
+    </closule>
+</lettre>
