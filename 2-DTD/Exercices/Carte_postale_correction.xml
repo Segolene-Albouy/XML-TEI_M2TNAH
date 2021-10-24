@@ -13,13 +13,13 @@
     <!ELEMENT zone (#PCDATA | zone | paragraphe | salutation | adresse)*>
     <!ELEMENT corr (#PCDATA)>
     
-     <!ATTLIST objet type CDATA #REQUIRED>
-     <!ATTLIST face type (recto|verso) #REQUIRED facs CDATA #IMPLIED >
-     <!ATTLIST zone type (entete|legende|timbre|tampon|message|destinataire) #REQUIRED 
-                                    rend CDATA #IMPLIED>
-     <!ATTLIST nom type (expediteur|destinataire) #REQUIRED>
-     <!ATTLIST corr rend CDATA #IMPLIED
-                                   cert CDATA #IMPLIED>
+    <!ATTLIST objet type CDATA #REQUIRED>
+    <!ATTLIST face type (recto|verso) #REQUIRED facs CDATA #IMPLIED >
+    <!ATTLIST zone type (entete|legende|timbre|tampon|message|destinataire) #REQUIRED 
+                   rend CDATA #IMPLIED>
+    <!ATTLIST nom type (expediteur|destinataire) #REQUIRED>
+    <!ATTLIST corr rend CDATA #IMPLIED
+                   cert CDATA #IMPLIED>
 ]>
 
 <objet type="cartePostale">
@@ -35,13 +35,17 @@
                 Bientôt sur le chemin du retour. Avons eu du beau temps tout le mois de
                 juillet. Vous souhaite à tous la même chose.
             </paragraphe>
-                <paragraphe>
-                    J'espère que vous êtes tous en bonne
-                santé. À chacun son tour, le beau temps et le repos.
+            <paragraphe>
+                J'espère que vous êtes tous en bonne santé. 
+                À chacun son tour, le beau temps et le repos.
             </paragraphe>
             <salutation>
-                <formulePolitesse>Avec d'affectueuses pensées et bons baisers à tous.</formulePolitesse>
-                <signature>Marcelle</signature>
+                <formulePolitesse>
+                    Avec d'affectueuses pensées et bons baisers à tous.
+                </formulePolitesse>
+                <signature>
+                    Marcelle
+                </signature>
             </salutation>
         </zone>
         <zone type="destinataire">
