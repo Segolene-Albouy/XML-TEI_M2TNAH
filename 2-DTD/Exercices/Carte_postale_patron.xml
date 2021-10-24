@@ -10,13 +10,13 @@
         <zone type="message">
             <paragraphe></paragraphe>
             <salutation>
-            <formulePolitesse></formulePolitesse>
-            <signature></signature>
+                <formulePolitesse></formulePolitesse>
+                <signature></signature>
             </salutation>
         </zone>
         <zone type="destinataire">
             <adresse>
-                <nom type="destinataire"/>
+                <nom type="destinataire"></nom>
                 <rue></rue>
                 <ville></ville>
             </adresse>
