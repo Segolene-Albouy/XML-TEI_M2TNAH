@@ -1,0 +1,55 @@
+# Evaluation XML-TEI – TNAH | 2021-2022
+
+**À rendre le 31 janvier 2022**
+
+## Consignes générales
+
+* Structurer en XML-TEI votre texte en vue d’une édition et en respectant le genre auquel appartient votre extrait **(/6)** ;
+
+* Compléter de la manière la plus précise possible le `teiHeader` de votre édition, en fonction des éléments nécessaires à son établissement et à la compréhension du texte **(/4)** ;
+
+* Écrire une ODD adaptée à votre encodage et documentée **(/10)** :
+	- Générer une ODD à partir de `Roma` ou de `oddbyexample` (/1) ;
+	- Votre ODD doit contenir au moins :
+		- Une règle contraignant l’usage d’un attribut et sa ou ses valeurs (/1) ;
+		- Une règle contraignant l’enchaînement de certains éléments (/1) ;
+		- Une règle contraignant la valeur d’un attribut ou l’usage d’un élément ou d’un attribut en fonction de son environnement (/1).
+	- À partir de votre ODD, générer la documentation HTML de votre projet :
+		- Présenter en introduction votre projet et ses exploitations possibles (/3) ;
+		- Documenter le fonctionnement de votre encodage et vos choix de balises (/3). 
+
+## Liste des sujets possibles
+
+S’inscrire [sur le drive](https://docs.google.com/spreadsheets/d/1KfnAR0q_gE__UEmkgMqd-ST_TTk5b3qAlfGlCtO3VUc/edit?usp=sharing) avant le 6 décembre.
+
+### I — Roman feuilleton : [Georges Sand, *Daniella*, La Presse](https://gallica.bnf.fr/html/und/presse-et-revues/la-daniella?mode=desktop)
+
+* Télécharger le texte via l’interface de Gallica ;
+* Nettoyer le texte (doubles espaces, problème sur les caractères accentués, coquilles…) ;
+* Structurer le texte ;
+* Signaler dans le texte les noms de personnages et les noms de lieux ;
+* Faire un index des noms de personnages et de lieux ;
+* Compléter le `teiHeader` ;
+* Écrire l’ODD la plus restrictive possible en fonction de votre encodage ;
+* Ajouter dans votre ODD la documentation sur votre projet d’encodage, les éléments que vous avez encodés : pourquoi et comment, et quels pourront être à terme les usages de votre édition.
+
+### II — Édition à visée paléographique : [Aristote, *De caleo et mundo*, traduction de Nicole Oresme, Français 1082](https://archivesetmanuscrits.bnf.fr/ark:/12148/cc78170k)
+
+* Transcrire et structurer le texte ;
+* Renseigner le `teiHeader`, et plus précisément le `msDesc` à l’aide de la notice Gallica du manuscrit ;
+* Encoder les abréviations et les normalisations graphiques de manière à conserver la graphie originale et à proposer une graphie régularisée (penser à utiliser une fonte adaptée à votre travail, ainsi qu’à proposer des entités pour les caractères spéciaux) ;
+* Écrire l’ODD la plus restrictive possible en fonction de votre encodage ;
+* Ajouter dans votre ODD la documentation sur votre projet d’encodage, les éléments que vous avez encodés : pourquoi et comment ;
+* Présenter comment votre encodage pourrait être exploité.
+
+### III — Édition critique :
+
+* À l'aide du texte fourni, structurer votre extrait ;
+* Encoder les noms de personnages, de lieux et faire un index de ces derniers dans le `teiHeader` ;
+*  À l’aide des documents fournis, proposer une édition critique basée sur l’édition des belles lettres (quand le texte fourni diffère, proposer en variante ce dernier en déclarant #Remacle comme témoin) ;
+* Compléter le `teiHeader` ;
+* Déclarer dans le `teiHeader`, la liste des témoins en vous appuyant sur les informations de l’introduction de l’édition des belles lettres ;
+* Constituer un apparat critique en suivant la méthode de la *parallel-segmentation* ;
+* Écrire l’ODD, la plus restrictive possible en fonction de votre encodage ;
+* Ajouter dans votre ODD la documentation sur votre projet d’encodage, les éléments que vous avez encodés : pourquoi et comment ;
+* Présenter les avantages d’une édition critique nativement numérique, par rapport à une « édition papier traditionnelle ».
