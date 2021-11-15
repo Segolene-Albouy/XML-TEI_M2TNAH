@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+      <teiHeader>
+
+            <!-- Description bibliographique du fichier numérique ainsi que de sa source (physique ou non) -->
+            <fileDesc>
+                  <titleStmt>
+                        <title>Titre de l'encodage</title>
+                        <author>
+                              <persName>Nom de l'auteur de l'encodage</persName>
+                        </author>
+                        <sponsor>
+                              <name>Nom du sponsor</name>
+                        </sponsor>
+                        <funder>
+                              <name>Nom du financeur</name>
+                        </funder>
+                        <editor>
+                              <name>Nom de l'éditeur</name>
+                        </editor>
+                        <principal>
+                              <persName>Nom du chercheur en chef du projet à l'origine d el'encodage</persName>
+                        </principal>
+                        <respStmt xml:id="encodeur">
+                              <resp>Identification d'un rôle non-listé auparavant</resp>
+                              <persName>Nom de la personne</persName>
+                        </respStmt>
+                  </titleStmt>
+                  <editionStmt>
+                        <edition>Précisions sur la présente édition (utile s'il y en a plusieurs)</edition>
+                        <respStmt>
+                              <resp>Description d'une tâche liée à l'édition</resp>
+                              <name>Nom de la personne qui a réalisé la tâche</name>
+                        </respStmt>
+                  </editionStmt>
+                  <extent>Taille du fichier électronique</extent>
+                  <publicationStmt>
+                        <publisher>Nom de l'éditeur (chargé de la publication/distribution et non de l'édition/encodage)</publisher>
+                        <address>
+                              <addrLine>Adresse de l'éditeur</addrLine>
+                        </address>
+                        <idno type="ISBN">0-19-254705-4<!-- ISBN ou autre numéro pour identifier l'édition --></idno>
+                        <availability status="restricted">
+                              <p>Description des droits d'auteur, etc.</p>
+                              <licence target="URL_de_la_licence">Résumé des termes de la licence</licence>
+                        </availability>
+                        <!-- Date de publication -->
+                        <date when="2021-11-10"/>
+                        <distributor>Nom du distributeur (i.e. l'organisation à contacter pour acheter l'édition)</distributor>
+                  </publicationStmt>
+                  <seriesStmt>
+                        <title>Titre de la série dans laquelle ce texte électronique est publié, le cas échéant</title>
+                        <respStmt>
+                              <resp>Nature de sa responsabilité dans l'édition</resp>
+                              <name>Nom de la personne ou de l'organisation responsable de la série, par ex. son éditeur</name>
+                        </respStmt>
+                        <idno type="ISSN">0143-3385<!-- ISSN ou autre numéro pour identifier la série --></idno>
+                  </seriesStmt>
+                  <notesStmt>
+                        <note>Notes sur le texte, comprenant des informations supplémentaires sur les sources, les anomalies, etc.</note>
+                  </notesStmt>
+                  
+                  <!-- Métadonnées concernant la source dont est issue l'encodage -->
+                  <sourceDesc>
+                        <!--Bibliographie structurée-->
+                        <biblStruct>
+                              <analytic>
+                                    <!-- Référence bibliograhique pour désigner un texte au sein d'une monographie (e.g. un article) -->
+                                    <author>Auteur</author>
+                                    <title>Titre</title>
+                              </analytic>
+                              <monogr>
+                                    <!-- Référence bibliograhique concernant une monographie -->
+                                    <author>Auteur</author>
+                                    <title>Titre</title>
+                                    <imprint>
+                                          <pubPlace>Lieu de publication</pubPlace>
+                                          <publisher>Éditeur</publisher>
+                                          <!-- Date de publication -->
+                                          <date when="2004-02-28"/>
+                                    </imprint>
+                              </monogr>
+                              <!-- Pages citées -->
+                              <citedRange from="30" to="50" unit="pp"/>
+                        </biblStruct>
+                  </sourceDesc>
+            </fileDesc>
+
+            <!-- Informations concernant l'encodage du texte -->
+            <encodingDesc>
+                  <projectDesc>
+                        <p>Informations concernant le projet à l'origine de l'encodage</p>
+                  </projectDesc>
+                  <samplingDecl>
+                        <p>Information concernant le choix du texte encodé</p>
+                  </samplingDecl>
+                  <editorialDecl>
+                        <correction status="unknown">
+                              <p>Information concernant le traitement des erreurs dans l'encodage</p>
+                        </correction>
+                        <normalization method="markup">
+                              <p>Information concernant les normalisations dans l'encodage</p>
+                        </normalization>
+                        <quotation>
+                              <p>Information concernant le traitement des citations dans l'encodage</p>
+                        </quotation>
+                        <hyphenation eol="hard">
+                              <p>Information concernant le traitement des césures dans l'encodage</p>
+                        </hyphenation>
+                        <segmentation>
+                              <p>Information concernant la manière de segmenter (encodage à visée linguistique)</p>
+                        </segmentation>
+                        <interpretation>
+                              <p>Information concernant l'interprétation à apporter à certains détails d'encodage</p>
+                        </interpretation>
+                  </editorialDecl>
+                  <styleDefDecl scheme="css">
+                        <p>
+                              Information concernant le language par défaut à utiliser pour le <att>style</att> 
+                              ou divers type de <gi>rendus</gi> ; généralement, la définition d'un <att>schema</att> est suffisant
+                        </p>
+                  </styleDefDecl>
+                  <tagsDecl>
+                        <!-- Utilisé pour documenter les balises utilisées dans le texte, leur fréquence d'utilisation et leur rendu par défaut -->
+                        <rendition selector="head">font-size: 120%; text-align: center;</rendition>
+                        <namespace name="http://www.tei-c.org/ns/1.0">
+                              <tagUsage gi="head" occurs="17" withId="2">Description sur l'utilisation de l'élément <!--<head>--></tagUsage>
+                        </namespace>
+                  </tagsDecl>
+                  <!-- Information sur l'utilisation de taxonomies, etc. --> 
+                  <classDecl>
+                        <taxonomy xml:id="DDC22">
+                              <bibl>
+                                    <title>Dewey Decimal Classification</title>
+                                    <edition>22nd print</edition>
+                                    <publisher>OCLC Online Computer Library Center, Inc.</publisher>
+                                    <pubPlace>Dublin, OH USA</pubPlace>
+                              </bibl>
+                        </taxonomy>
+                  </classDecl>
+                  <charDecl>
+                        <desc>Définitions des caractères, glyphes, par exemple les caractères qui ne sont pas dans Unicode, 
+                              ou pour différencier des glyphes distincts utilisés pour le même caractère</desc>
+                        <char xml:id="for_empty_g">
+                              <charName>nom du caractère</charName>
+                              <charProp>
+                                    <localName>nom d'une propriété non-unicode</localName>
+                                    <value>valeur de la propriété</value>
+                              </charProp>
+                              <mapping type="type_de_mapping">caractere_associe</mapping>
+                              <graphic url="./charPic.png"/>
+                        </char>
+                        <glyph xml:id="for_g">
+                              <glyphName>nom</glyphName>
+                              <desc>description du caractère (facultative)</desc>
+                              <charProp>
+                                    <unicodeName>nom d'une propriété unicode</unicodeName>
+                                    <value>valeur de la propriété</value>
+                              </charProp>
+                              <mapping>optionnel</mapping>
+                              <graphic url="./glyph.png"/>
+                        </glyph>
+                  </charDecl>
+            </encodingDesc>
+
+            <!-- Aspects non bibliographiques du texte numérique -->
+            <profileDesc>
+                  <!-- Métadonnées spécifiques à la correspondance -->
+                  <correspDesc>
+                        <!-- Description d'une action (réception, envoi, etc.) d'un message contenu dans l'encodage-->
+                        <!-- utiliser <correspContext> pour pointer vers une action précédente/suivante -->
+                        <!-- Séquence de lettres par exemple -->
+                        <correspAction type="sent">
+                              <date when="2021-06-11"/>
+                        </correspAction>
+                  </correspDesc>
+                  <!-- Liste des mains qui apparaissent dans le texte -->
+                  <handNotes>
+                        <!-- Détails sur la main en question dans les attributs -->
+                        <handNote xml:id="hojhf" medium="blueInk" scope="major" scribe="JHFlanders" script="plain"/>
+                        <handNote xml:id="hosdb" medium="pencil" scope="minor" scribe="SDBauman" script="sloppy"/>
+                  </handNotes>
+                  <!-- Liste des langages utilisés -->
+                  <langUsage>
+                        <language ident="en">Description du langage, au besoin</language>
+                  </langUsage>
+                  <!-- Participants à une interaction linguistique -->
+                  <particDesc>
+                        <listPerson>
+                              <person age="30" xml:id="p01" role="coordinator" sex="2">
+                                    <persName>Bidule Trucmuche</persName>
+                                    <affiliation>École des chartes</affiliation>
+                                    <birth when="1972-10-20">Lieu ou information concernant sa naissance</birth>
+                                    <education>Information sur ses études</education>
+                                    <occupation>Information sur son occupation</occupation>
+                              </person>
+                        </listPerson>
+                  </particDesc>
+                  <!-- Description de la nature ou du sujet du texte en termes de système de classification standard -->
+                  <textClass>
+                        <keywords scheme="#DDC22">
+                              <term>Text Encoding Initiative</term>
+                              <term>sample</term>
+                              <term>header</term>
+                              <term>XML</term>
+                        </keywords>
+                        <classCode scheme="#DDC22">006</classCode>
+                  </textClass>
+            </profileDesc>
+
+            <!-- Historique des modifications apportés à l'encodage après sa version initiale -->
+            <revisionDesc>
+                  <change when="2021-02-10" who="#encodeur">
+                        <!-- Répéter l'élément autant que nécessaire -->
+                  </change>
+            </revisionDesc>
+            
+      </teiHeader>
+
+      <text>
+            <body>
+                  <p>Corps du texte</p>
+            </body>
+      </text>
+
+</TEI>

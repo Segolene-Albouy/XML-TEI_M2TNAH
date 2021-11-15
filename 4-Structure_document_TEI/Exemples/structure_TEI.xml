@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?> <!-- Instruction de traitement XML, Version XML, Version d'encodage -->
+<!-- schéma qui restreint les possibilités d'emplois de balises -->
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<!-- @xmlns = espace de nom, on déclare qu'on propose un document conforme aux standards de la TEI -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+      <!-- Encodage des métadonnées décrivant le texte encodé dans l'élément <text> -->
+      <teiHeader>
+            <fileDesc>
+                  <titleStmt>
+                        <title></title>
+                        <author></author>
+                  </titleStmt>
+                  <publicationStmt>
+                        <p></p>
+                  </publicationStmt>
+                  <sourceDesc>
+                        <p/>
+                  </sourceDesc>
+            </fileDesc>
+      </teiHeader>
+
+      <!-- Encodage des données textuelles -->
+      <text>
+            <front>
+                  <!-- Données qui relèvent de la préface, de l'introduction -->
+            </front>
+            <body xml:lang="fr">
+                  <!-- Mise en place de la structuration du texte, l'imbrication peut se multiplier autant que nécessaire -->
+                  <div type="book">
+                        <!-- div = système de base de structuration hiérarchique, à personnaliser avec @type -->
+                        <div type="chapter" n="1">
+                              <head><!-- Titre --></head>
+                              <p><!-- Paragraphe --></p>
+                        </div>
+                  </div>
+            </body>
+            <back>
+                  <!-- Données qui relèvent de la postface, de l'épilogue, mais aussi glossaires -->
+            </back>
+      </text>
+</TEI>
