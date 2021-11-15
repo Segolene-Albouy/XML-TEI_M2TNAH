@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+      <teiHeader>
+            <fileDesc>
+                  <titleStmt>
+                        <title>Le Cid</title>
+                        <title type="sub">Tragédie</title>
+                        <author>Corneille, Pierre</author>
+                        <editor>J. Taschereau</editor>
+                  </titleStmt>
+                  <publicationStmt>
+                        <publisher>FIEVRE, Paul</publisher>
+                        <publisher resp="contributor">FIEVRE, Ernest</publisher>
+                        <date when="2012">12/03/2012</date>
+                        <idno>http://www.theatre-classique.fr/pages/txt/CORNEILLEP_CID.txt</idno>
+                        <availability status="restricted">
+                              <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+                        </availability>
+                  </publicationStmt>
+                  <sourceDesc>
+                        <p>
+                              Le texte est conforme à l'édition se situant dans les "<title>Oeuvres complètes de P. Corneille</title>" 
+                              revue et annotée par J. Taschereau, Paris : P. Jannet, 1857. Tome 2, pp 145-222.
+                        </p>
+                  </sourceDesc>
+            </fileDesc>
+            
+            <profileDesc>
+                  <creation>
+                        <date>1682</date>
+                        <country>France</country>
+                        <lang xml:lang="fr"/>
+                  </creation>
+            </profileDesc>
+            
+      </teiHeader>
+      
+      <text>
+            <front>
+                  <performance>
+                        <p>Représentée pour la première fois le <date when="1637-01-04">4 janvier
+                                    1637</date> au Théâtre du Marais.</p>
+                  </performance>
+                  <div type="examen">
+                        <head>Examen 1660</head>
+                        <p>Ce poème a tant d'avantages du côté du sujet et des pensées brillantes
+                              dont il est semé, que la plupart de ses auditeurs n'ont pas voulu voir
+                              les défauts de sa conduite, et ont laissé enlever leurs suffrages au
+                              plaisir que leur a donné sa représentation. Bien que ce soit celui de
+                              tous mes ouvrages réguliers où je me suis permis le plus de licence,
+                              il passe encore pour le plus beau auprès de ceux qui ne s'attachent
+                              pas à la dernière sévérité des règles, et depuis cinquante ans qu'il
+                              tient sa place sur nos théâtres, l'histoire ni l'effort de
+                              l'imagination n'y ont rien fait voir qui en ait effacé l'éclat. Aussi
+                              a-t-il les deux grandes conditions que demande Aristote aux tragédies
+                              parfaites, et dont l'assemblage se rencontre si rarement chez les
+                              anciens ni chez les modernes ; il les assemble même plus fortement et
+                              plus noblement que les espèces que pose ce philosophe. Une maîtresse
+                              que son devoir force à poursuivre la mort de son amant, qu'elle
+                              tremble d'obtenir, a les passions plus vives et plus allumées que tout
+                              ce qui peut se passer entre un mari et sa femme, une mère et son fils,
+                              un frère et sa soeur, et la haute vertu dans un naturel sensible à ses
+                              passions, qu'elle dompte sans les affaiblir, et à qui elle laisse
+                              toute leur force pour en triompher plus glorieusement, a quelque chose
+                              de plus touchant, de plus élevé et de plus aimable que cette médiocre
+                              bonté, capable d'une faiblesse et même d'un crime, où nos anciens
+                              étaient contraints d'arrêter le caractère le plus parfait des rois et
+                              des princes dont ils faisaient leurs héros, afin que ces taches et ces
+                              forfaits, défigurant ce qu'ils leur laissaient de vertu,
+                              s'accommodassent au goût et aux souhaits de leurs spectateurs, et
+                              fortifiassent l'horreur qu'ils avaient conçue de leur domination et de
+                              la monarchie. </p>
+                        <p>[...]</p>
+                  </div>
+                  <castList>
+                        <castItem xml:id="FERNAND">
+                              <role>
+                                    <roleName>DON FERNAND</roleName>, premier roi de Castille.
+                              </role>
+                        </castItem>
+                        <castItem xml:id="URRAQUE">
+                              <role>
+                                    <roleName>DONA URRAQUE</roleName>, infante de Castille.
+                              </role>
+                        </castItem>
+                        <castItem xml:id="DIEGUE">
+                              <role>
+                                    <roleName>DON DIÈGUE</roleName>, père de <persName ref="#RODRIGUE">Don Rodrigue</persName>
+                              </role>
+                        </castItem>
+                        <castItem xml:id="GOMES">
+                              <role>
+                                    <roleName>DON GOMES</roleName>, comte de Gormas, père de Chimène
+                              </role>
+                        </castItem>
+                        <castItem xml:id="RODRIGUE">
+                              <role>
+                                    <roleName>DON RODRIGUE</roleName>, amant de Chimène
+                              </role>
+                        </castItem>
+                        <castItem xml:id="ARIAS">
+                              <role>
+                                    <roleName>DON ARIAS</roleName>, gentilhomme castillan
+                              </role>
+                        </castItem>
+                        <castItem xml:id="ALONSE">
+                              <role>
+                                    <roleName>DON ALONSE</roleName>, gentilhomme castillan
+                              </role>
+                        </castItem>
+                        <castItem xml:id="CHIMENE">
+                              <role>
+                                    <roleName>CHIMÈNE</roleName>, fille de Don Gomès
+                              </role>
+                        </castItem>
+                        <castItem xml:id="LEONOR">
+                              <role>
+                                    <roleName>LÉONOR</roleName> gouvernante de l'Infante
+                              </role>
+                        </castItem>
+                        <castItem xml:id="ELVIRE">
+                              <role>
+                                    <roleName>ELVIRE</roleName> gouvernante de Chimène
+                              </role>
+                        </castItem>
+                        <castItem xml:id="PAGE">
+                              <role>Un Page de l'Infante.</role>
+                        </castItem>
+                        <stage>La scène est à Séville.</stage>
+                  </castList>
+            </front>
+            
+            <body>
+                  <div type="act" n="1">
+                        <head>ACTE I</head>
+                        <div type="scene" n="1">
+                              <head>SCÈNE PREMIÈRE</head>
+                              <stage>
+                                    <roleName ref="#CHIMENE">Chimène</roleName>
+                                    <roleName ref="#ELVIRE">Elvire</roleName>
+                              </stage>
+                              <sp who="#CHIMENE">
+                                    <l>Elvire, m'as-tu fait un rapport bien sincère ?</l>
+                                    <l>Ne déguises-tu rien de ce qu'a dit mon père ?</l>
+                              </sp>
+                              <sp who="#ELVIRE">
+                                    <l>Tous mes sens à moi-même en sont encor charmés,</l>
+                                    <l>Il estime Rodrigue autant que vous l'aimez,</l>
+                                    <l>Et si je ne m'abuse à lire dans son âme,</l>
+                                    <l>Il vous commandera de répondre à sa flamme.</l>
+                              </sp>
+                              <!-- suite du texte -->
+                        </div>
+                        <div type="scene" n="2">
+                              <head>SCÈNE II</head>
+                              <stage>
+                                    <roleName ref="#URRAQUE">Infante</roleName>
+                                    <roleName ref="#LEONOR">Léonor</roleName>
+                                    <roleName ref="#PAGE">Le page</roleName>
+                              </stage>
+                              <!-- suite du texte -->
+                              <sp who="#URRAQUE">
+                                    <l>l'amour est un tyran qui n'épargne personne :</l>
+                                    <l>Ce jeune cavalier, cet amant que je donne,</l>
+                                    <l part="I">Je l'aime.</l>
+                              </sp>
+                              <sp who="#LEONOR">
+                                    <l part="M">Vous l'aimez !</l>
+                              </sp>
+                              <sp who="#URRAQUE">
+                                    <l part="F">Mets la main sur mon coeur,</l>
+                              </sp>
+                        </div>
+                  </div>
+            </body>
+      </text>
+</TEI>
