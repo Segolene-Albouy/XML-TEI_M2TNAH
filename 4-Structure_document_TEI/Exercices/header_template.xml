@@ -8,7 +8,7 @@
                   <titleStmt>
                         <title>Titre de l'encodage</title>
                         <author>
-                              <persName>Nom de l'auteur de l'encodage</persName>
+                              <persName>Nom de l'auteur du texte encodé</persName>
                         </author>
                         <sponsor>
                               <name>Nom du sponsor</name>
@@ -20,7 +20,7 @@
                               <name>Nom de l'éditeur</name>
                         </editor>
                         <principal>
-                              <persName>Nom du chercheur en chef du projet à l'origine d el'encodage</persName>
+                              <persName>Nom du chercheur en chef du projet à l'origine de l'encodage</persName>
                         </principal>
                         <respStmt xml:id="encodeur">
                               <resp>Identification d'un rôle non-listé auparavant</resp>
