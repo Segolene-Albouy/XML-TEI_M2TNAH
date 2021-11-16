@@ -17,7 +17,7 @@
                               <name>Nom du financeur</name>
                         </funder>
                         <editor>
-                              <name>Nom de l'éditeur</name>
+                              <name>Nom de l'éditeur de l'encodage</name>
                         </editor>
                         <principal>
                               <persName>Nom du chercheur en chef du projet à l'origine de l'encodage</persName>
@@ -50,12 +50,12 @@
                         <distributor>Nom du distributeur (i.e. l'organisation à contacter pour acheter l'édition)</distributor>
                   </publicationStmt>
                   <seriesStmt>
-                        <title>Titre de la série dans laquelle ce texte électronique est publié, le cas échéant</title>
+                        <title>Titre de la collection dans laquelle le texte électronique est publié, le cas échéant</title>
                         <respStmt>
-                              <resp>Nature de sa responsabilité dans l'édition</resp>
-                              <name>Nom de la personne ou de l'organisation responsable de la série, par ex. son éditeur</name>
+                              <resp>Nature de sa responsabilité dans la collection</resp>
+                              <name>Nom de la personne ou de l'organisation responsable de la collection, par ex. son éditeur</name>
                         </respStmt>
-                        <idno type="ISSN">0143-3385<!-- ISSN ou autre numéro pour identifier la série --></idno>
+                        <idno type="ISSN">0143-3385<!-- ISSN ou autre numéro pour identifier la collection --></idno>
                   </seriesStmt>
                   <notesStmt>
                         <note>Notes sur le texte, comprenant des informations supplémentaires sur les sources, les anomalies, etc.</note>
@@ -63,7 +63,7 @@
                   
                   <!-- Métadonnées concernant la source dont est issue l'encodage -->
                   <sourceDesc>
-                        <!--Bibliographie structurée-->
+                        <!-- Référence(s) bibliographique(s) désignant la source dont est issu l'encodage -->
                         <biblStruct>
                               <analytic>
                                     <!-- Référence bibliograhique pour désigner un texte au sein d'une monographie (e.g. un article) -->
