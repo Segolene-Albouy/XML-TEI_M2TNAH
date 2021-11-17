@@ -48,7 +48,7 @@ S’inscrire [sur le drive](https://docs.google.com/spreadsheets/d/1KfnAR0q_gE__
 * Encoder les noms de personnages, de lieux et faire un index de ces derniers dans le `teiHeader` ;
 * Compléter le `teiHeader` ;
 * Déclarer dans le `teiHeader`, la liste des témoins en vous appuyant sur les informations présente sur le site [Online Froissard](https://www.dhi.ac.uk/onlinefroissart/apparatus.jsp?type=codi) ou d'autres ressources en ligne ;
-* Constituer un apparat critique en suivant la méthode de la *parallel-segmentation* ;
+* Constituer un apparat critique grâce à la fonctionalité *Collate* de l'[Online Froissart](https://www.dhi.ac.uk/onlinefroissart/index.jsp) en suivant la méthode de la *parallel-segmentation* ;
 * Écrire l’ODD, la plus restrictive possible en fonction de votre encodage ;
 * Ajouter dans votre ODD la documentation sur votre projet d’encodage, les éléments que vous avez encodés : pourquoi et comment ;
 * Présenter les avantages d’une édition critique nativement numérique, par rapport à une « édition papier traditionnelle ».

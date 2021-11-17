@@ -22,6 +22,8 @@ Ce cours est largement inspiré des [supports fournis par Ariane Pinche dans ce 
 
 ## Évaluation
 
+Les consignes détaillées concernant l'évaluation sont compilées dans [ce document](https://github.com/Segolene-Albouy/XML-TEI_M2TNAH/blob/main/ConsignesEvaluation.md).
+
 * Structurer en XML-TEI votre texte en vue d’une édition et en respectant le genre auquel appartient votre extrait **(/6)** ;
 
 * Compléter de la manière la plus précise possible le `teiHeader` de votre édition, en fonction des éléments nécessaires à son établissement et à la compréhension du texte **(/4)** ;
