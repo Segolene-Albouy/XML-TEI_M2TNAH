@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+      <teiHeader>
+            <fileDesc>
+                  <titleStmt>
+                        <title>Itinéraire de Paris à Jérusalem</title>
+                        <title type="sub">Voyage en Grèce</title>
+                        <author>François-René de Chateaubriand</author>
+                  </titleStmt>
+                  <publicationStmt>
+                        <distributor  facs="https://fr.wikisource.org/wiki/Itin%C3%A9raire_de_Paris_%C3%A0_J%C3%A9rusalem/Voyage/Partie_1">Wikisource</distributor>
+                  </publicationStmt>
+                  <sourceDesc>
+                        <bibl>
+                              <author>Chateaubriant</author>, <title>Œuvres complètes Tome 5</title>,
+                              <publisher>Garnier</publisher>,
+                              <pubPlace>Paris</pubPlace>, <date>1861</date>.
+                        </bibl>
+                  </sourceDesc>
+            </fileDesc>
+      </teiHeader>
+      <text>
+            <body>
+                  <p>Enfin, le grand jour de notre entrée à Athènes se leva. Le 23, à trois heures
+                        du matin, nous étions tous à cheval ; nous commençâmes à défiler en silence
+                        par la voie Sacrée : je puis assurer que l’initié le plus dévot à Cérès n’a
+                        jamais éprouvé un transport aussi vif que le mien. Nous avions mis nos beaux
+                        habits pour la fête ; le janissaire avait retourné son turban, et, par
+                        extraordinaire, on avait frotté et pansé les chevaux. Nous traversâmes le
+                        lit d’un torrent appelé Saranta-Potamo ou les Quarante Fleuves, probablement
+                        le Céphise Eleusinien ; nous vîmes quelques débris d’églises chrétiennes :
+                        ils doivent occuper la place du tombeau de ce Zarex qu’Apollon lui-même
+                        avait instruit dans l’art des chants. D’autres ruines nous annoncèrent les
+                        monuments d’Eumolpe et d’Hippothoon ; nous trouvâmes les rhiti ou les
+                        courants d’eau salée : c’était là que pendant les fêtes d’Eleusis les gens
+                        du peuple insultaient les passants, en mémoire des injures qu’une vieille
+                        femme avait dites autrefois à Cérès. De là passant au fond, ou au point
+                        extrême du canal de Salamine, nous nous engageâmes dans le défilé que
+                        forment le mont Parnès et le mont Egalée : cette partie de la voie Sacrée
+                        s’appelait Le Mystique. Nous aperçûmes le monastère de Daphné, bâti sur les
+                        débris du temple d’Apollon, et dont l’église est une des plus anciennes de
+                        l’Attique. Un peu plus loin, nous remarquâmes quelques restes du temple de
+                        Vénus. Enfin le défilé commence à s’élargir ; nous tournons autour du mont
+                        Poecile, placé au milieu du chemin comme pour masquer le tableau, et tout à
+                        coup nous découvrons la plaine d’Athènes. </p>
+                  <p>Les voyageurs qui visitent la ville de Cécrops arrivent ordinairement par le
+                        Pirée ou par la route de Négrepont. Ils perdent alors une partie du
+                        spectacle, car on n’aperçoit que la citadelle quand on vient de la mer, et
+                        l’Anchesme coupe la perspective quand on descend de l’Eubée. Mon étoile
+                        m’avait amené par le véritable chemin pour voir Athènes dans toute sa
+                        gloire. </p>
+                  <p> La première chose qui frappa mes yeux, ce fut la citadelle éclairée du soleil
+                        levant : elle était juste en face de moi, de l’autre côté de la plaine, et
+                        semblait appuyée sur le mont Hymette, qui faisait le fond du tableau. Elle
+                        présentait, dans un assemblage confus, les chapiteaux des Propylées, les
+                        colonnes du Parthénon et du temple d’Erechthée, les embrasures d’une
+                        muraille chargée de canons, les débris gothiques des chrétiens et les
+                        masures des musulmans. </p>
+                  <p> Deux petites collines, l’Anchesme et le Musée, s’élevaient au nord et au midi
+                        de l’Acropolis. Entre ces deux collines, et au pied de l’Acropolis, Athènes
+                        se montrait à moi : ses toits aplatis, entremêlés de minarets, de cyprès, de
+                        ruines, de colonnes isolées, les dômes de ses mosquées couronnés par de gros
+                        nids de cigognes, faisaient un effet agréable aux rayons du soleil. Mais si
+                        l’on reconnaissait encore Athènes à ses débris, on voyait aussi, à
+                        l’ensemble de son architecture et au caractère général des monuments, que la
+                        ville de Minerve n’était plus habitée par son peuple. </p>
+                  <p>Une enceinte de montagnes, qui se termine à la mer, forme la plaine ou le
+                        bassin d’Athènes. Du point où je voyais cette plaine au mont Poecile, elle
+                        paraissait divisée en trois bandes ou régions, courant dans une direction
+                        parallèle du nord au midi. La première de ces régions, et la plus voisine de
+                        moi, était inculte et couverte de bruyères ; la seconde offrait un terrain
+                        labouré où l’on venait de faire la moisson ; la troisième présentait un long
+                        bois d’oliviers, qui s’étendait un peu circulairement depuis les sources de
+                        l’Ilissus, en passant au pied de l’Anchesme, jusque vers le port de Phalère.
+                        Le Céphise coule dans cette forêt, qui par sa vieillesse semble descendre de
+                        l’olivier que Minerve fit sortir de la terre. L’Ilissus a son lit desséché
+                        de l’autre côté d’Athènes, entre le mont Hymette et la ville. La plaine
+                        n’est pas parfaitement unie : une petite chaîne de collines détachée du mont
+                        Hymette en surmonte le niveau et forme les différentes hauteurs sur
+                        lesquelles Athènes plaça peu à peu ses monuments. </p>
+                  <p>Ce n’est pas dans le premier moment d’une émotion très vive que l’on jouit le
+                        plus de ses sentiments. Je m’avançais vers Athènes avec une espèce de
+                        plaisir qui m’ôtait le pouvoir de la réflexion ; non que j’éprouvasse
+                        quelque chose de semblable à ce que j’avais senti à la vue de Lacédémone.
+                        Sparte et Athènes ont conservé jusque dans leurs ruines leurs différents
+                        caractères : celles de la première sont tristes, graves et solitaires ;
+                        celles de la seconde sont riantes, légères, habitées. A l’aspect de la
+                        patrie de Lycurgue, toutes les pensées deviennent sérieuses, mâles et
+                        profondes ; l’âme, fortifiée, semble s’élever et s’agrandir ; devant la
+                        ville de Solon, on est comme enchanté par les prestiges du génie ; on a
+                        l’idée de la perfection de l’homme considéré comme un être intelligent et
+                        immortel. Les hauts sentiments de la nature humaine prenaient à Athènes
+                        quelque chose d’élégant qu’ils n’avaient point à Sparte. L’amour de la
+                        patrie et de la liberté n’était point pour les Athéniens un instinct
+                        aveugle, mais un sentiment éclairé, fondé sur ce goût du beau dans tous les
+                        genres, que le ciel leur avait si libéralement départi ; enfin, en passant
+                        des ruines de Lacédémone aux ruines d’Athènes je sentis que j’aurais voulu
+                        mourir avec Léonidas et vivre avec Périclès. </p>
+            </body>
+      </text>
+</TEI>

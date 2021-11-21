@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="UTF-8"?> 
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?> 
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+      <teiHeader>
+            <fileDesc>
+                  <titleStmt>
+                        <title>Notre Dame de Paris</title>
+                        <author>Victor Hugo</author>
+                        <editor>Paul Meurice</editor>
+                  </titleStmt>
+                  <publicationStmt>
+                        <distributor  facs="https://fr.wikisource.org/wiki/Notre-Dame_de_Paris/Livre_deuxième">
+                              Wikisource
+                        </distributor>
+                  </publicationStmt>
+                  <sourceDesc>
+                        <biblFull>
+                              <titleStmt>
+                                    <title/>
+                              </titleStmt>
+                              <publicationStmt>
+                                    <p/>
+                              </publicationStmt>
+                              <seriesStmt>
+                                    <title/>
+                              </seriesStmt>
+                              <notesStmt>
+                                    <note/>
+                              </notesStmt>
+                        </biblFull>
+                  </sourceDesc>
+            </fileDesc>
+      </teiHeader>
+      <text>
+            <body>
+                  <div type="book" n="1">
+                        <head>LIVRE PREMIER</head>
+                        <div type="chapter" n="1">
+                              <p/>
+                        </div>
+                  </div>
+                  <div type="book" n="2">
+                        <head>LIVRE SECOND</head>
+                        <div type="book" n="2">
+                              <div type="chapter" n="1">
+                                    <head>De Charybde en Sylla</head>
+                                    <p>La nuit arrive de bonne heure en janvier. Les rues étaient
+                                          déjà sombres quand Gringoire sortit du Palais. Cette nuit
+                                          tombée lui plut ; il lui tardait d’aborder quelque ruelle
+                                          obscure et déserte pour y méditer à son aise et pour que
+                                          le philosophe posât le premier appareil sur la blessure du
+                                          poète. La philosophie était du reste son seul refuge, car
+                                          il ne savait où loger. Après l’éclatant avortement de son
+                                          coup d’essai théâtral, il n’osait rentrer dans le logis
+                                          qu’il occupait, rue Grenier-sur-l’Eau, vis-à-vis le
+                                          Port-au-Foin, ayant compté sur ce que monsieur le prévôt
+                                          devait lui donner de son épithalame pour payer à maître
+                                          Guillaume Doulx-Sire, fermier de la coutume du
+                                          pied-fourché de Paris, les six mois de loyer qu’il lui
+                                          devait, c’est-à-dire douze sols parisis ; douze fois la
+                                          valeur de ce qu’il possédait au monde, y compris son
+                                          haut-de-chausses, sa chemise et son bicoquet. Après avoir
+                                          un moment réfléchi, provisoirement abrité sous le petit
+                                          guichet de la prison du trésorier de la Sainte-Chapelle,
+                                          au gîte qu’il élirait pour la nuit, ayant tous les pavés
+                                          de à son choix, il se souvint d’avoir avisé, la semaine
+                                          précédente, rue de la Savaterie, à la porte d’un
+                                          conseiller au parlement, un marche-pied à monter sur mule,
+                                          et de s’être dit que cette pierre serait, dans l’occasion,
+                                          un fort excellent oreiller pour un mendiant ou pour un
+                                          poète. Il remercia la providence de lui avoir envoyé cette
+                                          bonne idée ; mais, comme il se préparait à traverser la
+                                          place du Palais pour gagner le tortueux labyrinthe de la
+                                          Cité, où serpentent toutes ces vieilles sœurs, les rues de
+                                          la Barillerie, de la Vieille-Draperie, de la Savaterie, de
+                                          la Juiverie, etc., encore debout aujourd’hui avec leurs
+                                          maisons à neuf étages, il vit la procession du pape des
+                                          fous qui sortait aussi du Palais et se ruait au travers de
+                                          la cour, avec grands cris, grande clarté de torches et sa
+                                          musique, à lui Gringoire. Cette vue raviva les écorchures
+                                          de son amour-propre ; il s’enfuit. Dans l’amertume de sa
+                                          mésaventure dramatique, tout ce qui lui rappelait la fête
+                                          du jour l’aigrissait et faisait saigner sa plaie. </p>
+                                    <p>Il voulut prendre le pont Saint-Michel ; des enfants y
+                                          couraient çà et là avec des lances à feu et des
+                                          fusées.</p>
+                                    <p>— Peste soit des chandelles d’artifice ! dit Gringoire, et il
+                                          se rabattit sur le pont au Change. On avait attaché aux
+                                          maisons de la tête du pont trois drapels représentant le
+                                          roi, le dauphin et Marguerite de Flandre, et six petits
+                                          drapelets où étaient pourtraicts le duc d’Autriche, le
+                                          cardinal de Bourbon, et M. de Beaujeu, et madame Jeanne de
+                                          France, et M. le bâtard de Bourbon, et je ne sais qui
+                                          encore ; le tout éclairé de torches. La cohue
+                                          admirait.</p>
+                                    <p>— Heureux peintre Jehan Fourbault ! dit Gringoire avec un
+                                          gros soupir, et il tourna le dos aux drapels et drapelets.
+                                          Une rue était devant lui ; il la trouva si noire et si
+                                          abandonnée qu’il espéra y échapper à tous les
+                                          retentissements comme à tous les rayonnements de la fête.
+                                          Il s’y enfonça. Au bout de quelques instants, son pied
+                                          heurta un obstacle ; il trébucha et tomba. C’était la
+                                          botte de mai, que les clercs de la basoche avaient déposée
+                                          le matin à la porte d’un président au parlement, en
+                                          l’honneur de la solennité du jour. Gringoire supporta
+                                          héroïquement cette nouvelle rencontre. Il se releva et
+                                          gagna le bord de l’eau. Après avoir laissé derrière lui la
+                                          tournelle civile et la tour criminelle, et longé le grand
+                                          mur des jardins du roi, sur cette grève non pavée où la
+                                          boue lui venait à la cheville, il arriva à la pointe
+                                          occidentale de la Cité, et considéra quelque temps l’îlot
+                                          du Passeur-aux-Vaches, qui a disparu depuis sous le cheval
+                                          de bronze du pont Neuf. L’îlot lui apparaissait dans
+                                          l’ombre comme une masse noire au delà de l’étroit cours
+                                          d’eau blanchâtre qui l’en séparait. On y devinait, au
+                                          rayonnement d’une petite lumière, l’espèce de hutte en
+                                          forme de ruche où le passeur aux vaches s’abritait la
+                                          nuit.</p>
+                                    <p> — Heureux passeur aux vaches ! pensa Gringoire ; tu ne
+                                          songes pas à la gloire et tu ne fais pas d’épithalames !
+                                          Que t’importent les rois qui se marient et les duchesses
+                                          de Bourgogne ! Tu ne connais d’autres marguerites que
+                                          celles que ta pelouse d’avril donne à brouter à tes vaches
+                                          ! Et moi, poëte, je suis hué, et je grelotte, et je dois
+                                          douze sols, et ma semelle est si transparente qu’elle
+                                          pourrait servir de vitre à ta lanterne. Merci ! passeur
+                                          aux vaches ! ta cabane repose ma vue, et me fait oublier
+                                          Paris ! </p>
+                                    <p>Il fut réveillé de son extase presque lyrique par un gros
+                                          double pétard de la Saint-Jean, qui partit brusquement de
+                                          la bienheureuse cabane. C’était le passeur aux vaches qui
+                                          prenait sa part des réjouissances du jour et se tirait un
+                                          feu d’artifice. </p>
+                                    <p>Ce pétard fit hérisser l’épiderme de Gringoire.[...]</p>
+                              </div>
+                              <div type="chapter" n="2">
+                                    <head>La place de grève</head>
+                                    <p>Il ne reste aujourd’hui qu’un bien imperceptible vestige de
+                                          la place de Grève telle qu’elle existait alors. C’est la
+                                          charmante tourelle qui occupe l’angle nord de la place, et
+                                          qui, déjà ensevelie sous l’ignoble badigeonnage qui empâte
+                                          les vives arêtes de ses sculptures, aura bientôt disparu
+                                          peut-être, submergée par cette crue de maisons neuves qui
+                                          dévore si rapidement toutes les vieilles façades de
+                                          Paris.</p>
+                                    <p>Les personnes qui, comme nous, ne passent jamais sur la place
+                                          de Grève sans donner un regard de pitié et de sympathie à
+                                          cette pauvre tourelle étranglée entre deux masures du
+                                          temps de Louis XV, peuvent reconstruire aisément dans leur
+                                          pensée l’ensemble d’édifices auquel elle appartenait, et y
+                                          retrouver entière la vieille place gothique du quinzième
+                                          siècle.</p>
+                                    <p>C’était, comme aujourd’hui, un trapèze irrégulier bordé d’un
+                                          côté par le quai, et des trois autres par une série de
+                                          maisons hautes, étroites et sombres. Le jour, on pouvait
+                                          admirer la variété de ses édifices, tous sculptés en
+                                          pierre ou en bois, et présentant déjà de complets
+                                          échantillons des diverses architectures domestiques du
+                                          moyen âge, en remontant du quinzième au onzième siècle,
+                                          depuis la croisée qui commençait à détrôner l’ogive,
+                                          jusqu’au plein cintre roman qui avait été supplanté par
+                                          l’ogive, et qui occupait encore, au-dessous d’elle, le
+                                          premier étage de cette ancienne maison de la Tour-Roland,
+                                          angle de la place sur la Seine, du côté de la rue de la
+                                          Tannerie. La nuit, on ne distinguait de cette masse
+                                          d’édifices que la dentelure noire des toits déroulant
+                                          autour de la place leur chaîne d’angles aigus. Car c’est
+                                          une des différences radicales des villes d’alors et des
+                                          villes d’à présent, qu’aujourd’hui ce sont les façades qui
+                                          regardent les places et les rues, et qu’alors c’étaient
+                                          les pignons. Depuis deux siècles, les maisons se sont
+                                          retournées.[...]</p>
+                              </div>
+                        </div>
+                  </div>
+            </body>
+      </text>
+</TEI>
