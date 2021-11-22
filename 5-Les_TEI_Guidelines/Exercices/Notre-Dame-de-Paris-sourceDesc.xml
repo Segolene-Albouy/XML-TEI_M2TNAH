@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8"?> 
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?> 
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+      <teiHeader>
+            <!-- métadonnées -->
+            <fileDesc>
+                  <titleStmt>
+                        <title>Notre Dame de Paris</title>
+                        <author>Victor Hugo</author>
+                        <editor>Paul Meurice</editor>
+                  </titleStmt>
+                  <publicationStmt>
+                        <distributor facs="https://fr.wikisource.org/wiki/Notre-Dame_de_Paris/Livre_deuxième">Wikisource</distributor>
+                  </publicationStmt>
+                  <sourceDesc>
+                        <biblFull>
+                              <titleStmt>
+                                    <title type="main">Notre-Dame de Paris</title>
+                                    <title type="subtitle">Livre Deuxième</title>
+                                    <author>
+                                          <forename>Victor</forename>
+                                          <surname>Hugo</surname>
+                                    </author>
+                                    <editor resp="main">Paul Meurice</editor>
+                                    <editor resp="contributor">Simon Gustave</editor>
+                              </titleStmt>
+                              <publicationStmt>
+                                    <publisher>Librairie Ollendorff</publisher>
+                                    <date>1904</date>
+                                    <pubPlace>Paris</pubPlace>
+                                    <distributor  facs="https://gallica.bnf.fr/ark:/12148/bpt6k1264641j/f12.image">
+                                          BnF
+                                    </distributor>
+                                    <availability>
+                                          <licence>Domaine public</licence>
+                                    </availability>
+                              </publicationStmt>
+                              <seriesStmt>
+                                    <title>Notre-Dame de Paris, Livre II</title>
+                                    <biblScope unit="volume" n="1"/>
+                                    <!-- emplacement de la source dans l'oeuvre papier -->
+                                    <biblScope unit="section" n="A"/>
+                                    <biblScope unit="tome" n="2"/>
+                                    <biblScope unit="page" from="43" to="83">pp.43-83</biblScope>
+                              </seriesStmt>
+                              <notesStmt>
+                                    <note>Texte imprimé par l'imprimerie nationale</note>
+                              </notesStmt>
+                        </biblFull>
+                  </sourceDesc>
+            </fileDesc>
+      </teiHeader>
+      <text>
+            <body>
+                  <div type="book" n="1">
+                        <head>LIVRE PREMIER</head>
+                        <div type="chapter" n="1">
+                              <p/>
+                        </div>
+                  </div>
+                  <div type="book" n="2">
+                        <head>LIVRE SECOND</head>
+                        <div type="chapter" n="1">
+                              <p/>
+                        </div>
+                  </div>
+            </body>
+      </text>
+</TEI>
