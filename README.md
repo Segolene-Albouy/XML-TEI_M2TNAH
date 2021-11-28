@@ -55,6 +55,7 @@ Les consignes détaillées concernant l'évaluation sont compilées dans [ce doc
 - CHATEAU, Emmanuel, [L'encodage des textes](http://www.desgodets.net/edition-des-cours/model), Cours de Desgodets, 2012 ;
 - CONSENTIN, Magali, [Cours XML](http://magali.contensin.free.fr/html/XML/index.php), 2007 ;
 - *Digital Scholarly Editions*, [Manuscripts, Texts and TEI Encoding](https://www.youtube.com/playlist?list=PL77mHK9JuenN9NXeXQbVcUORz7HZk-9Pv) ;
+- GENEVÈS, Pierre, [*The XPath Language*](http://wam.inrialpes.fr/courses/PG-MoSIG12/xpath.pdf) ;
 - HAWKINS, Kevin S., [Introduction to the TEI Header](http://www.ultraslavonic.info/intro-to-tei-header/) ;
 - JOLIVET, Vincent, [Cours XML-TEI](https://github.com/architexte/cours-TEI) ;
 - Les Bibliothèques Virtuelles Humanistes, [Manuel d’encodage XML-TEI Renaissance et temps modernes (Imprimés - manuscrits)](http://www.bvh.univ-tours.fr/XML-TEI/index.asp) ;
