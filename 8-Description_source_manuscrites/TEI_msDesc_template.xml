@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+      <teiHeader>
+            <fileDesc>
+                  <titleStmt>
+                        <title>Titre</title>
+                  </titleStmt>
+                  <publicationStmt>
+                        <p>Information sur la publication</p>
+                  </publicationStmt>
+                  <sourceDesc>
+
+                        <msDesc xml:id="A">
+                              <!-- identifier le manuscrit -->
+                              <msIdentifier>
+                                    <country><!--Pays de conservation--></country>
+                                    <settlement><!--Ville de conservation --></settlement>
+                                    <institution><!--Institution de conservation--></institution>
+                                    <repository>Instance de conservation</repository>
+                                    <collection><!--Collection--></collection>
+                                    <idno><!-- identifiant (cote) --></idno>
+                                    <msName><!--Nom du manuscrit--></msName>
+                                    <altIdentifier>
+                                          <idno><!--Ancienne cote par exemple--></idno>
+                                    </altIdentifier>
+                              </msIdentifier>
+                              
+                              <!--Fiche du manuscrit-->
+                              <head>
+                                    <title><!-- titre du manuscrit --></title>
+                                    <origDate><!-- datation --></origDate>
+                                    <note><!-- informations complémentaires --></note>
+                              </head>
+
+                              <!-- Structure du manuscrit -->
+                              <msContents>
+                                    <summary><!--Descriptif global du contenu--></summary>
+                                    <textLang mainLang="fr" otherLangs="en">
+                                          <!--Passages en anglais-->
+                                    </textLang>
+                                    <msItemStruct>
+                                          <locus from="xxxx" to="xxxx">
+                                                <!-- folios concernés par la section -->
+                                          </locus>
+                                          <author><!-- auteur --></author>
+                                          <title><!-- titre de la section --></title>
+                                          <incipit><!-- premiers mots de la section --></incipit>
+                                          <explicit><!-- derniers mots de la section --></explicit>
+                                          <filiation>
+                                                <!--Relation à d'autres manuscrits, textes ou œuvres diverses-->
+                                          </filiation>
+                                          <note><!--Ajouts divers--></note>
+                                          <textLang mainLang="" otherLangs="">
+                                                <!-- langue principale du texte concerné -->
+                                          </textLang>
+                                    </msItemStruct>
+                              </msContents>
+
+                              <!-- Description matérielle du manuscrit -->
+                              <physDesc>
+                                    <objectDesc>
+                                          <supportDesc>
+                                                <support><!-- matériaux --></support>
+                                                <extent>
+                                                  <width unit="mm"/>
+                                                  <height unit="mm"/>
+                                                </extent>
+                                                <foliation><!-- type de cahier, nombre de folios--></foliation>
+                                          </supportDesc>
+                                          <layoutDesc>
+                                                <!-- disposition du texte sur le folio -->
+                                                <layout columns="2" writtenLines="44"/>
+                                          </layoutDesc>
+                                    </objectDesc>
+                                    <handDesc hands="2">
+                                          <!-- @hands = nombre de mains -->
+                                          <!-- Déclaration des mains -->
+                                          <handNote xml:id="id">
+                                                <p><locus from="f2" to="f4"/><!-- passage concerné -->
+                                                  <!-- Description des traits distinctifs de la main concernée --></p>
+                                          </handNote>
+                                    </handDesc>
+                                    <scriptDesc>
+                                          <scriptNote><!-- caractérisation de l'écriture --></scriptNote>
+                                    </scriptDesc>
+                                    <decoDesc>
+                                          <decoNote/>
+                                          <!-- description de la décoration -->
+                                    </decoDesc>
+                                    <bindingDesc>
+                                          <p/>
+                                          <!-- description de la reliure -->
+                                    </bindingDesc>
+                                    <sealDesc>
+                                          <p/>
+                                          <!-- description du ou des sceaux -->
+                                    </sealDesc>
+                              </physDesc>
+
+                              <!-- Histoire et transmission du manuscrit -->
+                              <history>
+                                    <origin><!-- lieu de production du manuscrit --></origin>
+                                    <provenance>
+                                          <p><!-- histoire de la transmission du manuscrit --></p>
+                                          <!-- indications bibliographiques -->
+                                          <listBibl>
+                                                <bibl>
+                                                  <author/>
+                                                  <title/>
+                                                  <pubPlace/>
+                                                  <publisher/>
+                                                  <date/>
+                                                </bibl>
+                                          </listBibl>
+                                    </provenance>
+                                    <acquisition>
+                                          <!-- Marque de possession -->
+                                          <stamp>
+                                                <!-- estampille -->
+                                                <dim/>
+                                                <location/>
+                                                <mentioned/>
+                                          </stamp>
+                                    </acquisition>
+                              </history>
+                        </msDesc>
+                  </sourceDesc>
+            </fileDesc>
+      </teiHeader>
+      <text>
+            <body>
+                  <p>Some text here.</p>
+            </body>
+      </text>
+</TEI>
