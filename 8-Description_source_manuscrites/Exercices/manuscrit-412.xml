@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Édition numérique du Manuscrit 412</title>
+         </titleStmt>
+
+         <publicationStmt>
+            <!-- En admettant que cet encodage du Manuscrit soit publié sur Élec sous licence CC Share-Alike -->
+            <publisher>Éditions en ligne de l’École des chartes</publisher>
+            <pubPlace>Paris</pubPlace>
+            <date when-iso="2021-12">Décembre 2021</date>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/3.0/deed.fr">Licence
+                  Creative Commons Attribution-partage dans les mêmes conditions</licence>
+            </availability>
+         </publicationStmt>
+
+         <sourceDesc>
+            <msDesc xml:id="ms412">
+                  <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Département des manuscrits</repository>
+                        <idno>Français 412</idno>
+                        <altIdentifier>
+                              <idno>Lancelot 135 (Ancienne cote)</idno>
+                        </altIdentifier>
+                        <altIdentifier>
+                              <idno>Regius 7019(3) (Ancienne cote)</idno>
+                        </altIdentifier>
+                        <altIdentifier>
+                              <idno>ark:/12148/btv1b84259980</idno>
+                        </altIdentifier>
+                  </msIdentifier>
+
+               <head>
+                  <title>Recueil de textes, Vie de saints</title>
+                  <origDate when="1285">1285</origDate>
+               </head>
+
+               <msContents>
+                  <summary>
+                     <locus from="1" to="4">Calendrier en latin : <locus from="1" to="2">Le « Compost »
+                           </locus>
+                        <locus from="2" to="3">Textes divers (Foires de Champagne ; aunages des
+                           villes de fabrique ; les douze vendredis de jeûne)</locus>
+                     </locus>
+                     <locus from="5" to="227v">Vies de Saints, en prose</locus>
+                     <locus from="228" to="236">Bestiaire par Richart de Fournival</locus>
+                     <locus from="236v" to="245">Réponse du Bestiaire, par Richart de
+                        Fournival</locus>
+                  </summary>
+
+                     <msItem xml:id="Vies-Saints">
+                           <locus from="5" to="227v">Folios 5 à 227v</locus>
+                           <respStmt>
+                                 <resp>Copiste</resp>
+                                 <name>
+                                       <persName xml:id="Bonaventure">Bonaventure</persName>
+                                       <certainty target="#Bonaventure" locus="value" degree="0.7">
+                                             <desc>Peut être le nom du copiste selon le colophon</desc>
+                                       </certainty>
+                                 </name>
+                           </respStmt>
+                           <respStmt>
+                                 <resp>Enlumineur</resp>
+                                 <name>Henris</name>
+                           </respStmt>
+                           <title>Vies de Saints</title>
+                           <colophon>
+                                 Icis livres ici finist Bone aventure ait qui l’escrist Henris ot non
+                                 l’enlumineur Dex le gardie de deshouneur Ci fu fais l’an MCCIIIIxx et V
+                           </colophon>
+                           <msItem xml:id="Vie-Sixte">
+                                 <locus from="87ra" to="88va">Folios 87ra à 88va</locus>
+                                 <author>Anonyme</author>
+                                 <title>Vie de saint Sixte</title>
+                                 <incipit>Ci comence la vie et passion seint Sixte</incipit>
+                                 <explicit>nostre sires Jesu Criz nos octroit parvenir. Amen.</explicit>
+                                 <textLang mainLang="fre">Ancien français (langue d’oïl)</textLang>
+                           </msItem>
+                     </msItem>
+               </msContents>
+
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>Parchemin et papier</support>
+                        <extent>
+                           <width unit="245mm"/>
+                           <height unit="330mm"/>
+                        </extent>
+                        <foliation>245 feuillets (plus 3 gardes en papier au début et à la fin) pour
+                           21 cahiers de type senions.</foliation>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout columns="2" writtenLines="46">La justification du texte se fait sur
+                           une surface haute de 220mm et large de 140mm. On note la présence d’une
+                           réglure à la mine de plomb. Le titre courant est indiqué sur le haut, à
+                           cheval sur la double page.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+
+                  <handDesc hands="1">
+                     <handNote scribeRef="#Bonaventure" corresp="#Vies-Saints">
+                        <p>Les vies de saints sont rédigées d’une seule main. Quatre autres notes
+                           manuscrites sont présentes :</p>
+                        <list>
+                           <item>folios 193v et 195v d’une même main au XIVe siècle en français et
+                              en latin ;</item>
+                           <item>folio 245 en cursive ;</item>
+                           <item>folio 4v (ancien folio blanc) d’une main moderne détaillant le
+                              contenu du manuscrit.</item>
+                        </list>
+                     </handNote>
+                  </handDesc>
+
+                  <scriptDesc>
+                     <scriptNote>Écriture en lettre de forme. Titre courant en haut de page en
+                        onciales peintes alternativement en bleu et rouge.</scriptNote>
+                  </scriptDesc>
+
+                  <decoDesc>
+                     <decoNote type="initial">
+                        La plupart des majuscules du texte sont rubriquées en rouge. Certaines,
+                           lorsque présentes sur la première ligne de la page, sont allongées et
+                           rehaussées de bleu et rouge ainsi qu’ornées de motifs rappelant des
+                           circonvolutions végétales. Les initiales de début de paragraphe
+                           présentent des décorations plus prononcées telles que décrites
+                           ci-dessous.
+                     </decoNote>
+                     <decoNote type="initial" xml:id="C1"> Lettre C : lettrine historiée de 10
+                        lignes de hauteur représentant saint Sixte avec une auréole dorée devant
+                        Dèce et ses prévots sur un fond bleu. Gamme assez étendue de couleurs dans
+                        les teintes rouges et bleues. Lettrine inscrite dans un cadre rouge à motifs
+                        géométriques.</decoNote>
+                     <decoNote type="initial" xml:id="L2"> Lettre L : Tracé de la lettre à festons
+                        imbriqués de rouge et bleu, décoration stylisée de spirales et pointillés
+                        rouges et bleus. Rinceaux marginaux qui se déploient dans la hauteur de la
+                        page.</decoNote>
+                     <decoNote type="initial" xml:id="Q3"> Lettre Q : Tracé de la lettre à festons
+                        imbriqués de rouge et bleu, décoration stylisée de spirales et pointillés
+                        rouges et bleus. Rinceaux marginaux qui se déploient dans la hauteur de la
+                        page.</decoNote>
+                     <decoNote type="initial" xml:id="J4"> Lettre J : Tracé de la lettre à festons
+                        imbriqués de rouge et bleu, décoration stylisée de spirales et pointillés
+                        rouges et bleus. Rinceaux marginaux qui se déploient dans la hauteur de la
+                        page. La forme du J n’est pas très prononcée et son allongement rend malaisée
+                        sa lecture.</decoNote>
+                     <decoNote type="initial" xml:id="L5"> Lettre 5 : Tracé de la lettre à festons
+                        imbriqués de rouge et bleu, décoration stylisée de spirales et pointillés
+                        rouges et bleus. Rinceaux marginaux qui se déploient dans la hauteur de la
+                        page.</decoNote>
+                     <decoNote type="initial" xml:id="A6"> Lettre A : Tracé de la lettre à festons
+                        imbriqués de rouge et bleu, décoration stylisée de spirales et pointillés
+                        rouges et bleus. Rinceaux marginaux qui se déploient dans la hauteur de la
+                        page.</decoNote>
+                     <decoNote type="initial" xml:id="Q7"> Lettre Q : Tracé de la lettre à festons
+                        imbriqués de rouge et bleu, décoration stylisée de spirales et pointillés
+                        rouges et bleus. Rinceaux marginaux qui se déploient dans la hauteur de la
+                        page.</decoNote>
+                  </decoDesc>
+
+                  <bindingDesc>
+                     <binding>
+                        <decoNote type="plats">Cuir marbré jaune, avec encadrement stylisé doré sur
+                           les plats.</decoNote>
+                        <decoNote type="dos">Dos à 5 nerfs en maroquin rouge à fleurs de lys et
+                           chiffre royal (or). Dans la deuxième case, l’inscription "Vie des
+                           Saints".</decoNote>
+                        <decoNote type="contreplats">Contreplats de papier marbré.</decoNote>
+                     </binding>
+                  </bindingDesc>
+               </physDesc>
+
+               <history>
+                  <origin>
+                        <p>Localisation par l’iconographie : Cambrai 
+                              (cf <bibl corresp="#Stones-2013">Stones, 2013</bibl>)</p>
+                     <p>Localisation par le contenu : Nord de la France, Pays-Bas méridionaux ou
+                        Champagne (d’après les lieux cités). Mons, Hainaut (d’après les saints du
+                        calendrier).</p></origin>
+                  <provenance>
+                     <p>Le colophon du f.227v donne le nom du scribe : "Bonaventure" ; de
+                        l’enlumineur : "Henris", et la date à laquelle fut achevé le manuscrit :
+                        1285.</p>
+                     <listBibl>
+                        <head>
+                              Bibliographie des ouvrages mentionnant le 
+                              <bibl corresp="#ms412">manuscrit 412</bibl>
+                        </head>
+                        <bibl xml:id="Avril-1998">
+                           <idno type="ISBN">978-2-7118-3704-5</idno>
+                           <author>Notice par <persName>Fr. Avril</persName></author>
+                           <title level="m">L’Art au temps des rois maudits. Philippe le Bel et ses
+                              fils : 1285-1328</title>
+                           <pubPlace>Paris</pubPlace>
+                           <publisher>Réunion des Musées Nationaux</publisher>
+                           <date>1998</date>
+                           <biblScope unit="page">Commentaires : n° 200</biblScope>
+                        </bibl>
+                        <bibl xml:id="Busby-2005">
+                           <idno type="ISSN">0007-9731</idno>
+                           <author>Keith Busby</author>
+                           <title level="a">Codex and Context. Reading Old French Verse Narrative in
+                              Manuscript</title>
+                           <title level="m">La médiévistique au XXe siècle. Bilan et perspectives
+                              (nº189)</title>
+                           <title level="j">Cahiers de civilisation médiévale</title>
+                           <editor>Martin Aurell</editor>
+                           <pubPlace>New York</pubPlace>
+                           <publisher>Rodopi</publisher>
+                           <date>2005</date>
+                        </bibl>
+                        <bibl xml:id="Coilly-2012">
+                           <idno type="ISBN">978-2-7177-2522-3</idno>
+                           <author>
+                              <persName>Nathalie Coilly</persName>
+                              <persName>Marie-Hélène Tesnière</persName>
+                           </author>
+                           <title level="m">Le Roman de la Rose. L’art d’aimer au Moyen Âge</title>
+                           <pubPlace>Paris</pubPlace>
+                           <publisher>Bibliothèque nationale de France</publisher>
+                           <date>2012</date>
+                        </bibl>
+                        <bibl xml:id="DiFebo-2013">
+                           <idno type="ISBN">978-2-7453-2490-0</idno>
+                           <author>Martina Di Febo</author>
+                           <title level="m">Les versions en prose du Purgatoire de saint Patrice en
+                              ancien français</title>
+                           <title level="s">Classiques français du Moyen Age</title>
+                           <pubPlace>Paris</pubPlace>
+                           <publisher>Champion</publisher>
+                           <date>2013</date>
+                           <biblScope unit="page">Notice du ms p. 44</biblScope>
+                        </bibl>
+                     </listBibl>
+                  </provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+
+   </teiHeader>
+   
+   <text>
+      <body>
+            <div></div>
+      </body>
+   </text>
+</TEI>
