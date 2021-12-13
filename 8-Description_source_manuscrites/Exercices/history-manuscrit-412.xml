@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Édition numérique du Manuscrit 412</title>
+         </titleStmt>
+
+         <publicationStmt>
+            <!-- En admettant que cet encodage du Manuscrit soit publié sur Élec sous licence CC Share-Alike -->
+            <publisher>Éditions en ligne de l’École des chartes</publisher>
+            <pubPlace>Paris</pubPlace>
+            <date when-iso="2021-12">Décembre 2021</date>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/3.0/deed.fr">Licence
+                  Creative Commons Attribution-partage dans les mêmes conditions</licence>
+            </availability>
+         </publicationStmt>
+
+         <sourceDesc>
+            <msDesc xml:id="ms412">
+                  <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Département des manuscrits</repository>
+                        <idno>Français 412</idno>
+                        <altIdentifier>
+                              <idno>Lancelot 135 (Ancienne cote)</idno>
+                        </altIdentifier>
+                        <altIdentifier>
+                              <idno>Regius 7019(3) (Ancienne cote)</idno>
+                        </altIdentifier>
+                        <altIdentifier>
+                              <idno>ark:/12148/btv1b84259980</idno>
+                        </altIdentifier>
+                  </msIdentifier>
+
+               <head>
+                  <title>Recueil de textes, Vie de saints</title>
+                  <origDate when="1285">1285</origDate>
+               </head>
+
+               <history>
+                  <origin>
+                        <p>
+                              Localisation par l’iconographie : Cambrai (cf <bibl corresp="#Stones-2013">Stones, 2013</bibl>)
+                        </p>
+                        <p>
+                              Localisation par le contenu : Nord de la France, Pays-Bas méridionaux ou
+                              Champagne (d’après les lieux cités). Mons, Hainaut (d’après les saints du
+                              calendrier).
+                        </p>
+                        <p>
+                              Le colophon du f.227v donne le nom du scribe : "Bonaventure" ; 
+                              de l’enlumineur : "Henris", et la date à laquelle fut achevé le manuscrit : 1285.
+                        </p>
+                  </origin>
+                  <provenance>
+                     <listBibl>
+                        <head>
+                              Bibliographie des ouvrages mentionnant le 
+                              <bibl corresp="#ms412">manuscrit 412</bibl>
+                        </head>
+                        <bibl xml:id="Avril-1998">
+                           <idno type="ISBN">978-2-7118-3704-5</idno>
+                           <author>Notice par <persName>Fr. Avril</persName></author>
+                           <title level="m">L’Art au temps des rois maudits. Philippe le Bel et ses
+                              fils : 1285-1328</title>
+                           <pubPlace>Paris</pubPlace>
+                           <publisher>Réunion des Musées Nationaux</publisher>
+                           <date>1998</date>
+                           <biblScope unit="page">Commentaires : n° 200</biblScope>
+                        </bibl>
+                        <bibl xml:id="Busby-2005">
+                           <idno type="ISSN">0007-9731</idno>
+                           <author>Keith Busby</author>
+                           <title level="a">Codex and Context. Reading Old French Verse Narrative in
+                              Manuscript</title>
+                           <title level="m">La médiévistique au XXe siècle. Bilan et perspectives
+                              (nº189)</title>
+                           <title level="j">Cahiers de civilisation médiévale</title>
+                           <editor>Martin Aurell</editor>
+                           <pubPlace>New York</pubPlace>
+                           <publisher>Rodopi</publisher>
+                           <date>2005</date>
+                        </bibl>
+                        <bibl xml:id="Coilly-2012">
+                           <idno type="ISBN">978-2-7177-2522-3</idno>
+                           <author>
+                              <persName>Nathalie Coilly</persName>
+                              <persName>Marie-Hélène Tesnière</persName>
+                           </author>
+                           <title level="m">Le Roman de la Rose. L’art d’aimer au Moyen Âge</title>
+                           <pubPlace>Paris</pubPlace>
+                           <publisher>Bibliothèque nationale de France</publisher>
+                           <date>2012</date>
+                        </bibl>
+                        <bibl xml:id="DiFebo-2013">
+                           <idno type="ISBN">978-2-7453-2490-0</idno>
+                           <author>Martina Di Febo</author>
+                           <title level="m">Les versions en prose du Purgatoire de saint Patrice en
+                              ancien français</title>
+                           <title level="s">Classiques français du Moyen Âge</title>
+                           <pubPlace>Paris</pubPlace>
+                           <publisher>Champion</publisher>
+                           <date>2013</date>
+                           <biblScope unit="page">Notice du ms p. 44</biblScope>
+                        </bibl>
+                     </listBibl>
+                  </provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+
+   </teiHeader>
+   
+   <text>
+      <body>
+            <div></div>
+      </body>
+   </text>
+</TEI>

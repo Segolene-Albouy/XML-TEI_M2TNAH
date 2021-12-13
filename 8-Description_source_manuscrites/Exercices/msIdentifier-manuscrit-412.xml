@@ -30,7 +30,8 @@
                      <idno>Lancelot 135 (Ancienne cote)</idno>
                   </altIdentifier>
                   <altIdentifier>
-                     <idno>Regius 7019(3) (Ancienne cote)</idno>
+                        <idno>Regius 7019(3)</idno>
+                        <note>Ancienne cote</note>
                   </altIdentifier>
                   <altIdentifier>
                      <idno>ark:/12148/btv1b84259980</idno>

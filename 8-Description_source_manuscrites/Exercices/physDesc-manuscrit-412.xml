@@ -61,17 +61,22 @@
                   </objectDesc>
 
                   <handDesc hands="1">
-                     <handNote scribeRef="#Bonaventure" corresp="#Vies-Saints">
-                        <p>Les vies de saints sont rédigées d’une seule main. Quatre autres notes
-                           manuscrites sont présentes :</p>
-                        <list>
-                           <item>folios 193v et 195v d’une même main au XIVe siècle en français et
-                              en latin ;</item>
-                           <item>folio 245 en cursive ;</item>
-                           <item>folio 4v (ancien folio blanc) d’une main moderne détaillant le
-                              contenu du manuscrit.</item>
-                        </list>
-                     </handNote>
+                        <handNote scribeRef="#Bonaventure" corresp="#Vies-Saints">
+                              <p>Les vies de saints sont rédigées d’une seule main.</p>
+                        </handNote>
+                        <handNote corresp="#Vies-Saints">
+                              <p>
+                                    Quatre autres notes manuscrites sont présentes :
+                                    <list>
+                                          <item>
+                                                folios 193v et 195v d’une même main au XIVe siècle en français et en latin ;
+                                          </item>
+                                          <item>folio 245 en cursive ;</item>
+                                          <item>folio 4v (ancien folio blanc) d’une main moderne détaillant le
+                                                contenu du manuscrit.</item>
+                                    </list>
+                              </p>
+                        </handNote>
                   </handDesc>
 
                   <scriptDesc>
