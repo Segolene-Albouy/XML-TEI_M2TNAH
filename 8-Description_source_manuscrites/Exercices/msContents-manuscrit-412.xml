@@ -46,10 +46,10 @@
                      <locus from="1" to="4">
                            Calendrier en latin : 
                            <locus from="1" to="2">Le « Compost »</locus>
-                            <locus from="2" to="3">Textes divers (Foires de Champagne ; aunages des
+                           <locus from="2" to="3">Textes divers (Foires de Champagne ; aunages des
                            villes de fabrique ; les douze vendredis de jeûne)</locus>
                      </locus>
-                     <locus from="5" to="227v">Vies de Saints, en prose</locus>
+                     <locus from="5" to="227v" corresp="#Vies-Saints">Vies de Saints, en prose</locus>
                      <locus from="228" to="236">Bestiaire par Richart de Fournival</locus>
                      <locus from="236v" to="245">Réponse du Bestiaire, par Richart de Fournival</locus>
                   </summary>
@@ -74,14 +74,14 @@
                          Icis livres ici finist Bone aventure ait qui l’escrist Henris ot non
                         l’enlumineur Dex le gardie de deshouneur Ci fu fais l’an MCCIIIIxx et V
                      </colophon>
-                     <msItem xml:id="Vie-Sixte">
+                     <msItemStruct xml:id="Vie-Sixte">
                         <locus from="87ra" to="88va">Folios 87ra à 88va</locus>
                         <author>Anonyme</author>
                         <title>Vie de saint Sixte</title>
                         <incipit>Ci comence la vie et passion seint Sixte</incipit>
                         <explicit>nostre sires Jesu Criz nos octroit parvenir. Amen.</explicit>
                         <textLang mainLang="fre">Ancien français (langue d’oïl)</textLang>
-                     </msItem>
+                     </msItemStruct>
                   </msItem>
                      
                </msContents>

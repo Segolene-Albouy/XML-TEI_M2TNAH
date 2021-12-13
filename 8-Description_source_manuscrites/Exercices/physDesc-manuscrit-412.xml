@@ -12,8 +12,9 @@
             <pubPlace>Paris</pubPlace>
             <date when-iso="2021-12">Décembre 2021</date>
             <availability>
-               <licence target="https://creativecommons.org/licenses/by-sa/3.0/deed.fr">Licence
-                  Creative Commons Attribution-partage dans les mêmes conditions</licence>
+               <licence target="https://creativecommons.org/licenses/by-sa/3.0/deed.fr">
+                     Licence Creative Commons Attribution-partage dans les mêmes conditions
+               </licence>
             </availability>
          </publicationStmt>
 
@@ -62,20 +63,26 @@
 
                   <handDesc hands="1">
                         <handNote scribeRef="#Bonaventure" corresp="#Vies-Saints">
+                              <locus from="5" to="227v">Folios 5 à 227v</locus>
                               <p>Les vies de saints sont rédigées d’une seule main.</p>
                         </handNote>
-                        <handNote corresp="#Vies-Saints">
-                              <p>
-                                    Quatre autres notes manuscrites sont présentes :
-                                    <list>
-                                          <item>
-                                                folios 193v et 195v d’une même main au XIVe siècle en français et en latin ;
-                                          </item>
-                                          <item>folio 245 en cursive ;</item>
-                                          <item>folio 4v (ancien folio blanc) d’une main moderne détaillant le
-                                                contenu du manuscrit.</item>
-                                    </list>
-                              </p>
+                        <handNote>
+                              <p>Quatre autres notes manuscrites sont présentes :</p>
+                              <list>
+                                    <item>
+                                          <locus from="193v" to="195v">Folios 193v et 195v</locus>
+                                          D’une même main au XIVe siècle en français et en latin ;
+                                    </item>
+                                    <item>
+                                          <locus from="245" to="245">Folio 245</locus>
+                                          En cursive ;
+                                    </item>
+                                    <item>
+                                          <locus from="4v" to="4v">Folio 4v</locus>
+                                          <note>(ancien folio blanc)</note>
+                                          D’une main moderne détaillant le contenu du manuscrit.
+                                    </item>
+                              </list>
                         </handNote>
                   </handDesc>
 
@@ -87,11 +94,11 @@
                   <decoDesc>
                      <decoNote type="initial">
                         La plupart des majuscules du texte sont rubriquées en rouge. Certaines,
-                           lorsque présentes sur la première ligne de la page, sont allongées et
-                           rehaussées de bleu et rouge ainsi qu’ornées de motifs rappelant des
-                           circonvolutions végétales. Les initiales de début de paragraphe
-                           présentent des décorations plus prononcées telles que décrites
-                           ci-dessous.
+                        lorsque présentes sur la première ligne de la page, sont allongées et
+                        rehaussées de bleu et rouge ainsi qu’ornées de motifs rappelant des
+                        circonvolutions végétales. Les initiales de début de paragraphe
+                        présentent des décorations plus prononcées telles que décrites
+                        ci-dessous.
                      </decoNote>
                      <decoNote type="initial" xml:id="C1"> Lettre C : lettrine historiée de 10
                         lignes de hauteur représentant saint Sixte avec une auréole dorée devant
