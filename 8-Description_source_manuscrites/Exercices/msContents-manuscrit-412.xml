@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Édition numérique du Manuscrit 412</title>
+         </titleStmt>
+
+         <publicationStmt>
+            <!-- En admettant que cet encodage du Manuscrit soit publié sur Élec sous licence CC Share-Alike -->
+            <publisher>Éditions en ligne de l’École des chartes</publisher>
+            <pubPlace>Paris</pubPlace>
+            <date when-iso="2021-12">Décembre 2021</date>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/3.0/deed.fr">Licence
+                  Creative Commons Attribution-partage dans les mêmes conditions</licence>
+            </availability>
+         </publicationStmt>
+
+         <sourceDesc>
+            <msDesc xml:id="ms412">
+                  <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Département des manuscrits</repository>
+                        <idno>Français 412</idno>
+                        <altIdentifier>
+                              <idno>Lancelot 135 (Ancienne cote)</idno>
+                        </altIdentifier>
+                        <altIdentifier>
+                              <idno>Regius 7019(3) (Ancienne cote)</idno>
+                        </altIdentifier>
+                        <altIdentifier>
+                              <idno>ark:/12148/btv1b84259980</idno>
+                        </altIdentifier>
+                  </msIdentifier>
+
+               <head>
+                  <title>Recueil de textes, Vie de saints</title>
+                  <origDate when="1285">1285</origDate>
+               </head>
+
+               <msContents>
+                  <summary>
+                     <locus from="1" to="4">
+                           Calendrier en latin : 
+                           <locus from="1" to="2">Le « Compost »</locus>
+                            <locus from="2" to="3">Textes divers (Foires de Champagne ; aunages des
+                           villes de fabrique ; les douze vendredis de jeûne)</locus>
+                     </locus>
+                     <locus from="5" to="227v">Vies de Saints, en prose</locus>
+                     <locus from="228" to="236">Bestiaire par Richart de Fournival</locus>
+                     <locus from="236v" to="245">Réponse du Bestiaire, par Richart de Fournival</locus>
+                  </summary>
+
+                  <msItem xml:id="Vies-Saints">
+                     <locus from="5" to="227v">Folios 5 à 227v</locus>
+                     <respStmt>
+                        <resp>Copiste</resp>
+                        <name>
+                           <persName xml:id="Bonaventure">Bonaventure</persName>
+                           <certainty target="#Bonaventure" locus="value" degree="0.7">
+                              <desc>Peut être le nom du copiste selon le colophon</desc>
+                           </certainty>
+                        </name>
+                     </respStmt>
+                     <respStmt>
+                        <resp>Enlumineur</resp>
+                        <name>Henris</name>
+                     </respStmt>
+                     <title>Vies de Saints</title>
+                     <colophon>
+                         Icis livres ici finist Bone aventure ait qui l’escrist Henris ot non
+                        l’enlumineur Dex le gardie de deshouneur Ci fu fais l’an MCCIIIIxx et V
+                     </colophon>
+                     <msItem xml:id="Vie-Sixte">
+                        <locus from="87ra" to="88va">Folios 87ra à 88va</locus>
+                        <author>Anonyme</author>
+                        <title>Vie de saint Sixte</title>
+                        <incipit>Ci comence la vie et passion seint Sixte</incipit>
+                        <explicit>nostre sires Jesu Criz nos octroit parvenir. Amen.</explicit>
+                        <textLang mainLang="fre">Ancien français (langue d’oïl)</textLang>
+                     </msItem>
+                  </msItem>
+                     
+               </msContents>
+
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+
+   </teiHeader>
+   
+   <text>
+      <body>
+            <div></div>
+      </body>
+   </text>
+</TEI>
