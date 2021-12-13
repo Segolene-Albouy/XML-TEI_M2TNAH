@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Édition numérique du Manuscrit 412</title>
+         </titleStmt>
+
+         <publicationStmt>
+            <!-- En admettant que cet encodage du Manuscrit soit publié sur Élec sous licence CC Share-Alike -->
+            <publisher>Éditions en ligne de l’École des chartes</publisher>
+            <pubPlace>Paris</pubPlace>
+            <date when-iso="2021-12">Décembre 2021</date>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/3.0/deed.fr">Licence
+                  Creative Commons Attribution-partage dans les mêmes conditions</licence>
+            </availability>
+         </publicationStmt>
+
+         <sourceDesc>
+            <msDesc xml:id="ms412">
+                  
+               <msIdentifier>
+                  <country>France</country>
+                  <settlement>Paris</settlement>
+                   <institution>Bibliothèque nationale de France</institution>
+                  <repository>Département des manuscrits</repository>
+                  <idno>Français 412</idno>
+                  <altIdentifier>
+                     <idno>Lancelot 135 (Ancienne cote)</idno>
+                  </altIdentifier>
+                  <altIdentifier>
+                     <idno>Regius 7019(3) (Ancienne cote)</idno>
+                  </altIdentifier>
+                  <altIdentifier>
+                     <idno>ark:/12148/btv1b84259980</idno>
+                  </altIdentifier>
+               </msIdentifier>
+
+               <head>
+                  <title>Recueil de textes, Vie de saints</title>
+                  <origDate when="1285">1285</origDate>
+               </head>
+
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+
+   </teiHeader>
+   
+   <text>
+      <body>
+            <div></div>
+      </body>
+   </text>
+</TEI>
