@@ -12,7 +12,7 @@ collation.add_plain_witness("A", austin)
 collation.add_plain_witness("P", paris)
 collation.add_plain_witness("S", stonyhurst)
 
-alignment_table = collate(collation, output="tei", segmentation=False, near_match=True)
+alignment_table = collate(collation, output="tei", segmentation=True, near_match=True)
 
 with open("collation.xml", "w") as output:
 	output.write(alignment_table)
