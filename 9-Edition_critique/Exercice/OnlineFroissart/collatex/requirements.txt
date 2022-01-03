@@ -1,0 +1,9 @@
+collatex==2.2
+graphviz==0.19.1
+importlib-metadata==4.10.0
+networkx==2.6.3
+prettytable==2.5.0
+python-Levenshtein==0.12.2
+typing-extensions==4.0.1
+wcwidth==0.2.5
+zipp==3.7.0
