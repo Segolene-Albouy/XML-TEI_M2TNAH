@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+      <teiHeader>
+            <fileDesc>
+                  <titleStmt>
+                        <title ref="http://data.bnf.fr/ark:/12148/cb11961167w">Le Misanthrope</title>
+                        <title type="sub">Comédie en 5 actes</title>
+                        <author ref="http://data.bnf.fr/ark:/12148/cb11916418p">Molière</author>
+                  </titleStmt>
+                  <editionStmt>
+                        <edition>Exercice XML TEI</edition>
+                  </editionStmt>
+                  <publicationStmt>
+                        <publisher>École des chartes</publisher>
+                        <date when="2021"/>
+                  </publicationStmt>
+                  <sourceDesc>
+                        <bibl>
+                              <author>Molière</author>, <title>le Misanthrope</title>,
+                                    <publisher>Librairie classique Eugène Belin</publisher>,
+                                    <pubPlace>Paris</pubPlace>, <date>1847</date>.
+                        </bibl>
+                  </sourceDesc>
+            </fileDesc>
+            <profileDesc>
+                  <creation when="1666"/>
+                  <langUsage>
+                        <language ident="fr"/>
+                  </langUsage>
+            </profileDesc>
+      </teiHeader>
+      <text>
+            <body>
+                  <head>Le Misanthrophe</head>
+                  <castList>
+                        <castItem xml:id="philinte">Philinte</castItem>
+                        <castItem xml:id="alceste">Alceste</castItem>
+                  </castList>
+                  <div xml:id="I" type="act" n="1">
+                        <head>Acte Premier</head>
+                        <div type="scene" n="1">
+                              <head>Scène Première</head>
+                              <stage>Philinte, Alceste</stage>
+                              <sp who="#philinte">
+                                    <speaker>Philinte</speaker>
+                                    <l n="1" part="I">Qu’est-ce donc ? qu’avez-vous ?</l>
+                              </sp>
+                              <sp who="#alceste">
+                                    <speaker>Alceste</speaker>
+                                    <stage>assis</stage>
+                                    <l n="1" part="F">Laissez-moi, je vous prie.</l>
+                              </sp>
+                              <sp who="#philinte">
+                                    <speaker>Philinte</speaker>
+                                    <l n="2">Mais, encor, dites-moi, quelle bizarrerie...</l>
+                              </sp>
+                              <sp who="#alceste">
+                                    <speaker>Alceste</speaker>
+                                    <l n="3">Laissez-moi là, vous dis-je, et courez vous cacher.</l>
+                              </sp>
+                              <sp who="#philinte">
+                                    <speaker>Philinte</speaker>
+                                    <l n="4">Mais on entend les Gens, au moins, sans se fâcher.</l>
+                              </sp>
+                              <sp who="#alceste">
+                                    <speaker>Alceste</speaker>
+                                    <l n="5">Moi, je veux me fâcher, et ne veux point entendre.</l>
+                              </sp>
+                              <sp who="#philinte">
+                                    <speaker>Philinte</speaker>
+                                    <l n="6">Dans vos brusques chagrins, je ne puis vous comprendre ;</l>
+                                    <l n="7">Et quoique amis, enfin, je suis tout des premiers...</l>
+                              </sp>
+                              <sp who="#alceste">
+                                    <speaker>Alceste</speaker>
+                                    <stage>se levant brusquement</stage>
+                                    <l n="8">Moi, votre ami ? rayez cela de vos papiers.</l>
+                                    <l n="9">J’ai fait jusques ici, profession de l’être ;</l>
+                                    <l n="10">Mais après ce qu’en vous, je viens de voir paraître,</l>
+                              </sp>
+                        </div>
+                  </div>
+            </body>
+      </text>
+</TEI>

@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="out/SainteEulalie_ODD.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<!DOCTYPE texte [
+<!ENTITY pbarre-pre "<choice><abbr>&#58981;</abbr><expan>p<ex>re</ex></expan></choice>" >
+<!ENTITY obarre-om "<choice><abbr>õ</abbr><expan>eo</expan></choice>">
+<!ENTITY xp-christ "<choice><abbr>x&#58981;</abbr><expan>Ch<ex>rist</ex></expan></choice>">
+<!ENTITY s-us "<choice><abbr>s</abbr><expan><ex>u</ex>s</expan></choice>">
+<!ENTITY xpi-christi "<choice><abbr>x&#58981;i</abbr><expan>Ch<ex>rist</ex>i</expan></choice>">
+<!ENTITY ntilde-non "<choice><abbr>n&#185;</abbr><expan>n<ex>on</ex></expan></choice>">
+<!ENTITY pbarré-per "<choice><abbr>&#42833;</abbr><expan>p<ex>er</ex></expan></choice>" >
+]>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Séquence de sainte Eulalie</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Texte édité dans la cadre d'un exercice de XML-TEI à l'école nationale des
+               Chartes</p>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="A">
+               <!-- Identifier le manuscrit -->
+               <msIdentifier>
+                  <country>France</country>
+                  <repository>bibliothèque municipale de Valentienne</repository>
+                  <idno>150</idno>
+                  <altIdentifier>
+                     <idno>Ms. 143</idno>
+                  </altIdentifier>
+                  <altIdentifier>
+                     <idno>ark:/12148/btv1b84526286</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <head>
+                  <title>« In hoc corpore continentur libri octo Gregorii Nazanzeni episcopi, id est
+                     Apologeticus lib. I ; de epifanis sive de natali Domini lib. I ; de luminibus
+                     vel secundis epifanis lib. I ; de Pentecosten vel Spiritu sancto lib. I ; in
+                     semetipso de agro regressus, lib. I ; de Hieremia dicta praesente imperatore,
+                     apud quem intercedit pro quodam periclitante, lib. I ; de reconciliatione
+                     monachi, lib. I ; de grandinis vastatione, cum pater episcopus reticeret, lib.
+                     I. »</title>
+                  <origDate when="0800">Le corps du manuscrit est du plein IXe siècle, ainsi que les articles
+                     additionnels 1 et 2</origDate>
+                  <note>Ce célèbre manuscrit a été souvent examiné, et divers fac-similés ont été
+                     publiés depuis la découverte de la cantilène de Ste Eulalie et du poème
+                     allemand par Hermann de Fallersleben, en 1837. On trouvera notamment un
+                     fac-similé du texte roman dans les Anciens Monuments de la langue française,
+                     publiés par M. G. Paris.</note>
+               </head>
+               <!-- structure du manuscrit -->
+               <msContents>
+                  <msItemStruct n="1" xml:lang="lat">
+                     <locus from="1" to="1">1r</locus>
+                     <author/>
+                     <title/>
+                     <incipit>Versus beati Gregorii papae. Virgo parens hac luce Deumque virumque
+                        creavit...</incipit>
+                     <explicit>Et mortem jussit mortuus ipse mori</explicit>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItemStruct>
+                  <msItemStruct n="4">
+                     <locus from="141" to="141">f.141v</locus>
+                     <author>anonyme</author>
+                     <title>Cantilère de sainte Eulalie</title>
+                     <incipit>Buona pulcella fut Eulalia.</incipit>
+                     <explicit>Par souue clementia.</explicit>
+                     <textLang mainLang="fro">Ancien français</textLang>
+                  </msItemStruct>
+               </msContents>
+               <!-- Description matérielle du manuscrit -->
+               <physDesc>
+                  <objectDesc form="codex">
+                     
+                     <supportDesc>
+                        <support>parchemin</support>
+                        <extent>
+                           <width unit="mm">237</width>
+                           <height unit="mm">150</height>
+                        </extent>
+                        <foliation>143 feuillets</foliation>
+                     </supportDesc>
+                     <layoutDesc>
+                        <!-- disposition du texte sur le folio -->
+                        <layout columns="1" writtenLines="15"/>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc hands="2">
+                     <handNote xml:id="M1">
+                        <p><locus from="1" to="140"/></p>
+                     </handNote>
+                     <handNote xml:id="M2">
+                        <p><locus from="140" to="143"/></p>
+                     </handNote>
+                  </handDesc>
+                  <scriptDesc>
+                     <scriptNote>Titres en capitales conjointes de bon style. Minuscule assez forte
+                        et régulière.</scriptNote>
+                  </scriptDesc>
+                  <bindingDesc>
+                     <p>Reliure en peau non apprêtée</p>
+                  </bindingDesc>
+               </physDesc>
+               <!-- Histoire et transmission du manuscrit -->
+               <history>
+                  <origin>scriptorium lotharingien</origin>
+                  <provenance>
+                     <p>Appartient à l'ensemble documentaire : RegiaCarol</p>
+                     <p>Le manuscrit 150 se présente sous l'apparence d'un codex de petite taille,
+                        protégé par un couverture de peau souple non apprêtée : c'est un livre
+                        "poilu", "liber pilosus" selon la mention d'un catalogue médiéval de la
+                        bibliothèque de l'abbaye de Saint-Amand. Le livre est daté du IXe siècle. Il
+                        est attribué à un scriptorium lotharingien. Le volume s’inscrirait dans une
+                        campagne de reconstitution de la bibliothèque de l'abbaye de Saint-Amand
+                        entamée à la fin du IXe siècle, à la suite des invasions normandes qui
+                        ravagèrent celle-ci en 881 et 883. Le corps du manuscrit contient des
+                        sermons de Grégoire de Naziance, traduits du grec en latin par Rufin
+                        d'Aquilée. Les derniers feuillets du manuscrit, restés vierges, ont été
+                        utilisés après coup, à la fin du IXe siècle, pour la copie de cinq chants.
+                        Parmi ceux-ci, trois chants liturgiques latins et, aux côtés de la Cantilène
+                        rédigée en français (folio 141 verso), transcrit par la même main, le
+                        Ludwigslied ou Rithmus teutonicus, en langue germanique. Cette juxtaposition
+                        a été qualifiée de "miracle linguistique" par les historiens des
+                        langues.</p>
+                     <ref>https://bibliotheque.ville-valenciennes.fr/iguana/www.main.cls?surl=histoire_cantilene</ref>
+                     <listBibl>
+                        <bibl>
+                           <author><name>Brasseur</name><forename>Annette</forename></author>
+                           <author><name>Berger</name><forename>Roger</forename></author>
+                           <title>Les séquences de sainte Eulalie et les autres textes du manuscrit
+                              150</title>
+                           <pubPlace>Genêve</pubPlace>
+                           <publisher>Droz</publisher>
+                           <date>2004</date>
+                        </bibl>
+                     </listBibl>
+                  </provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <creation>
+            <date>880</date>
+            <country>Abbaye de Saint-Amant</country>
+            <lang xml:lang="fro"/>
+         </creation>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>Séquence de saint Eulalie</head>
+         <pb facs="https://gallica.bnf.fr/ark:/12148/btv1b84526286/f288.item" n="141v"/>
+         <div type="cantilene">
+            <l facs="#l1">Buona pulcella fut <choice>
+                  <orig>e</orig>
+                  <reg>E</reg>
+               </choice>ulalia.</l>
+            <l facs="#l2">Bel a<choice>
+                  <orig>u</orig>
+                  <reg>v</reg>
+               </choice>ret corps bellezour anima.</l>
+            <lb/>
+            <l facs="#l3">Voldrent la veintre li d<choice>
+                  <abbr>õ</abbr>
+                  <expan>eo</expan>
+               </choice> inimi.</l>
+            <l>Voldrent la faire diavle servir.</l>
+            <lb/>
+            <l>Elle nont eskoltet les mals conselliers.</l>
+            <l>Quelle d<choice>
+               <abbr>õ</abbr>
+               <expan>eo</expan>
+            </choice> raneiet chi maent <seg rend="suscrit">sus en ciel</seg>.</l>
+            <lb/>
+            <l>Ne por or ned argent ne paramenz.</l>
+            <l>Por manatce regiel ne preiement.</l>
+            <lb/>
+            <l>Niule cose non la pouret omque pleier.</l>
+            <l>La polle sempre n&ntilde-non; amast lo d&obarre-om; <seg rend="suscrit"
+                  >menestier</seg>.</l>
+            <lb/>
+            <l>E por<pc type="reg"> </pc>o fut &pbarre-pre;sentede <choice>
+                  <orig>m</orig>
+                  <reg>M</reg>
+               </choice>aximiien.</l>
+            <l>Chi rex eret a cels dis soure pagiens.</l>
+            <lb/>
+            <l>Il<pc type="reg"> </pc>li en ortet dont lei nonque chielt.</l>
+            <l>Qued elle fuiet lo nom &xpi-christi;iien.</l>
+            <lb/>
+            <l>Ellent adunet lo suon element</l>
+            <l>Melz sostendreiet les empedementz.</l>
+            <lb/>
+            <l>Quelle &pbarre-pre;desse sa virginitet.</l>
+            <l>Por<pc type="reg"> </pc>os suret morte a grand honestet.</l>
+            <lb/>
+            <l>Enz enl fou lo getterent com arde tost.</l>
+            <l>Elle colpes &ntilde-non; avret por<pc type="reg"> </pc>o <seg rend="suscrit">nos
+                  coist</seg>.</l>
+            <lb/>
+            <l>A<pc type="reg"> </pc>czo nos voldret concreidre li rex pagiens.</l>
+            <l>Ad une spede li roveret <seg rend="suscrit">tolir lo chief</seg>.</l>
+            <lb/>
+            <l>La domnizelle celle kose &ntilde-non; contredist.</l>
+            <l>Volt lo seule lazsier si ruovet krist.</l>
+            <lb/>
+            <l>In figure de colomb volat a ciel.</l>
+            <l>Tuit oram que por<pc type="reg"> </pc>nos degnet preier.</l>
+            <lb/>
+            <l>Qued avuisset de nos &xp-christ;&s-us; mercit</l>
+            <l>Post la mort <choice>
+                  <abbr>&amp;</abbr>
+                  <expan>et</expan>
+               </choice> a<pc type="reg"> </pc>lui nos laist <choice>
+                  <orig>u</orig>
+                  <reg>v</reg>
+               </choice>enir.</l>
+            <l>Par souue clementia.</l>
+         </div>
+      </body>
+   </text>
+</TEI>
