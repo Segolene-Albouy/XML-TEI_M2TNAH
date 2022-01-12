@@ -1,0 +1,1841 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE TEI SYSTEM "DTD-Edition_paleographique.dtd">
+<?xml-model href="RNG-Edition_paleographique.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Vie de saint Sixte</title>
+         </titleStmt>
+
+         <editionStmt>
+            <edition>Évaluation XML TEI - École nationale des chartes <date when="2019-01">Janvier
+                  2019</date>
+            </edition>
+            <respStmt>
+               <resp>Transcription et encodage du manuscrit.</resp>
+               <persName xml:id="SA">
+                  <forename>Ségolène</forename>
+                  <surname>Albouy</surname>
+               </persName>
+            </respStmt>
+         </editionStmt>
+
+         <publicationStmt>
+            <!-- En admettant que cet encodage de la vie de Saint Sixte soit publié sur Élec sous licence CC Share-Alike -->
+            <publisher>Éditions en ligne de l’école des chartes</publisher>
+            <pubPlace>Paris</pubPlace>
+            <date when-iso="2019-01">Janvier 2019</date>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/3.0/deed.fr">Licence
+                  Creative Commons Attribution-partage dans les mêmes conditions</licence>
+            </availability>
+         </publicationStmt>
+
+         <sourceDesc>
+            <msDesc xml:id="ms412">
+               <msIdentifier>
+                  <country>France</country>
+                  <settlement>Paris</settlement>
+                  <repository>Bibliothèque nationale de France - Département des
+                     manuscrits</repository>
+                  <idno>Français 412</idno>
+                  <altIdentifier>
+                     <idno>Lancelot 135 (Ancienne cote)</idno>
+                  </altIdentifier>
+                  <altIdentifier>
+                     <idno>Regius 7019(3) (Ancienne cote)</idno>
+                  </altIdentifier>
+                  <altIdentifier>
+                     <idno>ark:/12148/btv1b84259980</idno>
+                  </altIdentifier>
+               </msIdentifier>
+
+               <head>
+                  <title>Recueil de textes, Vie de saints</title>
+                  <origDate when="1285">1285</origDate>
+               </head>
+
+               <msContents>
+                  <summary>
+                     <locus from="1" to="4">Calendrier en latin : <locus from="1" to="2">Le « Compost »
+                           </locus>
+                        <locus from="2" to="3">Textes divers (Foires de Champagne ; aunages des
+                           villes de fabrique ; les douze vendredis de jeûne)</locus>
+                     </locus>
+                     <locus from="5" to="227v">Vies de Saints, en prose</locus>
+                     <locus from="228" to="236">Bestiaire par Richart de Fournival</locus>
+                     <locus from="236v" to="245">Réponse du Bestiaire, par Richart de
+                        Fournival</locus>
+                  </summary>
+
+                  <msItem xml:id="Vies-Saints">
+                     <locus from="5" to="227v">Folios 5 à 227v</locus>
+                     <respStmt>
+                        <resp>Copiste</resp>
+                        <name>
+                           <persName xml:id="Bonaventure">Bonaventure</persName>
+                           <certainty target="#Bonaventure" locus="value" degree="0.7">
+                              <desc>Peut être le nom du copiste selon le colophon</desc>
+                           </certainty>
+                        </name>
+                     </respStmt>
+                     <respStmt>
+                        <resp>Enlumineur</resp>
+                        <name>Henris</name>
+                     </respStmt>
+                     <title>Vies de Saints</title>
+                     <colophon>Icis livres ici finist Bone aventure ait qui l’escrist Henris ot non
+                        l’enlumineur Dex le gardie de deshouneur Ci fu fais l’an MCCIIIIxx et
+                        V</colophon>
+                     <msItem xml:id="Vie-Sixte">
+                        <locus from="87ra" to="88va">Folios 87ra à 88va</locus>
+                        <author>Anonyme</author>
+                        <title>Vie de saint Sixte</title>
+                        <incipit>Ci comence la vie et passion seint Sixte</incipit>
+                        <explicit>nostre sires Jesu Criz nos octroit parvenir. Amen.</explicit>
+                        <textLang mainLang="fre">Ancien français (langue d’oïl)</textLang>
+                     </msItem>
+                  </msItem>
+               </msContents>
+
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>Parchemin et papier</support>
+                        <extent>
+                           <width unit="245mm"/>
+                           <height unit="330mm"/>
+                        </extent>
+                        <foliation>245 feuillets (plus 3 gardes en papier au début et à la fin) pour
+                           21 cahiers de type senions.</foliation>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout columns="2" writtenLines="46">La justification du texte se fait sur
+                           une surface haute de 220mm et large de 140mm. On note la présence d’une
+                           réglure à la mine de plomb. Le titre courant est indiqué sur le haut, à
+                           cheval sur la double page.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+
+                  <handDesc hands="1">
+                     <handNote scribeRef="#Bonaventure" corresp="#Vies-Saints">
+                        <p>Les vies de saints sont rédigées d’une seule main. Quatre autres notes
+                           manuscrites sont présentes :</p>
+                        <list>
+                           <item>folios 193v et 195v d’une même main au XIVe siècle en français et
+                              en latin ;</item>
+                           <item>folio 245 en cursive ;</item>
+                           <item>folio 4v (ancien folio blanc) d’une main moderne détaillant le
+                              contenu du manuscrit.</item>
+                        </list>
+                     </handNote>
+                  </handDesc>
+
+                  <scriptDesc>
+                     <scriptNote>Écriture en lettre de forme. Titre courant en haut de page en
+                        onciales peintes alternativement en bleu et rouge.</scriptNote>
+                  </scriptDesc>
+
+                  <decoDesc>
+                     <decoNote type="initial">
+                        La plupart des majuscules du texte sont rubriquées en rouge. Certaines,
+                           lorsque présentes sur la première ligne de la page, sont allongées et
+                           rehaussées de bleu et rouge ainsi qu’ornées de motifs rappelant des
+                           circonvolutions végétales. Les initiales de début de paragraphe
+                           présentent des décorations plus prononcées telles que décrites
+                           ci-dessous.
+                     </decoNote>
+                     <decoNote type="initial" xml:id="C1"> Lettre C : lettrine historiée de 10
+                        lignes de hauteur représentant saint Sixte avec une auréole dorée devant
+                        Dèce et ses prévots sur un fond bleu. Gamme assez étendue de couleurs dans
+                        les teintes rouges et bleues. Lettrine inscrite dans un cadre rouge à motifs
+                        géométriques.</decoNote>
+                     <decoNote type="initial" xml:id="L2"> Lettre L : Tracé de la lettre à festons
+                        imbriqués de rouge et bleu, décoration stylisée de spirales et pointillés
+                        rouges et bleus. Rinceaux marginaux qui se déploient dans la hauteur de la
+                        page.</decoNote>
+                     <decoNote type="initial" xml:id="Q3"> Lettre Q : Tracé de la lettre à festons
+                        imbriqués de rouge et bleu, décoration stylisée de spirales et pointillés
+                        rouges et bleus. Rinceaux marginaux qui se déploient dans la hauteur de la
+                        page.</decoNote>
+                     <decoNote type="initial" xml:id="J4"> Lettre J : Tracé de la lettre à festons
+                        imbriqués de rouge et bleu, décoration stylisée de spirales et pointillés
+                        rouges et bleus. Rinceaux marginaux qui se déploient dans la hauteur de la
+                        page. La forme du J n’est pas très prononcée et son allongement rend malaisée
+                        sa lecture.</decoNote>
+                     <decoNote type="initial" xml:id="L5"> Lettre 5 : Tracé de la lettre à festons
+                        imbriqués de rouge et bleu, décoration stylisée de spirales et pointillés
+                        rouges et bleus. Rinceaux marginaux qui se déploient dans la hauteur de la
+                        page.</decoNote>
+                     <decoNote type="initial" xml:id="A6"> Lettre A : Tracé de la lettre à festons
+                        imbriqués de rouge et bleu, décoration stylisée de spirales et pointillés
+                        rouges et bleus. Rinceaux marginaux qui se déploient dans la hauteur de la
+                        page.</decoNote>
+                     <decoNote type="initial" xml:id="Q7"> Lettre Q : Tracé de la lettre à festons
+                        imbriqués de rouge et bleu, décoration stylisée de spirales et pointillés
+                        rouges et bleus. Rinceaux marginaux qui se déploient dans la hauteur de la
+                        page.</decoNote>
+                  </decoDesc>
+
+                  <bindingDesc>
+                     <binding>
+                        <decoNote type="plats">Cuir marbré jaune, avec encadrement stylisé doré sur
+                           les plats.</decoNote>
+                        <decoNote type="dos">Dos à 5 nerfs en maroquin rouge à fleurs de lys et
+                           chiffre royal (or). Dans la deuxième case, l’inscription "Vie des
+                           Saints".</decoNote>
+                        <decoNote type="contreplats">Contreplats de papier marbré.</decoNote>
+                     </binding>
+                  </bindingDesc>
+               </physDesc>
+
+               <history>
+                  <origin><p>Localisation par l’iconographie : Cambrai (cf <bibl
+                           corresp="#Stones-2013">Stones, 2013</bibl>)</p>
+                     <p>Localisation par le contenu : Nord de la France, Pays-Bas méridionaux ou
+                        Champagne (d’après les lieux cités). Mons, Hainaut (d’après les saints du
+                        calendrier).</p></origin>
+                  <provenance>
+                     <p>Le colophon du f.227v donne le nom du scribe : "Bonaventure" ; de
+                        l’enlumineur : "Henris", et la date à laquelle fut achevé le manuscrit :
+                        1285.</p>
+                     <listBibl>
+                        <head>Bibliographie des ouvrages mentionnant le <bibl corresp="#ms412"
+                              >manuscrit 412</bibl></head>
+                        <bibl xml:id="Avril-1998">
+                           <idno type="ISBN">978-2-7118-3704-5</idno>
+                           <author>Notice par <persName>Fr. Avril</persName></author>
+                           <title level="m">L’Art au temps des rois maudits. Philippe le Bel et ses
+                              fils : 1285-1328</title>
+                           <pubPlace>Paris</pubPlace>
+                           <publisher>Réunion des Musées Nationaux</publisher>
+                           <date>1998</date>
+                           <biblScope unit="page">Commentaires : n° 200</biblScope>
+                        </bibl>
+                        <bibl xml:id="Burgio-2006">
+                           <idno type="ISBN">978-88-8450-211-7</idno>
+                           <author>Eugenio Burgio</author>
+                           <title level="a">Schede bibliografiche sulla tradizione delle versioni
+                              antico-francesi dei ’Dialogi’ di Gregorio Magno</title>
+                           <title level="m">I ’Dialogi’ di Gregorio Magno</title>
+                           <title level="s">Tradizione del testo e antiche traduzioni, Archivum
+                              gregorianum</title>
+                           <pubPlace>Firenze</pubPlace>
+                           <publisher>Sismel, Edizioni del Galluzzo</publisher>
+                           <date>2006</date>
+                           <biblScope unit="page">p. 83-126</biblScope>
+                        </bibl>
+                        <bibl xml:id="Busby-2005">
+                           <idno type="ISSN">0007-9731</idno>
+                           <author>Keith Busby</author>
+                           <title level="a">Codex and Context. Reading Old French Verse Narrative in
+                              Manuscript</title>
+                           <title level="m">La médiévistique au XXe siècle. Bilan et perspectives
+                              (nº189)</title>
+                           <title level="j">Cahiers de civilisation médiévale</title>
+                           <editor>Martin Aurell</editor>
+                           <pubPlace>New York</pubPlace>
+                           <publisher>Rodopi</publisher>
+                           <date>2005</date>
+                        </bibl>
+                        <bibl xml:id="Carieri-2001">
+                           <idno type="ISSN">0007-9731</idno>
+                           <author>
+                              <persName>Maria Careri</persName>
+                              <persName>Françoise Féry-Hue</persName>
+                              <persName>Françoise Gasparri</persName>
+                              <persName>Geneviève Hasenohr</persName>
+                              <persName>Gillette Labory</persName>
+                              <persName>Sylvie Lefèvre</persName>
+                              <persName>Anne-Françoise Leurquin</persName>
+                              <persName>Christine Ruby</persName>
+                           </author>
+                           <title level="a">Album de manuscrits français du 13e siècle : mise en
+                              page et mise en texte</title>
+                           <title level="m">X-XIIe siècles (nº183)</title>
+                           <title level="j">Cahiers de civilisation médiévale</title>
+                           <editor>Martin Aurell</editor>
+                           <pubPlace>Rome</pubPlace>
+                           <publisher>Viella</publisher>
+                           <date>2001</date>
+                        </bibl>
+                        <bibl xml:id="Chiesa-2006">
+                           <idno type="ISBN">978-88-8450-211-7</idno>
+                           <author>Paolo Chiesa</author>
+                           <title level="m">“Dialogi” di Gregorio Magno. Tradizione del testo e
+                              antiche traduzioni</title>
+                           <pubPlace>Firenze</pubPlace>
+                           <publisher>Sismel, Edizioni del Galluzzo</publisher>
+                           <date>2006</date>
+                        </bibl>
+                        <bibl xml:id="Coilly-2012">
+                           <idno type="ISBN">978-2-7177-2522-3</idno>
+                           <author>
+                              <persName>Nathalie Coilly</persName>
+                              <persName>Marie-Hélène Tesnière</persName>
+                           </author>
+                           <title level="m">Le Roman de la Rose. L’art d’aimer au Moyen Âge</title>
+                           <pubPlace>Paris</pubPlace>
+                           <publisher>Bibliothèque nationale de France</publisher>
+                           <date>2012</date>
+                        </bibl>
+                        <bibl xml:id="DiFebo-2013">
+                           <idno type="ISBN">978-2-7453-2490-0</idno>
+                           <author>Martina Di Febo</author>
+                           <title level="m">Les versions en prose du Purgatoire de saint Patrice en
+                              ancien français</title>
+                           <title level="s">Classiques français du Moyen Age</title>
+                           <pubPlace>Paris</pubPlace>
+                           <publisher>Champion</publisher>
+                           <date>2013</date>
+                           <biblScope unit="page">Notice du ms p. 44</biblScope>
+                        </bibl>
+                        <bibl xml:id="LyndeRecchia-2005">
+                           <idno type="ISBN">978-2-600-01012-2</idno>
+                           <editor>Molly Lynde-Recchia</editor>
+                           <author>Wauchier de Denain</author>
+                           <title level="m">La vie seint Marcel de Lymoges</title>
+                           <title level="s">Textes Littéraires Français</title>
+                           <pubPlace>Genève</pubPlace>
+                           <publisher>Droz</publisher>
+                           <date>2005</date>
+                        </bibl>
+                        <bibl xml:id="Meyer-1888">
+                           <author>Paul Meyer</author>
+                           <title level="a">Notice sur le manuscrit 307 (ancien 851) de la
+                              bibliothèque d’Arras, recueil de vies de saints en prose et en
+                              vers</title>
+                           <title level="m">Numéro 67</title>
+                           <title level="s">Romania. Tome 17</title>
+                           <pubPlace>Paris</pubPlace>
+                           <publisher>F. Vieweg</publisher>
+                           <date>1888</date>
+                           <biblScope unit="page">p. 366-400</biblScope>
+                           <note>Commentaires : nombreux textes communs</note>
+                        </bibl>
+                        <bibl xml:id="Meyer-1906-1">
+                           <author>Paul Meyer</author>
+                           <title level="m">Légendes hagiographiques en français en prose</title>
+                           <title level="s">Histoire littéraire de la France. Tome 33</title>
+                           <pubPlace>Paris</pubPlace>
+                           <publisher>Imprimerie nationale</publisher>
+                           <date>1906</date>
+                           <biblScope unit="page">p. 378-458</biblScope>
+                           <biblScope unit="page">p. 411-416</biblScope>
+                        </bibl>
+                        <bibl xml:id="Meyer-1906-2">
+                           <author>Paul Meyer</author>
+                           <title level="m">Vies des Pères (versions en vers et en prose)</title>
+                           <title level="s">Histoire littéraire de la France. Tome 33</title>
+                           <pubPlace>Paris</pubPlace>
+                           <publisher>Imprimerie nationale</publisher>
+                           <date>1906</date>
+                           <biblScope unit="page">p. 254-328</biblScope>
+                           <biblScope unit="page">Cité p.279</biblScope>
+                        </bibl>
+                        <bibl xml:id="Millar-1959">
+                           <idno type="ISBN">978-0-5710-5025-3</idno>
+                           <author>Eric George Millar</author>
+                           <title level="m">The parisian miniaturist Honoré</title>
+                           <pubPlace>London</pubPlace>
+                           <publisher>Faber &amp; Faber</publisher>
+                           <date>1959</date>
+                        </bibl>
+                        <bibl xml:id="Paulin-1841">
+                           <author>A. Paulin Paris</author>
+                           <title level="m">Leur histoire et celle des textes allemands, anglois,
+                              hollandois, italiens, espagnols de la même collection</title>
+                           <title level="s">Les manuscrits françois de la bibliothèque du roy. Tome
+                              4</title>
+                           <pubPlace>Paris</pubPlace>
+                           <publisher>Techener</publisher>
+                           <date>1841</date>
+                           <biblScope unit="page">p. 14</biblScope>
+                        </bibl>
+                        <bibl xml:id="Stones-2002">
+                           <idno type="ISBN">90-429-1233-2</idno>
+                           <author>Alison Stones</author>
+                           <title level="a">A Note on the Maître au menton fuyant</title>
+                           <title level="m">Als ich can. Liber Amicorum in Memory of Professor Dr.
+                              Maurits Smeyers</title>
+                           <title level="s">Corpus of Illuminated Manuscripts</title>
+                           <pubPlace>Louvain</pubPlace>
+                           <editor>
+                              <persName>Bert Cardon</persName>
+                              <persName>Jan Van Der Stock</persName>
+                              <persName>Dominique Vanwijnsberghe</persName>
+                           </editor>
+                           <publisher>Peeters</publisher>
+                           <date>2002</date>
+                           <biblScope unit="page">p. 1247-1271</biblScope>
+                        </bibl>
+                        <bibl xml:id="Stones-2013">
+                           <idno type="ISBN">978-1-8725-0195-6</idno>
+                           <author>Alison Stones</author>
+                           <title level="m">Gothic Manuscripts 1260-1320</title>
+                           <pubPlace>London</pubPlace>
+                           <publisher>Harvey Miller</publisher>
+                           <date>2013</date>
+                           <biblScope unit="page">Cité parmi les sources p.60-64</biblScope>
+                        </bibl>
+                        <bibl xml:id="Vanwijnsberghe-2005">
+                           <author>Dominique Vanwijnsberghe</author>
+                           <title level="a">De fin or et d’azur. Les commanditaires de livres et le
+                              métier de l’enluminure à Tournai à la fin du Moyen Age (XIV-XVe
+                              siècles)</title>
+                           <title level="m">Histoire médiévale, moderne et contemporaine (nº83 -
+                              fasc.2)</title>
+                           <title level="j">Revue belge de Philologie et d’Histoire</title>
+                           <pubPlace>Genève</pubPlace>
+                           <publisher>Droz</publisher>
+                           <date>2005</date>
+                           <biblScope unit="page">p.581-582</biblScope>
+                        </bibl>
+                        <bibl xml:id="Zinelli-2016">
+                           <idno type="ISBN">978-3-8253-6497-7</idno>
+                           <author>Fabio Zinelli</author>
+                           <title level="a">Au carrefour des traditions italiennes et
+                              méditerranéennes. Un légendier français et ses rapports avec
+                              l’histoire ancienne jusqu’à César et les Fait des romains</title>
+                           <title level="m">L’agiografia volgare. Tradizioni di testi, motivi e
+                              linguaggi. Atti del congresso internazionale, Klagenfurt, 15-16
+                              gennaio 2015</title>
+                           <title level="s">Studia Romanica. Tome 195</title>
+                           <pubPlace>Heidelberg</pubPlace>
+                           <publisher>Universitätsverlag</publisher>
+                           <date>2016</date>
+                           <biblScope unit="page">p.68</biblScope>
+                        </bibl>
+                     </listBibl>
+                  </provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+
+      <profileDesc>
+         <settingDesc>
+            <listPlace>
+               <place xml:id="Rome">
+                  <placeName>Rome</placeName>
+                  <note>Lieu de l’action et diocèse de l’évêque saint Sixte.</note>
+                  <note>"evesqes à Rome"</note>
+               </place>
+               <place xml:id="Athenes">
+                  <placeName>Athènes</placeName>
+                  <note>Lieu de naissance de Saint Sixte.</note>
+                  <note>"seins Sixtes qi estoit néz d’Athenes"</note>
+               </place>
+               <place xml:id="Roarnertine">
+                  <placeName>Roarnertine</placeName>
+                  <note>Lieu de provenance d'une certaine charte.</note>
+                  <note>"charte de Roarnertine"</note>
+               </place>
+               <place xml:id="Celyon">
+                  <placeName>Mont de Celyon</placeName>
+                  <note>Colline sur laquelle se trouve la maison de <persName ref="#Cyriace"
+                        >Cyriace</persName>.</note>
+                  <note>"enz el mont de Celyon"</note>
+               </place>
+               <place xml:id="Rue-Charnier">
+                  <placeName>Rue du charnier</placeName>
+                  <note>Rue où se trouve la maison de <persName ref="#Nartyses"
+                     >Nartyses</persName>.</note>
+                  <note>"rue del charnier"</note>
+               </place>
+               <place xml:id="Rue-Patrisse">
+                  <placeName>Rue Patrisse</placeName>
+                  <note>Rue où se trouve une crypte où se sont dissimulés de nombreux
+                     chrétiens.</note>
+                  <note>"en la rue qi estoit apelee Patrisse"</note>
+               </place>
+               <place xml:id="Porte-Apie">
+                  <placeName>Porte Apie</placeName>
+                  <note>Une des portes qui marque la limite de la ville.</note>
+                  <note>"la porte qi est apelee Apie"</note>
+               </place>
+               <place xml:id="Cimetiere-Calyxte">
+                  <placeName>Le cimetière saint Calyxte</placeName>
+                  <note>Lieu où sont enterrés saint Sixte, Felicisme et Agapite.</note>
+                  <note>"el cymentiere seint Calyxte"</note>
+               </place>
+            </listPlace>
+         </settingDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="Sixte">
+                  <persName> Saint <forename>Sixte</forename>
+                  </persName>
+                  <note>Évêque à <placeName ref="#Rome">Rome</placeName>.</note>
+               </person>
+               <person xml:id="Laurent">
+                  <persName>Saint <forename>Laurent</forename></persName>
+                  <note>Archidiacre à <placeName ref="#Rome">Rome</placeName>.</note>
+               </person>
+               <person xml:id="Dece">
+                  <persName>Trajan Dèce</persName>
+                  <note>Empereur à <placeName ref="#Rome">Rome</placeName>.</note>
+               </person>
+               <person xml:id="JC">
+                  <persName>Jésus Christ</persName>
+                  <note>Fils de <persName ref="#Dieu">Dieu</persName>.</note>
+               </person>
+               <person xml:id="Dieu">
+                  <persName>Dieu</persName>
+                  <note>Dieu le Père.</note>
+               </person>
+               <person xml:id="Saint-Esprit">
+                  <persName>Saint Esprit</persName>
+                  <note>Troisième élément de la Trinité.</note>
+               </person>
+               <person xml:id="Felice">
+                  <persName>Felicisme</persName>
+                  <note>Disciple de saint <persName ref="#Sixte">Sixte</persName>.</note>
+               </person>
+               <person xml:id="Agapi">
+                  <persName>Agapite</persName>
+                  <note>Disciple de saint <persName ref="#Sixte">Sixte</persName>.</note>
+               </person>
+               <person xml:id="Justin">
+                  <persName>Justin</persName>
+                  <note>Prêtre ordonné par saint <persName ref="#Sixte">Sixte</persName>.</note>
+               </person>
+               <person xml:id="Cyriace">
+                  <persName>Cyriace</persName>
+                  <note>Femme chrétienne qui accueille des chrétiens dans sa maison.</note>
+               </person>
+               <person xml:id="Nartyses">
+                  <persName>Nartyses</persName>
+                  <note>Homme chrétien qui accueille des chrétiens dans sa maison.</note>
+               </person>
+               <person xml:id="Valerien">
+                  <persName>Valérien</persName>
+                  <note>Prévot de l’empereur <persName ref="#Dece">Dèce</persName>.</note>
+               </person>
+               <person xml:id="Mars">
+                  <persName>Mars</persName>
+                  <note>Divinité du panthéon romain.</note>
+               </person>
+               <person xml:id="Aveugle">
+                  <persName>Homme non nommé dans le texte</persName>
+                  <note>Homme aveugle qui a recouvré la vue au contact des mains de saint <persName
+                        ref="#Laurent">Laurent</persName>.</note>
+               </person>
+            </listPerson>
+         </particDesc>
+      </profileDesc>
+
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="IMAGE/Syxte1.jpeg" width="1024px" height="1539px"/>
+         <zone xml:id="l1" ulx="287" uly="1110" lrx="358" lry="1131"/>
+         <zone xml:id="l2" ulx="66" uly="1129" lrx="354" lry="1151"/>
+         <zone xml:id="l3" ulx="68" uly="1153" lrx="354" lry="1171"/>
+         <zone xml:id="l4" ulx="368" uly="140" lrx="699" lry="170"/>
+         <zone xml:id="l5" ulx="619" uly="177" lrx="707" lry="193"/>
+         <zone xml:id="l6" ulx="621" uly="196" lrx="706" lry="216"/>
+         <zone xml:id="l7" ulx="622" uly="219" lrx="713" lry="235"/>
+         <zone xml:id="l8" ulx="621" uly="240" lrx="716" lry="261"/>
+         <zone xml:id="l9" ulx="622" uly="264" lrx="705" lry="281"/>
+         <zone xml:id="l10" ulx="624" uly="287" lrx="694" lry="300"/>
+         <zone xml:id="l11" ulx="623" uly="306" lrx="703" lry="323"/>
+         <zone xml:id="l12" ulx="624" uly="328" lrx="705" lry="347"/>
+         <zone xml:id="l13" ulx="626" uly="353" lrx="707" lry="372"/>
+         <zone xml:id="l14" ulx="413" uly="379" lrx="700" lry="391"/>
+         <zone xml:id="l15" ulx="417" uly="400" lrx="709" lry="414"/>
+         <zone xml:id="l16" ulx="415" uly="422" lrx="711" lry="435"/>
+         <zone xml:id="l17" ulx="415" uly="449" lrx="708" lry="457"/>
+         <zone xml:id="l18" ulx="415" uly="469" lrx="705" lry="479"/>
+         <zone xml:id="l19" ulx="417" uly="491" lrx="714" lry="505"/>
+         <zone xml:id="l20" ulx="415" uly="511" lrx="710" lry="529"/>
+         <zone xml:id="l21" ulx="417" uly="537" lrx="713" lry="550"/>
+         <zone xml:id="l22" ulx="413" uly="561" lrx="711" lry="573"/>
+         <zone xml:id="l23" ulx="416" uly="582" lrx="709" lry="595"/>
+         <zone xml:id="l24" ulx="421" uly="605" lrx="708" lry="616"/>
+         <zone xml:id="l25" ulx="419" uly="626" lrx="717" lry="638"/>
+         <zone xml:id="l26" ulx="418" uly="647" lrx="713" lry="660"/>
+         <zone xml:id="l27" ulx="420" uly="667" lrx="717" lry="682"/>
+         <zone xml:id="l28" ulx="420" uly="691" lrx="732" lry="707"/>
+         <zone xml:id="l29" ulx="421" uly="715" lrx="706" lry="725"/>
+         <zone xml:id="l30" ulx="422" uly="731" lrx="709" lry="746"/>
+         <zone xml:id="l31" ulx="422" uly="755" lrx="711" lry="766"/>
+         <zone xml:id="l32" ulx="425" uly="778" lrx="725" lry="790"/>
+         <zone xml:id="l33" ulx="423" uly="799" lrx="718" lry="811"/>
+         <zone xml:id="l34" ulx="423" uly="825" lrx="712" lry="834"/>
+         <zone xml:id="l35" ulx="426" uly="846" lrx="722" lry="856"/>
+         <zone xml:id="l36" ulx="425" uly="867" lrx="713" lry="879"/>
+         <zone xml:id="l37" ulx="421" uly="888" lrx="717" lry="899"/>
+         <zone xml:id="l38" ulx="422" uly="908" lrx="723" lry="918"/>
+         <zone xml:id="l39" ulx="425" uly="931" lrx="728" lry="942"/>
+         <zone xml:id="l40" ulx="424" uly="956" lrx="719" lry="966"/>
+         <zone xml:id="l41" ulx="426" uly="975" lrx="720" lry="987"/>
+         <zone xml:id="l42" ulx="426" uly="999" lrx="721" lry="1013"/>
+         <zone xml:id="l43" ulx="424" uly="1021" lrx="730" lry="1037"/>
+         <zone xml:id="l44" ulx="425" uly="1046" lrx="727" lry="1057"/>
+         <zone xml:id="l45" ulx="425" uly="1072" lrx="723" lry="1082"/>
+         <zone xml:id="l46" ulx="425" uly="1088" lrx="723" lry="1101"/>
+         <zone xml:id="l47" ulx="429" uly="1111" lrx="726" lry="1124"/>
+         <zone xml:id="l48" ulx="428" uly="1134" lrx="726" lry="1146"/>
+         <zone xml:id="l49" ulx="427" uly="1159" lrx="723" lry="1170"/>
+      </surface>
+      <surface>
+         <graphic url="IMAGE/Syxte2.jpeg" width="1024px" height="1542px"/>
+         <zone xml:id="l50" ulx="322" uly="153" lrx="611" lry="171"/>
+         <zone xml:id="l51" ulx="323" uly="178" lrx="622" lry="197"/>
+         <zone xml:id="l52" ulx="323" uly="204" lrx="620" lry="221"/>
+         <zone xml:id="l53" ulx="320" uly="226" lrx="618" lry="240"/>
+         <zone xml:id="l54" ulx="323" uly="244" lrx="608" lry="260"/>
+         <zone xml:id="l55" ulx="326" uly="264" lrx="606" lry="282"/>
+         <zone xml:id="l56" ulx="325" uly="287" lrx="606" lry="302"/>
+         <zone xml:id="l57" ulx="326" uly="305" lrx="621" lry="325"/>
+         <zone xml:id="l58" ulx="325" uly="328" lrx="612" lry="347"/>
+         <zone xml:id="l59" ulx="324" uly="350" lrx="608" lry="367"/>
+         <zone xml:id="l60" ulx="324" uly="372" lrx="608" lry="387"/>
+         <zone xml:id="l61" ulx="325" uly="394" lrx="618" lry="409"/>
+         <zone xml:id="l62" ulx="325" uly="415" lrx="610" lry="434"/>
+         <zone xml:id="l63" ulx="324" uly="439" lrx="616" lry="457"/>
+         <zone xml:id="l64" ulx="322" uly="463" lrx="622" lry="481"/>
+         <zone xml:id="l65" ulx="322" uly="485" lrx="617" lry="502"/>
+         <zone xml:id="l66" ulx="322" uly="507" lrx="614" lry="525"/>
+         <zone xml:id="l67" ulx="322" uly="529" lrx="619" lry="551"/>
+         <zone xml:id="l68" ulx="322" uly="555" lrx="618" lry="572"/>
+         <zone xml:id="l69" ulx="321" uly="577" lrx="611" lry="594"/>
+         <zone xml:id="l70" ulx="323" uly="597" lrx="606" lry="615"/>
+         <zone xml:id="l71" ulx="321" uly="619" lrx="438" lry="636"/>
+         <zone xml:id="l72" ulx="294" uly="636" lrx="613" lry="660"/>
+         <zone xml:id="l73" ulx="389" uly="664" lrx="630" lry="683"/>
+         <zone xml:id="l74" ulx="388" uly="687" lrx="613" lry="704"/>
+         <zone xml:id="l75" ulx="319" uly="705" lrx="613" lry="726"/>
+         <zone xml:id="l76" ulx="320" uly="730" lrx="614" lry="747"/>
+         <zone xml:id="l77" ulx="321" uly="750" lrx="625" lry="769"/>
+         <zone xml:id="l78" ulx="317" uly="774" lrx="607" lry="794"/>
+         <zone xml:id="l79" ulx="320" uly="798" lrx="628" lry="814"/>
+         <zone xml:id="l80" ulx="319" uly="819" lrx="611" lry="835"/>
+         <zone xml:id="l81" ulx="320" uly="839" lrx="626" lry="857"/>
+         <zone xml:id="l82" ulx="320" uly="862" lrx="626" lry="881"/>
+         <zone xml:id="l83" ulx="318" uly="884" lrx="618" lry="901"/>
+         <zone xml:id="l84" ulx="318" uly="905" lrx="607" lry="922"/>
+         <zone xml:id="l85" ulx="317" uly="928" lrx="615" lry="945"/>
+         <zone xml:id="l86" ulx="318" uly="951" lrx="602" lry="966"/>
+         <zone xml:id="l87" ulx="320" uly="969" lrx="617" lry="987"/>
+         <zone xml:id="l88" ulx="320" uly="990" lrx="610" lry="1010"/>
+         <zone xml:id="l89" ulx="320" uly="1013" lrx="610" lry="1031"/>
+         <zone xml:id="l90" ulx="318" uly="1034" lrx="589" lry="1056"/>
+         <zone xml:id="l91" ulx="310" uly="1057" lrx="623" lry="1080"/>
+         <zone xml:id="l92" ulx="390" uly="1083" lrx="609" lry="1104"/>
+         <zone xml:id="l93" ulx="387" uly="1106" lrx="611" lry="1126"/>
+         <zone xml:id="l94" ulx="313" uly="1119" lrx="612" lry="1147"/>
+         <zone xml:id="l95" ulx="316" uly="1143" lrx="614" lry="1171"/>
+         <zone xml:id="l96" ulx="688" uly="144" lrx="989" lry="190"/>
+         <zone xml:id="l97" ulx="691" uly="177" lrx="973" lry="205"/>
+         <zone xml:id="l98" ulx="695" uly="197" lrx="984" lry="229"/>
+         <zone xml:id="l99" ulx="688" uly="221" lrx="988" lry="251"/>
+         <zone xml:id="l100" ulx="684" uly="237" lrx="978" lry="267"/>
+         <zone xml:id="l101" ulx="690" uly="262" lrx="980" lry="292"/>
+         <zone xml:id="l102" ulx="688" uly="281" lrx="977" lry="311"/>
+         <zone xml:id="l103" ulx="690" uly="305" lrx="983" lry="335"/>
+         <zone xml:id="l104" ulx="689" uly="328" lrx="977" lry="353"/>
+         <zone xml:id="l105" ulx="685" uly="347" lrx="982" lry="375"/>
+         <zone xml:id="l106" ulx="688" uly="368" lrx="982" lry="397"/>
+         <zone xml:id="l107" ulx="691" uly="389" lrx="974" lry="421"/>
+         <zone xml:id="l108" ulx="687" uly="414" lrx="984" lry="444"/>
+         <zone xml:id="l109" ulx="691" uly="439" lrx="986" lry="465"/>
+         <zone xml:id="l110" ulx="685" uly="460" lrx="978" lry="485"/>
+         <zone xml:id="l111" ulx="690" uly="482" lrx="978" lry="507"/>
+         <zone xml:id="l112" ulx="687" uly="506" lrx="978" lry="532"/>
+         <zone xml:id="l113" ulx="687" uly="526" lrx="977" lry="552"/>
+         <zone xml:id="l114" ulx="685" uly="546" lrx="970" lry="573"/>
+         <zone xml:id="l115" ulx="687" uly="572" lrx="982" lry="598"/>
+         <zone xml:id="l116" ulx="684" uly="593" lrx="973" lry="618"/>
+         <zone xml:id="l117" ulx="684" uly="616" lrx="974" lry="644"/>
+         <zone xml:id="l118" ulx="682" uly="641" lrx="972" lry="663"/>
+         <zone xml:id="l119" ulx="681" uly="663" lrx="974" lry="687"/>
+         <zone xml:id="l120" ulx="686" uly="687" lrx="979" lry="708"/>
+         <zone xml:id="l121" ulx="687" uly="708" lrx="975" lry="727"/>
+         <zone xml:id="l122" ulx="686" uly="726" lrx="978" lry="751"/>
+         <zone xml:id="l123" ulx="684" uly="751" lrx="978" lry="771"/>
+         <zone xml:id="l124" ulx="683" uly="769" lrx="975" lry="792"/>
+         <zone xml:id="l125" ulx="684" uly="793" lrx="977" lry="814"/>
+         <zone xml:id="l126" ulx="684" uly="815" lrx="977" lry="836"/>
+         <zone xml:id="l127" ulx="684" uly="839" lrx="985" lry="862"/>
+         <zone xml:id="l128" ulx="682" uly="865" lrx="973" lry="884"/>
+         <zone xml:id="l129" ulx="682" uly="885" lrx="968" lry="903"/>
+         <zone xml:id="l130" ulx="683" uly="905" lrx="976" lry="925"/>
+         <zone xml:id="l131" ulx="682" uly="928" lrx="975" lry="943"/>
+         <zone xml:id="l132" ulx="682" uly="947" lrx="974" lry="965"/>
+         <zone xml:id="l133" ulx="685" uly="969" lrx="969" lry="986"/>
+         <zone xml:id="l134" ulx="683" uly="989" lrx="974" lry="1009"/>
+         <zone xml:id="l135" ulx="685" uly="1013" lrx="973" lry="1035"/>
+         <zone xml:id="l136" ulx="680" uly="1038" lrx="916" lry="1058"/>
+         <zone xml:id="l137" ulx="680" uly="1058" lrx="976" lry="1076"/>
+         <zone xml:id="l138" ulx="679" uly="1080" lrx="978" lry="1099"/>
+         <zone xml:id="l139" ulx="678" uly="1104" lrx="984" lry="1122"/>
+         <zone xml:id="l140" ulx="685" uly="1127" lrx="981" lry="1146"/>
+         <zone xml:id="l141" ulx="684" uly="1151" lrx="979" lry="1171"/>
+      </surface>
+      <surface>
+         <graphic url="IMAGE/Syxte3.jpeg" width="1024px" height="1543px"/>
+         <zone xml:id="l142" ulx="45" uly="174" lrx="339" lry="192"/>
+         <zone xml:id="l143" ulx="50" uly="200" lrx="336" lry="215"/>
+         <zone xml:id="l144" ulx="51" uly="221" lrx="346" lry="239"/>
+         <zone xml:id="l145" ulx="50" uly="242" lrx="340" lry="261"/>
+         <zone xml:id="l146" ulx="50" uly="264" lrx="340" lry="283"/>
+         <zone xml:id="l147" ulx="49" uly="286" lrx="341" lry="303"/>
+         <zone xml:id="l148" ulx="47" uly="306" lrx="346" lry="326"/>
+         <zone xml:id="l149" ulx="49" uly="329" lrx="347" lry="347"/>
+         <zone xml:id="l150" ulx="50" uly="350" lrx="348" lry="368"/>
+         <zone xml:id="l151" ulx="51" uly="373" lrx="346" lry="388"/>
+         <zone xml:id="l152" ulx="47" uly="392" lrx="338" lry="411"/>
+         <zone xml:id="l153" ulx="44" uly="412" lrx="334" lry="433"/>
+         <zone xml:id="l154" ulx="46" uly="436" lrx="347" lry="455"/>
+         <zone xml:id="l155" ulx="50" uly="459" lrx="354" lry="481"/>
+         <zone xml:id="l156" ulx="48" uly="483" lrx="343" lry="500"/>
+         <zone xml:id="l157" ulx="44" uly="502" lrx="345" lry="521"/>
+         <zone xml:id="l158" ulx="45" uly="524" lrx="344" lry="546"/>
+         <zone xml:id="l159" ulx="46" uly="549" lrx="353" lry="567"/>
+         <zone xml:id="l160" ulx="46" uly="573" lrx="346" lry="592"/>
+         <zone xml:id="l161" ulx="44" uly="591" lrx="353" lry="616"/>
+         <zone xml:id="l162" ulx="48" uly="616" lrx="359" lry="637"/>
+         <zone xml:id="l163" ulx="46" uly="639" lrx="353" lry="657"/>
+         <zone xml:id="l164" ulx="50" uly="661" lrx="343" lry="683"/>
+         <zone xml:id="l165" ulx="41" uly="682" lrx="341" lry="703"/>
+         <zone xml:id="l166" ulx="48" uly="702" lrx="350" lry="727"/>
+         <zone xml:id="l167" ulx="42" uly="724" lrx="351" lry="748"/>
+         <zone xml:id="l168" ulx="43" uly="744" lrx="228" lry="765"/>
+         <zone xml:id="l169" ulx="25" uly="755" lrx="340" lry="787"/>
+         <zone xml:id="l170" ulx="104" uly="788" lrx="344" lry="810"/>
+         <zone xml:id="l171" ulx="103" uly="813" lrx="346" lry="832"/>
+         <zone xml:id="l172" ulx="44" uly="824" lrx="346" lry="856"/>
+         <zone xml:id="l173" ulx="38" uly="852" lrx="341" lry="876"/>
+         <zone xml:id="l174" ulx="44" uly="872" lrx="342" lry="901"/>
+         <zone xml:id="l175" ulx="42" uly="891" lrx="341" lry="922"/>
+         <zone xml:id="l176" ulx="39" uly="911" lrx="345" lry="941"/>
+         <zone xml:id="l177" ulx="45" uly="936" lrx="350" lry="963"/>
+         <zone xml:id="l178" ulx="44" uly="958" lrx="346" lry="990"/>
+         <zone xml:id="l179" ulx="42" uly="976" lrx="344" lry="1008"/>
+         <zone xml:id="l180" ulx="46" uly="1002" lrx="346" lry="1029"/>
+         <zone xml:id="l181" ulx="46" uly="1020" lrx="341" lry="1050"/>
+         <zone xml:id="l182" ulx="41" uly="1041" lrx="340" lry="1072"/>
+         <zone xml:id="l183" ulx="45" uly="1065" lrx="345" lry="1095"/>
+         <zone xml:id="l184" ulx="45" uly="1090" lrx="334" lry="1114"/>
+         <zone xml:id="l185" ulx="43" uly="1107" lrx="345" lry="1139"/>
+         <zone xml:id="l186" ulx="46" uly="1129" lrx="344" lry="1163"/>
+         <zone xml:id="l187" ulx="42" uly="1153" lrx="340" lry="1182"/>
+         <zone xml:id="l188" ulx="405" uly="126" lrx="715" lry="201"/>
+         <zone xml:id="l189" ulx="414" uly="197" lrx="707" lry="223"/>
+         <zone xml:id="l190" ulx="414" uly="216" lrx="712" lry="243"/>
+         <zone xml:id="l191" ulx="414" uly="238" lrx="704" lry="265"/>
+         <zone xml:id="l192" ulx="411" uly="260" lrx="709" lry="285"/>
+         <zone xml:id="l193" ulx="408" uly="280" lrx="709" lry="308"/>
+         <zone xml:id="l194" ulx="412" uly="302" lrx="710" lry="326"/>
+         <zone xml:id="l195" ulx="411" uly="321" lrx="728" lry="348"/>
+         <zone xml:id="l196" ulx="408" uly="342" lrx="675" lry="369"/>
+         <zone xml:id="l197" ulx="400" uly="365" lrx="709" lry="391"/>
+         <zone xml:id="l198" ulx="476" uly="390" lrx="705" lry="410"/>
+         <zone xml:id="l199" ulx="477" uly="412" lrx="724" lry="437"/>
+         <zone xml:id="l200" ulx="411" uly="433" lrx="707" lry="458"/>
+         <zone xml:id="l201" ulx="408" uly="458" lrx="700" lry="482"/>
+         <zone xml:id="l202" ulx="410" uly="484" lrx="705" lry="506"/>
+         <zone xml:id="l203" ulx="408" uly="506" lrx="713" lry="524"/>
+         <zone xml:id="l204" ulx="408" uly="525" lrx="720" lry="547"/>
+         <zone xml:id="l205" ulx="405" uly="547" lrx="710" lry="570"/>
+         <zone xml:id="l206" ulx="401" uly="569" lrx="709" lry="590"/>
+         <zone xml:id="l207" ulx="404" uly="592" lrx="715" lry="616"/>
+         <zone xml:id="l208" ulx="410" uly="613" lrx="725" lry="638"/>
+         <zone xml:id="l209" ulx="410" uly="639" lrx="713" lry="661"/>
+         <zone xml:id="l210" ulx="413" uly="663" lrx="722" lry="684"/>
+         <zone xml:id="l211" ulx="407" uly="685" lrx="710" lry="703"/>
+         <zone xml:id="l212" ulx="405" uly="707" lrx="707" lry="724"/>
+         <zone xml:id="l213" ulx="408" uly="728" lrx="720" lry="749"/>
+         <zone xml:id="l214" ulx="407" uly="751" lrx="711" lry="769"/>
+         <zone xml:id="l215" ulx="413" uly="768" lrx="713" lry="792"/>
+         <zone xml:id="l216" ulx="411" uly="790" lrx="711" lry="812"/>
+         <zone xml:id="l217" ulx="408" uly="812" lrx="708" lry="833"/>
+         <zone xml:id="l218" ulx="408" uly="830" lrx="706" lry="857"/>
+         <zone xml:id="l219" ulx="407" uly="854" lrx="704" lry="878"/>
+         <zone xml:id="l220" ulx="410" uly="877" lrx="702" lry="904"/>
+         <zone xml:id="l221" ulx="409" uly="899" lrx="700" lry="922"/>
+         <zone xml:id="l222" ulx="411" uly="921" lrx="707" lry="940"/>
+         <zone xml:id="l223" ulx="411" uly="939" lrx="717" lry="964"/>
+         <zone xml:id="l224" ulx="410" uly="963" lrx="695" lry="983"/>
+         <zone xml:id="l225" ulx="411" uly="982" lrx="708" lry="1005"/>
+         <zone xml:id="l226" ulx="410" uly="1005" lrx="712" lry="1028"/>
+         <zone xml:id="l227" ulx="409" uly="1026" lrx="711" lry="1051"/>
+         <zone xml:id="l228" ulx="411" uly="1050" lrx="708" lry="1072"/>
+         <zone xml:id="l229" ulx="410" uly="1071" lrx="713" lry="1097"/>
+         <zone xml:id="l230" ulx="410" uly="1095" lrx="712" lry="1116"/>
+         <zone xml:id="l231" ulx="407" uly="1116" lrx="706" lry="1140"/>
+         <zone xml:id="l232" ulx="411" uly="1136" lrx="710" lry="1161"/>
+         <zone xml:id="l233" ulx="415" uly="1160" lrx="721" lry="1185"/>
+      </surface>
+      <surface>
+         <graphic url="IMAGE/Syxte4.jpeg" width="1024px" height="1542px"/>
+         <zone xml:id="l234" ulx="312" uly="111" lrx="612" lry="184"/>
+         <zone xml:id="l235" ulx="317" uly="184" lrx="610" lry="202"/>
+         <zone xml:id="l236" ulx="316" uly="203" lrx="424" lry="226"/>
+         <zone xml:id="l237" ulx="308" uly="227" lrx="608" lry="249"/>
+         <zone xml:id="l238" ulx="388" uly="251" lrx="610" lry="270"/>
+         <zone xml:id="l239" ulx="382" uly="273" lrx="607" lry="290"/>
+         <zone xml:id="l240" ulx="317" uly="291" lrx="615" lry="310"/>
+         <zone xml:id="l241" ulx="319" uly="315" lrx="612" lry="333"/>
+         <zone xml:id="l242" ulx="314" uly="338" lrx="621" lry="356"/>
+         <zone xml:id="l243" ulx="318" uly="359" lrx="625" lry="379"/>
+         <zone xml:id="l244" ulx="318" uly="381" lrx="618" lry="403"/>
+         <zone xml:id="l245" ulx="318" uly="404" lrx="618" lry="427"/>
+         <zone xml:id="l246" ulx="316" uly="423" lrx="609" lry="447"/>
+         <zone xml:id="l247" ulx="317" uly="447" lrx="631" lry="467"/>
+         <zone xml:id="l248" ulx="317" uly="470" lrx="609" lry="492"/>
+         <zone xml:id="l249" ulx="314" uly="494" lrx="609" lry="509"/>
+         <zone xml:id="l250" ulx="319" uly="511" lrx="615" lry="531"/>
+         <zone xml:id="l251" ulx="320" uly="531" lrx="625" lry="558"/>
+         <zone xml:id="l252" ulx="315" uly="560" lrx="615" lry="576"/>
+         <zone xml:id="l253" ulx="318" uly="578" lrx="627" lry="604"/>
+         <zone xml:id="l254" ulx="319" uly="605" lrx="623" lry="624"/>
+         <zone xml:id="l255" ulx="314" uly="622" lrx="625" lry="649"/>
+      </surface>
+   </facsimile>
+   <text type="edition">
+      <body>
+
+         <div type="section" corresp="#Vie-Sixte">
+            <head>De seint S&y;xte</head>
+            <p rend="color:red">
+               <milestone unit="section"/>
+               <seg facs="#l1">Ci comen-</seg>
+
+               <seg facs="#l2">ce la &vu;ie &et; la passion seint <persName ref="#Sixte">
+                     &Ss;&y;xte</persName> le bene-</seg>
+
+               <seg facs="#l3">oit mart&y;r &Nn;ostre &Ss;ignor <persName ref="#JC"
+                     >&Ji;esu&espace;&Cc;rist</persName>.</seg>
+            </p>
+            <p>
+               <cb n="1"/>
+
+               <seg facs="#l4"><g type="initiale" rend="color:blue sizeAct:10lines deco:miniature"
+                     ref="#C1">C</g><g type="initiale" rend="color:red">E</g> fu el tens</seg>
+
+               <seg facs="#l5">qe <persName ref="#Dece" xml:id="Decius-Ce" next="#sar">&Dd;ecius
+                     &Cc;e-</persName></seg>
+
+               <seg facs="#l6"><persName xml:id="sar" prev="#Decius-Ce">sar</persName> fu
+                  em&per;-</seg>
+
+               <seg facs="#l7">eres qe cil qi</seg>
+
+               <seg facs="#l8">&Nn;ostre <roleName ref="#JC">&Ss;ignor</roleName></seg>
+
+               <seg facs="#l9">apeloient</seg>
+
+               <seg facs="#l10">estoient</seg>
+
+               <seg facs="#l11">mart&y;ri&é;</seg>
+
+               <seg facs="#l12">&et; soffroient</seg>
+
+               <seg facs="#l13">griez tor&men;z</seg>
+
+               <seg facs="#l14">por l&apost;amor de &Ll;ui. <g type="initiale" rend="color:red"
+                     >E</g>n cel tens estoit mes</seg>
+
+               <seg facs="#l15">sires seins <persName ref="#Sixte">&Ss;&y;xtes</persName> qi estoit
+                  n&é;z d&apost;<placeName ref="#Athenes">&Aa;thenes</placeName>.</seg>
+
+               <seg facs="#l16">&Pp;h&y;losophes fu premiers &et; puis ensi&vu;i</seg>
+
+               <seg facs="#l17">les oeu&vu;res &Nn;ostre &Ss;ignor <persName ref="#JC"
+                     >&Ji;esu&espace;&Cc;rist</persName> mout</seg>
+
+               <seg facs="#l18">&vu;eraiement &punctus-elevatus; e&vu;esqes &à; <placeName
+                     ref="#Rome">&Rr;ome</placeName> de ceus qi</seg>
+
+               <seg facs="#l19">&Nn;ostre <roleName ref="#JC">&Ss;ignor</roleName> &et; <seg
+                     xml:id="saide">saide</seg><certainty locus="value" target="#saide" resp="#SA"
+                     degree="0.3">
+                     <desc>La transcription du terme précédent est incertaine en absence de sens
+                        clair du mot transcrit. Il s’agit certainement d’un terme se rapportant à
+                        Dieu.</desc>
+                  </certainty> reclamoient&virgule; &et; molt</seg>
+
+               <seg facs="#l20">les ensegnoit docement de &vu;eraie doctri-</seg>
+
+               <seg facs="#l21">ne. <g type="initiale" rend="color:red">Q</g>ant <persName
+                     ref="#Dece">&Dd;ecius &Cc;esar</persName> &et; li pre&vu;oz sorent</seg>
+
+               <seg facs="#l22">&et; &vu;irent&virgule; qe la crestient&é;z monteplioit</seg>
+
+               <seg facs="#l23">&par; le seint home qi <persName ref="#Sixte">&Ss;&y;xtes</persName>
+                  a&vu;oit non &punctus-elevatus; il</seg>
+
+               <seg facs="#l24">&com;manderent qe l&apost;en l&apost;amenast de&vu;ant</seg>
+
+               <seg facs="#l25">els &par;&espace;nuit&virgule; &et; lui &et; ses clers dedenz la
+                  cit&é;&point0;</seg>
+
+               <seg facs="#l26"><g type="initiale" rend="color:red">L</g>ors dist seinz <persName
+                     ref="#Sixte">&Ss;&y;xtes</persName> &à; ses clers qant il</seg>
+
+               <seg facs="#l27">o&ï; les messages por aus reconforter &guillemet-ouvrant; <said
+                     who="#Sixte" xml:id="Si1" next="#Si2"
+                     >&Mm;i</said></seg>
+
+               <seg facs="#l28">
+                  <said xml:id="Si2" prev="#Si1" next="#Si3">chier frere
+                     &et; mi chier compaignon&virgule0; n&apost;ai&é;z</said>
+               </seg>
+
+               <seg facs="#l29">
+                  <said xml:id="Si3" prev="#Si2" next="#Si4">nule
+                     poor&virgule; &vu;os sa&vu;&é;z bien com granz</said>
+               </seg>
+
+               <seg facs="#l30">
+                  <said xml:id="Si4" prev="#Si3" next="#Si5">tormenz tuit
+                     li seint ont soffert&virgule; pour</said>
+               </seg>
+
+               <seg facs="#l31">
+                  <said xml:id="Si5" prev="#Si4" next="#Si6">&par;&vu;enir
+                     seurement &à; la &vu;ie &par;durable&virgule; &et;</said>
+               </seg>
+
+               <seg facs="#l32">
+                  <said xml:id="Si6" prev="#Si5" next="#Si7">&Nn;ostre
+                     &Ss;ires <persName ref="#JC">&Ji;esu&espace;&Cc;rist</persName> meesmement
+                     souf</said>
+               </seg>
+
+               <seg facs="#l33">
+                  <said xml:id="Si7" prev="#Si6" next="#Si8">fir mort &et;
+                     passion por nostre salu&virgule; &et; si n&os;</said>
+               </seg>
+
+               <seg facs="#l34"><said xml:id="Si8"
+                     prev="#Si7">dona
+                  example</said>&guillemet-fermant2; &Et; qant li seinz hom ot ce</seg>
+
+               <seg facs="#l35">dit&punctus-elevatus; il s&apost;escria &à; haute &vu;oiz&virgule;
+                  &et; si dist &guillemet; <said who="#Sixte" xml:id="Si9" next="#Si10"
+                     >&Vu;en&é;z</said></seg>
+
+               <seg facs="#l36">
+                  <said xml:id="Si10" prev="#Si9">en&virgule; &et; si ni ait celui qi donne nule
+                     poor</said>&guillemet-fermant;
+               </seg>
+
+               <seg facs="#l37">Donc li respondirent&virgule; <persName ref="#Felice"
+                     >&Ff;elicismes</persName>&virgule; &et; <persName ref="#Agapi"
+                     >&Aa;gapi</persName>&virgule0;</seg>
+
+               <seg facs="#l38">ces qi si deciple estoient&virgule0; &et; si distrent
+                  &guillemet-ouvrant; <said who="#Felice #Agapi" xml:id="FeAg1" next="#FeAg2"><g
+                        type="initiale" rend="color:red">O</g>&ù;</said></seg>
+
+               <seg facs="#l39"><said xml:id="FeAg2" prev="#FeAg1">porrons nos
+                     aler sanz toi qi ies nostre &per;e &point-interrogation0;</said>
+                  &guillemet;</seg>
+
+               <seg facs="#l40"><g type="initiale" rend="color:red">&À;</g> cele ore tot
+                  &par;&espace;nuit fu seinz <persName ref="#Sixte">&Ss;&y;xtes</persName> me-</seg>
+
+               <seg facs="#l41">n&é;z de&vu;ant l&apost;<roleName ref="#Dece">em&per;eor</roleName>
+                  &et; de&vu;ant le &pre;&vu;ost&virgule;</seg>
+
+               <seg facs="#l42">&et; li duz d&y;acre ensamble o&espace;lui. <g type="initiale"
+                     rend="color:red">L</g>ors par-</seg>
+
+               <seg facs="#l43">la li <roleName ref="#Dece">em&per;eres</roleName> au seint home
+                  &et; si dist &guillemet-ouvrant; <said who="#Dece" xml:id="De1" next="#De2"
+                        ><g type="initiale" rend="color:red">S</g>&é;z</said></seg>
+
+               <seg facs="#l44">
+                  <said xml:id="De2" prev="#De1" next="#De3">tu por qel chose tu ies pris &et;
+                     amen&é;z de-</said>
+               </seg>
+
+               <seg facs="#l45"><said xml:id="De3" prev="#De2">&vu;ant moi
+                     &point-interrogation0;</said> &guillemet; <g type="initiale" rend="color:red"
+                     >S</g>ainz <persName ref="#Sixte">&Ss;&y;xtes</persName> respondi gel</seg>
+
+               <seg facs="#l46">sai bien. <persName ref="#Dece"><g type="initiale" rend="color:red"
+                        >D</g>ecius &Cc;esar</persName> li dist &guillemet-ouvrant; <said
+                     who="#Dece" xml:id="De4" next="#De5"><g type="initiale" rend="color:red"
+                        >S</g>e tu le s&é;z</said></seg>
+
+               <seg facs="#l47">
+                  <said xml:id="De5" prev="#De4" next="#De6">bien&punctus-elevatus; fai aussi qe
+                     tuit le facent&virgule; si qe tu</said>
+               </seg>
+
+               <seg facs="#l48"><said xml:id="De6" prev="#De5">puisses &vu;i&vu;re &et; ti
+                     clerc acroistre &point-interrogation0;</said> &guillemet; &Ll;i seins</seg>
+
+               <seg facs="#l49">hom li respondi &guillemet-ouvrant; <said who="#Sixte" xml:id="Si11"
+                     next="#Si12"><g type="initiale" rend="color:red">J</g>e ai fait &et; faz
+                     &vu;eraie-</said></seg>
+               <pb n="2"/>
+               <cb n="2"/>
+
+               <seg facs="#l50"><said xml:id="Si12" prev="#Si11">ment qe mes clergies
+                     acroisse</said>&guillemet-fermant; <persName ref="#Dece"><g type="initiale"
+                        rend="color:blue">D</g>ecius</persName> li</seg>
+
+               <seg facs="#l51">dist &guillemet-ouvrant; <said who="#Dece" xml:id="De7" next="#De8"
+                        ><g type="initiale" rend="color:red">D</g>ont sacrefie &à; nos dex q<hi
+                        rend="sup">i</hi> ne sont mie</said></seg>
+
+               <seg facs="#l52"><said xml:id="De8" prev="#De7">mortel&virgule; &et; si
+                     soies princes des prestres</said>&guillemet-fermant; <g type="initiale"
+                     rend="color:red">S</g>einz</seg>
+
+               <seg facs="#l53"><persName ref="#Sixte">&Ss;&y;xtes</persName> li respondi
+                  &guillemet-ouvrant; <said who="#Sixte" xml:id="Si13"
+                     next="#Si14">&Ji;&apost;ai toz tens sacrefie &et;
+                  en-</said></seg>
+
+               <seg facs="#l54">
+                  <said xml:id="Si14" prev="#Si13" next="#Si15">core sacrefie &ji;e pure
+                     oiste &et; &par;durable&virgule; &et;</said>
+               </seg>
+
+               <seg facs="#l55">
+                  <said xml:id="Si15" prev="#Si14" next="#Si16">sanz tache &à; <persName
+                        ref="#Dieu">&Dd;eu &Ll;e &Pp;ere &Tt;out &Pp;uissant</persName>&virgule;
+                     &et;</said>
+               </seg>
+
+               <seg facs="#l56">
+                  <said xml:id="Si16" prev="#Si15" next="#Si17">&Nn;ostre &Ss;ignor
+                        <persName ref="#JC">&Ji;esu&espace;&Cc;rist</persName> &Ss;on &Ff;il &et; au
+                        <persName ref="#Saint-Esprit" xml:id="Seint" next="#Esperit"
+                        >&Ss;eint </persName></said>
+               </seg>
+
+               <seg facs="#l57"><said xml:id="Si17" prev="#Si16"><persName
+                        xml:id="Esperit" prev="#Seint"
+                  >&Ee;sperit</persName></said>&guillemet-fermant; <persName ref="#Dece"><g
+                        type="initiale" rend="color:red">D</g>ecius</persName> dist
+                  &guillemet-ouvrant0; <said who="#Dece" xml:id="De9" next="#De10">&Cc;onseille toi
+                     &et; ton cler-</said></seg>
+
+               <seg facs="#l58"><said xml:id="De10" prev="#De9">gie aussi com nos &vu;os
+                     consellons</said>&guillemet-fermant; <g type="initiale" rend="color:red"
+                  >S</g>einz</seg>
+
+               <seg facs="#l59"><persName ref="#Sixte">&Ss;&y;xtes</persName> respondi
+                  &guillemet-ouvrant; <said who="#Sixte" xml:id="Si18" next="#Si19"><seg
+                        xml:id="Tres-qa"><g type="initiale" rend="color:red">T</g>res
+                        qa</seg><certainty locus="value" target="#Tres-qa" resp="#SA" degree="0.5">
+                        <desc>La transcription des termes précédents est incertaine en absence de
+                           sens clair des mots transcrits. Il s’agit peut-être d’une forme de
+                           "tresque".</desc>
+                     </certainty> ore av&é; &con;selli&é;</said></seg>
+
+               <seg facs="#l60">
+                  <said xml:id="Si19" prev="#Si18" next="#Si20">&et; moi &et; mon clergie qe &ji;e
+                     les puisse toz</said>
+               </seg>
+
+               <seg facs="#l61"><said xml:id="Si20" prev="#Si19">deli&vu;rer&virgule; &et;
+                     oster de la mort &par;durable</said>&guillemet-fermant; <persName ref="#Dece"
+                     xml:id="Deci" next="#uz">Deci-</persName></seg>
+
+               <seg facs="#l62"><persName xml:id="uz" prev="#Deci">uz</persName> li dist
+                  &guillemet-ouvrant; <said who="#Dece" xml:id="De11" next="#De12">&Ss;acrefie
+                     &à; noz dex&virgule; &et; se tu ce ne</said></seg>
+
+               <seg facs="#l63">
+                  <said xml:id="De12" prev="#De11" next="#De13">&vu;ius <seg
+                        xml:id="fere">fere</seg><certainty locus="value" target="#fere" resp="#SA"
+                        degree="0.6">
+                        <desc>La transcription du terme précédent est incertaine en absence de sens
+                           clair du mot transcrit. Il s’agit peut-être d’une graphie du verbe
+                           "faire".</desc>
+                     </certainty> &punctus-elevatus; saces qe tuit li autre porront</said>
+               </seg>
+
+               <seg facs="#l64"><said xml:id="De13" prev="#De12">&à; toi prendre
+                     example</said>&guillemet-fermant; <g type="initiale" rend="color:red">S</g>einz
+                     <persName ref="#Sixte">&Ss;&y;xtes</persName> respon-</seg>
+
+               <seg facs="#l65">di &guillemet-ouvrant; <said who="#Sixte" xml:id="Si21"
+                     next="#Si22">&Ji;e t&apost;ai &ji;a une foiz dit qe &ji;e faz
+                     sacrefice</said></seg>
+
+               <seg facs="#l66">
+                  <said xml:id="Si22" prev="#Si21" next="#Si23">&à; &Mm;on <persName ref="#Dieu"
+                        >&Dd;eu</persName> &et; &à; &Nn;ostre &Ss;ignor <persName ref="#JC"
+                        >&Ji;esu&espace;&Cc;rist</persName> son</said>
+               </seg>
+
+               <seg facs="#l67"><said xml:id="Si23" prev="#Si22"
+                  >&Ff;il</said>&guillemet-fermant; <g type="initiale" rend="color:red">L</g>ors
+                  dist <persName ref="#Dece">&Dd;ec&y;us &Cc;esar</persName> &à; ses che&vu;aliers
+                  &deux-points;</seg>
+
+               <seg facs="#l68">&guillemet; <said who="#Dece" xml:id="De14" next="#De15"
+                     >&Pp;ren&é;s le &et; si le men&é;z au temple mart&y;r&virgule;</said></seg>
+
+               <seg facs="#l69">
+                  <said xml:id="De15" prev="#De14" next="#De16">&et; si face
+                     sacrefice au deu &et; se il ce ne &vu;elt</said>
+               </seg>
+
+               <seg facs="#l70">
+                  <said xml:id="De16" prev="#De15" next="#De17">faire met&é;z le
+                     emprisson en la chartre</said>
+               </seg>
+
+               <seg facs="#l71"><said xml:id="De17" prev="#De16">de
+                        <placeName ref="#Roarnertine">&Rr;oarnertine</placeName><certainty
+                        locus="value" target="#Roarnertine" resp="#SA" degree="0.6">
+                        <desc>La transcription du nom propre précédent est incertaine</desc>
+                     </certainty></said>&guillemet-fermant;</seg>
+            </p>
+
+            <p>
+
+               <seg facs="#l72"><g type="initiale" rend="color:blue sizeAct:6lines" ref="#L2"
+                  >L</g>ors fu men&é;z li seins hom au</seg>
+
+               <seg facs="#l73">temple de lor deu qi <persName ref="#Mars">&Mm;ars</persName>
+                  estoit</seg>
+
+               <seg facs="#l74">apel&é;z&virgule; &et; l&à; le &com;mencierent li</seg>
+
+               <seg facs="#l75">che&vu;alier &à; constraindre q&apost;il li feist sacre-</seg>
+
+               <seg facs="#l76">fice. Li seinz hom lor dist &guillemet-ouvrant; <said who="#Sixte"
+                     xml:id="Si24"
+                     next="#Si25">He
+                     maleureus</said></seg>
+
+               <seg facs="#l77">
+                  <said xml:id="Si25" prev="#Si24"
+                     next="#Si26">qi aor&é;z &et;
+                     reqer&é;z aide &à; ces &y;doles&virgule; qi sont</said>
+               </seg>
+
+               <seg facs="#l78">
+                  <said xml:id="Si26" prev="#Si25"
+                     next="#Si27">&vu;eines &et; faites
+                     &par; main d&apost;ome&virgule; &et; qi sont</said>
+               </seg>
+
+               <seg facs="#l79">
+                  <said xml:id="Si27" prev="#Si26"
+                     next="#Si28">mues &et; sordes ne ne pueent
+                     &à; eles aidier</said>
+               </seg>
+
+               <seg facs="#l80">
+                  <said xml:id="Si28" prev="#Si27"
+                     next="#Si29">ne &à; autrui. <g type="initiale"
+                        rend="color:red">M</g>i biau fil o&é;z moi &et; enten-</said>
+               </seg>
+
+               <seg facs="#l81">
+                  <said xml:id="Si29" prev="#Si28"
+                     next="#Si30">d&é;z. &et; li deli&vu;r&é;z &vu;os ames
+                     des &par;durables</said>
+               </seg>
+
+               <seg facs="#l82">
+                  <said xml:id="Si30" prev="#Si29"
+                     next="#Si31">tormenz&virgule; &et; si ne creni&é;z mie les
+                     tormenz</said>
+               </seg>
+
+               <seg facs="#l83">
+                  <said xml:id="Si31" prev="#Si30"
+                     next="#Si32">de cest siecle &punctus-elevatus; <g type="initiale"
+                        rend="color:red">M</g>&é;s ceus qi sont &par;durable&virgule;</said>
+               </seg>
+
+               <seg facs="#l84">
+                  <said xml:id="Si32"
+                     prev="#Si31" next="#Si33">&et;
+                     si rece&vu;&é;z &et; faites penitance car &vu;oz</said>
+               </seg>
+
+               <seg facs="#l85">
+                  <said xml:id="Si33"
+                     prev="#Si32" next="#Si34"
+                     >sacrefi&é;z as &y;doles aussi &con;cil qi mielz ne</said>
+               </seg>
+
+               <seg facs="#l86"><said xml:id="Si34"
+                     prev="#Si33"
+                     >se&vu;ent</said>&guillemet-fermant; <g type="initiale" rend="color:red"
+                  >Q</g>ant cil qi l&à; l&apost;a&vu;oient men&é;</seg>
+
+               <seg facs="#l87">o&ï;rent q&apost;il despisoit le &com;mandement l&apost;<persName
+                     ref="#Dece" xml:id="em" next="#pereor">em-</persName></seg>
+
+               <seg facs="#l88"><persName xml:id="pereor" prev="#em">pereor</persName>
+                  &punctus-elevatus; il l&apost;enmenerent &vu;ers la prisson</seg>
+
+               <seg facs="#l89">o&ù; l&apost;en lor a&vu;oit comand&é; &et; a&vu;eqes lui</seg>
+
+               <seg facs="#l90">les .II. d&y;acres <persName ref="#Felice">&Ff;elicisme</persName>
+                  &et; <persName ref="#Agapi">&Aa;gapite</persName>.</seg>
+            </p>
+            <p>
+
+               <seg facs="#l91"><g type="initiale" rend="color:blue sizeAct:5lines" ref="#Q3"
+                  >Q</g>uant seinz <persName ref="#Laurent">&Ll;orenz</persName>&virgule0; qi dont
+                  estoit</seg>
+
+               <seg facs="#l92">arced&y;acres&virgule0; o&ï; &et; &con;nut con en</seg>
+
+               <seg facs="#l93">menoit seint <persName ref="#Sixte">&Ss;&y;xte</persName>
+                  l&apost;e&vu;esqe &punctus-elevatus;</seg>
+
+               <seg facs="#l94">ille &com;menca <choice>
+                     <sic>a a</sic>
+                     <corr>&à;</corr>
+                  </choice> parler en ceste maniere</seg>
+
+               <seg facs="#l95">&et; si dist &guillemet-ouvrant; <said who="#Laurent" xml:id="La1"
+                     next="#La2"><g type="initiale" rend="color:red"
+                     >B</g>iaus peres o&ù; &vu;as tu sans ton</said></seg>
+               <cb n="3"/>
+
+               <seg facs="#l96">
+                  <said xml:id="La2" prev="#La1" next="#La3">fil
+                     &punctus-interrogatus; <g type="initiale" rend="color:red">E</g>t o&ù; &vu;as
+                     tu qi ies seinz prestres&virgule; sanz</said>
+               </seg>
+
+               <seg facs="#l97">
+                  <said xml:id="La3" prev="#La2" next="#La4">ton d&y;acre
+                     &punctus-interrogatus; <g type="initiale" rend="color:red">T</g>u ne sacrefias
+                     onqes sanz</said>
+               </seg>
+
+               <seg facs="#l98">
+                  <said xml:id="La4" prev="#La3" next="#La5">menistre ne si ne
+                     l&apost;as mie acostume. Et qel</said>
+               </seg>
+
+               <seg facs="#l99">
+                  <said xml:id="La5" prev="#La4" next="#La6">chose desplest ore
+                     &à; ta seinte &Pp;aternit&é; de <unclear reason="illegible"
+                     >mor</unclear>&punctus-interrogatus;</said>
+               </seg>
+
+               <seg facs="#l100">
+                  <said xml:id="La6" prev="#La5" next="#La7"><g type="initiale"
+                        rend="color:red">A</g>s me tu donc pro&vu;e de nule rien q&apost;il
+                     &vu;ene-</said>
+               </seg>
+
+               <seg facs="#l101"><said xml:id="La7"
+                     prev="#La6">ne soit &et;
+                  &vu;raie</said>&guillemet-fermant; <g type="initiale" rend="color:red">D</g>onc
+                  respondi sains <persName ref="#Sixte"> &Ss;&y;xtes</persName></seg>
+
+               <seg facs="#l102">&à; seint <persName ref="#Laurent">&Ll;orenz</persName>&virgule;
+                  &et; si li dist &guillemet-ouvrant; <said who="#Sixte" xml:id="Si35"
+                     next="#Si36"
+                        ><g type="initiale" rend="color:red">B</g>iaus fuiz&virgule; &ji;e
+                  ne</said></seg>
+
+               <seg facs="#l103">
+                  <said xml:id="Si36" prev="#Si35"
+                     next="#Si37"
+                     >te relenqis mie ne ne deguerpiz&virgule; m&é;s plus</said>
+               </seg>
+
+               <seg facs="#l104">
+                  <said xml:id="Si37" prev="#Si36"
+                     next="#Si38"
+                     >grant estrif &et; plus grief torment te sont</said>
+               </seg>
+
+               <seg facs="#l105">
+                  <said xml:id="Si38" prev="#Si37"
+                     next="#Si39">don&é;
+                     et t&apost;atendent. <g type="initiale" rend="color:red">N</g>os rece&vu;ons le
+                     cours</said>
+               </seg>
+
+               <seg facs="#l106">
+                  <said xml:id="Si39" prev="#Si38"
+                     next="#Si40">de legiere
+                     peine aussi com &vu;iel home&virgule; &et; toi</said>
+               </seg>
+
+               <seg facs="#l107">
+                  <said xml:id="Si40" prev="#Si39"
+                     next="#Si41">atent plus
+                     glorieuse &vu;ictoire einsi &com;me</said>
+               </seg>
+
+               <seg facs="#l108">
+                  <said xml:id="Si41" prev="#Si40"
+                     next="#Si42">&ji;o&vu;encel. <g
+                        type="initiale" rend="color:red">L</g>esse le plorer car tu &vu;endras
+                     a&pré;s</said>
+               </seg>
+
+               <seg facs="#l109">
+                  <said xml:id="Si42" prev="#Si41"
+                     next="#Si43">moi&virgule; &et; si
+                     m&apost;enfuiras qi ies d&y;acres au chief</said>
+               </seg>
+
+               <seg facs="#l110">
+                  <said xml:id="Si43"
+                     prev="#Si42"
+                     next="#Si44">de .III. &ji;ors. <g type="initiale"
+                        rend="color:red">I</g>l n&apost;afiert mie &à; toi qe tu recoi-</said>
+               </seg>
+
+               <seg facs="#l111">
+                  <said xml:id="Si44"
+                     prev="#Si43"
+                     next="#Si45">&vu;es passion desouz mestre aussi &com;me
+                     se</said>
+               </seg>
+
+               <seg facs="#l112">
+                  <said xml:id="Si45"
+                     prev="#Si44"
+                     next="#Si46">tu queroies aide. <g type="initiale"
+                        rend="color:red">E</g>t por qoi demandes tu</said>
+               </seg>
+
+               <seg facs="#l113">
+                  <said xml:id="Si46"
+                     prev="#Si45"
+                     next="#Si47">ne reqiers compaignie de ta passion
+                     &point-interrogation1; Je</said>
+               </seg>
+
+               <seg facs="#l114">
+                  <said xml:id="Si47"
+                     prev="#Si46"
+                     next="#Si48">te deguerpiz tot mon iretage&virgule; &et; por qoi</said>
+               </seg>
+
+               <seg facs="#l115">
+                  <said xml:id="Si48"
+                     prev="#Si47"
+                     next="#Si49">me vielz tu &vu;eoir &punctus-interrogatus; <g type="initiale"
+                        rend="color:red">E</g>l&y;es deguerpi <name xml:id="Helyseum"
+                        >&Hh;el&y;se&um;</name><certainty locus="value" target="#Helyseum"
+                        resp="#SA" degree="0.4">
+                        <desc>Le contexte textuel ne permet pas d’identifier clairement la nature de
+                           ce terme.</desc>
+                     </certainty></said>
+               </seg>
+
+               <seg facs="#l116"><said xml:id="Si49"
+                     prev="#Si48"
+                     >&et; si ne li toli mie sa &vu;ertu</said>&guillemet-fermant; <g
+                     type="initiale" rend="color:red">Q</g>ant il ot ce</seg>
+
+               <seg facs="#l117">dit&virgule; si li &com;manda q&apost;il preist toz les
+                  tresors</seg>
+
+               <seg facs="#l118">de l&apost;&y;glise&virgule; si les de&par;tist &et; donast l&à;
+                  o&ù; il</seg>
+
+               <seg facs="#l119">seust q&apost;il fussent mielz emploi&é;s. Lors do-</seg>
+
+               <seg facs="#l120">na seint <persName ref="#Sixte">&Ss;&y;xte</persName> &à; seint
+                     <persName ref="#Laurent">&Ll;orens</persName> le d&y;acre tou-</seg>
+
+               <seg facs="#l121">tes les facult&é;z &et; les a&vu;oirs de l&apost;&y;glisse.</seg>
+
+               <seg facs="#l122"><g type="initiale" rend="color:red">E</g>t donc prist seins
+                     <persName ref="#Laurent">&Ll;orens</persName>&virgule; la poeste del
+                  seint</seg>
+
+               <seg facs="#l123">e&vu;esqe&virgule; si &com;menca a enquerr&é; &par;tout l&à;
+                  o&ù;</seg>
+
+               <seg facs="#l124">li clerc estoient &et; li po&vu;re&virgule; si portoit
+                  a&vu;ec</seg>
+
+               <seg facs="#l125">lui les a&vu;oirs &punctus-elevatus; si les donoit l&à; o&ù;
+                  mestiers</seg>
+
+               <seg facs="#l126">estoit. <g type="initiale" rend="color:red">E</g>t apr&é;s &vu;int
+                  enz el <placeName ref="#Celyon">mont de &Cc;el&y;on</placeName></seg>
+
+               <seg facs="#l127">&à; la meson d&apost;une &vu;eue deme qi
+                  l&apost;amanoit&virgule;</seg>
+
+               <seg facs="#l128">qi .XI. anz a&vu;oit est&é; a&vu;ec son baron&virgule; &et;</seg>
+
+               <seg facs="#l129">.XXVII. anz &vu;eue&virgule; cele feme <g type="initiale"
+                     rend="color:red">a</g>&vu;oit en sa</seg>
+
+               <seg facs="#l130">meson molt de crestienz&virgule0; repoz&virgule0; prestres
+                  &et;</seg>
+
+               <seg facs="#l131">clers &et; por la poor des t&y;ranz. <g type="initiale"
+                     rend="color:red">Q</g>ant seinz</seg>
+
+               <seg facs="#l132"><persName ref="#Laurent">&Ll;orenz</persName> le sot&virgule; il
+                  &vu;int &par;&espace;nuit&virgule; si lor aporta</seg>
+
+               <seg facs="#l133">&vu;esteures &et; a&vu;oirs &et; apr&é;s lor la&vu;a toz</seg>
+
+               <seg facs="#l134">les pi&é;z. <g type="initiale" rend="color:red">Q</g>ant il ot ce
+                  fet &punctus-elevatus; la &vu;eue feme</seg>
+
+               <seg facs="#l135">en cui meson il estoient &punctus-elevatus; se lessa cheoir</seg>
+
+               <seg facs="#l136">as piez saint <persName ref="#Laurent">&Ll;orenz</persName> &et; si
+                  li dist &deux-points;</seg>
+            </p>
+            <p>
+
+               <seg facs="#l137">&guillemet; <said who="#Cyriace" xml:id="Cy1" next="#Cy2"
+                        ><g type="initiale" rend="color:blue sizeAct:17lines" ref="#J4">&JI;</g><g
+                        type="initiale" rend="color:red">E</g> te pri &et; con&ji;ur de &par; &Nn;ostre
+                     &Ss;ignor <persName ref="#JC" xml:id="Jesu" next="#Crist"
+                     >&Ji;esu</persName></said></seg>
+
+               <seg facs="#l138">
+                  <said xml:id="Cy2" prev="#Cy1" next="#Cy3"><persName xml:id="Crist"
+                        prev="#Jesu">&Cc;rist</persName>&virgule; qe tu me metes tes meins sor
+                     mon</said>
+               </seg>
+
+               <seg facs="#l139">
+                  <said xml:id="Cy3" prev="#Cy2" next="#Cy4">chief&virgule; car &ji;e iai molt
+                     grant doleur &et; <choice>
+                        <abbr>mlt</abbr>
+                        <expan>m<ex>o</ex>lt</expan>
+                     </choice></said>
+               </seg>
+
+               <seg facs="#l140"><said xml:id="Cy4" prev="#Cy3">tres grant
+                     enfermet&é;</said>&guillemet-fermant; Lors dist seinz <persName ref="#Laurent">
+                     &Ll;orenz</persName></seg>
+
+               <seg facs="#l141">&à; la feme qi <persName ref="#Cyriace">&Cc;&y;riace</persName>
+                  estoit apelee &guillemet-ouvrant; <said who="#Laurent" xml:id="La8"
+                     next="#La9">&JI;e te me-</said></seg>
+               <pb n="3"/>
+               <cb n="4"/>
+
+               <seg facs="#l142">
+                  <said xml:id="La9" prev="#La8" next="#La10">terai ma mein sor ton chief <g
+                        type="initiale" rend="color:red">E</g>l non &Nn;ostre</said>
+               </seg>
+
+               <seg facs="#l143"><said xml:id="La10" prev="#La9">&Ss;igneur <persName ref="#JC"
+                        >&Ji;esu</persName> le &Ff;iuz <persName ref="#Dieu"
+                     >&Dd;eu</persName></said>&guillemet-fermant; <g type="initiale"
+                     rend="color:red">E</g>t lors li fist</seg>
+
+               <seg facs="#l144">le signe de la &vu;raie croiz seur son chief&virgule; &et; si
+                  li</seg>
+
+               <seg facs="#l145">mist ses meins deseure &et; puis mist deseur</seg>
+
+               <seg facs="#l146">li le drap dont l&apost;en essuiot les pi&é;z des seinz</seg>
+
+               <seg facs="#l147">homes qi l&à; estoient. <g type="initiale" rend="color:red">E</g>t
+                  tantost fu ele ga-</seg>
+
+               <seg facs="#l148">rie de la grant enfermet&é;. En cele meisme</seg>
+
+               <seg facs="#l149">nuit se de&par;ti seinz <persName ref="#Laurent">
+                     &Ll;orenz</persName> de l&à;&virgule; &et; si &com;menca</seg>
+
+               <seg facs="#l150">aquerr&é; les crestienz partout l&à; o&ù; il estoi-</seg>
+
+               <seg facs="#l151">ent assambl&é; &punctus-elevatus; fust en mesons ou en crou-</seg>
+
+               <seg facs="#l152">tes ou en autres leus&virgule; tant qe il &vu;int en</seg>
+
+               <seg facs="#l153">la rue <placeName ref="#Rue-Charnier">del
+                  charnier</placeName>&virgule; &et; l&à; tro&vu;a il molt de</seg>
+
+               <seg facs="#l154">crestiens assambl&é;z &à; la meson d&apost;un crestien</seg>
+
+               <seg facs="#l155">qi <persName ref="#Nartyses">&Nn;art&y;ses</persName><certainty
+                     locus="value" target="#Nartyses" resp="#SA" degree="0.7">
+                     <desc>La transcription du nom propre précédent est incertaine.</desc>
+                  </certainty> estoit apel&é;z. <g type="initiale" rend="color:red">Q</g>ant seinz
+                     <persName ref="#Laurent"> &Ll;orenz</persName></seg>
+
+               <seg facs="#l156">i fu entr&é;z tot plorant&virgule; il lor la&vu;a les pi&é;z</seg>
+
+               <seg facs="#l157">&et; si lor dona de l&apost;a&vu;oir qe seinz <persName
+                     ref="#Sixte">&Ss;&y;xtes</persName> a&vu;oit</seg>
+
+               <seg facs="#l158">&com;mand&é; &à; doner as po&vu;res. <g type="initiale"
+                     rend="color:red">E</g>n cele meson</seg>
+
+               <seg facs="#l159">tro&vu;a il .I. home qi estoit a&vu;ugles si a&vu;oit</seg>
+
+               <seg facs="#l160">non cressencies&virgule; &et; cil li &com;menca &à; proier
+                  tot</seg>
+
+               <seg facs="#l161">emplorant &et; &à; dire &guillemet-ouvrant; <said who="#Aveugle"
+                     xml:id="Av1" next="#Av2"><g type="initiale" rend="color:red">S</g>eins hom a
+                     touch&é; mes</said></seg>
+
+               <seg facs="#l162"><said xml:id="Av2" prev="#Av1">iols de ces meins si qe &ji;e puisse
+                     &vu;eoir ta face</said>&guillemet-fermant;</seg>
+
+               <seg facs="#l163"><g type="initiale" rend="color:red">D</g>onc &com;menca li seinz
+                  amis <persName ref="#Dieu">&Dd;eu</persName> &à; dire &guillemet-ouvrant; <said
+                     who="#Laurent" xml:id="La11" next="#La12">Nostre</said></seg>
+
+               <seg facs="#l164">
+                  <said xml:id="La12" prev="#La11" next="#La13">&Ss;ire <persName ref="#JC"
+                        >&Ji;esu&espace;&Cc;rist</persName> qi a&espace;o&vu;ri les iols del
+                     a&vu;ugle &punctus-elevatus;</said>
+               </seg>
+
+               <seg facs="#l165"><said xml:id="La13" prev="#La12">te puisse
+                  enluminer</said>&guillemet-fermant; &Et; tantost com il ot</seg>
+
+               <seg facs="#l166">fet le signe de la &vu;eraie croiz &Nn;ostre <roleName ref="#JC"
+                     >&Ss;ignor</roleName></seg>
+
+               <seg facs="#l167">sor ses iols &punctus-elevatus; cil &vu;it la lumiere &et; saint
+                     <persName ref="#Laurent">&Ll;or&en;z</persName></seg>
+
+               <seg facs="#l168">einsi q&apost;il li a&vu;oit requis&point0;</seg>
+            </p>
+            <p>
+
+               <seg facs="#l169"><g type="initiale" rend="color:blue sizeAct:7lines" ref="#L5"
+                  >L</g>ors s&apost;en de&par;ti seinz <persName ref="#Laurent">
+                     &Ll;orenz</persName>&virgule; &et; si o&ï;</seg>
+
+               <seg facs="#l170">dire qe en la rue qi estoit apelee</seg>
+
+               <seg facs="#l171"><placeName ref="#Rue-Patrisse">&Pp;atrisse</placeName><certainty
+                     locus="value" target="#Rue-Patrisse" resp="#SA" degree="0.7">
+                     <desc>La transcription du nom propre précédent est incertaine</desc>
+                  </certainty> a&vu;oit molt de crestienz</seg>
+
+               <seg facs="#l172">assambl&é;z en une croute &et; l&à; &vu;int il &à;&espace;aus</seg>
+
+               <seg facs="#l173">&et; si porta a&vu;ec lui ce qe mestiers estoit &à;
+                  els&virgule;</seg>
+
+               <seg facs="#l174">&et; si en i a&vu;oit bien assambl&é;z qe homes qe</seg>
+
+               <seg facs="#l175">femes .LXIII. <g type="initiale" rend="color:red">E</g>t lors les
+                  baisa seinz <persName ref="#Laurent">&Ll;orens</persName></seg>
+
+               <seg facs="#l176">tot emplorant&virgule; &et; si lor dona pais&virgule; l&à;
+                  tro&vu;a</seg>
+
+               <seg facs="#l177">il un prestre qi &par;non estoit apel&é;z <persName ref="#Justin"
+                     >&Ji;ustins</persName></seg>
+
+               <seg facs="#l178">qe seinz <persName ref="#Sixte">&Ss;&y;xtes</persName> a&vu;oit
+                  orden&é;. <g type="initiale" rend="color:red">Q</g>ant seinz</seg>
+
+               <seg facs="#l179"><persName ref="#Laurent">&Ll;orenz</persName> le &vu;it&virgule; il
+                  se mist &à; &ji;enols sor le pa&vu;e-</seg>
+
+               <seg facs="#l180">ment por baisier ses pi&é;z. <g type="initiale" rend="color:red"
+                     >E</g>t seins <persName ref="#Justin">&Ji;ustins</persName></seg>
+
+               <seg facs="#l181">se remist aussi &à; genoz&virgule; por baisier les pi&é;z</seg>
+
+               <seg facs="#l182">seint <persName ref="#Laurent">&Ll;orens</persName>. <g
+                     type="initiale" rend="color:red">A</g> ce faire mistrent il grant</seg>
+
+               <seg facs="#l183">piet&é; qe li uns ne lessoit beisier ses pi&é;z &à;</seg>
+
+               <seg facs="#l184">l&apost;autre. Et donc dist seinz <persName ref="#Laurent">
+                     &Ll;orenz</persName> &guillemet-ouvrant; <said who="#Laurent" xml:id="La14"
+                     next="#La15"><g type="initiale" rend="color:red"
+                  >B</g>iaus</said></seg>
+
+               <seg facs="#l185">
+                  <said xml:id="La15" prev="#La14" next="#La16">sire raemplissi&é;z mon
+                     desirier &et; si me les-</said>
+               </seg>
+
+               <seg facs="#l186">
+                  <said xml:id="La16" prev="#La15" next="#La17">-si&é;z la&vu;er &vu;oz
+                     pi&é;z&virgule; &et; les pi&é;z de ces seins ho-</said>
+               </seg>
+
+               <seg facs="#l187"><said xml:id="La17" prev="#La16">mes qi ceiens sont &à;
+                     mes meins</said>&guillemet-fermant; <g type="initiale" rend="color:red"
+                  >S</g>eins</seg>
+               <cb n="5"/>
+
+               <seg facs="#l188"><persName ref="#Justin"><g type="initiale" rend="color:red"
+                        >&JI;</g>ustins</persName> li prestres li respondi &guillemet-ouvrant; <said
+                     who="#Justin" xml:id="Ju1" next="#Ju2"><g type="initiale" rend="color:red"
+                        >L</g>e est li cou-</said></seg>
+
+               <seg facs="#l189">
+                  <said xml:id="Ju2" prev="#Ju1" next="#Ju3">mandemenz &Nn;ostre <roleName ref="#JC"
+                        >&Ss;ignor</roleName> &punctus-elevatus; feites &vu;ostre</said>
+               </seg>
+
+               <seg facs="#l190"><said xml:id="Ju3" prev="#Ju2">&vu;olent&é;&virgule; el non
+                        dame&espace;<persName ref="#Dieu">&Dd;eu</persName>
+                     <persName ref="#JC"
+                  >&Ji;esu&espace;&Cc;rist</persName></said>&guillemet-fermant; Lors mi-</seg>
+
+               <seg facs="#l191">strent de l&apost;eue en un &vu;aissel&virgule; &et; seinz
+                     <persName ref="#Laurent">&Ll;orenz</persName></seg>
+
+               <seg facs="#l192">la&vu;a les pi&é;z de toz les seinz homes qi lai-</seg>
+
+               <seg facs="#l193">enz estoient. <g type="initiale" rend="color:red">Q</g>ant il
+                  &vu;int &à; seint <persName ref="#Justin">&Ji;ustin</persName></seg>
+
+               <seg facs="#l194">il&espace;li &com;menca &à; la&vu;er les pi&é;z &et; &à; beisier.
+                  Et</seg>
+
+               <seg facs="#l195">qant il ot ce fet &punctus-elevatus; il se &com;manda &à; seint
+                     <persName ref="#Justin">&Ji;ustin</persName></seg>
+
+               <seg facs="#l196">le prestre&virgule; &et; si se de&par;ti de l&à; &à; cele
+                  hore.</seg>
+            </p>
+            <p>
+
+               <seg facs="#l197"><g type="initiale" rend="color:blue sizeAct:3lines" ref="#A6">A</g>
+                  donc &vu;it seinz <persName ref="#Laurent">&Ll;orenz</persName> con en me-</seg>
+
+               <seg facs="#l198">noit seint <persName ref="#Sixte">&Ss;&y;xte</persName>&virgule;
+                  &et; a&vu;euqes les</seg>
+
+               <seg facs="#l199">.II. d&y;acres seint <persName ref="#Felice">
+                     &Ff;elicisme</persName>&virgule; &et; seint</seg>
+
+               <seg facs="#l200"><persName ref="#Agapi">&Aa;gapite</persName> de&vu;ant <persName
+                     ref="#Dece">&Dd;ecie &Cc;esar</persName> l&apost;em&per;eor&virgule; &et;</seg>
+
+               <seg facs="#l201">de&vu;ant <persName ref="#Valerien">&Vu;alerien</persName> le
+                  &pre;&vu;ost. <g type="initiale" rend="color:red">Q</g>ant <persName ref="#Dece"
+                     >&Dd;ecies</persName></seg>
+
+               <seg facs="#l202">&vu;it seint <persName ref="#Sixte">&Ss;&y;xte</persName>&virgule;
+                  si li dist &guillemet-ouvrant; <said who="#Dece" xml:id="De18" next="#De19"
+                        ><g type="initiale" rend="color:red">N</g>os te &con;seillons</said></seg>
+
+               <seg facs="#l203">
+                  <said xml:id="De19" prev="#De18" next="#De20">por ce qe tu es &vu;ielz
+                     hom&virgule; qe tu faces mes</said>
+               </seg>
+
+               <seg facs="#l204"><said xml:id="De20" prev="#De19">&com;mandemenz&virgule; &et;
+                     si sacrefie &à; noz dex</said>&guillemet-fermant; <g type="initiale"
+                     rend="color:red">S</g>eins</seg>
+
+               <seg facs="#l205"><persName ref="#Sixte">&Ss;&y;xtes</persName> respondi
+                  &guillemet-ouvrant0; <said who="#Sixte" xml:id="Si50" next="#Si51"
+                     >&Cc;hetif m&é;s conseille toi-</said></seg>
+
+               <seg facs="#l206">
+                  <said xml:id="Si51" prev="#Si50" next="#Si52">si ne me blasme mie &et; pren
+                     ta peneance</said>
+               </seg>
+
+               <seg facs="#l207">
+                  <said xml:id="Si52" prev="#Si51" next="#Si53">&et; si la fai&virgule; por ce
+                     qe tu as tant de sanc de se&in;z</said>
+               </seg>
+
+               <seg facs="#l208"><said xml:id="Si53" prev="#Si52">homes espandu sor
+                     terre</said>&guillemet-fermant; <g type="initiale" rend="color:red">D</g>onc
+                  dist <persName ref="#Dece" xml:id="Decies-Ce" next="#sar2">&Dd;ecies
+                     &Cc;e-</persName></seg>
+
+               <seg facs="#l209"><persName xml:id="sar2" prev="#Decies-Ce">sar</persName> qi pleinz
+                  estoit de grant forsenerie &à;</seg>
+
+               <seg facs="#l210"><persName ref="#Valerien">&Vu;alerien</persName>
+                  &guillemet-ouvrant; <g type="initiale" rend="color:red">S</g>e cil n&apost;est
+                  morz&virgule; la poor de toi n&apost;ert</seg>
+
+               <seg facs="#l211">gra&vu;es cremue&guillemet-fermant; <persName ref="#Valerien"
+                     >&Vu;aleriens</persName> li respondi cou-</seg>
+
+               <seg facs="#l212">mant l&apost;en q&apost;il ait la teste trenchi&é;. Lors
+                  res&tiret0;</seg>
+
+               <seg facs="#l213">pondirent seinz <persName ref="#Agapi">&Aa;gapites</persName> &et;
+                  seinz <persName ref="#Felice">&Ff;elicisme</persName>&espace;&com;</seg>
+
+               <seg facs="#l214">qi d&y;acre estoient&virgule; &et; si distrent &guillemet-ouvrant;
+                     <said who="#Agapi #Felice" xml:id="FeAg3" next="#FeAg4"><g
+                        type="initiale" rend="color:red">C</g>hetif se</said></seg>
+
+               <seg facs="#l215">
+                  <said xml:id="FeAg4" prev="#FeAg3" next="#FeAg5">&vu;os o&é;z &et;
+                     entend&é;z les &com;mandemenz&virgule; &et; les</said>
+               </seg>
+
+               <seg facs="#l216">
+                  <said xml:id="FeAg5" prev="#FeAg4" next="#FeAg6">amonestemenz de
+                     &Nn;ostre <roleName ref="#JC">&Ss;ignor</roleName> &punctus-elevatus; &vu;os
+                     por-</said>
+               </seg>
+
+               <seg facs="#l217">
+                  <said xml:id="FeAg6" prev="#FeAg5" next="#FeAg7">ri&é;s eschaper des
+                     peines &par;durables qi &vu;oz</said>
+               </seg>
+
+               <seg facs="#l218"><said xml:id="FeAg7" prev="#FeAg6"
+                     >tra&vu;eilleront &et; tormenteront</said>&guillemet-fermant; <persName
+                     ref="#Valerien">&Vu;aleriens</persName></seg>
+
+               <seg facs="#l219">li pre&vu;oz dist &guillemet-ouvrant; <said who="#Valerien"
+                     xml:id="Va1" next="#Va2">&Pp;or qoi &vu;i&vu;ent cist si
+                     longe-</said></seg>
+
+               <seg facs="#l220">
+                  <said xml:id="Va2" prev="#Va1" next="#Va3">ment qi noz prometent
+                     &à;&espace;a&vu;oir si griez</said>
+               </seg>
+
+               <seg facs="#l221">
+                  <said xml:id="Va3" prev="#Va2" next="#Va4">tormenz
+                     &punctus-interrogatus; Men&é;z les encore au temple de</said>
+               </seg>
+
+               <seg facs="#l222">
+                  <said xml:id="Va4" prev="#Va3" next="#Va5">noz dex&virgule; &et; si
+                     facent sacrefice&virgule; &et; se il ne le &vu;oe-</said>
+               </seg>
+
+               <seg facs="#l223">
+                  <said xml:id="Va5" prev="#Va4" next="#Va6">lent faire&virgule0; si
+                     lor trench&é; l&apost;en en meismes leu</said>
+               </seg>
+
+               <seg facs="#l224"><said xml:id="Va6" prev="#Va5">les
+                     testes</said>&guillemet-fermant; <g type="initiale" rend="color:red">D</g>onc
+                  furent men&é; li .III. saint</seg>
+
+               <seg facs="#l225">home au temple qi estoit defors les murs</seg>
+
+               <seg facs="#l226">de la porte qi est apelee <placeName ref="#Porte-Apie"
+                     >&Aa;pie</placeName><certainty locus="value" target="#Porte-Apie" resp="#SA"
+                     degree="0.6">
+                     <desc>La transcription du nom propre précédent est incertaine</desc>
+                  </certainty>. Lors comenca</seg>
+
+               <seg facs="#l227">seint <persName ref="#Sixte">&Ss;&y;xtes</persName> &à; dire qant
+                  il furent &vu;enu al</seg>
+
+               <seg facs="#l228">temple &guillemet-ouvrant; <said who="#Sixte" xml:id="Si54"
+                     next="#Si55">&Vu;e&é;z ici les &y;doles &vu;eines &et; mues</said></seg>
+
+               <seg facs="#l229">
+                  <said xml:id="Si55" prev="#Si54" next="#Si56">&et; sordes feites de pierre qe li
+                     chetif enclin&en;t&virgule;</said>
+               </seg>
+
+               <seg facs="#l230"><said xml:id="Si56" prev="#Si55">&et;&espace;a&espace;eurent
+                     porce q&apost;il perdent la &vu;ie
+                  &par;durable</said>&guillemet-fermant0;</seg>
+
+               <seg facs="#l231">&Ll;ors esgarda il le temple &et; dist &guillemet-ouvrant; <said
+                     who="#Sixte" xml:id="Si57" next="#Si58"><persName ref="#JC"><g type="initiale"
+                           rend="color:red">&Ji;</g>esu&espace;&Cc;riz</persName> &Ll;i</said></seg>
+
+               <seg facs="#l232"><said xml:id="Si58" prev="#Si57">&Ff;iuz <persName ref="#Dieu"
+                        >&Dd;eu</persName> te destruise</said>&guillemet-fermant; &Et; tuit cil qi
+                  l&à; estoient</seg>
+
+               <seg facs="#l233">crestien respondirent amen&virgule; &et; meinten&an;t</seg>
+               <pb n="4"/>
+               <cb n="6"/>
+
+               <seg facs="#l234">c<g type="initiale" rend="color:red">h</g>ai une mout grant partie
+                     de<g type="initiale" rend="color:red">L</g> temple&virgule;</seg>
+
+               <seg facs="#l235">&et; si combrisa les &y;doles &et; les &y;mages qi de-</seg>
+
+               <seg facs="#l236">denz estoient.</seg>
+            </p>
+               <p>
+                  <seg facs="#l237"><g type="initiale" rend="color:blue sizeAct:3lines" ref="#Q7"
+                  >Q</g>uant seinz <persName ref="#Laurent">&Ll;orenz</persName> &vu;it ce qi
+                  a&vu;ec</seg>
+
+               <seg facs="#l238">aus estoit &punctus-elevatus; il &com;menca &à; crier &et;
+                  &à;</seg>
+
+               <seg facs="#l239">dire &guillemet-ouvrant; <said who="#Laurent" xml:id="La18"
+                     next="#La19">Seinz peres ne me deguer-</said></seg>
+
+               <seg facs="#l240">
+                  <said xml:id="La19" prev="#La18" next="#La20">piz mie. <g type="initiale"
+                        rend="color:red">C</g>ar &ji;&apost;ai les tresors toz qe tu me les-</said>
+               </seg>
+
+               <seg facs="#l241"><said xml:id="La20" prev="#La19">sas departiz &et; don&é;z as
+                     po&vu;rez</said>&guillemet-fermant; <g type="initiale" rend="color:red"
+                  >Q</g>ant li che-</seg>
+
+               <seg facs="#l242">&vu;alier qi la estoient o&ï;rent qe seinz <persName ref="#Laurent"
+                     > &Ll;orenz</persName></seg>
+
+               <seg facs="#l243">a&vu;oit tresors il le pristrent. <g type="initiale"
+                     rend="color:red">E</g>t seint <persName ref="#Sixte">
+                  &Ss;&y;xtes</persName></seg>
+
+               <seg facs="#l244">&et; ses .II. compaignons furent iluec de&vu;ant</seg>
+
+               <seg facs="#l245">aus decoler&virgule; &et; ce fu fait as <seg xml:id="victienes"
+                     >&vu;ictienes</seg><certainty locus="value" target="#victienes" resp="#SA"
+                     degree="0.6">
+                     <desc>La transcription du terme précédent est incertaine en absence de sens
+                        clair du mot transcrit. Il s’agit probablement d’une forme de
+                        "vingtième".</desc>
+                  </certainty> &y;des</seg>
+
+               <seg facs="#l246">d&apost;aoust&virgule; &et; la remestrent li&espace;cors des
+                  seins</seg>
+
+               <seg facs="#l247">mart&y;rs gisant en la place&virgule; <seg xml:id="tresqa"
+                     >tresqa</seg><certainty locus="value" target="#tresqa" resp="#SA" degree="0.5">
+                     <desc>La transcription du terme précédent est incertaine en absence de sens
+                        clair du mot transcrit. Il s’agit peut-être d’une forme de "tresque".</desc>
+                  </certainty> la nuit.</seg>
+
+               <seg facs="#l248">qe li prestre &et; li clerc qi d&y;acre estoient. &et;</seg>
+
+               <seg facs="#l249">grans torbes de crestiens pristrent le cors</seg>
+
+               <seg facs="#l250">seint <persName ref="#Sixte">&Ss;&y;xte</persName> le beneoit
+                  mart&y;r&virgule; si l&apost;enfoirent</seg>
+
+               <seg facs="#l251">el <placeName ref="#Cimetiere-Calyxte">c&y;mentiere seint
+                     &Cc;al&y;xte</placeName> en cele meisme</seg>
+
+               <seg facs="#l252">&vu;oie&virgule; &et; l&à; enfo&ï;rent il en cel meisme
+                  &ji;or</seg>
+
+               <seg facs="#l253">seint <persName ref="#Felice">&Ff;elice</persName>&virgule; &et;
+                  saint <persName ref="#Agapi">&Aa;gapite</persName> qi furent se&in;t</seg>
+
+               <seg facs="#l254">mart&y;r&virgule; &et; si sont en &ji;oie &par;durable o&ù;
+                  &Nn;o-</seg>
+
+               <seg facs="#l255">stre &Ss;ires <persName ref="#JC">&Ji;esu&espace;&Cc;riz</persName>
+                  nos octroit &par;&vu;enir&point0; Am&en;.</seg>
+            </p>
+         </div>
+      </body>
+   </text>
+</TEI>

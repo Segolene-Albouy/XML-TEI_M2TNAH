@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Très bon travail d'encodage -->
+
+<?xml-model href="RNG-Roman_feuilleton.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Les Fils de famille</title>
+            <author ref="https://catalogue.bnf.fr/ark:/12148/cb11925725r">
+               <forename>Eugène</forename>
+               <surname>Sue</surname>
+            </author>
+            <respStmt>
+               <resp>Encodage réalisé dans le cadre du contrôle terminal du cours de XML TEI du
+                  Master TNAH</resp>
+               <persName>
+                  <forename>Hugo</forename>
+                  <surname>Scheithauer</surname>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Librairie de Michel Lévy Frères</publisher>
+            <pubPlace>
+               <address>
+                  <country key="FR"/>
+                  <settlement type="city">Paris</settlement>
+                  <postCode>75002</postCode>
+                  <district type="arrondissement">2e</district>
+                  <street> Rue Vivienne, <num>2 bis</num>
+                  </street>
+               </address>
+            </pubPlace>
+            <date when-iso="1862">1862</date>
+            <distributor facs="https://gallica.bnf.fr/ark:/12148/bpt6k58180814/">Gallica
+               Bibliothèque nationale de France</distributor>
+            <availability>
+               <licence
+                  target="https://gallica.bnf.fr/edit/und/conditions-dutilisation-des-contenus-de-gallica"
+                  >Domaine public</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblFull>
+               <titleStmt>
+                  <title>Les Fils de famille</title>
+                  <author ref="https://catalogue.bnf.fr/ark:/12148/cb11925725r">
+                     <forename>Eugène</forename>
+                     <surname>Sue</surname>
+                  </author>
+               </titleStmt>
+               <publicationStmt>
+                  <publisher>Librairie de Michel Lévy Frères</publisher>
+                  <pubPlace>
+                     <address>
+                        <country key="FR"/>
+                        <settlement type="city">Paris</settlement>
+                        <postCode>75002</postCode>
+                        <district type="arrondissement">2e</district>
+                        <street>Rue Vivienne, <num>2 bis</num>
+                        </street>
+                     </address>
+                  </pubPlace>
+                  <date when-iso="1862">1862</date>
+                  <distributor facs="https://gallica.bnf.fr/ark:/12148/bpt6k58180814/">Gallica
+                     Bibliothèque nationale de France</distributor>
+                  <availability>
+                     <licence
+                        target="https://gallica.bnf.fr/edit/und/conditions-dutilisation-des-contenus-de-gallica"
+                        >Domaine public</licence>
+                  </availability>
+               </publicationStmt>
+               <seriesStmt>
+                  <title>Les Fils de famille</title>
+                  <biblScope unit="book">Les Fils de famille</biblScope>
+                  <biblScope unit="part">Première partie</biblScope>
+                  <biblScope unit="chapter">I à II</biblScope>
+                  <biblScope unit="page" from="2" to="5">pp. 2-5</biblScope>
+               </seriesStmt>
+            </biblFull> <!-- très bien-->
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <creation>
+            <date when-iso="1856">1856</date>
+            <country key="FR">France</country>
+            <lang xml:lang="fr"/>
+         </creation>
+         <settingDesc>
+            <listPlace>
+
+               <place xml:id="Paris" type="city">
+                  <placeName>
+                     <name>Paris</name>
+                     <address>
+                        <country key="FR"/>
+                        <settlement type="city"/>
+                        <postCode>75000</postCode>
+                        <district>none</district>
+                        <street>none</street>
+                     </address>
+                  </placeName>
+                  <note>Capitale de France.</note>
+               </place>
+
+               <place xml:id="Champs_Élysées" type="avenue">
+                  <placeName>
+                     <name>Avenue des Champs—Élysées</name>
+                     <address>
+                        <country key="FR"/>
+                        <settlement type="city">Paris</settlement>
+                        <postCode>75008</postCode>
+                        <district type="arrondissement">8e</district>
+                        <street>Avenue des Champs—Élysées</street>
+                     </address>
+                  </placeName>
+                  <note>L'avenue des Champs—Élysées, dans le 8e arrondissement de Paris. Fréquentée
+                     par la bourgeoisie parisienne du XIXe siècle.</note>
+               </place>
+
+               <place xml:id="Morillon" type="domain">
+                  <placeName>
+                     <name>Le Morillon</name>
+                     <address>
+                        <country key="FR"/>
+                        <settlement>none</settlement>
+                        <postCode>none</postCode>
+                        <district>none</district>
+                        <street>none</street>
+                     </address>
+                     <region>Jura</region>
+                  </placeName>
+                  <note>Nom du domaine appartenant à la <persName ref="#famille_Dumirail">famille
+                        Dumirail</persName>, dans lequel <persName ref="#Charles_Delmare">Charles
+                        Delmare</persName> se rend souvent. Situé dans le Jura, c'est un domaine
+                     essentiellement agricole.</note>
+               </place>
+
+               <place xml:id="Italie" type="country">
+                  <placeName>
+                     <name>Italie</name>
+                     <address>
+                        <country key="IT"/>
+                        <settlement>none</settlement>
+                        <postCode>none</postCode>
+                        <district>none</district>
+                        <street>none</street>
+                     </address>
+                  </placeName>
+               </place>
+
+            </listPlace>
+         </settingDesc>
+         <particDesc>
+            <listPerson>
+
+               <person xml:id="Geneviève" sex="female">
+                  <persName>Geneviève</persName>
+                  <note>Geneviève a plus de soixante ans au début du roman. Elle est la nourrice de
+                        <persName ref="#Charles_Delmare">Charles Delmare</persName> et travaille
+                     dans sa demeure du Jura.</note>
+               </person>
+
+               <person xml:id="Charles_Delmare" sex="male">
+                  <persName>Charles Delmare</persName>
+                  <note>Charles Delmare a quarante-cinq ans au début du roman. Il possède
+                     l'appartement dans lequel travaille <persName ref="#Geneviève"
+                        >Geneviève</persName>.</note>
+               </person>
+
+               <person xml:id="père_Delmare" sex="male">
+                  <persName>Le Père Delmare</persName>
+                  <note>Il est le père de <persName ref="#Charles_Delmare">Charles
+                        Delmare</persName>. Son fils lui doit sa fortune.</note>
+               </person>
+
+               <personGrp xml:id="famille_Dumirail" sex="mixed">
+                  <name>Famille Dumirail</name>
+                  <note>Madame Dumirail a 40 ans, tandis que Monsieur Dumirail en a 60. Ils forment
+                     un couple et possède le <placeName ref="#Morillon">Morillon</placeName> où se
+                     rend souvent <persName ref="#Charles_Delmare">Charles
+                     Delmare</persName>.</note>
+               </personGrp>
+
+            </listPerson>
+         </particDesc>
+      </profileDesc>
+      <encodingDesc><!-- Bien -->
+         <p>Cet encodage a été réalisé à partir de la numérisation disponible sur Gallica du
+            roman-feuilleton Les Fils de Famille, écrit par Eugène Sue en 1856, et édité par la
+            librairie Michel Lévy Frères en 1862. Le texte a été transcrit fidèlement, à l'exception
+            des césures de fin de ligne propres à l'édition, qui ont été transformées en un seul
+            mot, ainsi que de l'en-tête de chaque page et de la structure typographique, cette
+            dernière n'étant pas comprise dans ce projet d'encodage.</p>
+      </encodingDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="book">
+            <head>LES FILS DE FAMILLE PAR EUGENE SUE</head>
+            <div type="part" n="1">
+               <head>PREMIERE PARTIE</head>
+               <div type="chapter" n="1">
+                  <head>I</head>
+                  <p><persName ref="#Geneviève">Geneviève</persName> n‘achève pas <rs
+                        type="person_grammar" ref="#Geneviève">sa</rs> phrase, étouffe un soupir et
+                     ajoute :</p>
+
+                  <p><said who="#Geneviève" direct="true" aloud="true" toWhom="#Charles_Delmare">—
+                        Au fait ! il vaut mieux ne pas parler du passé. Enfin, voici <rs
+                           type="person_grammar" ref="#Charles_Delmare">tes</rs> comptes... le mois
+                        est fort... je <rs type="person_grammar" ref="#Charles_Delmare">t‘</rs>en
+                        avertis... <rs type="person" ref="#Charles_Delmare">mon pauvre fieu</rs>...
+                        Ah ! dame, oui, attends—<rs type="person_grammar" ref="#Charles_Delmare"
+                           >toi</rs> à un mois terriblement fort !</said></p>
+
+                  <p><said who="#Charles_Delmare" direct="true" aloud="true" toWhom="#Geneviève">—
+                        Oh ! oh ! <persName ref="#Geneviève">madame Geneviève</persName>, <seg
+                           type="incise">dit <persName ref="#Charles_Delmare">Charles
+                              Delmare</persName> en souriant</seg>, <rs type="person_grammar"
+                           ref="#Geneviève">vous</rs> voulez donc ma ruine ?</said></p>
+
+                  <p><said who="#Geneviève" direct="true" aloud="true" toWhom="#Charles_Delmare">—
+                        Allons ! c‘est ça, mets—<rs type="person_grammar" ref="#Charles_Delmare"
+                           >toi</rs> à rire ! quand il s‘agit de quelque chose d‘aussi sacré que les
+                        comptes d‘un mois terrible ! Es—<rs type="person_grammar"
+                           ref="#Charles_Delmare">tu</rs> impatientant, va !</said></p>
+
+                  <p><said who="#Charles_Delmare" direct="true" aloud="true" toWhom="#Geneviève">—
+                        Ne <rs type="person_grammar" ref="#Geneviève">te</rs> fâche pas, <rs
+                           type="person" ref="#Geneviève">nourrice</rs>, <rs type="person_grammar"
+                           ref="#Charles_Delmare">je</rs> reconnais mes torts ! <rs
+                           type="person_grammar" ref="#Charles_Delmare">Je</rs> ne devais pas
+                        plaisanter sur le compte de ce mois... terrible... Voyons, quel est le
+                        chiffre de <rs type="person_grammar" ref="#Charles_Delmare, #Geneviève"
+                           >nos</rs> dépenses ?</said></p>
+
+                  <p><said who="#Geneviève" direct="true" aloud="true" toWhom="#Charles_Delmare">—
+                        Quarante—neuf francs et huit sous... Eh bien, trouves—<rs
+                           type="person_grammar" ref="#Charles_Delmare">tu</rs> qu‘il y ait de quoi
+                        rire maintenant... hein ?</said></p>
+
+                  <p><said who="#Charles_Delmare" direct="true" aloud="true" toWhom="#Geneviève">—
+                        Non, ma foi, et, sérieusement, <rs type="person_grammar"
+                           ref="#Charles_Delmare">je m‘</rs>étonne de ce que...</said></p>
+
+                  <p><said who="#Geneviève" direct="true" aloud="true" toWhom="#Charles_Delmare"
+                        xml:id="said_fromEnd_p2_toBeginning_p3_part1">— De ce que le chiffre est si
+                        gros ? A la bonne heure, voilà qui est au moins prendre souci de <rs
+                           type="person_grammar" ref="#Charles_Delmare">tes</rs> intérêts... Eh !
+                        mon Dieu, <rs type="person" ref="#Charles_Delmare">mon pauvre fieu</rs>, <rs
+                           type="person_grammar" ref="#Geneviève">moi aussi</rs>, <rs
+                           type="person_grammar" ref="#Geneviève">j‘</rs>ai été étonnée de ce gros
+                        chiffre ! si étonnée, que plusieurs fois <rs type="person_grammar"
+                           ref="#Geneviève">j‘</rs>ai recommencé mon addition pour m‘assurer que <rs
+                           type="person_grammar" ref="#Geneviève">je</rs> ne me trompais pas...
+                        mais, d‘un autre côté, il faut dire que le ressemelage de l‘une de <rs
+                           type="person_grammar" ref="#Charles_Delmare">tes</rs> paires de souliers
+                        (ils sont maintenant aussi bons que des neufs !) entre dans <rs
+                           type="person_grammar" ref="#Charles_Delmare, #Geneviève">notre</rs>
+                        compte pour la somme de quatre francs et cinq sous !... Il y a aussi un
+                        achat de trois francs et dix sous de finette, employée à doubler de nouveau
+                        l‘une de <rs type="person_grammar" ref="#Charles_Delmare">tes</rs> vestes...
+                        ça fait près de huit francs; et dame, vois—tu, le total monte fièrement
+                        vite, lorsque ça va par des trois et des quatre francs à la fois
+                     !</said></p>
+
+                  <p><said who="#Charles_Delmare" direct="true" aloud="true" toWhom="#Geneviève">—
+                           <rs type="person" ref="#Geneviève">Digne et excellente femme</rs>, <seg
+                           type="incise">reprend <persName ref="#Charles_Delmare">Charles
+                              Delmare</persName></seg> : — depuis le temps que <rs
+                           type="person_grammar" ref="#Geneviève">tu</rs> es ma ménagère, <rs
+                           type="person_grammar" ref="#Charles_Delmare">je</rs> devrais m‘habituer à
+                           <rs type="person_grammar" ref="#Geneviève">tes</rs> prodiges d‘ordre,
+                        d‘économie ; cependant <rs type="person_grammar" ref="#Charles_Delmare">je
+                           m‘</rs>étonne aussi sincèrement aujourd‘hui qu‘il y a trois ans, de ce
+                        que, grâce à <rs type="person_grammar" ref="#Geneviève">toi</rs>, <rs
+                           type="person_grammar" ref="#Geneviève, #Charles_Delmare">nous</rs>
+                        puissions vivre de si peu !...</said></p>
+
+                  <p><said who="#Geneviève" direct="true" aloud="true" toWhom="#Charles_Delmare">—
+                        Mais, <rs type="person" ref="#Charles_Delmare">mon Charlot</rs>, réfléchis
+                        donc que <rs type="person_grammar" ref="#Charles_Delmare">tu</rs> déjeunes
+                        d‘une tasse de lait et de quelques fruits ; que <rs type="person_grammar"
+                           ref="#Charles_Delmare">tu</rs> dînes des légumes de notre jardin, des
+                        œufs de <rs type="person_grammar" ref="#Charles_Delmare, #Geneviève"
+                           >nos</rs> poules ; que <rs type="person_grammar" ref="#Charles_Delmare"
+                           >tu</rs> bois de l‘eau de <rs type="person_grammar"
+                           ref="#Charles_Delmare, #Geneviève">notre</rs> fontaine ; que <rs
+                           type="person_grammar" ref="#Charles_Delmare">tu</rs> ne manges pas, <rs
+                           type="person_grammar" ref="#Geneviève">j‘</rs>en suis sûre, une
+                        demi—livre de pain par jour. Sais—<rs type="person_grammar"
+                           ref="#Charles_Delmare">tu</rs>
+                        <rs type="person_grammar" ref="#Charles_Delmare, #Geneviève">notre</rs> plus
+                        grosse dépense ? C‘est le savon... parce que, sans reproche, <rs
+                           type="person_grammar" ref="#Charles_Delmare">tu</rs> es comme un
+                        déchaîné, pour ce qui est du linge blanc ; mais, heureusement, le ruisseau
+                        coule au bout de notre clos, et <rs type="person_grammar" ref="#Geneviève"
+                           >j‘</rs>ai encore bons bras au savonnage et bons yeux au repassage ;
+                        enfin, est—ce que <rs type="person_grammar" ref="#Charles_Delmare">tu</rs>
+                        ne dînes pas au moins deux ou trois fois par semaine au <placeName
+                           ref="#Morillon">Morillon</placeName>, chez cette brave <persName
+                           ref="#famille_Dumirail">famille Dumirail</persName> ? C‘est encore là une
+                        fameuse économie... à quoi <rs type="person_grammar" ref="#Charles_Delmare"
+                           >tu</rs> ne songes pas ! Et <rs type="person_grammar"
+                           ref="#Charles_Delmare">tu</rs>
+                        <rs type="person_grammar" ref="#Charles_Delmare">t‘</rs>étonnes de ne pas
+                        dépenser davantage ?... Ah ! <rs type="person" ref="#Charles_Delmare">mon
+                           pauvre fieu</rs> ! <rs type="person" ref="#Charles_Delmare">mon pauvre
+                           fieu</rs> ! <rs type="person_grammar" ref="#Charles_Delmare">tu</rs> n‘as
+                        jamais su... et <rs type="person_grammar" ref="#Charles_Delmare">tu</rs> ne
+                        sauras jamais, vois—<rs type="person_grammar" ref="#Charles_Delmare"
+                        >tu</rs>, ce que c‘est que l‘argent, et <rs type="person_grammar"
+                           ref="#Charles_Delmare">tu</rs> devrais pourtant le savoir, <rs
+                           type="person_grammar" ref="#Charles_Delmare">toi</rs> qui as mangé une
+                        fortune de plus de cent mille livres de rente... Bonté divine ! <rs
+                           type="person_grammar" ref="#Geneviève">j‘</rs>en ai la chair de poule
+                        quand <rs type="person_grammar" ref="#Geneviève">j‘</rs>y songe... cent
+                        mille livres de rente !...</said></p>
+
+                  <p><said who="#Charles_Delmare" direct="true" aloud="true" toWhom="#Geneviève">—
+                        Que veux—<rs type="person_grammar" ref="#Geneviève">tu</rs>, <persName
+                           ref="#Geneviève">Geneviève</persName> ! <said who="#père_Delmare"
+                           direct="inapplicable" aloud="true" toWhom="#Charles_Delmare">« Les
+                           enfants sont généralement ce que les parents les font, »</said> a dit <rs
+                           type="person" ref="#père_Delmare">un sage</rs>, et <rs type="person"
+                           ref="#père_Delmare">le sage</rs> avait raison; <rs type="person"
+                           ref="#père_Delmare">mon excellent père</rs>
+                        <rs type="person_grammar" ref="#Charles_Delmare">m‘</rs>adorait... — <seg
+                           type="incise">ajoute <persName ref="#Charles_Delmare">Charles
+                              Delmare</persName> jetant un regard attendri sur le portrait du <rs
+                              type="person" ref="#père_Delmare">vieillard à cheveux
+                           blancs</rs></seg>. — Artisan de sa fortune, puisqu‘il servait les maçons
+                        avant de devenir maître maçon, puis entrepreneur millionnaire, <rs
+                           type="person" ref="#père_Delmare">mon père</rs> mettait en <rs
+                           type="person_grammar" ref="#Charles_Delmare">moi</rs> son orgueil ; <rs
+                           type="person_grammar" ref="#père_Delmare">il</rs> vivait de peu par
+                        habitude, par goût, et <rs type="person_grammar" ref="#Charles_Delmare"
+                           >j‘</rs>étais <emph rend="italic">son luxe</emph> ; comme <rs
+                           type="person_grammar" ref="#père_Delmare">il</rs> disait. Le fils d‘un
+                        grand seigneur n‘a pas été plus soigneusement élevé que <rs
+                           type="person_grammar" ref="#Charles_Delmare">moi</rs> ; <rs
+                           type="person_grammar" ref="#Charles_Delmare">j‘</rs>avais un gouverneur,
+                        les meilleurs professeurs de <placeName ref="#Paris">Paris</placeName> ; <rs
+                           type="person_grammar" ref="#Charles_Delmare">mon</rs> appartement était
+                        splendide et complet, tandis que <rs type="person" ref="#père_Delmare">mon
+                           père</rs> occupait une seule chambre, à peine meublée d‘un lit de fer,
+                        d‘une table et de quelques chaises !...</said></p>
+
+                  <p><said who="#Geneviève" direct="true" aloud="true" toWhom="#Charles_Delmare">—
+                           <rs type="person" ref="#père_Delmare">Pauvre cher monsieur</rs> ! <rs
+                           type="person_grammar" ref="#père_Delmare">il</rs> prétendait qu‘<rs
+                           type="person_grammar" ref="#père_Delmare">il</rs> étouffait dans une
+                        chambre où il y avait des rideaux... c‘était <rs type="person_grammar"
+                           ref="#père_Delmare">son</rs> idée, <seg type="incise">— reprend <persName
+                              ref="#Geneviève">Geneviève</persName></seg>, — sans compter qu‘<rs
+                           type="person_grammar" ref="#père_Delmare">il</rs> aurait craint de brûler
+                        l‘étoffe des beaux meubles avec le feu de <rs type="person_grammar"
+                           ref="#père_Delmare">sa</rs> pipe ou de salir les tapis en crachant
+                        dessus, vu qu‘<rs type="person_grammar" ref="#père_Delmare">il</rs> chiquait
+                        abominablement, <rs type="person_grammar" ref="#père_Delmare">le digne
+                           homme</rs>! <rs type="person_grammar" ref="#père_Delmare">Il</rs> était,
+                        du reste, en tout et pour tout, la simplicité en personne ; <rs
+                           type="person_grammar" ref="#père_Delmare">il</rs> avait pris un fameux
+                        cuisinier à cause des déjeuners, des dîners qu‘<rs type="person_grammar"
+                           ref="#père_Delmare">il</rs>
+                        <rs type="person_grammar" ref="#Charles_Delmare">t‘</rs>engageait à donner à
+                           <rs type="person_grammar" ref="#Charles_Delmare">tes</rs> amis... mais,
+                        quant à <rs type="person_grammar" ref="#père_Delmare">lui</rs>, <rs
+                           type="person" ref="#père_Delmare">il</rs> ne voulait rien autre chose que
+                        mon pot—à—feu à la bonne femme, avec un haricot de mouton ou du salé aux
+                        choux, son petit morceau de marolle par là—dessus, et <rs
+                           type="person_grammar" ref="#père_Delmare">il</rs> dînait comme un roi !
+                           <rs type="person_grammar" ref="#père_Delmare">Il</rs> ne souffrait autour
+                        de <rs type="person_grammar" ref="#père_Delmare">lui</rs> d‘autre domestique
+                        que <rs type="person_grammar" ref="#Geneviève">moi</rs>, et <rs
+                           type="person_grammar" ref="#père_Delmare">il</rs>
+                        <rs type="person_grammar" ref="#Charles_Delmare">te</rs> donnait des gens
+                        pour <rs type="person_grammar" ref="#Charles_Delmare">te</rs> servir ; <rs
+                           type="person_grammar" ref="#père_Delmare">il</rs> sortait toujours à
+                        pied, avec <rs type="person_grammar" ref="#père_Delmare">ses</rs> gros
+                        souliers, <rs type="person_grammar" ref="#père_Delmare">son</rs> parapluie à
+                        carreaux sous le bras, tandis qu‘à dix—huit ans, <rs type="person"
+                           ref="#Charles_Delmare">tu</rs> avais six chevaux dans ton écurie et deux
+                        mille francs par mois pour <rs type="person_grammar" ref="#Charles_Delmare"
+                           >tes</rs> menus plaisirs.</said></p>
+
+                  <p><said who="#Charles_Delmare" direct="true" aloud="true" toWhom="#Geneviève">—
+                        Oui, et, lorsque <rs type="person_grammar" ref="#Charles_Delmare">je</rs>
+                        lui disais : <said who="#Charles_Delmare" direct="inapplicable" aloud="true"
+                           toWhom="#père_Delmare">« <rs type="person" ref="#père_Delmare">Mon
+                              père</rs>, <rs type="person_grammar" ref="#Charles_Delmare">me</rs>
+                           voici pourtant à l‘âge de choisir une carrière ! »</said> que <rs
+                           type="person_grammar" ref="#Charles_Delmare">me</rs> répondait l‘<rs
+                           type="person" ref="#père_Delmare">excellent homme</rs> dans <rs
+                           type="person_grammar" ref="#père_Delmare">son</rs> aveugle tendresse ?
+                           <said who="#père_Delmare" direct="inapplicable" aloud="true"
+                           toWhom="#Charles_Delmare">« <rs type="person_grammar"
+                              ref="#Charles_Delmare">Toi</rs>, <rs type="person"
+                              ref="#Charles_Delmare">mon enfant</rs>, prendre un état, travailler ?
+                           Allons donc ! <rs type="person_grammar" ref="#Charles_Delmare">tu</rs>
+                           plaisantes ! est—ce que <rs type="person_grammar" ref="#père_Delmare"
+                              >je</rs> n‘ai pas, moi, travaillé comme un manœuvre, mis sou sur sou
+                           pendant trente ans, afin que <rs type="person_grammar"
+                              ref="#Charles_Delmare">tu</rs> jouisses de la vie sans <rs
+                              type="person_grammar" ref="#Charles_Delmare">t‘</rs>occuper de rien
+                           que de <rs type="person_grammar" ref="#Charles_Delmare">t‘</rs>amuser ?
+                           On prend un état quand on a sa fortune à faire, la tienne est faite,
+                           profites—en largement ; <rs type="person_grammar" ref="#Charles_Delmare"
+                              >tu</rs> ne sais pas le plaisir que <rs type="person_grammar"
+                              ref="#père_Delmare">j‘</rs>ai, lorsque <rs type="person_grammar"
+                              ref="#père_Delmare">je</rs>
+                           <rs type="person_grammar" ref="#père_Delmare">me</rs> promène aux
+                              <placeName ref="#Champs_Élysées">Champs—Élysées</placeName>, <rs
+                              type="person_grammar" ref="#père_Delmare">ma</rs> pipe à la bouche,
+                              <rs type="person_grammar" ref="#père_Delmare">mes</rs> mains dans <rs
+                              type="person_grammar" ref="#père_Delmare">mes</rs> poches, et que <rs
+                              type="person_grammar" ref="#père_Delmare">je</rs>
+                           <rs type="person_grammar" ref="#Charles_Delmare">te</rs> vois conduisant
+                              <rs type="person_grammar" ref="#Charles_Delmare">ton</rs> phaéton, ou
+                           passer à cheval suivi de <rs type="person_grammar" ref="#Charles_Delmare"
+                              >ton</rs> petit groom, et que tout le monde se retourne pour admirer
+                              <rs type="person_grammar" ref="#Charles_Delmare">ton</rs> cheval ou
+                              <rs type="person_grammar" ref="#Charles_Delmare">ton</rs> fringant
+                           équipage ! »</said></said></p>
+
+                  <p><said who="#Geneviève" direct="true" aloud="true" toWhom="#Charles_Delmare">—
+                        C‘est vrai, c‘était là <rs type="person_grammar" ref="#père_Delmare"
+                           >son</rs> plaisir, <seg type="incise">— ajouta <persName ref="#Geneviève"
+                              >Geneviève</persName></seg>, — Combien de fois <rs type="person"
+                           ref="#père_Delmare">ce cher homme</rs> ne <rs type="person_grammar"
+                           ref="#Geneviève">m‘</rs>a—t—<rs type="person_grammar" ref="#père_Delmare"
+                           >il</rs> pas dit, en rentrant et se rengorgeant : <said
+                           who="#père_Delmare" direct="inapplicable" aloud="true"
+                           toWhom="#Geneviève">« Ce n‘est pas parce que je suis son père, mais <rs
+                              type="person_grammar" ref="#père_Delmare">mon</rs>
+                           <persName ref="#Charles_Delmare">Charles</persName> est le plus beau
+                           garçon de <placeName ref="#Paris">Paris</placeName>!... et, parmi tous
+                           ces mirliflors des <placeName ref="#Champs_Élysées"
+                              >Champs—Élysées</placeName>, ducs ou marquis, il n‘en est pas un qui
+                           ait une plus jolie figure, une plus jolie tournure, de plus beaux chevaux
+                           que <rs type="person_grammar" ref="#père_Delmare">mon <persName
+                                 ref="#Charles_Delmare">Charles</persName></rs> ! Oui, oui, le fils
+                           de l‘ex—maçon enfonce les ducs et les marquis, car <rs
+                              type="person_grammar" ref="#Charles_Delmare">il</rs> a l‘air d‘un
+                           prince. Sais—<rs type="person_grammar" ref="#Geneviève">tu</rs>,
+                              <persName ref="#Geneviève">Geneviève</persName>, que des dames
+                           charmantes se sont retournées à deux fois pour regarder passer <rs
+                              type="person" ref="#Charles_Delmare">mon garçon</rs> ?
+                     »</said></said></p>
+
+                  <p><said who="#Charles_Delmare" direct="true" aloud="true" toWhom="#Geneviève">—
+                           <rs type="person" ref="#Geneviève">Nourrice</rs>, <rs type="person"
+                           ref="#Geneviève">nourrice</rs>, songe à <rs type="person_grammar"
+                           ref="#Charles_Delmare">mes</rs> cheveux gris ! <seg type="incise">—
+                           reprend <persName ref="#Charles_Delmare">Charles Delmare</persName> avec
+                           un sourire mélancolique </seg>; — ils sont déjà loin, bien loin les beaux
+                        jour de <rs type="person_grammar" ref="#Charles_Delmare">ma</rs> jeunesse
+                        !</said></p>
+
+                  <p><said who="#Geneviève" direct="true" aloud="true" toWhom="#Charles_Delmare">—
+                        Ça n‘empêche pas que j‘aime toujours à <rs type="person_grammar"
+                           ref="#Geneviève">me</rs> rappeler ce temps—là, moi !... <rs type="person"
+                           ref="#père_Delmare">ton brave homme de père</rs> était si heureux !...
+                           <said who="#père_Delmare" direct="inapplicable" aloud="true"
+                           toWhom="#Geneviève">« <rs type="person_grammar" ref="#Geneviève">Tu</rs>
+                           ne sais pas, <persName ref="#Geneviève">Geneviève</persName>, — <rs
+                              type="person_grammar" ref="#Geneviève">me</rs> disait—<rs
+                              type="person_grammar" ref="#père_Delmare">il</rs> d‘autres fois en
+                           rentrant aussi fier que s‘<rs type="person_grammar" ref="#père_Delmare"
+                              >il</rs> avait eu la croix d‘honneur, — tu ne sais— pas ? Tantôt <rs
+                              type="person" ref="#Charles_Delmare">mon garçon</rs> m‘a aperçu de
+                           loin aux <placeName ref="#Champs_Élysées">Champs—Élysées</placeName> ;
+                           pourtant, foi d‘honnête homme, <rs type="person" ref="#père_Delmare"
+                              >je</rs> ne me mettais pas en évidence, de peur d‘être vu de <rs
+                              type="person_grammar" ref="#Charles_Delmare">lui</rs> et de <rs
+                              type="person_grammar" ref="#Charles_Delmare">le</rs> déranger dans sa
+                           promenade... <rs type="person_grammar" ref="#père_Delmare">je</rs> fumais
+                              <rs type="person_grammar" ref="#père_Delmare">ma</rs> pipe dans la
+                           seconde contre—allée, suivant de loin et de tous <rs
+                              type="person_grammar" ref="#père_Delmare">mes</rs> yeux <rs
+                              type="person_grammar" ref="#Charles_Delmare">mon</rs>
+                           <persName ref="#Charles_Delmare">Charles</persName> que j‘admirais,
+                           lorsque, par hasard, <rs type="person_grammar" ref="#Charles_Delmare"
+                              >il</rs> me reconnaît ; <rs type="person_grammar"
+                              ref="#Charles_Delmare">il</rs> descend aussitôt de cheval, le donne en
+                           main à <rs type="person_grammar" ref="#père_Delmare">mon</rs> domestique,
+                           accourt à <rs type="person_grammar" ref="#père_Delmare">moi</rs>, bon gré
+                           mal gré <rs type="person_grammar" ref="#père_Delmare">me</rs> prend le
+                           bras... <rs type="person_grammar" ref="#père_Delmare">Je</rs> veux mettre
+                           ma pipe dans <rs type="person_grammar" ref="#père_Delmare">ma</rs> poche
+                           ! Ah bien, oui ! <rs type="person_grammar" ref="#Charles_Delmare">il</rs>
+                           s‘y oppose, me force de continuer de fumer puisque c‘est <rs
+                              type="person_grammar" ref="#père_Delmare">mon</rs> plaisir, et <rs
+                              type="person_grammar" ref="#père_Delmare, #Charles_Delmare">nous</rs>
+                           avons, ma foi, bras dessus, bras—dessous, monté et descendu deux fois
+                              l‘<placeName ref="#Champs_Élysées">avenue des
+                              Champs—Élysées</placeName> comme une paire d‘amis !</said>
+                        <said who="#Geneviève" direct="inapplicable" aloud="true"
+                           toWhom="#père_Delmare">— Avouez, <rs type="person" ref="#père_Delmare"
+                              >monsieur</rs>, <seg type="incise_discours_rapporté">— disais—<rs
+                                 type="person_grammar" ref="#Geneviève">je</rs> à <rs type="person"
+                                 ref="#père_Delmare">ton père</rs></seg>, avouez qu‘en ce moment—là,
+                           tenant <rs type="person" ref="#Charles_Delmare">votre fieu</rs> sous le
+                           bras, le roi n‘était pas votre maître ?</said>
+                        <said who="#père_Delmare" direct="inapplicable" aloud="true"
+                           toWhom="#Geneviève">— Ah ! bigre non ! <seg
+                              type="incise_discours_rapporté"><rs type="person" ref="#Geneviève"
+                                 >me</rs> répondait <rs type="person" ref="#père_Delmare">le cher
+                                 homme</rs></seg> ; — <rs type="person_grammar" ref="#père_Delmare"
+                              >je</rs> tenais mon parapluie au port d‘armes, <rs
+                              type="person_grammar" ref="#père_Delmare">je</rs> me redressais, <rs
+                              type="person_grammar" ref="#père_Delmare">je</rs> me grandissais, <rs
+                              type="person_grammar" ref="#père_Delmare">je</rs> tâchais de marcher
+                           au pas de <rs type="person" ref="#Charles_Delmare">mon garçon</rs>... «
+                           C‘est <rs type="person" ref="#Charles_Delmare">mon fils</rs>! » avais—<rs
+                              type="person_grammar" ref="#père_Delmare">je</rs> l‘air de dire à tout
+                           ce beau monde de la</said></said></p>
+
+                  <gap reason="deleted" unit="page" n="4" quantity="1">
+                     <desc>Page 4 manquante dans la numérisation disponible sur Gallica. Chapitre 1
+                        se terminait probablement sur cette page, le début du chapitre 2 devait y
+                        commencer.</desc>
+                  </gap>
+
+               </div>
+               <div type="chapter" n="2">
+                  <head xml:id="CE_head1">II</head>
+                  <p>chain départ pour un long voyage en <placeName ref="#Italie"
+                     >Italie</placeName>, et ajoutait que, <emph rend="italic">démontant</emph> sa
+                     maison, <rs type="person" ref="#Charles_Delmare">il</rs> mettait en vente ses
+                     chevaux, ses voitures, son mobilier, etc., etc. De cette vente, <rs
+                        type="person_grammar" ref="#Charles_Delmare">il</rs> retira près de
+                     cinquante mille écus, la délicatesse de <rs type="person"
+                        ref="#Charles_Delmare">son</rs> goût, <rs type="person_grammar"
+                        ref="#Charles_Delmare">sa</rs> renommée de magnificence choisie doublant la
+                     valeur de tout ce qui provenait de <rs type="person_grammar"
+                        ref="#Charles_Delmare">lui</rs>. <rs type="person_grammar"
+                        ref="#Charles_Delmare">Il</rs> conservait seulement le portrait de quelques
+                     chevaux de prédilection, <rs type="person_grammar" ref="#Charles_Delmare"
+                        >son</rs> piano, d'autres objets auxquels se rattachaient de tendres
+                     souvenirs ou un respect religieux. Parmi ceux-là, le vieux lit de fer où <rs
+                        type="person" ref="#père_Delmare">son père</rs> cherchait, durant sa vie, le
+                     repos de ses travaux du jour, humble couche où <rs type="person"
+                        ref="#père_Delmare">le maçon enrichi</rs> avait rendu le dernier soupir.
+                        <persName ref="#Charles_Delmare">Charles Delmare</persName> renfermait ces
+                     pieuses reliques dans un petit appartement, où, caprice bizarre, <rs
+                        type="person_grammar" ref="#Charles_Delmare">il</rs> comptait revenir se
+                     suicider à l'heure suprême de sa ruine. Puis, quittant <placeName ref="#Paris"
+                        >Paris</placeName>, et voyageant en grand seigneur, <rs
+                        type="person_grammar" ref="#Charles_Delmare">il</rs> parcourait l'<placeName
+                        ref="#Italie">Italie</placeName>, redoublant de prodigalités, semblant
+                     s'acharner à précipiter <rs type="person_grammar" ref="#Charles_Delmare"
+                        >sa</rs> ruine.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+   <standOff>
+      <listRelation type="family">
+         <relation name="father" active="#père_Delmare" passive="#Charles_Delmare"/>
+      </listRelation>
+      <listRelation type="work">
+         <relation name="employer" active="#Charles_Delmare" passive="#Geneviève"/>
+      </listRelation>
+      <listRelation type="friendship">
+         <relation name="friends" mutual="#Charles_Delmare, #famille_Dumirail"/>
+      </listRelation>
+      <list type="certainty">
+         <item>
+            <certainty locus="value" target="#CE_head1" cert="high">
+               <desc>Nous supposons ici que le chapitre 2 était numéroté, à l'instar du chapitre 1,
+                  à l'aide d'un chiffre romain. Donc "II".</desc>
+            </certainty>
+         </item>
+      </list>
+   </standOff>
+</TEI>

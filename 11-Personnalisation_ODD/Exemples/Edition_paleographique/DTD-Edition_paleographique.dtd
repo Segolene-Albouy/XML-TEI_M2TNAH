@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ENTITY pre "<choice><abbr>p&#x304;</abbr><expan>pre</expan></choice>" >
+<!ENTITY pré "<choice><abbr>p&#x304;</abbr><expan>pré</expan></choice>" >
+<!ENTITY par "<choice><abbr>&#xa751;</abbr><expan>par</expan></choice>" >
+<!ENTITY per "<choice><abbr>&#xa751;</abbr><expan>per</expan></choice>" >
+<!ENTITY et "<choice><abbr> &#x204a;</abbr><expan> et </expan></choice>" >
+<!ENTITY Et "<choice><abbr> &#x204a;</abbr><expan> Et </expan></choice>" >
+<!ENTITY com "<choice><abbr>&#xa76f;</abbr><expan>com</expan></choice>" >
+<!ENTITY con "<choice><abbr>&#xa76f;</abbr><expan>con</expan></choice>" >
+<!ENTITY os "<choice><abbr>&#xa76e;</abbr><expan>os</expan></choice>" >
+<!ENTITY an "<choice><abbr>&#257;</abbr><expan>an</expan></choice>" >
+<!ENTITY en "<choice><abbr>&#275;</abbr><expan>en</expan></choice>" >
+<!ENTITY in "<choice><abbr>&#299;</abbr><expan>in</expan></choice>" >
+<!ENTITY on "<choice><abbr>&#333;</abbr><expan>on</expan></choice>" >
+<!ENTITY um "<choice><abbr>&#363;</abbr><expan>um</expan></choice>" >
+<!ENTITY men "<choice><abbr>&#7745;</abbr><expan>men</expan></choice>" >
+
+<!ENTITY virgule "<choice><orig>. </orig><reg>, </reg></choice>" >
+<!ENTITY virgule0 "<choice><sic></sic><corr>, </corr></choice>" >
+<!ENTITY guillemet '<choice><orig>.</orig><reg>"</reg></choice>' >
+<!ENTITY guillemet-ouvrant '<choice><orig>.</orig><reg> : "</reg></choice>' >
+<!ENTITY guillemet-ouvrant0 '<choice><sic></sic><corr> : "</corr></choice>' >
+<!ENTITY guillemet-fermant '<choice><orig>.</orig><reg>."</reg></choice>' >
+<!ENTITY guillemet-fermant0 '<choice><sic></sic><corr>."</corr></choice>' >
+<!ENTITY guillemet-fermant2 '<choice><orig>&#11854;</orig><reg>."</reg></choice>' >
+<!ENTITY tiret0 "<choice><sic></sic><corr>-</corr></choice>" >
+<!ENTITY point "<choice><orig>;</orig><reg>.</reg></choice>" >
+<!ENTITY point0 "<choice><sic></sic><corr>.</corr></choice>" >
+<!ENTITY deux-points "<choice><orig> &#183; </orig><reg> : </reg></choice>" >
+<!ENTITY point-interrogation0 "<choice><sic></sic><corr> ? </corr></choice>" >
+<!ENTITY point-interrogation1 "<choice><orig>. </orig><reg> ? </reg></choice>" >
+<!ENTITY punctus-elevatus "<choice><orig> &#x2e4e;</orig><reg> ; </reg></choice>" >
+<!ENTITY punctus-interrogatus "<choice><orig> &#x2e4e;</orig><reg> ? </reg></choice>" >
+
+<!ENTITY espace "<choice><orig></orig><reg> </reg></choice>" >
+<!ENTITY apost "<choice><orig></orig><reg>’</reg></choice>" >
+
+<!ENTITY y "<choice><orig>&#7823;</orig><reg>y</reg></choice>" >
+<!ENTITY é "<choice><orig>e</orig><reg>é</reg></choice>" >
+<!ENTITY à "<choice><orig>a</orig><reg>à </reg></choice>" >
+<!ENTITY À "<choice><orig> A </orig><reg> À </reg></choice>" >
+<!ENTITY ù "<choice><orig>u</orig><reg>ù</reg></choice>" >
+<!ENTITY ï "<choice><orig>i</orig><reg>ï</reg></choice>" >
+
+<!ENTITY ji "<choice><orig>i</orig><reg>j</reg></choice>" >
+<!ENTITY Ji "<choice><orig>i</orig><reg>J</reg></choice>" >
+<!ENTITY JI "<choice><orig>I</orig><reg>J</reg></choice>" >
+
+<!ENTITY vu "<choice><orig>u</orig><reg>v</reg></choice>" >
+<!ENTITY Vu "<choice><orig>u</orig><reg>V</reg></choice>" >
+<!ENTITY VU "<choice><orig>U</orig><reg>V</reg></choice>" >
+
+<!ENTITY Aa "<choice><orig>a</orig><reg>A</reg></choice>" >
+<!ENTITY Bb "<choice><orig>b</orig><reg>B</reg></choice>" >
+<!ENTITY Cc "<choice><orig>c</orig><reg>C</reg></choice>" >
+<!ENTITY Dd "<choice><orig>d</orig><reg>D</reg></choice>" >
+<!ENTITY Ee "<choice><orig>e</orig><reg>E</reg></choice>" >
+<!ENTITY Ff "<choice><orig>f</orig><reg>F</reg></choice>" >
+<!ENTITY Gg "<choice><orig>g</orig><reg>G</reg></choice>" >
+<!ENTITY Hh "<choice><orig>h</orig><reg>H</reg></choice>" >
+<!ENTITY Ii "<choice><orig>i</orig><reg>I</reg></choice>" >
+<!ENTITY Kk "<choice><orig>k</orig><reg>K</reg></choice>" >
+<!ENTITY Ll "<choice><orig>l</orig><reg>L</reg></choice>" >
+<!ENTITY Mm "<choice><orig>m</orig><reg>M</reg></choice>" >
+<!ENTITY Nn "<choice><orig>n</orig><reg>N</reg></choice>" >
+<!ENTITY Oo "<choice><orig>o</orig><reg>O</reg></choice>" >
+<!ENTITY Pp "<choice><orig>p</orig><reg>P</reg></choice>" >
+<!ENTITY Qq "<choice><orig>q</orig><reg>Q</reg></choice>" >
+<!ENTITY Rr "<choice><orig>r</orig><reg>R</reg></choice>" >
+<!ENTITY Ss "<choice><orig>s</orig><reg>S</reg></choice>" >
+<!ENTITY Tt "<choice><orig>t</orig><reg>T</reg></choice>" >
+<!ENTITY Uu "<choice><orig>u</orig><reg>U</reg></choice>" >
+<!ENTITY Xx "<choice><orig>x</orig><reg>X</reg></choice>" >
+<!ENTITY Yy "<choice><orig>y</orig><reg>Y</reg></choice>" >
+<!ENTITY Zz "<choice><orig>z</orig><reg>Z</reg></choice>" >

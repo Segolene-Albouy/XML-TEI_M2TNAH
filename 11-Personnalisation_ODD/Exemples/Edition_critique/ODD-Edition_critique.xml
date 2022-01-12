@@ -1,0 +1,1118 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Votre travail est d'une grande précision et excellent, bravo -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Rétroconversion de l'édition des Belles Lettres (1961) de l'Éneide, de
+               Virgile.</title>
+            <author>Camille Carette</author>
+         </titleStmt>
+         <publicationStmt>
+            <p>Edition encodée et enrichie dans le cadre du master "Technologies numériques
+               appliquées à l'histoire" de l'École nationale des chartes.</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Derived from an analysis of 177 files from file:/C:/Users/caret/Desktop/</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div1>
+            <head>Présentation de l'encodage en XML-TEI de l'Éneide de Virgile, d'après la 10ème
+               édition des Belles Lettres (1961)</head>
+            <div2>
+               <head>Structure du fichier</head>
+               <p>La présente édition respecte le schéma TEI all.</p>
+               <div3>
+                  <head>Structure du teiHeader</head>
+                  <p>Le <gi>teiHeader</gi> est composé de trois sous-ensembles : <specList>
+                        <specDesc key="fileDesc"/>
+                        <specDesc key="profileDesc"/>
+                        <specDesc key="encodingDesc"/>
+                     </specList>
+                  </p>
+                  <div4>
+                     <head>Structure du fileDesc</head>
+                     <p>Le <gi>fileDesc</gi> est lui-même composé de trois sous-ensembles : <specList>
+                           <specDesc key="titleStmt"/>
+                           <specDesc key="publicationStmt"/>
+                           <specDesc key="sourceDesc"/>
+                        </specList> Le <gi>sourceDesc</gi> contient les éléments suivants : <specList>
+                           <specDesc key="biblStruct"/>
+                           <specDesc key="listWit"/>
+                           <specDesc key="listBibl"/>
+                        </specList></p>
+
+                     <p>L'élément <gi>biblStruct</gi> contient les informations relatives à
+                        l'édition des Belles Lettres rétroconvertie dans ce travail, ainsi que
+                        celles relatives à l'édition du Project Perseus dont la transcription et le
+                        premier niveau d'encodage de notre texte (structuration et numérotation des
+                        vers) ont été issus, avant d'être remaniés pour correspondre au texte exacte
+                        de l'édition des Belles Lettres. <egXML
+                           xmlns="http://www.tei-c.org/ns/Examples">
+                           <biblStruct>
+                              <monogr>
+                                 <title>Eneide</title>
+                                 <author>Virgile</author>
+                                 <editor role="scientific_editor">Henri Goelzer</editor>
+                                 <editor role="scientific_editor">René Durand</editor>
+                                 <editor role="translator">André Bellessort</editor>
+                                 <edition>10ème édition</edition>
+                                 <imprint>
+                                    <publisher>Les Belles Lettres</publisher>
+                                    <pubPlace>Paris</pubPlace>
+                                    <date>1961</date>
+                                 </imprint>
+                              </monogr>
+                              <citedRange unit="book" n="7"/>
+                              <citedRange unit="verse" from="236" to="425"/>
+                              <relatedItem
+                                 source="https://github.com/PerseusDL/canonical-latinLit/blob/master/data/phi0690/phi003/phi0690.phi003.perseus-lat2.xml">
+                                 <bibl>Le texte et l'encodage des vers qui ont servi de base à
+                                    l'établissement de cette édition sont issus de : <title>Aeneid,
+                                       Machine readable text</title> [...] </bibl>
+                              </relatedItem>
+                           </biblStruct>
+                        </egXML></p>
+                     <p>L'élément <gi>listWit</gi> contient la liste des sources utilisées par les
+                        auteurs de l'édition des Belles Lettres pour établir le texte de l'Eneide.
+                        Ces témoins sont séparés en sous-listes, selon les catégories évoquées dans
+                        la section <hi rend="italic">La traduction manuscrite</hi> de l'introduction
+                        de ladite édition.</p>
+                     <p>La déclaration d'un identifiant, grâce à l'attribut <att>xml:id</att> de
+                        l'élément <gi>witness</gi>, permet de se référer à ces témoins dans
+                        l'apparat critique.</p>
+                     <p>Enfin, dans le cas des manuscrits, la cote actuelle a été indiquée dans la
+                        mesure du possible et, si une version numérisée existait, celle-ci a été
+                        renseignée grâce à l'attribut <att>facs</att> de l'élément <gi>witness</gi>.
+                           <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                           <witness xml:id="M"
+                              facs="http://mss.bmlonline.it/Catalogo.aspx?Shelfmark=Plut.39.1"
+                              >Bibliothèque Laurentienne, plut. 39.1, <date notBefore="0401"
+                                 notAfter="0500">5e siècle</date></witness>
+                        </egXML>
+                     </p>
+                     <p>L'élément <gi>listBibl</gi> contient la brève bibliographie des travaux
+                        auxquels l'édition des Belles Lettres se réfère, quand il a été possible de
+                        les identifier. Ces références sont également dotées d'un identifiant.
+                           <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                           <bibl xml:id="havet">Louis HAVET, Manuel de critique verbale appliquée
+                              aux textes latins, Paris : Hachette, 1911.</bibl></egXML></p>
+                  </div4>
+                  <div4>
+                     <head>Structure du profileDesc</head>
+                     <p>Le <gi>profileDesc</gi> est composé de deux sous-ensembles : <specList>
+                           <specDesc key="settingDesc"/>
+                           <specDesc key="particDesc"/>
+                        </specList></p>
+                     <p>Le <gi>settingDesc</gi> contient un index des noms de lieux, renseigné dans
+                        l'élément <gi>listPlace</gi>. Chaque nom de lieu est indiqué latin
+                        (nominatif singulier) et en français, grâce à l'attribut <att>xml:lang</att>
+                        de l'élément <hi>placeName</hi>.</p>
+                     <p>Un identifiant, attribué avec l'attribut <att>xml:id</att> de l'élément
+                           <gi>person</gi>, permet d'effectuer des références à l'entrée de l'index
+                        dans le corps du texte.</p>
+                     <p>Enfin, une brève description du lieu est renseignée grâce à l'élément
+                           <gi>note</gi>. L'attribut <att>type</att> prend ici la valeur
+                        "information", qui est réservée dans notre édition aux notes des index, afin
+                        de les différencier de celles présentes dans le corps de texte. L'attribut
+                           <att>anchored</att> prend la valeur "true" afin que le texte de cette
+                        note reste positionné à la suite des noms de lieux quelque soit la façon
+                        dont le document source sera transformé et mis en page ; en effet, cela
+                        n'aurait pas de sens d'isoler le texte descriptif des entrées de l'index
+                        dans une bulle, ou en bas de page. <egXML
+                           xmlns="http://www.tei-c.org/ns/Examples">
+                           <place xml:id="acheron">
+                              <placeName xml:lang="la">Acheron</placeName>
+                              <placeName xml:lang="fr">Achéron</placeName>
+                              <note type="information" anchored="true">Fleuve des enfers</note>
+                           </place>
+                        </egXML></p>
+                     <p>Le <gi>particDesc</gi> contient un index des noms de personnages, renseigné
+                        dans l'élément <gi>listName</gi>. Chaque nom de personnages est indiqué
+                        latin (nominatif singulier, sauf dans le cas de noms se déclinant uniquement
+                        au pluriel) et en français, grâce à l'attribut <att>xml:lang</att> de
+                        l'élément <hi>placeName</hi>. L'élément <gi>surname</gi> vient renseigner
+                        les appelations autre que le nom même du personnage issues du corps du
+                        texte.</p>
+                     <p>Un identifiant, attribué avec l'attribut <att>xml:id</att> de l'élément
+                           <gi>person</gi>, permet d'effectuer des références à l'entrée de l'index
+                        dans le corps du texte.</p>
+                     <p>Enfin, une brève description du lieu est renseignée grâce à l'élément
+                           <gi>note</gi>. Comme dans le cas de l'index de noms de lieux, l'attribut
+                           <att>type</att> prend ici la valeur "information", qui est réservée dans
+                        notre édition aux notes des index, afin de les différencier de celles
+                        présentes dans le corps de texte. L'attribut <att>anchored</att> prend la
+                        valeur "true" afin que le texte de cette note reste positionné à la suite
+                        des noms de personnages. <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                           <person xml:id="aeneas">
+                              <persName xml:lang="la">Aeneas</persName>
+                              <persName xml:lang="fr">Enée</persName>
+                              <persName xml:lang="la"><surname>Anchisa generate</surname></persName>
+                              <persName xml:lang="fr"><surname>Fils d'Anchise</surname></persName>
+                              <note type="information" anchored="true">Prince troyen, fils d'Anchise
+                                 et de Vénus</note>
+                           </person>
+                        </egXML></p>
+                  </div4>
+                  <div4>
+                     <head>Contenu de l'encodingDesc</head>
+                     <p>L'<gi>encodingDesc</gi> donne des précisions sur la manière dont a été
+                        encodé le fichier XML qui contient notre édition. Ici, la méthode utilisée
+                        est celle de la <hi rend="italic">parallel segmentation</hi>, qui consiste à
+                        déclarer les variantes du texte grâce aux éléments <gi>app</gi>,
+                           <gi>lem</gi> et <gi>rdg</gi>, et à référencer dans ces variantes
+                        l'identifiant des témoins concernés. <egXML
+                           xmlns="http://www.tei-c.org/ns/Examples">
+                           <variantEncoding method="parallel-segmentation" location="internal"/>
+                        </egXML></p>
+                  </div4>
+               </div3>
+               <div3>
+                  <head>Structure du texte</head>
+                  <div4>
+                     <head>Structure du corps de texte</head>
+                     <p>L'Eneide est un texte donc le découpage hiérarchique est assez limpide, ce
+                        qui nous a permis de structurer le corps de texte grâce aux éléments
+                        suivants : <specList>
+                           <specDesc key="div"/>
+                           <specDesc key="lg"/>
+                           <specDesc key="l"/>
+                        </specList></p>
+                     <p>L'élément <gi>div</gi> est utilisé pour désigner les chants du poème, ce que
+                        nous indiquons avec l'attribut <att>unit</att> qui ne prend que la valeur
+                        "book", l'anglais n'ayant pas de termes spécifiques à la notion de "chant"
+                        dans un poème. L'attribut <att>n</att> permet de désigner le numéro du
+                        chant.</p>
+                     <p>Au sein d'un chant, le texte est structuré en strophe avec l'élément
+                           <gi>lg</gi>, elles mêmes séparées en vers avec l'élément <gi>l</gi>. Les
+                        vers sont numérotés grâce à l'attribut <att>n</att>, <egXML
+                           xmlns="http://www.tei-c.org/ns/Examples">
+                           <div type="book" n="6">
+                              <lg>
+                                 <l n="236">His actis propere exsequitur praecepta Sibyllae.</l>
+                                 <l n="237">Spelunca alta fuit uastoque immanis hiatu,</l>
+                                 <l n="238">scrupea, tuta lacu nigro nemorumque tenebris,</l>
+                                 <l n="239">quam super haud ullae poterant impune uolantes [...]</l>
+                              </lg>
+                           </div>
+                        </egXML></p>
+                     <p>Les dialogues présents au sein du texte ont été encodés avec l'élément
+                           <gi>said</gi>. Comme le schéma TEI all ne permet pas à la balise
+                           <gi>said</gi> de contenir la balise <gi>l</gi>, il n'était pas possible
+                        d'utiliser une unique balise pour englober tout un dialogue s'étendant sur
+                        plusieurs vers ; nous avons donc déclaré des identifiants dans ces dialogues
+                        avec l'attribut <att>xml:id</att>, puis nous avons appelé ces identifiants à
+                        travers les attributs <att>prev</att> et <att>next</att> afin de
+                        reconstituer chaque prise de parole dans sa totalité. <egXML
+                           xmlns="http://www.tei-c.org/ns/Examples">
+                           <l n="361">
+                              <said xml:id="palinurus1-15" prev="#palinurus1-14"
+                                 next="#palinurus1-16">ferro inuasisset praedamque ignara
+                                 putasset.</said>
+                           </l>
+                           <l n="362">
+                              <said xml:id="palinurus1-16" prev="#palinurus1-15"
+                                 next="#palinurus1-17">Nunc me fluctus habet uersantque in litore
+                                 uenti.</said>
+                           </l>
+                           <l n="363">
+                              <said xml:id="palinurus1-17" prev="#palinurus1-16"
+                                 next="#palinurus1-18">Quod te per caeli iucundum lumen et
+                                 auras,</said>
+                           </l>
+                        </egXML> Nous avons fait le choix de ne pas utiliser l'attribut
+                           <att>who</att> de la balise <gi>said</gi> pour indiquer le personnage
+                        prenant la parole, afin de ne pas utiliser nos identifiants de nom de
+                        personnages pour autre chose que pour l'indexation des noms, et ainsi de ne
+                        pas obtenir de renvoie vers les dialogues en voulant se servir de ces
+                        identifiantts pour retrouver les mentions des noms dans le texte. Créer de
+                        nouveaux identifiants pour la prise de parole aurait trop alourdi le
+                        code.</p> <!-- vos choix sont le résultat d'une véritable réflexion, et c'est très bien. La transformation les who sur les said n'auraient pas vraiment nui à l'indexation, 
+                           mais vous ne pouviez pas le savoir - En revanche la question du non-alourdissement du code est tout à fait pertinente, 
+                           la forme de l'identifiant pourrait être travaillée pour récupérer facilement le nom du personnage, 
+                           en ajoutant par exemple : ou . devant pour s'en servir de séparateur dans le traitement de la chaine de caractères-->
+                  </div4>
+                  <div4>
+                     <head>Structure de l'apparat</head>
+                     <p>L'édition des Belles Lettres comporte un apparat critique, que nous avons
+                        encodé de la façon suivante : les différentes variantes entre le texte
+                        principal et ses leçons ont été indiquées grâce aux éléments <specList>
+                           <specDesc key="app"/>
+                           <specDesc key="lem"/>
+                           <specDesc key="rdgGrp"/>
+                           <specDesc key="rdg"/>
+                        </specList> L'identifiant du témoin auquel se rapporte la variante est
+                        indiqué avec l'attribut <att>wit</att>, dans en respectant l'ordre de
+                        l'édition des Belles Lettres. <egXML
+                           xmlns="http://www.tei-c.org/ns/Examples">
+                           <l> Namque gubernaclum multa <app>
+                                 <lem wit="#M #R">ui forte</lem>
+                                 <rdg wit="#P">uix arte</rdg>
+                              </app> reuolsum</l>
+                        </egXML></p>
+                     <p>Les références à des travaux, indiquées à la suite de certains témoins à
+                        l'aide d'un <hi rend="italic">cf.</hi> pour compléter l'information, ont été
+                        placées dans une <gi>note</gi> englobée dans la balise <gi>rdg</gi>. Ces
+                        notes ont un attribut <att>type</att> qui prend la valeur "reference".
+                           <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                           <l n="350"> cui datus haerebam custos cursusque <app>
+                                 <lem wit="#M #R">regebam</lem>
+                                 <rdg wit="#P #y1">gerebam<note type="reference"><bibl
+                                          source="#havet">Havet § 470</bibl></note></rdg>
+                              </app>
+                           </l>
+                        </egXML></p>
+                     <p>Les développements de certaines abbréviations latines, qui apportent un
+                        complément d'information à l'indication de certains témoins, sont indiquées
+                        dans une <gi>note</gi>, dont l'attribut <att>type</att> prend la valeur
+                        "expansion". C'est également dans ce type de notes que sont retranscrites les notes de bas de page 
+                        entièrement en latin, afin de les différencier de celles en français que nous avons typées autrement.
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                           <rdg wit="#c2 #π #servius">abibis<note type="expansion">servius : détérioré</note></rdg>
+                        </egXML>
+                     </p>
+                     <p>En effet, les notes de bas de page présentes dans la traduction française de l'édition
+                        des Belles Lettres ont également été incluses dans cette édition. Elles sont
+                        typées avec l'attribut <att>type</att>, qui prend la valeur "commentary".
+                           <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                           <l n="402"> casta licet patrui seruet Proserpina limen<note
+                                 type="commentary">Proserpine était la nièce et la femme de
+                                 Pluton.</note>. </l>
+                        </egXML></p>
+                  </div4>
+               </div3>
+            </div2>
+            <div2>
+               <head>Choix d'édition</head>
+               <div3>
+                  <head>Témoins et références</head>
+                  <div4>
+                     <head>Précisions concernant certains témoins</head>
+                     <p>Manuscrit A : La date présente dans l'édition des Belles Lettres différant
+                        de celle présente dans le catalogue de la Bibliothèque aposolique vaticane,
+                        c'est celle de la Bibliothèque que nous avons choisi de retenir.</p>
+                     <p>Manuscrit l : D'après le catalogue en ligne de la Biblioteca Medicea
+                        Laurenziana, la cote ashb. 4 signalée par l'édition des Belles Lettes
+                        n'existe pas, les cotes du fonds Ashburnham commençant à partir de ashb. 17.
+                        En revanche, le manuscrit 23 de ce fonds correspond à une édition de
+                        l'Eneide du 10e siècle ; nous pensons donc qu'il pourrait s'agir du même
+                        témoin.</p>
+                  </div4>
+                  <div4>
+                     <head>Encodage des références bibliographiques</head>
+                     <p>Ont été considérées comme des références bibliographiques, et donc encodées
+                        dans une balise <gi>bibl</gi> et non <gi>witness</gi>, toutes les références
+                        désignées par un <hi>cf.</hi>. Comme elles sont relativement peu nombreuses,
+                        il n'a pas paru nécessaire de les encoder de manière extrêmement détaillées
+                        : c'est pour cela que seul la description bibliographique de l'édition que
+                        nous encodons, dans le <gi>fileDesc</gi>, est encodée de manière détaillée
+                        (auteur, éditeur...).</p>
+                     <p>Afin de ne pas alourdir tant l'encodage que la lecture du document, il a été
+                        décidé de ne pas mettre la référence complète de l'ouvrage dans la
+                           <gi>note</gi>, mais de garder la façon dont ces références sont signalées
+                        dans l'édition des Belles Lettres, en renvoyant vers la référence complète
+                        avec l'attribut <att>source</att> de la balise <gi>bibl</gi>, qui permet de
+                        se référer à l'identifiant déclaré dans la bibliographie. Un choix
+                        consistant à mettre des abbréviations telles que <hi rend="italic"
+                           >ibid.</hi> ou <hi rend="italic">op.</hi> n'aurait pas été judicieux,
+                        car, si le document est transformé d'une manière à afficher les notes non en
+                        bas de page, mais par exemple sous la forme de fenêtres pop-up, il faudrait
+                        alors ouvrir toutes ces fenêtres pour retrouver la référence à laquelle se
+                        référait ce <hi rend="italic">idem</hi>. <egXML
+                           xmlns="http://www.tei-c.org/ns/Examples">
+                           <bibl source="#havet">Havet § 1063</bibl>
+                        </egXML></p>
+                  </div4>
+                  <div4>
+                     <head>Normalisation des dates</head>
+                     <p>Seules les dates présentes dans les manuscrits ont été normalisées, à l'aide
+                        des attributs <att>notBefore</att> et <att>notAfter</att> de l'élément
+                           <gi>date</gi>. En effet, ces témoins rendent compte d'une version du
+                        texte de l'Enéide, et il y a donc un véritable intéret scientifique à
+                        pouvoir les rechercher par date ; pour ne pas corrompre une éventuellement
+                        extraction des données de type date en mélangeant les dates des manuscrits
+                        avec celles d'éditions récentes ou de commentaires de l'Enéide, toutes les
+                        autres dates indiquées avec l'élément <gi>date</gi> n'ont volontairement pas
+                        été normalisées. <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                           <publisher>Les Belles Lettres</publisher>
+                           <pubPlace>Paris</pubPlace>
+                           <date>1961</date></egXML>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                           <witness xml:id="P">Bibliothèque apostolique vaticane, pal. lat. 1631,
+                                 <date notBefore="0401" notAfter="0500">5e siècle</date></witness>
+                        </egXML></p>
+                  </div4>
+               </div3>
+               <div3>
+                  <head>Index</head>
+                  <p>Les noms latin de l'index ont été renseignés au nominatif.</p>
+                  <div4>
+                     <head>Choix opérés dans l'indexation des lieux</head>
+                     <p>Seuls les lieux qui sont des noms propres ont été encodés dans l'index ; les
+                        lieux génériques ("le ciel", "le marais"...) n'y figurent pas.</p>
+                     <p>Dans la mythologie grecque, la plupart des lieux sont également des
+                        divinités, filles et fils d'autres divinités : ainsi, le fleuve Styx est une
+                        Océanide, l'Erèbe est une divinité qui possède une épouse et une
+                        descendance... Il nous a donc fallu opérer un choix pour différencier les
+                           <gi>placeName</gi> des <gi>persName</gi>, c'est pourquoi toute divinité
+                        considérée comme un lieu dans le contexte textuel dans lequelle elle
+                        apparait à été encodée comme un lieu. Cela a conduit à quelques différences
+                        dans les choix d'encodage : l'Erèbe est associé aux ténèbres en tant
+                        qu'espace dans le texte, là où sa soeur et épouse, Nyx (la Nuit) est
+                        désignée dans notre texte comme "la mère des Euménides", et a donc été
+                        encodée comme une personne.</p>
+                  </div4>
+                  <div4>
+                     <head>Choix opérés dans l'indexation des noms de personnages</head>
+                     <p>Les personnifications qui ne sont pas des divinités (les Songes, la Maladie)
+                        n'ont pas été considérées comme des personnages et n'ont pas été encodées
+                        dans l'index.</p>
+                     <p>La langue latine n'ayant pas de pronoms personnels, nous n'avons pas encodés
+                        les interventions des personnages dans des verbes à la 3ème personne,
+                        traduites par "il" ou "elle" dans la traduction : cela aurait eu pour
+                        conséquence d'alourdir l'encodage, et de réduire l'utilité de l'index comme
+                        outil servant à la recherche des apparitions des noms dans le texte.</p>
+                  </div4>
+               </div3>
+               <div3>
+                  <head>Présentation des variantes</head>
+                  <p>Si l'édition des Belles Lettres indique en notes d'apparat uniquement les
+                     fragments du mots qui varient par rapport à la tradition, comme il est de
+                     coutume dans les éditions scientifiques papier, il nous a paru plus judicieux,
+                     pour une édition numérique, de transcrire l'intégralité des variantes dans les
+                     balises <gi>rdg</gi>. En effet, il serait possible, au moment de la
+                     transformation du fichier source, de faire apparaître uniquement la version du
+                     texte avec les variantes de tel ou tel témoin. Dans cet optique, il faut que
+                     chaque leçon encodée possède les mots transcrits dans leur intégralité, afin de
+                     ne pas générer une version du texte où certains mots seraient remplacés par des
+                     mots incomplets, tels que "-tis" ou "-geton" (exemples tirés de notre texte).
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples"><app>
+                           <lem wit="#F #P #R">Phlegethon</lem>
+                           <rdg wit="#M">Phlegeton</rdg>
+                        </app></egXML></p>
+               </div3>
+            </div2>
+            <div2>
+               <head>Avantages de l'édition numérique</head>
+               <div3>
+                  <head>Avantages par rapport à l'édition imprimée des Belles Lettres</head>
+                  <p>Une édition numérique de l'Enéide de Virgile, d'après l'édition des Belles
+                     Lettres de 1961, présente l'avantage de la lisibilité : la méthode de la <hi
+                        rend="italic">parallel segmentation</hi> permet d'encoder les variantes de
+                     la tradition directement dans le corps du texte, et non en notes de bas de
+                     page. De plus, il est possible d'imaginer une transformation XSLT qui rendrait
+                     compte de plusieurs niveaux de notes (que nous avons typées selon une liste de
+                     valeurs définie, afin de les différencier), qui permettrait aux différents
+                     types d'annotation du texte d'apparaître de manières différentes</p>
+                  <p>Outre l'avantage de la lisibilité, une telle édition facilite grandement
+                     l'étude des différentes leçons : grâce au système d'identifiants, il est
+                     possible de retrouver toutes les variantes issues d'un même témoin, ou encore
+                     d'obtenir des versions parallèles du texte qui permettent de comparer certains
+                     témoins spécifiques.</p>
+               </div3>
+               <div3>
+                  <head>Un enrichissement du contenu</head>
+                  <p>Le format d'une édition numérique nous a, de plus, permis d'enrichir le contenu
+                     de l'édition de manière pertinente, notamment en mettant en valeur les
+                     dialogues, qu'il est ainsi possible de localiser rapidement dans le texte, mais
+                     également en indexant les noms de lieux et de personnages. Ces index, qui
+                     fonctionnent eux aussi grâce à un système d'identifiants, pourraient permettre
+                     au moment de la transformation du document d'effectuer un renvoie cliquable du
+                     nom concerné vers son entrée dans l'index, ou de faire apparaître l'entrée de
+                     l'index, sous forme de fenêtre pop-up par exemple. A l'inverse, cet encodage
+                     précis des noms permet également de retrouver toutes les mentions d'un nom de
+                     lieu ou de personnage d'un personnage dans le texte avec plus de facilité que
+                     ne le permettrait un index papier.</p>
+               </div3>
+            </div2>
+         </div1>
+         <div1>
+            <head>Elements utilisés dans cette édition</head>
+            <schemaSpec ident="oddbyexample" start="TEI ">
+
+               <moduleRef key="tei"/>
+               <!--Checking module textcrit-->
+               <classRef key="att.textCritical"/>
+               <classRef key="att.witnessed"/>
+               <classRef key="model.rdgLike"/>
+               <classRef key="model.rdgPart"/>
+               <moduleRef key="textcrit"
+                  include="app lem rdg rdgGrp listWit witness variantEncoding"/>
+
+               <elementSpec ident="app" mode="change">
+                  <gloss>Apparat</gloss>
+                  <desc>permet d'encoder les différentes leçons du texte.</desc>
+                  <content>
+                     <!-- L'élément app contient un lem, et soit à un plusieurs rdgGrp, soit un à plusieurs rdg -->
+                     <sequence preserveOrder="true">
+                        <elementRef key="lem" minOccurs="1" maxOccurs="1"/>
+                        <alternate>
+                           <elementRef key="rdgGrp" minOccurs="0" maxOccurs="unbounded"/>
+                           <elementRef key="rdg" minOccurs="0" maxOccurs="unbounded"/> 
+                              <!-- Il serait mieux de faire apparaitre une leçon, car l'apparat apparait dès qu'il a différence et ne peut donc pas être constitué uniquement du lemme -->
+                        </alternate>
+                     </sequence>
+                  </content>
+               </elementSpec>
+
+               <elementSpec ident="lem" mode="change">
+                  <gloss>Lemme</gloss>
+                  <desc>permet de signaler la leçon retenue dans la présente édition.</desc>
+                  <content>
+                     <textNode/> <!-- Attention, votre règle de contenu dans lem est un peu trop restrictive, dans le cas d'un groupe de mots assez long, il peut être interessant de garder les placeName et les persName -->
+                     <elementRef key="note" minOccurs="0" maxOccurs="unbounded"/>
+                  </content>
+                  <attList>
+                     <!-- L'élément lem peut avoir un attribut wit -->
+                     <attDef ident="wit" mode="change" usage="opt"/>
+                     <attDef ident="ana" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+
+               <elementSpec ident="rdg" mode="change">
+                  <gloss>Leçon</gloss>
+                  <desc>permet de signaler une variante du texte édité.</desc>
+                  <content>
+                     <textNode/>
+                     <elementRef key="note" minOccurs="0" maxOccurs="unbounded"/>
+                  </content>
+                  <attList>
+                     <!-- L'élément rdg peut avoir un attribut wit -->
+                     <attDef ident="wit" mode="change" usage="req"/>
+                     <attDef ident="ana" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+
+               <elementSpec ident="rdgGrp" mode="change">
+                  <gloss>Groupe de leçons</gloss>
+                  <desc>contient plusieurs variantes du texte édité.</desc>
+                  <content>
+                     <!-- L'élément rdgGrp contient au minimum 2 rdg  -->
+                     <elementRef key="rdg" minOccurs="2" maxOccurs="unbounded"/>
+                  </content>
+               </elementSpec>
+
+               <elementSpec ident="listWit" mode="change">
+                  <gloss>Liste des témoins</gloss>
+                  <desc>contient la liste des témoins utilisés dans cette édition.</desc>
+                  <content>
+                     <!-- L'élément listWit contient soit une à plusieurs listWit, soit un head suivi d'un à plusieurs witness -->
+                     <alternate>
+                        <elementRef key="listWit" minOccurs="1" maxOccurs="unbounded"/>
+                        <sequence preserveOrder="true">
+                           <elementRef key="head" minOccurs="1" maxOccurs="1"/>
+                           <elementRef key="witness" minOccurs="1" maxOccurs="unbounded"/>
+                        </sequence>
+                     </alternate>
+                  </content>
+               </elementSpec>
+
+               <elementSpec ident="witness" mode="change">
+                  <gloss>Témoin</gloss>
+                  <desc>contient les références du témoin.</desc>
+                  <content>
+                     <!-- L'élément witness peut contenir du texte, une balise date (optionnelle), puis encore du texte -->
+                     <sequence preserveOrder="true">
+                        <textNode/>
+                        <elementRef key="date" minOccurs="0" maxOccurs="1"/>
+                        <textNode/>
+                     </sequence>
+                  </content>
+                  <attList>
+                     <!-- L'élément witness a obligatoirement un attribut xml:id -->
+                     <attDef ident="xml:id" mode="change" usage="req"/>
+                     <!-- L'élément witness peut avoir un attribut facs -->
+                     <attDef ident="facs" mode="add" usage="opt"/>
+                     <attDef ident="ana" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+
+               <!--Checking module namesdates-->
+               <classRef key="att.datable.iso"/>
+               <classRef key="model.persNamePart"/>
+               <moduleRef key="namesdates"
+                  include="orgName persName surname forename genName nameLink addName roleName placeName country settlement district affiliation listPerson listPlace location occupation org person place"/>
+
+               <elementSpec ident="persName" mode="change">
+                  <gloss>Nom de personne</gloss>
+                  <desc>permet de signaler le nom d'un personnage ou d'une personne.</desc>
+                  <attList>
+                     <attDef ident="xml:lang" mode="change" usage="opt"/>
+                     <!-- L'élément persName peut avoir un attribut xml:lang -->
+                     <attDef ident="ref" mode="change" usage="opt"/>
+                     <!-- L'élément persName peut avoir un attribut ref -->
+                     <attDef ident="ana" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+
+               <elementSpec ident="surname" mode="change">
+                  <gloss>Surnom</gloss>
+                  <desc>permet de signaler le surnom d'un personnage tel qu'il est apparu dans le
+                     texte.</desc>
+                  <attList>
+                     <!-- L'élément surname peut avoir un attribut xml:lang -->
+                     <attDef ident="xml:lang" mode="change" usage="opt"/>
+                     <!-- L'élément surname peut avoir un attribut ref -->
+                     <attDef ident="ref" mode="change" usage="opt"/>
+                     <attDef ident="ana" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+
+               <elementSpec ident="placeName" mode="change">
+                  <gloss>Nom de lieu</gloss>
+                  <desc>permet de signaler le nom d'un lieu.</desc>
+                  <attList>
+                     <!-- L'élément placeName peut avoir un attribut xml:lang -->
+                     <attDef ident="xml:lang" mode="change" usage="opt"/>
+                     <!-- L'élément placeName peut avoir un attribut ref -->
+                     <attDef ident="ref" mode="change" usage="opt"/>
+                     <attDef ident="ana" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+
+               <elementSpec ident="listPerson" mode="change">
+                  <gloss>Liste de personnes</gloss>
+                  <desc>permet d'encoder l'index des noms de personnages.</desc>
+                  <content>
+                     <!-- L'élément listPerson contient un à plusieurs élément person -->
+                     <elementRef key="person" minOccurs="1" maxOccurs="unbounded"/>
+                  </content>
+               </elementSpec>
+
+               <elementSpec ident="listPlace" mode="change">
+                  <gloss>Liste de lieux</gloss>
+                  <desc>permet d'encoder l'index des noms de lieux.</desc>
+                  <content>
+                     <!-- L'élément listPlace contient un à plusieurs élément place -->
+                     <elementRef key="place" minOccurs="1" maxOccurs="unbounded"/>
+                  </content>
+               </elementSpec>
+
+               <elementSpec ident="person" mode="change">
+                  <gloss>Personne</gloss>
+                  <desc>permet de renseigner des informations sur un personnage ou une
+                     personne.</desc>
+                  <content>
+                     <!-- L'élément person contient au moins un persName, puis une note -->
+                     <sequence preserveOrder="true">
+                        <elementRef key="persName" minOccurs="1" maxOccurs="unbounded"/>
+                        <elementRef key="note" minOccurs="1" maxOccurs="1"/>
+                     </sequence>
+                  </content>
+                  <attList>
+                     <attDef ident="ana" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+
+               <elementSpec ident="place" mode="change">
+                  <gloss>Lieu</gloss>
+                  <desc>permet de renseigner des informations sur un lieu.</desc>
+                  <content>
+                     <!-- L'élément person contient au moins un placeName, puis une note -->
+                     <sequence preserveOrder="true">
+                        <elementRef key="placeName" minOccurs="1" maxOccurs="unbounded"/>
+                        <elementRef key="note" minOccurs="1" maxOccurs="1"/>
+                     </sequence>
+                  </content>
+                  <attList>
+                     <attDef ident="ana" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+
+               <!--Checking module core-->
+               <classRef key="att.milestoneUnit"/>
+               <moduleRef key="core"
+                  include="p foreign emph hi said quote q cit desc gloss term choice reg orig gap add del name address addrLine street date abbr expan ptr ref list item label head note index graphic milestone pb lb analytic monogr author editor respStmt resp title imprint publisher biblScope citedRange pubPlace bibl biblStruct listBibl relatedItem l lg sp speaker stage divGen textLang"/>
+
+               <elementSpec ident="p" mode="change">
+                  <gloss>Paragraphe</gloss>
+                  <desc>contient un contenu textuel structuré.</desc>
+               </elementSpec>
+
+               <elementSpec ident="said" mode="change">
+                  <gloss>Dialogue</gloss>
+                  <desc>contient un discours prononcé à haute voix.</desc>
+                  <content>
+                     <alternate minOccurs="1" maxOccurs="unbounded">
+                        <textNode/>
+                        <elementRef key="note"/>
+                        <elementRef key="app"/>
+                        <elementRef key="persName"/>
+                        <elementRef key="placeName"/>
+                     </alternate>
+                  </content>
+                  <attList>
+                     <!-- L'élément said a obligatoirement un attribut xml:id -->
+                     <attDef ident="xml:id" mode="change" usage="req"/>
+                     <!-- L'élément said peut avoir un attribut prev -->
+                     <attDef ident="prev" mode="add" usage="opt"/>
+                     <!-- L'élément said peut avoir un attribut next -->
+                     <attDef ident="next" mode="add" usage="opt"/>
+                     <attDef ident="ana" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+
+               <elementSpec ident="del" mode="replace">
+                  <gloss>Ommission</gloss>
+                  <desc>Indique un texte écarté de la tradition principale par l'éditeur
+                     scientifique : suppression, ommission dans certains témoins...</desc>
+                  <content>
+                     <alternate minOccurs="1" maxOccurs="unbounded">
+                        <textNode/>
+                        <elementRef key="said"/>
+                        <elementRef key="note"/>
+                        <elementRef key="app"/>
+                        <elementRef key="persName"/>
+                        <elementRef key="placeName"/>
+                     </alternate>
+                  </content>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                     <attDef ident="resp" mode="delete"/>
+                  </attList>
+               </elementSpec>
+
+               <elementSpec ident="date" mode="change">
+                  <gloss>Date</gloss>
+                  <desc>permet d'encoder une date.</desc>
+                  <attList>
+                     <!-- L'élément date peut avoir un attribut notBefore -->
+                     <attDef ident="notBefore" mode="change" usage="opt"/>
+                     <!-- L'élément date peut avoir un attribut notAfter -->
+                     <attDef ident="notAfter" mode="change" usage="opt"/>
+                     <attDef ident="ana" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+
+               <elementSpec ident="head" mode="change">
+                  <gloss>Titre</gloss>
+                  <desc>contient le titre d'une catégorie.</desc>
+               </elementSpec>
+
+               <elementSpec ident="note" mode="replace">
+                  <gloss>Note</gloss>
+                  <desc>contient le titre d'une catégorie.</desc>
+                  <content>
+                     <sequence>
+                        <textNode/>
+                        <elementRef key="bibl" minOccurs="0" maxOccurs="1"/>
+                        <textNode/>
+                     </sequence>
+                  </content>
+                  <attList>
+                     <!-- L'élément note peut avoir un attribut type, qui prend les valeurs : commentary, expansion, information, reference -->
+                     <attDef ident="type" mode="add" usage="req">
+                        <valList mode="add" type="closed">
+                           <valItem ident="commentary"/>
+                           <valItem ident="expansion"/>
+                           <valItem ident="information"/>
+                           <valItem ident="reference"/>
+                        </valList>
+                     </attDef>
+                     <!-- L'élément note peut avoir l'attribut anchored -->
+                     <attDef ident="anchored" mode="add" usage="opt"/>
+                  </attList>
+               </elementSpec>
+
+               <elementSpec ident="author" mode="change">
+                  <gloss>Auteur</gloss>
+                  <desc>renseigne le nom de l'auteur d'une oeuvre.</desc>
+               </elementSpec>
+
+               <elementSpec ident="editor" mode="change">
+                  <gloss>Editeur</gloss>
+                  <desc>permet d'indiquer le nom d'un contributeur d'une oeuvre : éditeur
+                     scientifique, traducteur...</desc>
+                  <attList>
+                     <!-- L'élément editor peut avoir un attribut role qui prend les valeurs : scientific_editor, translator, principal_researcher -->
+                     <attDef ident="role" mode="change" usage="opt">
+                        <valList mode="add" type="closed">
+                           <valItem ident="scientific_editor"/>
+                           <valItem ident="translator"/>
+                           <valItem ident="principal_researcher"/>
+                        </valList>
+                     </attDef>
+                  </attList>
+               </elementSpec>
+
+               <elementSpec ident="respStmt" mode="change">
+                  <gloss>Mention de responsabilité</gloss>
+                  <desc>permet d'indiquer une responsabilité quant au contenu du texte et à son
+                     édition.</desc>
+                  <content>
+                     <!-- L'élément respStmt contient une à plusieurs séquences composées chacune d'un élément resp suivi d'un élément persName -->
+                     <sequence minOccurs="1" maxOccurs="unbounded">
+                        <elementRef key="resp"/>
+                        <elementRef key="persName"/>
+                     </sequence>
+                  </content>
+               </elementSpec>
+
+               <elementSpec ident="resp" mode="change">
+                  <gloss>Responsabilité</gloss>
+                  <desc>permet d'indiquer la nature du rôle joué par une personne ou une
+                     organisation quant au contenu du texte et à son édition.</desc>
+               </elementSpec>
+
+               <elementSpec ident="title" mode="change">
+                  <gloss>Titre</gloss>
+                  <desc>indique le titre d'une oeuvre.</desc>
+               </elementSpec>
+
+               <elementSpec ident="imprint" mode="change">
+                  <gloss>Impression</gloss>
+                  <desc>indique le titre d'une oeuvre.</desc>
+                  <content>
+                     <!-- L'élément imprint peut contenir un élément publisher, suivi d'un élément pubplace, suivi d'un élément date ; ces éléments sont tous optionnels -->
+                     <sequence>
+                        <elementRef key="publisher" minOccurs="0" maxOccurs="1"/>
+                        <elementRef key="pubPlace" minOccurs="0" maxOccurs="1"/>
+                        <elementRef key="date" minOccurs="0" maxOccurs="1"/>
+                     </sequence>
+                  </content>
+               </elementSpec>
+
+               <elementSpec ident="publisher" mode="change">
+                  <gloss>Editeur</gloss>
+                  <desc>permet d'indiquer le nom de l'éditeur responsable de la publication d'une
+                     oeuvre.</desc>
+               </elementSpec>
+
+               <elementSpec ident="citedRange" mode="change">
+                  <gloss>Extrait cité</gloss>
+                  <desc>permet de spécifier la longueur et les références de la partie de l'oeuvre
+                     reprise dans la présente édition.</desc>
+                  <attList>
+                     <!-- L'élément citedRange possède obligatoirement l'attribut unit qui prend les valeurs : book, verse -->
+                     <attDef ident="unit" mode="change" usage="req">
+                        <valList>
+                           <valItem ident="book"/>
+                           <valItem ident="verse"/>
+                        </valList>
+                     </attDef>
+                     <!-- L'élément citedRange peut avoir un attribut n -->
+                     <attDef ident="n" mode="change" usage="opt"/>
+                     <!-- L'élément citedRange peut avoir un attribut from -->
+                     <attDef ident="from" mode="change" usage="opt"/>
+                     <!-- L'élément citedRange peut avoir un attribut to -->
+                     <attDef ident="to" mode="change" usage="opt"/>
+                     <attDef ident="ana" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+
+               <elementSpec ident="pubPlace" mode="change">
+                  <gloss>Lieu de publication</gloss>
+                  <desc>permet d'indiquer le lieu de publication d'une oeuvre.</desc>
+               </elementSpec>
+
+               <elementSpec ident="bibl" mode="change">
+                  <gloss>Référence bibliographie</gloss>
+                  <desc>indique les références à un ouvrage, à un document.</desc>
+                  <attList>
+                     <!-- L'élément bibl peut avoir un attribut xml:id et un attribut source -->
+                     <attDef ident="xml:id" mode="change" usage="opt"/>
+                     <attDef ident="source" mode="change" usage="opt"/>
+                     <attDef ident="ana" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+
+               <elementSpec ident="biblStruct" mode="change">
+                  <gloss>Référence bibliographie structurée</gloss>
+                  <desc>indique les références à un ouvrage, à un document, de manière
+                     détaillée.</desc>
+                  <content>
+                     <!-- L'élément biblStruct peut avoir plusieurs séquences composées chacune d'un à plusieurs élément monogr, 
+                           d'éléments citedRange (optionnels) et d'éléments relatedItem (optionnels) -->
+                     <sequence minOccurs="1" maxOccurs="unbounded">
+                        <elementRef key="monogr" minOccurs="1" maxOccurs="unbounded"/>
+                        <elementRef key="citedRange" minOccurs="0" maxOccurs="unbounded"/>
+                        <elementRef key="relatedItem" minOccurs="0" maxOccurs="unbounded"/>
+                     </sequence>
+                  </content>
+               </elementSpec>
+
+               <elementSpec ident="listBibl" mode="change">
+                  <gloss>Bibliographie</gloss>
+                  <desc>permet de renseigner une liste de références bibliographiques.</desc>
+                  <content>
+                     <!-- L'élément listBibl est composé d'un élément head suivi de un à plusieurs éléments bibl -->
+                     <sequence>
+                        <elementRef key="head" minOccurs="1" maxOccurs="1"/>
+                        <elementRef key="bibl" minOccurs="1" maxOccurs="unbounded"/>
+                     </sequence>
+                  </content>
+               </elementSpec>
+
+               <elementSpec ident="relatedItem" mode="change">
+                  <gloss>Objet lié</gloss>
+                  <desc>Au sein d'une référence bibliographique structurée, indique une oeuvre en
+                     rapport avec celle décrite.</desc>
+                  <content>
+                     <!-- L'élément relatedItem est composé d'un élément bibl -->
+                     <elementRef key="bibl"/>
+                  </content>
+                  <attList>
+                     <!-- L'élément relatedItem peut avoir l'attribut source -->
+                     <attDef ident="source" mode="change" usage="opt"/>
+                  </attList>
+               </elementSpec>
+
+               <elementSpec ident="l" mode="change">
+                  <gloss>Vers</gloss>
+                  <desc>indique une division en vers au sein d'un poème.</desc>
+                  <content>
+                     <alternate minOccurs="1" maxOccurs="unbounded">
+                        <textNode/>
+                        <elementRef key="said"/>
+                        <elementRef key="note"/>
+                        <elementRef key="app"/>
+                        <elementRef key="del"/>
+                        <elementRef key="persName"/>
+                        <elementRef key="placeName"/>
+                     </alternate>
+                  </content>
+                  <attList>
+                     <!-- L'élément l a obligatoirement un attribut n -->
+                     <attDef ident="n" mode="change" usage="req"/>
+                  </attList>
+               </elementSpec>
+
+               <elementSpec ident="lg" mode="change">
+                  <gloss>Strophe</gloss>
+                  <desc>indique une division en strophes au sein d'un poème.</desc>
+                  <content>
+                     <!-- L'élément lg est composé d'un à plusieurs éléments l -->
+                     <elementRef key="l" minOccurs="1" maxOccurs="unbounded"/>
+                  </content>
+               </elementSpec>
+
+               <!--Checking module header-->
+               <classRef key="att.patternReplacement"/>
+               <moduleRef key="header"
+                  include="teiHeader fileDesc titleStmt sponsor funder principal editionStmt edition extent publicationStmt distributor authority idno availability licence seriesStmt notesStmt sourceDesc biblFull encodingDesc projectDesc refsDecl cRefPattern refState classDecl taxonomy category catDesc profileDesc handNote creation langUsage language textClass keywords catRef revisionDesc change scriptNote"/>
+
+               <elementSpec ident="teiHeader" mode="change">
+                  <attList>
+                     <attDef ident="corresp" mode="delete"/>
+                     <attDef ident="next" mode="delete"/>
+                     <attDef ident="prev" mode="delete"/>
+                     <attDef ident="ana" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+
+               <elementSpec ident="fileDesc" mode="change">
+                  <attList>
+                     <attDef ident="corresp" mode="delete"/>
+                     <attDef ident="next" mode="delete"/>
+                     <attDef ident="prev" mode="delete"/>
+                     <attDef ident="ana" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+
+               <elementSpec ident="titleStmt" mode="change">
+                  <attList>
+                     <attDef ident="corresp" mode="delete"/>
+                     <attDef ident="next" mode="delete"/>
+                     <attDef ident="prev" mode="delete"/>
+                     <attDef ident="ana" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+
+               <elementSpec ident="edition" mode="change">
+                  <gloss>Edition</gloss>
+                  <desc>permet de renseigner des informations relatives à l'édition d'une
+                     oeuvre.</desc>
+                  <content>
+                     <!-- L'élément edition englobe du texte -->
+                     <textNode/>
+                  </content>
+               </elementSpec>
+
+               <elementSpec ident="publicationStmt" mode="change">
+                  <gloss>Information relative à l'édition</gloss>
+                  <desc>permet de renseigner les informations relatives à l'édition, ici
+                     numérique.</desc>
+                  <attList>
+                     <attDef ident="corresp" mode="delete"/>
+                     <attDef ident="next" mode="delete"/>
+                     <attDef ident="prev" mode="delete"/>
+                     <attDef ident="ana" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+
+               <elementSpec ident="sourceDesc" mode="change">
+                  <gloss>Description des sources</gloss>
+                  <desc>permet de renseigner des informations relatives aux sources utilisées dans
+                     l'établissement du texte de l'édition.</desc>
+                  <attList>
+                     <attDef ident="corresp" mode="delete"/>
+                     <attDef ident="next" mode="delete"/>
+                     <attDef ident="prev" mode="delete"/>
+                     <attDef ident="ana" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+
+               <elementSpec ident="encodingDesc" mode="change">
+                  <gloss>Information relative à l'encodage</gloss>
+                  <desc>contient des informations sur la méthode choisie pour encoder le texte de
+                     l'édition.</desc>
+                  <content>
+                     <elementRef key="variantEncoding"/>
+                  </content>
+                  <attList>
+                     <attDef ident="corresp" mode="delete"/>
+                     <attDef ident="next" mode="delete"/>
+                     <attDef ident="prev" mode="delete"/>
+                     <attDef ident="ana" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+
+               <elementSpec ident="profileDesc" mode="change">
+                  <gloss>Description des éléments non-bibliographiques</gloss>
+                  <desc>permet de renseigner des informations supplémentaires au contenu du texte,
+                     telles que les index des lieux et des personnages.</desc>
+                  <attList>
+                     <attDef ident="corresp" mode="delete"/>
+                     <attDef ident="next" mode="delete"/>
+                     <attDef ident="prev" mode="delete"/>
+                     <attDef ident="ana" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+
+               <!--Checking module textstructure-->
+               <moduleRef key="textstructure"
+                  include="TEI text body group div div1 div2 div3 div4 trailer dateline opener closer salute signed postscript docTitle titlePart docDate front back"/>
+
+               <elementSpec ident="TEI" mode="change">
+                  <attList>
+                     <attDef ident="version" mode="delete"/>
+                     <attDef ident="corresp" mode="delete"/>
+                     <attDef ident="next" mode="delete"/>
+                     <attDef ident="prev" mode="delete"/>
+                     <attDef ident="ana" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                     <attDef ident="resp" mode="delete"/>
+                     <attDef ident="source" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                     <attDef ident="subtype" mode="delete"/>
+                  </attList>
+               </elementSpec>
+
+               <elementSpec ident="text" mode="change">
+                  <attList>
+                     <attDef ident="corresp" mode="delete"/>
+                     <attDef ident="next" mode="delete"/>
+                     <attDef ident="prev" mode="delete"/>
+                     <attDef ident="ana" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                     <attDef ident="resp" mode="delete"/>
+                     <attDef ident="source" mode="delete"/>
+                     <attDef ident="decls" mode="delete"/>
+                  </attList>
+               </elementSpec>
+
+               <elementSpec ident="body" mode="change">
+                  <attList>
+                     <attDef ident="corresp" mode="delete"/>
+                     <attDef ident="next" mode="delete"/>
+                     <attDef ident="prev" mode="delete"/>
+                     <attDef ident="ana" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                     <attDef ident="resp" mode="delete"/>
+                     <attDef ident="source" mode="delete"/>
+                     <attDef ident="decls" mode="delete"/>
+                  </attList>
+               </elementSpec>
+
+               <elementSpec ident="div" mode="change">
+                  <gloss>Division</gloss>
+                  <desc>permet d'indiquer une division du texte ; dans notre édition, il s'agit
+                     uniquement de la division entre les 12 chants de l'oeuvre.</desc>
+                  <attList>
+                     <!-- L'élément div a obligatoirement un attribut type qui prend la valeur book -->
+                     <attDef ident="type" mode="change" usage="req">
+                        <valList mode="add" type="closed">
+                           <valItem ident="book"/>
+                        </valList>
+                     </attDef>
+                     <!-- L'élément div a obligatoirement un attribut n -->
+                     <attDef ident="n" mode="change" usage="req"/>
+                     <attDef ident="ana" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+
+               <!--Checking module corpus-->
+               <moduleRef key="corpus" include="particDesc settingDesc"/>
+
+               <elementSpec ident="particDesc" mode="change">
+                  <attList>
+                     <attDef ident="corresp" mode="delete"/>
+                     <attDef ident="next" mode="delete"/>
+                     <attDef ident="prev" mode="delete"/>
+                     <attDef ident="ana" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+
+               <elementSpec ident="settingDesc" mode="change">
+                  <attList>
+                     <attDef ident="corresp" mode="delete"/>
+                     <attDef ident="next" mode="delete"/>
+                     <attDef ident="prev" mode="delete"/>
+                     <attDef ident="ana" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+            </schemaSpec>
+         </div1>
+      </body>
+   </text>
+</TEI>
