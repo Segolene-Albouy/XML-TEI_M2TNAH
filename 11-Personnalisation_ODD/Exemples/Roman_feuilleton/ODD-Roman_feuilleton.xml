@@ -1,4 +1,5 @@
-<!-- Très bonne documentation, très bonne personnalisation (attention une règle schematron ne correspond pas à votre encodage), il aurait été bien de mieux signaler les endroits que vous avez modifiés manuellement -->
+<!-- Très bonne documentation, très bonne personnalisation (attention une règle schematron ne correspond pas à votre encodage), 
+      il aurait été bien de mieux signaler les endroits que vous avez modifiés manuellement -->
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0"
    xmlns:s="http://purl.oclc.org/dsdl/schematron" xml:lang="en">
    <teiHeader>

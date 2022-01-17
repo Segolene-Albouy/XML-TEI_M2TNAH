@@ -1,7 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
-	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="out/ODD_sonnetTEI.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
@@ -37,7 +35,7 @@
             <lg type="sizain">
                <lg type="tercet" n="1">
                   <l>Aimons-nous doucement. L’Amour dans sa guérite,</l>
-                  <l> Ténébreux, embusqué, bande son arc fatal.</l>
+                  <l>Ténébreux, embusqué, bande son arc fatal.</l>
                   <l>Je connais les engins de son vieil arsenal :</l>
                </lg>
                <lg type="tercet" n="2">
