@@ -1,0 +1,18 @@
+<assert test="@title">
+	L'élément doit avoir l'attribut @title renseigné
+</assert>
+<assert test="count(*)=2 and count(name)=1 and count(gender)=1">
+	L'élément doit avoir pour enfant un élément name et un élément gender
+</assert>
+<assert test="*[1]=name">
+	L'élément enfant name doit apparaître en premier
+</assert>
+
+<assert test="(@title='Mr' and gender='Male') or @title!='Mr'">
+	Si l'attribut @title a pour valeur "Mr", alors le gender doit être "Male"
+</assert>
+<rule context="person[@title='Mr']">
+    <assert test="gender='Male'">
+    	Si l'attribut @title a pour valeur "Mr", alors le gender doit être "Male"
+    </assert>
+</rule>
