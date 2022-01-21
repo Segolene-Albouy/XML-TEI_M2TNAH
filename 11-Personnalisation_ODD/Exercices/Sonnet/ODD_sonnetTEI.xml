@@ -34,6 +34,7 @@
                               <!-- Les vers doivent avoir un attribut @n dont la valeur est supérieure de 1 au vers précédent -->
                               <constraintSpec scheme="schematron" ident="numerotation">
                                     <constraint>
+                                          <s:ns prefix="tei" uri="http://www.tei-c.org/ns/1.0"/>
                                           <s:rule context="tei:l[position() != 1]">
                                                 <s:assert test="number(@n) = number(preceding-sibling::tei:l[1]/@n) + 1">
                                                       La numérotation doit être continue.
@@ -54,9 +55,9 @@
                                     </attDef>
                                     <attDef ident="rime" mode="add" ns="http://www.exemple.com/ns/nonTEI">
                                           <valList mode="add" type="closed">
-                                                <valItem ident="rime A"/>
-                                                <valItem ident="rime B"/>     
-                                                <valItem ident="rime C"/>   
+                                                <valItem ident="A"/>
+                                                <valItem ident="B"/>     
+                                                <valItem ident="C"/>   
                                           </valList>
                                     </attDef>
                               </attList>
@@ -89,7 +90,8 @@
                               </constraintSpec>
                               <!-- Un sonnet ne peut contenir que 3 groupements de vers : 2 quatrains, un sizain -->
                               <constraintSpec scheme="schematron" ident="sonnet">
-                                    <constraint>
+                                    <constraint xmlns:tei="http://www.tei-c.org/ns/1.0">
+                                          <!--<s:ns prefix="tei" uri="http://www.tei-c.org/ns/1.0"/>-->
                                           <s:rule context="tei:lg[@type='sonnet']">
                                                 <s:assert test="count(tei:lg)=3 and count(tei:lg[@type='quatrain'])=2 and count(tei:lg[@type='sizain'])=1">
                                                       Les lg[@type='sonnet'] doivent contenir trois lg, dont deux de @type="quatrain" et un de @type="sizain"
@@ -100,6 +102,7 @@
                               <!-- Un lg[@type="sonnet"] doit commencer par un titre -->
                               <constraintSpec scheme="schematron" ident="title">
                                     <constraint>
+                                          <s:ns prefix="tei" uri="http://www.tei-c.org/ns/1.0"/>
                                           <s:rule context="tei:lg[@type='sonnet']">
                                                 <s:assert test="*[1]=tei:head">
                                                       Le premier élément d'un lg[@type='sonnet'] doit être head

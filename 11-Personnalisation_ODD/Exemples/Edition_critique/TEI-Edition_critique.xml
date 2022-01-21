@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?> 
-<?xml-model href="out/ODDcarette-eneide-sujet7.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="RNG-Edition_critique.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="RNG-Edition_critique.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!-- Excellent travail -->
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
@@ -17,7 +18,7 @@
          </titleStmt>
          <publicationStmt>
             <p>Edition encodée et enrichie dans le cadre du master "Technologies numériques
-               appliquées à l'histoire" de l'Ecole nationale des chartes.</p>
+               appliquées à l'histoire" de l'École nationale des chartes.</p>
          </publicationStmt>
          <sourceDesc>
             <biblStruct>

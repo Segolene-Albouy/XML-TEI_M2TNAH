@@ -2,6 +2,7 @@
 
 <!DOCTYPE TEI SYSTEM "DTD-Edition_paleographique.dtd">
 <?xml-model href="RNG-Edition_paleographique.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="RNG-Edition_paleographique.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -1303,29 +1304,23 @@
                </seg>
 
                <seg facs="#l112">
-                  <said xml:id="Si45"
-                     prev="#Si44"
-                     next="#Si46">tu queroies aide. <g type="initiale"
+                  <said xml:id="Si45" prev="#Si44" next="#Si46">
+                        tu queroies aide. <g type="initiale"
                         rend="color:red">E</g>t por qoi demandes tu</said>
                </seg>
 
                <seg facs="#l113">
-                  <said xml:id="Si46"
-                     prev="#Si45"
-                     next="#Si47">ne reqiers compaignie de ta passion
+                  <said xml:id="Si46" prev="#Si45" next="#Si47">
+                        ne reqiers compaignie de ta passion
                      &point-interrogation1; Je</said>
                </seg>
 
                <seg facs="#l114">
-                  <said xml:id="Si47"
-                     prev="#Si46"
-                     next="#Si48">te deguerpiz tot mon iretage&virgule; &et; por qoi</said>
+                  <said xml:id="Si47" prev="#Si46" next="#Si48">te deguerpiz tot mon iretage&virgule; &et; por qoi</said>
                </seg>
 
                <seg facs="#l115">
-                  <said xml:id="Si48"
-                     prev="#Si47"
-                     next="#Si49">me vielz tu &vu;eoir &punctus-interrogatus; <g type="initiale"
+                  <said xml:id="Si48" prev="#Si47" next="#Si49">me vielz tu &vu;eoir &punctus-interrogatus; <g type="initiale"
                         rend="color:red">E</g>l&y;es deguerpi <name xml:id="Helyseum"
                         >&Hh;el&y;se&um;</name><certainty locus="value" target="#Helyseum"
                         resp="#SA" degree="0.4">
@@ -1334,9 +1329,9 @@
                      </certainty></said>
                </seg>
 
-               <seg facs="#l116"><said xml:id="Si49"
-                     prev="#Si48"
-                     >&et; si ne li toli mie sa &vu;ertu</said>&guillemet-fermant; <g
+               <seg facs="#l116">
+                     <said xml:id="Si49" prev="#Si48">
+                     &et; si ne li toli mie sa &vu;ertu</said>&guillemet-fermant; <g
                      type="initiale" rend="color:red">Q</g>ant il ot ce</seg>
 
                <seg facs="#l117">dit&virgule; si li &com;manda q&apost;il preist toz les

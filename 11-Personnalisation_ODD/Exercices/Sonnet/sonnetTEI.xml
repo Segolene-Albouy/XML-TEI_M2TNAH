@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="out/ODD_sonnetTEI.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="out/ODD_sonnetTEI.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:nt="http://www.exemple.com/ns/nonTEI">
    <teiHeader>
@@ -21,27 +22,27 @@
          <lg type="sonnet">
             <head>Sonnet d'automne</head>
             <lg type="quatrain" n="1">
-                  <l n="1" nt:rime="rime A">Ils me disent, tes yeux, clairs comme le cristal :</l>
-                  <l n="2" nt:rime="rime B">« Pour toi, bizarre amant, quel est donc mon mérite ? »</l>
-                  <l n="3" nt:rime="rime B">— Sois charmante et tais-toi ! Mon cœur, que tout irrite,</l>
-                  <l n="4" nt:rime="rime A">Excepté la candeur de l’antique animal,</l>
+                  <l n="1" nt:rime="A">Ils me disent, tes yeux, clairs comme le cristal :</l>
+                  <l n="2" nt:rime="B">« Pour toi, bizarre amant, quel est donc mon mérite ? »</l>
+                  <l n="3" nt:rime="B">— Sois charmante et tais-toi ! Mon cœur, que tout irrite,</l>
+                  <l n="4" nt:rime="A">Excepté la candeur de l’antique animal,</l>
             </lg>
             <lg type="quatrain" n="2">
-                  <l n="5" nt:rime="rime A">Ne veut pas te montrer son secret infernal,</l>
-                  <l n="6" nt:rime="rime B">Berceuse dont la main aux longs sommeils m’invite,</l>
-                  <l n="7" nt:rime="rime B">Ni sa noire légende avec la flamme écrite.</l>
-                  <l n="8" nt:rime="rime A">Je hais la passion et l’esprit me fait mal !</l>
+                  <l n="5" nt:rime="A">Ne veut pas te montrer son secret infernal,</l>
+                  <l n="6" nt:rime="B">Berceuse dont la main aux longs sommeils m’invite,</l>
+                  <l n="7" nt:rime="B">Ni sa noire légende avec la flamme écrite.</l>
+                  <l n="8" nt:rime="A">Je hais la passion et l’esprit me fait mal !</l>
             </lg>
             <lg type="sizain">
                <lg type="tercet" n="1">
-                     <l n="9" nt:rime="rime B">Aimons-nous doucement. L’Amour dans sa guérite,</l>
-                     <l n="10" nt:rime="rime A">Ténébreux, embusqué, bande son arc fatal.</l>
-                     <l n="11" nt:rime="rime A">Je connais les engins de son vieil arsenal :</l>
+                     <l n="9" nt:rime="B">Aimons-nous doucement. L’Amour dans sa guérite,</l>
+                     <l n="10" nt:rime="A">Ténébreux, embusqué, bande son arc fatal.</l>
+                     <l n="11" nt:rime="A">Je connais les engins de son vieil arsenal :</l>
                </lg>
                <lg type="tercet" n="2">
-                     <l n="12" nt:rime="rime B">Crime, horreur et folie ! — Ô pâle marguerite !</l>
-                     <l n="13" nt:rime="rime A">Comme moi n’es-tu pas un soleil automnal,</l>
-                     <l n="14" nt:rime="rime A">Ô ma si blanche, ô ma si froide Marguerite ?</l>
+                     <l n="12" nt:rime="B">Crime, horreur et folie ! — Ô pâle marguerite !</l>
+                     <l n="13" nt:rime="A">Comme moi n’es-tu pas un soleil automnal,</l>
+                     <l n="14" nt:rime="A">Ô ma si blanche, ô ma si froide Marguerite ?</l>
                </lg>
             </lg>
          </lg>
