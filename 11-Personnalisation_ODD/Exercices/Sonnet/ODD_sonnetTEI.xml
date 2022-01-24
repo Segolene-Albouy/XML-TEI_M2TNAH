@@ -124,12 +124,6 @@
                               </attList>
                         </elementSpec>
 
-                        <elementSpec ident="head" mode="change">
-                              <attList>
-                                    <attDef ident="type" mode="delete"/>
-                              </attList>
-                        </elementSpec>
-
                         <classRef key="model.physDescPart"/>
                         <classRef key="model.persNamePart"/>
                         <classRef key="model.entryLike"/>

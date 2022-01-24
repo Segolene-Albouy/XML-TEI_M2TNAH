@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <!DOCTYPE TEI SYSTEM "DTD-Edition_paleographique.dtd">
-<?xml-model href="RNG-Edition_paleographique.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="RNG-Edition_paleographique.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="RNG-Edition_paleographique.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -1115,8 +1114,7 @@
                      maleureus</said></seg>
 
                <seg facs="#l77">
-                  <said xml:id="Si25" prev="#Si24"
-                     next="#Si26">qi aor&é;z &et;
+                  <said xml:id="Si25" prev="#Si24" next="#Si26">qi aor&é;z &et;
                      reqer&é;z aide &à; ces &y;doles&virgule; qi sont</said>
                </seg>
 

@@ -694,7 +694,9 @@
                   <gloss>Prise de parole</gloss>
                   <constraintSpec ident="whoReq" scheme="schematron">
                      <constraint>
-                        <s:assert test="@who">L'attribut who est requis.</s:assert> <!-- Ce genre de modification se fait plutôt dans la liste d'attributs -->
+                           <s:rule context="tei:said[not(@prev)]">
+                              <s:assert test="@who">L'attribut who est requis pour le premier segment de prise de parole</s:assert>
+                           </s:rule>
                      </constraint>
                   </constraintSpec>
                   <constraintSpec ident="segSaid" scheme="schematron">

@@ -5,7 +5,7 @@
          xmlns="http://relaxng.org/ns/structure/1.0"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2022-01-10T20:24:46Z. .
+Schema generated from ODD source 2022-01-24T15:23:55Z. .
 TEI Edition: Version 4.3.0. Last updated on
         31st August 2021, revision b4f72b1ff
 TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.3.0/
@@ -2239,21 +2239,18 @@ Suggested values include: 1] volume (volume); 2] issue; 3] page (page); 4] line;
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Prise de parole) indicates passages thought or spoken aloud, whether explicitly indicated in the source or not, whether directly or indirectly reported, whether by real people or fictional characters. [3.3.3. Quotation]</a:documentation>
          <ref name="macro.specialPara"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="oddbyexample-said-whoReq-constraint-assert-3">
-            <rule context="tei:said">
-               <s:assert xmlns="http://www.tei-c.org/ns/1.0"
-                         xmlns:s="http://purl.oclc.org/dsdl/schematron"
-                         xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                         test="@who">L'attribut who est requis.</s:assert>
-            </rule>
+                  id="oddbyexample-said-whoReq-constraint-rule-6">
+            <s:rule xmlns="http://www.tei-c.org/ns/1.0"
+                    xmlns:s="http://purl.oclc.org/dsdl/schematron"
+                    xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                    context="tei:said[not(@prev)]">
+               <s:assert test="@who">L'attribut who est requis pour le premier segment de prise de parole</s:assert>
+            </s:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="oddbyexample-said-segSaid-constraint-assert-4">
             <rule context="tei:said">
-               <s:assert xmlns="http://www.tei-c.org/ns/1.0"
-                         xmlns:s="http://purl.oclc.org/dsdl/schematron"
-                         xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                         test="parent::tei:seg">L'élément said ne peut qu'être contenu dans une
+               <s:assert xmlns:s="http://purl.oclc.org/dsdl/schematron" test="parent::tei:seg">L'élément said ne peut qu'être contenu dans une
                               balise seg.</s:assert>
             </rule>
          </pattern>
@@ -2297,7 +2294,7 @@ Suggested values include: 1] volume (volume); 2] issue; 3] page (page); 4] line;
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Description) contains a short description of the purpose, function, or use of its parent element, or when the parent is a documentation element, describes or defines the object being documented.  [22.4.1. Description of Components]</a:documentation>
          <ref name="macro.limitedContent"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="oddbyexample-desc-deprecationInfo-only-in-deprecated-constraint-rule-6">
+                  id="oddbyexample-desc-deprecationInfo-only-in-deprecated-constraint-rule-7">
             <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:s="http://purl.oclc.org/dsdl/schematron"
@@ -2644,7 +2641,7 @@ Suggested values include: 1] illegible (illegible); 2] inaudible (inaudible); 3]
             </zeroOrMore>
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="oddbyexample-list-gloss-list-must-have-labels-constraint-rule-7">
+                  id="oddbyexample-list-gloss-list-must-have-labels-constraint-rule-8">
             <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:s="http://purl.oclc.org/dsdl/schematron"
@@ -3111,7 +3108,7 @@ Elements]</a:documentation>
             </choice>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="oddbyexample-bibl-titleBibl-constraint-rule-8">
+                  id="oddbyexample-bibl-titleBibl-constraint-rule-9">
             <s:rule xmlns="http://www.tei-c.org/ns/1.0"
                     xmlns:s="http://purl.oclc.org/dsdl/schematron"
                     xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -3823,7 +3820,7 @@ Elements]</a:documentation>
             </oneOrMore>
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="oddbyexample-div-divId-constraint-rule-10">
+                  id="oddbyexample-div-divId-constraint-rule-11">
             <s:rule xmlns="http://www.tei-c.org/ns/1.0"
                     xmlns:s="http://purl.oclc.org/dsdl/schematron"
                     xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -5907,7 +5904,7 @@ Sample values include: 1] ignorance; 2] incompleteness; 3] credibility; 4] impre
       </optional>
    </define>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="oddbyexample-att.repeatable-MINandMAXoccurs-constraint-rule-11">
+            id="oddbyexample-att.repeatable-MINandMAXoccurs-constraint-rule-12">
       <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:xi="http://www.w3.org/2001/XInclude"
                 xmlns="http://www.tei-c.org/ns/1.0"
@@ -5940,7 +5937,7 @@ Sample values include: 1] ignorance; 2] incompleteness; 3] credibility; 4] impre
       </optional>
    </define>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="oddbyexample-att.deprecated-validUntil-deprecation-two-month-warning-constraint-rule-13">
+            id="oddbyexample-att.deprecated-validUntil-deprecation-two-month-warning-constraint-rule-14">
       <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:xi="http://www.w3.org/2001/XInclude"
                 xmlns="http://www.tei-c.org/ns/1.0"
@@ -5961,7 +5958,7 @@ Sample values include: 1] ignorance; 2] incompleteness; 3] credibility; 4] impre
       </sch:rule>
    </pattern>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="oddbyexample-att.deprecated-validUntil-deprecation-should-be-explained-constraint-rule-14">
+            id="oddbyexample-att.deprecated-validUntil-deprecation-should-be-explained-constraint-rule-15">
       <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:xi="http://www.w3.org/2001/XInclude"
                 xmlns="http://www.tei-c.org/ns/1.0"
@@ -6119,7 +6116,7 @@ Sample values include: 1] TEI; 2] DBK (docbook); 3] XX (unknown); 4] Schematron;
       <element name="moduleRef">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(module reference) references a module which is to be incorporated into a schema. [22.2. Modules and Schemas]</a:documentation>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="oddbyexample-moduleRef-modref-constraint-rule-15">
+                  id="oddbyexample-moduleRef-modref-constraint-rule-16">
             <rule xmlns:xi="http://www.w3.org/2001/XInclude"
                   xmlns:s="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -6137,7 +6134,7 @@ Child elements of <name/> are only allowed when an external module is being load
             </attribute>
          </optional>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="oddbyexample-moduleRef-prefix-not-same-prefix-constraint-rule-16">
+                  id="oddbyexample-moduleRef-prefix-not-same-prefix-constraint-rule-17">
             <rule xmlns:xi="http://www.w3.org/2001/XInclude"
                   xmlns:s="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -6204,7 +6201,7 @@ Child elements of <name/> are only allowed when an external module is being load
             </zeroOrMore>
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="oddbyexample-schemaSpec-deprecate_schemaSpec_in_bizarre_places-constraint-rule-17">
+                  id="oddbyexample-schemaSpec-deprecate_schemaSpec_in_bizarre_places-constraint-rule-18">
             <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
                       xmlns="http://www.tei-c.org/ns/1.0"
@@ -6311,7 +6308,7 @@ Child elements of <name/> are only allowed when an external module is being load
             </zeroOrMore>
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="oddbyexample-elementSpec-child-constraint-based-on-mode-constraint-rule-18">
+                  id="oddbyexample-elementSpec-child-constraint-based-on-mode-constraint-rule-19">
             <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
                       xmlns="http://www.tei-c.org/ns/1.0"
@@ -6457,7 +6454,7 @@ Child elements of <name/> are only allowed when an external module is being load
                  prefix="sch"
                  uri="http://purl.oclc.org/dsdl/schematron"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="oddbyexample-constraintSpec-needrules-constraint-rule-20">
+                  id="oddbyexample-constraintSpec-needrules-constraint-rule-21">
             <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:macroSpec/tei:constraintSpec[@scheme eq 'schematron']/tei:constraint">
                <sch:report test="sch:assert|sch:report">An ISO Schematron constraint specification for a macro should not
@@ -6558,7 +6555,7 @@ Suggested values include: 1] schematron (ISO Schematron)</a:documentation>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="oddbyexample-attDef-noDefault4Required-constraint-rule-21">
+                  id="oddbyexample-attDef-noDefault4Required-constraint-rule-22">
             <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
                       xmlns="http://www.tei-c.org/ns/1.0"
@@ -6569,7 +6566,7 @@ Suggested values include: 1] schematron (ISO Schematron)</a:documentation>
             </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="oddbyexample-attDef-defaultIsInClosedList-twoOrMore-constraint-rule-22">
+                  id="oddbyexample-attDef-defaultIsInClosedList-twoOrMore-constraint-rule-23">
             <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
                       xmlns="http://www.tei-c.org/ns/1.0"
@@ -6583,7 +6580,7 @@ Suggested values include: 1] schematron (ISO Schematron)</a:documentation>
             </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="oddbyexample-attDef-defaultIsInClosedList-one-constraint-rule-23">
+                  id="oddbyexample-attDef-defaultIsInClosedList-one-constraint-rule-24">
             <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
                       xmlns="http://www.tei-c.org/ns/1.0"
@@ -6795,7 +6792,7 @@ Suggested values include: 1] schematron (ISO Schematron)</a:documentation>
       </attribute>
    </define>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="oddbyexample-att.identified-spec-in-module-constraint-rule-24">
+            id="oddbyexample-att.identified-spec-in-module-constraint-rule-25">
       <rule xmlns:xi="http://www.w3.org/2001/XInclude"
             xmlns:s="http://purl.oclc.org/dsdl/schematron"
             xmlns:rng="http://relaxng.org/ns/structure/1.0"
