@@ -16,3 +16,5 @@
     	Si l'attribut @title a pour valeur "Mr", alors le gender doit être "Male"
     </assert>
 </rule>
+
+<assert test="ancestor::tei:l">L'élément doit être contenu dans un élément l</assert>
