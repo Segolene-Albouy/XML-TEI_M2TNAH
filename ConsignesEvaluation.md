@@ -10,12 +10,12 @@
 
 * Écrire une ODD adaptée à votre encodage et documentée **(/10)** :
 	- Générer une ODD à partir de `Roma` ou de `oddbyexample` (/1) ;
-	- Votre ODD doit contenir au moins une règle fonctionnelle (et ne faisant pas partie des exemples du cours) :
+	- Votre ODD doit contenir au moins une règle **fonctionnelle** (et ne faisant pas partie des exemples du cours) et **documentée** (une description *a minima* en commentaire explicitant la fonction de la règle de validation) :
 		- Une règle contraignant l’usage d’un attribut et sa ou ses valeurs (`<attDef>`) (/1) ;
 		- Une règle contraignant l’enchaînement de certains éléments (`<content>`) (/1) ;
 		- Une règle contraignant la valeur d’un attribut ou l’usage d’un élément ou d’un attribut en fonction de son environnement (`<constraint>`) (/1).
 	- À partir de votre ODD, générer la documentation HTML de votre projet :
-		- Présenter en introduction votre projet et ses exploitations possibles (/3) ;
+		- Présenter en introduction votre projet éditorial et ses exploitations possibles (/3) ;
 		- Documenter le fonctionnement de votre encodage et vos choix de balises (/3). 
 
 ## Liste des sujets possibles
