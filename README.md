@@ -52,6 +52,7 @@ Les consignes détaillées concernant l'évaluation sont compilées dans [ce doc
 - BURGHART, Marjorie, PIERAZZO, Elena et al., [*Online course: Digital Scholarly Editions: Manuscripts, Texts, and TEI Encoding – Digital Editing of Medieval Manuscripts*](https://www.digitalmanuscripts.eu/digital-editing-of-medieval-texts-a-textbook/) ;
 - CAMPS, Jean-Baptiste, [Structuration des données et des documents : balisage XML](https://halshs.archives-ouvertes.fr/cel-01706530) ;
 - CHATEAU, Emmanuel, [L'encodage des textes](http://www.desgodets.net/edition-des-cours/model), Cours de Desgodets, 2012 ;
+- Consortium ORIFLAMMS, [Spécification au format XML-TEI pour l'alignement texte-image. Bonnes pratiques d'encodage](https://oriflamms.hypotheses.org/1510), 2016 ;
 - CONSENTIN, Magali, [Cours XML](http://magali.contensin.free.fr/html/XML/index.php), 2007 ;
 - *Digital Scholarly Editions*, [Manuscripts, Texts and TEI Encoding](https://www.youtube.com/playlist?list=PL77mHK9JuenN9NXeXQbVcUORz7HZk-9Pv) ;
 - GENEVÈS, Pierre, [*The XPath Language*](http://wam.inrialpes.fr/courses/PG-MoSIG12/xpath.pdf) ;
@@ -100,6 +101,3 @@ Les consignes détaillées concernant l'évaluation sont compilées dans [ce doc
 - [Roma](https://romabeta.tei-c.org/) ;
 - [TEI Critical Apparatus Toolbox](http://teicat.huma-num.fr/) ;
 - [XPath tester](https://extendsclass.com/xpath-tester.html).
-
-
-
