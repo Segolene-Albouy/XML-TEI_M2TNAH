@@ -45,6 +45,7 @@ Les consignes détaillées concernant l'évaluation sont compilées dans [ce doc
 
 - PINCHE, Ariane, [Cours TNAH XML-TEI](https://github.com/ArianePinche/coursTNAH_XML-TEI) ;
 - Alsacreation, [XML en quelques mots](https://www.alsacreations.com/article/lire/609-XML-en-quelques-mots.html) ;
+- BESHERO-BONDAR, Elisa et al., [*Document Modeling with the TEI Critical Apparatus*](http://slides.com/elisabeshero-bondar/app-crit), 2019 ;
 - BURGHART, Marjorie, PIERAZZO, Elena et al., [*Online course: Digital Scholarly Editions: Manuscripts, Texts, and TEI Encoding – Digital Editing of Medieval Manuscripts*](https://www.digitalmanuscripts.eu/digital-editing-of-medieval-texts-a-textbook/) ;
 - BURNARD, Lou, [Comment maîtriser le tigre TEI](https://cahier.hypotheses.org/files/2018/08/ODD-diapos.pdf) ;
 - BURNARD, Lou, [La Text Encoding Initiative (TEI) C'est quoi ?](https://docasie.cnrs.fr/wp-content/uploads/PresentationPPT/DocAsie2013/DocAsie2013_LouBurnard_TEI.pdf) ;
