@@ -18,3 +18,61 @@
 </rule>
 
 <assert test="ancestor::tei:l">L'élément doit être contenu dans un élément l</assert>
+
+<rule context="tei:TEI//tei:cb">
+      <assert test="matches(@facs, concat('#c', @n))">
+            Le "column begining" doit référencer une zone de facsimilé correspondante à son rang d'apparition @n
+            avec @facs='#c[@n]'
+      </assert>
+</rule>
+
+<pattern>
+      <rule context="@wit">
+            <let name="wits" value="for $w in tokenize(., '\s+') return substring-after($w, '#')"/>
+            <assert test="every $wit in $wits satisfies $wit = //tei:TEI//tei:listWit//@xml:id">
+                  Chaque référence dans l'attribut @wit doit correspondre à l'identifiant d'un witness dans le listWit
+            </assert>
+      </rule>
+</pattern>
+
+<pattern>
+      <rule context="tei:TEI//tei:body//tei:placeName">
+            <let name="ref" value="substring-after(@ref, '#')"/>
+            <assert test="@ref and $ref = //tei:TEI//tei:settingDesc//tei:place/@xml:id">
+                  la valeur @ref du &lt;placeName&gt; doit être renseignée
+                  et correspondre à une &lt;place&gt; déclarée dans le &lt;settingDesc&gt;
+            </assert>
+      </rule>
+</pattern>
+
+<schema>
+      <let name="mots" value="'test,hello'"/>
+      <let name="match" value="replace($mots, ',', '|')"/>
+      <pattern>
+            <rule context="//tei:title">
+                  <report test="matches(text(), $match)" role="warn">
+                        Les mots suivants sont prohibés dans les titres
+                        <value-of select="$mots"/>
+                  </report>
+            </rule>
+      </pattern>
+</schema>
+
+<pattern abstract="true" id="majuscule">
+      <rule context="$el" role="information">
+            <let name="firstNodeIsElement" value="node()[1] instance of element()"/>
+            <report test="(not($firstNodeIsElement) and (not(matches(., '^[A-Z|0-9]'))))">
+                  L'élément &lt;<value-of select="$el"/>&gt; doit commencer par une majuscule.
+            </report>
+      </rule>
+</pattern>
+<pattern is-a="majuscule">
+      <param name="el" value="title"/>
+</pattern>
+<pattern is-a="majuscule">
+      <param name="el" value="li"/>
+</pattern>
+
+<assert test="name(following-sibling::*[1]) = 'lb'">
+      L'élément doit être suivi d'un &lt;ln&gt;
+</assert>
