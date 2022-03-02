@@ -27,16 +27,15 @@ Les consignes détaillées concernant l'évaluation sont compilées dans [ce doc
 * Structurer en XML-TEI votre texte en vue d’une édition et en respectant le genre auquel appartient votre extrait **(/6)** ;
 
 * Compléter de la manière la plus précise possible le `teiHeader` de votre édition, en fonction des éléments nécessaires à son établissement et à la compréhension du texte **(/4)** ;
-
 * Écrire une ODD adaptée à votre encodage et documentée **(/10)** :
-	- Générer une ODD à partir de `Roma` ou de `oddbyexample` (/1) ;
-	- Votre ODD doit contenir au moins :
-		- Une règle contraignant l’usage d’un attribut et sa ou ses valeurs (/1) ;
-		- Une règle contraignant l’enchaînement de certains éléments (/1) ;
-		- Une règle contraignant la valeur d’un attribut ou l’usage d’un élément ou d’un attribut en fonction de son environnement (/1).
-	- À partir de votre ODD, générer la documentation HTML de votre projet :
-		- Présenter en introduction votre projet et ses exploitations possibles (/3) ;
-		- Documenter le fonctionnement de votre encodage et vos choix de balises (/3). 
+    - Générer une ODD à partir de `Roma` ou de `oddbyexample` (/1) ;
+    - Votre ODD doit contenir au moins une règle **fonctionnelle** (et ne faisant pas partie des exemples du cours) et **documentée** (une description *a minima* en commentaire explicitant la fonction de la règle de validation) :
+        - Une règle contraignant l’usage d’un attribut et sa ou ses valeurs (`<attDef>`) (/1) ;
+        - Une règle contraignant l’enchaînement de certains éléments (`<content>`) (/1) ;
+        - Une règle contraignant la valeur d’un attribut ou l’usage d’un élément ou d’un attribut en fonction de son environnement (`<constraint>`) (/1).
+    - À partir de votre ODD, générer la documentation HTML de votre projet :
+        - Présenter en introduction votre projet éditorial et ses exploitations possibles (/3) ;
+        - Documenter le fonctionnement de votre encodage et vos choix de balises (/3). 
 
 **Date de rendu** : au plus tard le 31 janvier.
 
@@ -46,6 +45,7 @@ Les consignes détaillées concernant l'évaluation sont compilées dans [ce doc
 
 - PINCHE, Ariane, [Cours TNAH XML-TEI](https://github.com/ArianePinche/coursTNAH_XML-TEI) ;
 - Alsacreation, [XML en quelques mots](https://www.alsacreations.com/article/lire/609-XML-en-quelques-mots.html) ;
+- BESHERO-BONDAR, Elisa et al., [*Document Modeling with the TEI Critical Apparatus*](http://slides.com/elisabeshero-bondar/app-crit), 2019 ;
 - BURGHART, Marjorie, PIERAZZO, Elena et al., [*Online course: Digital Scholarly Editions: Manuscripts, Texts, and TEI Encoding – Digital Editing of Medieval Manuscripts*](https://www.digitalmanuscripts.eu/digital-editing-of-medieval-texts-a-textbook/) ;
 - BURNARD, Lou, [Comment maîtriser le tigre TEI](https://cahier.hypotheses.org/files/2018/08/ODD-diapos.pdf) ;
 - BURNARD, Lou, [La Text Encoding Initiative (TEI) C'est quoi ?](https://docasie.cnrs.fr/wp-content/uploads/PresentationPPT/DocAsie2013/DocAsie2013_LouBurnard_TEI.pdf) ;
@@ -53,6 +53,7 @@ Les consignes détaillées concernant l'évaluation sont compilées dans [ce doc
 - BURGHART, Marjorie, PIERAZZO, Elena et al., [*Online course: Digital Scholarly Editions: Manuscripts, Texts, and TEI Encoding – Digital Editing of Medieval Manuscripts*](https://www.digitalmanuscripts.eu/digital-editing-of-medieval-texts-a-textbook/) ;
 - CAMPS, Jean-Baptiste, [Structuration des données et des documents : balisage XML](https://halshs.archives-ouvertes.fr/cel-01706530) ;
 - CHATEAU, Emmanuel, [L'encodage des textes](http://www.desgodets.net/edition-des-cours/model), Cours de Desgodets, 2012 ;
+- Consortium ORIFLAMMS, [Spécification au format XML-TEI pour l'alignement texte-image. Bonnes pratiques d'encodage](https://oriflamms.hypotheses.org/1510), 2016 ;
 - CONSENTIN, Magali, [Cours XML](http://magali.contensin.free.fr/html/XML/index.php), 2007 ;
 - *Digital Scholarly Editions*, [Manuscripts, Texts and TEI Encoding](https://www.youtube.com/playlist?list=PL77mHK9JuenN9NXeXQbVcUORz7HZk-9Pv) ;
 - GENEVÈS, Pierre, [*The XPath Language*](http://wam.inrialpes.fr/courses/PG-MoSIG12/xpath.pdf) ;
@@ -101,6 +102,3 @@ Les consignes détaillées concernant l'évaluation sont compilées dans [ce doc
 - [Roma](https://romabeta.tei-c.org/) ;
 - [TEI Critical Apparatus Toolbox](http://teicat.huma-num.fr/) ;
 - [XPath tester](https://extendsclass.com/xpath-tester.html).
-
-
-
