@@ -678,7 +678,7 @@
                <!-- ÉLÉMENTS PERSONNALISÉS -->
                <elementSpec ident="seg" mode="change">
                   <gloss>Segment de texte</gloss>
-                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contient le
+                  <desc>contient le
                      texte correspondant à une ligne sur la page.</desc> 
                   <attList>
                      <attDef ident="corresp" mode="delete"/>
@@ -734,7 +734,7 @@
 
                <elementSpec ident="g" mode="change">
                   <gloss>Caractère ou glyphe</gloss>
-                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contient les
+                  <desc>contient les
                      détails relatifs aux initiales ornées.</desc>
                   <content> <!-- L'élément g contient un mélange de texte brut et d'éléments choice -->
                      <alternate minOccurs="0" maxOccurs="unbounded">
@@ -776,7 +776,7 @@
 
                <elementSpec ident="div" mode="change">
                   <gloss>Division de texte</gloss>
-                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                  <desc>permet de
                      structurer le texte en différentes sections.</desc>
                   <content>
                      <sequence preserveOrder="true">
@@ -837,7 +837,7 @@
 
                <elementSpec ident="choice" mode="change">
                   <gloss>Choix entre deux versions</gloss>
-                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contient
+                  <desc>contient
                      l'alternative entre orthographe originelle et orthographe régularisée.</desc>
                   <content>
                      <alternate>
@@ -867,7 +867,7 @@
                <!-- DESCRIPTION DU MANUSCRIT DANS LE HEADER -->
                <elementSpec ident="msDesc" mode="change">
                   <gloss>Description du manuscrit</gloss>
-                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"> contient les
+                  <desc> contient les
                      détails concernant le manuscrit à l'origine de l'encodage : ses identifiants
                      (msIdentifier), son titre (head), son contenu (msContents), sa description
                      matérielle (physDesc) et son histoire (history).</desc>
@@ -885,7 +885,7 @@
                <!-- MsIdentifier -->
                <elementSpec ident="msIdentifier" mode="change">
                   <gloss>Identifiants du manuscrit</gloss>
-                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contient les
+                  <desc>contient les
                      différents identifiants associés au manuscrit : cotes actuelles et anciennes
                      (idno et altIdentifier), lieu (repository) et pays de conservation
                      (country).</desc>
@@ -967,7 +967,7 @@
                </elementSpec>
                <elementSpec ident="altIdentifier" mode="change">
                   <gloss>Identifiant alternatif</gloss>
-                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">ancienne cote
+                  <desc>ancienne cote
                      ou autre forme d'identifiant.</desc>
                   <attList>
                      <attDef ident="corresp" mode="delete"/>
@@ -1012,7 +1012,7 @@
                <!-- MsContents -->
                <elementSpec ident="msContents" mode="change">
                   <gloss>Contenu du manuscrit</gloss>
-                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contient le
+                  <desc>contient le
                      détail du contenu du manuscrit : un sommaire des différentes partie du recueil
                      (summary) et un description plus détaillée de la partie d'où est tiré le texte
                      encodé (msItem).</desc>
@@ -1028,8 +1028,7 @@
                <!-- Contenu de msContents -->
                <elementSpec ident="summary" mode="change">
                   <gloss>Sommaire</gloss>
-                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">regroupe la
-                     liste des parties présentes dans le recueil manuscrit et leur disposition dans
+                  <desc>regroupe la liste des parties présentes dans le recueil manuscrit et leur disposition dans
                      l'ouvrage.</desc>
                   <attList>
                      <attDef ident="corresp" mode="delete"/>
@@ -1042,7 +1041,7 @@
                </elementSpec>
                <elementSpec ident="msItem" mode="change">
                   <gloss>Élément du manuscrit</gloss>
-                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">détaille avec
+                  <desc>détaille avec
                      davantage de précision la partie d'où est issue l'encodage : les bornes en
                      terme de folio (locus), les mentions de responsabilité (respStmt, author), le
                      titre de la partie (title), le contenu du colophon à la fin de la partie
@@ -1108,7 +1107,7 @@
                <!-- PhysDesc -->
                <elementSpec ident="physDesc" mode="change">
                   <gloss>Description matérielle du manuscrit</gloss>
-                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contient la
+                  <desc>contient la
                      description matérielle des différents éléments du manuscrit : les principales
                      caractéristiques du manuscrit (objectDesc), la déclaration des mains
                      intervenues sur le manuscrit (handDesc), la description de l'écriture
@@ -1129,7 +1128,7 @@
                <!-- ObjectDesc -->
                <elementSpec ident="objectDesc" mode="change">
                   <gloss>Description générale de l'objet manuscrit</gloss>
-                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contient les
+                  <desc>contient les
                      informations relatives aux dimensions et mise en page : les détails du support
                      (supportDesc) et de la disposition sur la page (layoutDesc).</desc>
                   <attList>
@@ -1225,7 +1224,7 @@
                <!-- HandDesc -->
                <elementSpec ident="handDesc" mode="change">
                   <gloss>Description des mains</gloss>
-                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contient les
+                  <desc>contient les
                      informations relatives scribes intervenus sur le manuscrit (handNote).</desc>
                   <attList>
                      <attDef ident="corresp" mode="delete"/>
@@ -1238,7 +1237,7 @@
                </elementSpec>
                <elementSpec ident="handNote" mode="change">
                   <gloss>Détails des mains</gloss>
-                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contient
+                  <desc>contient
                      l'endroit où est intervenu la main (@corresp) et d'autres informations
                      structurées dans un paragraphe.</desc>
                   <attList>
@@ -1252,7 +1251,7 @@
                <!-- ScriptDesc -->
                <elementSpec ident="scriptDesc" mode="change">
                   <gloss>Description de l'écriture</gloss>
-                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contient les
+                  <desc>contient les
                      détails de l'écriture présente dans le manuscrit (scriptNote).</desc>
                   <attList>
                      <attDef ident="corresp" mode="delete"/>
@@ -1278,7 +1277,7 @@
                <!-- DecoDesc -->
                <elementSpec ident="decoDesc" mode="change">
                   <gloss>Description de la décoration</gloss>
-                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contient les
+                  <desc>contient les
                      détails de la décoration présente dans la partie du manuscrit encodée
                      (decoNote).</desc>
                   <attList>
@@ -1310,7 +1309,7 @@
                <!-- BindingDesc -->
                <elementSpec ident="bindingDesc" mode="change">
                   <gloss>Description de la reliure</gloss>
-                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contient les
+                  <desc>contient les
                      détails de la reliure du manuscrit (binding).</desc>
                   <attList>
                      <attDef ident="corresp" mode="delete"/>
@@ -1323,7 +1322,7 @@
                </elementSpec>
                <elementSpec ident="binding" mode="change">
                   <gloss>Détails de la reliure</gloss>
-                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">les détails de
+                  <desc>les détails de
                      la reliure sont décrit dans les balises decoNote.</desc>
                   <attList>
                      <attDef ident="contemporary" mode="delete"/>
@@ -1341,7 +1340,7 @@
                <!-- History -->
                <elementSpec ident="history" mode="change">
                   <gloss>Histoire du manuscrit</gloss>
-                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contient les
+                  <desc>contient les
                      éléments relatfs à l'histoire du manuscrit : son origine géographique (origin)
                      et les éléments concernant sa création et sa transmission (provenance)</desc>
                   <attList>
@@ -1369,7 +1368,7 @@
                </elementSpec>
                <elementSpec ident="provenance" mode="change">
                   <gloss>Informations de provenance</gloss>
-                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contient les
+                  <desc>contient les
                      informations de provenance dans un paragraphe et dans une liste bibliographique
                      des ouvrages mentionnant le manuscrit encodé (listBibl).</desc>
                   <attList>
@@ -1476,7 +1475,7 @@
                </elementSpec>
                <elementSpec ident="biblScope" mode="change">
                   <gloss>Pages concernées</gloss>
-                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">délimite les
+                  <desc>délimite les
                      pages de l'ouvrage qui porte sur l'objet de la bibliographie.</desc>
                   <attList>
                      <attDef ident="corresp" mode="delete"/>
@@ -1559,7 +1558,7 @@
                </elementSpec>
                <elementSpec ident="person" mode="change">
                   <gloss>Informations sur un individu</gloss>
-                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contient
+                  <desc>contient
                      l'identifiant de personnage (@xml:id), son nom (persName) et des notes le
                      décrivant (note).</desc>
                   <attList>
@@ -1602,7 +1601,7 @@
                </elementSpec>
                <elementSpec ident="place" mode="change">
                   <gloss>Informations sur un lieu</gloss>
-                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contient
+                  <desc>contient
                      l'identifiant de lieu (@xml:id), son nom (placeName) et des notes le décrivant
                      (note).</desc>
                   <attList>
@@ -1821,7 +1820,7 @@
                </elementSpec>
                <elementSpec ident="graphic" mode="change">
                   <gloss>Informations relatives à une image</gloss>
-                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contient le
+                  <desc>contient le
                      chemin du fichier image (@url), sa largeur (@width) et sa hauteur
                      (@height).</desc>
                   <attList>
@@ -1895,8 +1894,7 @@
                </elementSpec>
                <elementSpec ident="particDesc" mode="change">
                   <gloss>Description du contexte narratif</gloss>
-                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contient la
-                     liste de lieux mentionnés dans le texte (listPLaces).</desc>
+                  <desc>contient la liste de lieux mentionnés dans le texte (listPLaces).</desc>
                   <attList>
                      <attDef ident="corresp" mode="delete"/>
                      <attDef ident="next" mode="delete"/>
@@ -1908,8 +1906,7 @@
                </elementSpec>
                <elementSpec ident="settingDesc" mode="change">
                   <gloss>Description des personnes citées dans le texte</gloss>
-                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contient la
-                     liste des personnes mentionnées dans le texte (listPerson).</desc>
+                  <desc>contient la liste des personnes mentionnées dans le texte (listPerson).</desc>
                   <attList>
                      <attDef ident="corresp" mode="delete"/>
                      <attDef ident="next" mode="delete"/>
@@ -2098,7 +2095,7 @@
                   </attList>
                </elementSpec>
                <elementSpec ident="resp" mode="change">
-                  <gloss>Nature de la responsabilité intelectuelle d'une personne</gloss>
+                  <gloss>Nature de la responsabilité intellectuelle d'une personne</gloss>
                   <attList>
                      <attDef ident="corresp" mode="delete"/>
                      <attDef ident="next" mode="delete"/>

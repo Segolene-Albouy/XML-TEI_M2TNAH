@@ -76,3 +76,9 @@
 <assert test="name(following-sibling::*[1]) = 'lb'">
       L'élément doit être suivi d'un &lt;ln&gt;
 </assert>
+
+<s:rule context="tei:TEI//tei:body//tei:persName">
+      <s:assert test="@ref and matches(@ref, '^#[a-zA-Z]+$')">
+            L'attribut @ref doit être renseigné à l'aide un identifiant constitué uniquement de lettres <!-- important de mettre ^ et $ si c'est l'intégralité de la valeur qu'on vise -->
+      </s:assert>
+</s:rule>
