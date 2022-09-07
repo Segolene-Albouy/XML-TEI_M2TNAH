@@ -1,24 +1,24 @@
 # Cours XML-TEI
 
-Ce *repository* constitue un dépôt pour le contenu pédagogique du cours XML TEI du M2 Technologies Numériques Appliquées à l'Histoire à l'École des chartes (2021/2022).
+Ce *repository* constitue un dépôt pour le contenu pédagogique du cours XML TEI du M2 Technologies Numériques Appliquées à l'Histoire à l'École des chartes (2022/2023).
 Ce cours est largement inspiré des [supports fournis par Ariane Pinche dans ce *repository*](https://github.com/ArianePinche/coursTNAH_XML-TEI).
 
 ## Programme du cours
 
-| Date        | Horaire     | Sujet                                                              |
-|-------------|-------------|--------------------------------------------------------------------|
-| 13 octobre  | 9h-11h      | Encoder le texte : les langages à balises                          |
-| 18 octobre  | 15h30-17h30 | Contraindre le XML : la *Document Type Definition*                 |
-| 25 octobre  | 15h30-17h30 | Décrire les documents patrimoniaux : la *Text Encoding Initiative* |
-| 15 novembre | 15h30-17h30 | Anatomie d'un document TEI : parties et composants                 |
-| 22 novembre | 15h30-17h30 | Les TEI *guidelines* : modules, modèles, macros, etc.              |
-| 29 novembre | 15h30-17h30 | Localisation dans le document : XPath                              |
-| 6 décembre  | 15h30-17h30 | Éditer un texte : initiation à l’édition scientifique              |
-| 13 décembre | 15h30-17h30 | Éditer un texte : description des sources manuscrites              |
-| 3 janvier   | 15h30-17h30 | Éditer un texte : encodage d'une édition critique                  |
-| 10 janvier  | 15h30-17h30 | Les schémas XML : initiation à l'ODD                               |
-| 17 janvier  | 15h30-17h30 | Les schémas XML : ODD personnalisations avancées                   |
-| 24 janvier  | 15h30-17h30 | Les schémas XML : Mise en pratique                                 |
+| Date         | Horaire     | Sujet                                                              |
+|--------------|-------------|--------------------------------------------------------------------|
+| 28 septembre | 9h-11h      | Encoder le texte : les langages à balises                          |
+| 5 octobre    | 15h30-17h30 | Contraindre le XML : la *Document Type Definition*                 |
+| 12 octobre   | 15h30-17h30 | Décrire les documents patrimoniaux : la *Text Encoding Initiative* |
+| 19 octobre   | 15h30-17h30 | Anatomie d'un document TEI : parties et composants                 |
+| 9 novembre   | 15h30-17h30 | Les TEI *guidelines* : modules, modèles, macros, etc.              |
+| 16 novembre  | 15h30-17h30 | Localisation dans le document : XPath                              |
+| 23 novembre  | 15h30-17h30 | Éditer un texte : initiation à l’édition scientifique              |
+| 30 novembre  | 15h30-17h30 | Éditer un texte : description des sources manuscrites              |
+| 7 décembre   | 15h30-17h30 | Éditer un texte : encodage d'une édition critique                  |
+| 14 décembre  | 15h30-17h30 | Les schémas XML : initiation à l'ODD                               |
+| 4 janvier    | 15h30-17h30 | Les schémas XML : ODD personnalisations avancées                   |
+| 11 janvier   | 15h30-17h30 | Les schémas XML : Mise en pratique                                 |
 
 ## Évaluation
 
