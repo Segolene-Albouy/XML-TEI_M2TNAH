@@ -1,6 +1,6 @@
-# Evaluation XML-TEI – TNAH | 2021-2022
+# Evaluation XML-TEI – TNAH | 2022-2023
 
-**À rendre le 31 janvier 2022**
+**À rendre le 25 janvier 2023**
 
 ## Consignes générales
 
@@ -16,7 +16,9 @@
 		- Une règle contraignant la valeur d’un attribut ou l’usage d’un élément ou d’un attribut en fonction de son environnement (`<constraint>`) (/1).
 	- À partir de votre ODD, générer la documentation HTML de votre projet :
 		- Présenter en introduction votre projet éditorial et ses exploitations possibles (/3) ;
-		- Documenter le fonctionnement de votre encodage et vos choix de balises (/3). 
+		- Documenter le fonctionnement de votre encodage et vos choix de balises (/3).
+
+* Déposer l'ensemble des documents sur un *repository* GitHub
 
 ## Liste des sujets possibles
 
