@@ -37,7 +37,7 @@ Les consignes détaillées concernant l'évaluation sont compilées dans [ce doc
         - Présenter en introduction votre projet éditorial et ses exploitations possibles (/3) ;
         - Documenter le fonctionnement de votre encodage et vos choix de balises (/3). 
 
-**Date de rendu** : au plus tard le 31 janvier.
+**Date de rendu** : au plus tard le 25 janvier.
 
 # Pour aller plus loin
 
