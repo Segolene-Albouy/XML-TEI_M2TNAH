@@ -90,7 +90,7 @@ Les consignes détaillées concernant l'évaluation sont compilées dans [ce doc
 - [*Beta maṣāḥǝft*](http://betamasaheft.eu): *Manuscripts of Ethiopia and Eritrea* ;
 - [Geste: un corpus de chansons de geste](http://dev.chartes.psl.eu/elec/geste/) ;
 - [L’année 1437 dans la pratique de Pierre Christofle](http://elec.enc.sorbonne.fr/christofle/index.html), notaire du Châtelet d'Orléans ;
-- [Les éditions électroniques de l’École nationale des chartes](http://www.chartes.psl.eu/fr/rubrique-publications/eitions-electroniques) ;
+- [Les éditions électroniques de l’École nationale des chartes](http://www.chartes.psl.eu/fr/rubrique-publications/editions-electroniques) ;
 - [*Perseus Digital Library*](http://www.perseus.tufts.edu/hopper/) ;
 - [TEI project page](https://tei-c.org/activities/projects/) ;
 - [*The Shelley-Godwin Archive*](http://shelleygodwinarchive.org/sc/oxford/frankenstein/volume/i/#/p1/mode/rdg).
