@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<texte>
+      <chapitre>
+            <titreChapitre>
+                  <nomPersonnage>Blanche-Neige</nomPersonnage> mange la pomme empoisonnée
+            </titreChapitre>
+            <paragraphe>
+                  Il était une fois <nomPersonnage>Blanche-Neige</nomPersonnage>
+                  <noteDeBasDePage n="1">Elle porte ce nom, car son visage est blanc comme la neige</noteDeBasDePage> 
+                  que sa belle-mère détestait. [...]
+            </paragraphe>
+      </chapitre>
+      <chapitre>
+            <titreChapitre>
+                  <nomPersonnage>Blanche-Neige</nomPersonnage> attend le prince <nomPersonnage>Charmant</nomPersonnage>
+            </titreChapitre>
+            <paragraphe>
+                  Un jour <nomPersonnage>Charmant</nomPersonnage>
+                  <noteDeBasDePage>Nom du prince qui sauve Blanche-Neige</noteDeBasDePage> 
+                  arriva sur son cheval blanc et la sauva. [...]
+            </paragraphe>
+      </chapitre>
+</texte>
+
