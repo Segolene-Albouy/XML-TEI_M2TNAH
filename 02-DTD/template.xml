@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE root [
+      <!ELEMENT root (el*)>
+      <!ELEMENT el ANY>
+      <!ELEMENT el1 ANY>
+      <!ELEMENT el2 ANY>
+      <!ELEMENT el3 ANY>
+      
+      <!ATTLIST el att CDATA #IMPLIED>
+]>
+
+<root>
+      
+</root>
