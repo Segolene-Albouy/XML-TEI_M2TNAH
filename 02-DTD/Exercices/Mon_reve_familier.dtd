@@ -1,15 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 
-
-<!ELEMENT poeme (titre?, auteur, strophe+)>
+<!ELEMENT poeme (titre, auteur+, strophe+)>
 <!ELEMENT titre (#PCDATA)>
 <!ELEMENT auteur (#PCDATA)>
-<!ELEMENT strophe (vers | tercet)*>
-<!ELEMENT tercet (vers)*>
+<!ELEMENT strophe ((vers, vers, vers, vers) | (tercet, tercet))>
 <!ELEMENT vers (#PCDATA)>
+<!ELEMENT tercet (#PCDATA | vers)*>
 
-
-<!ATTLIST poeme type CDATA #FIXED 'sonnet' >
+<!ATTLIST poeme type CDATA #FIXED "sonnet">
 <!ATTLIST strophe type (quatrain | sizain) #REQUIRED>
-<!ATTLIST strophe n CDATA #IMPLIED >
-<!ATTLIST tercet n CDATA #REQUIRED >
+<!ATTLIST strophe n (1 | 2) #IMPLIED>
+<!ATTLIST tercet n (1 | 2) #REQUIRED>
