@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE objet [
+    <!ELEMENT objet (face+)>
+    <!ELEMENT adresse (nom | rue | ville)*>
+    <!ELEMENT face (zone*)>
+    <!ELEMENT formulePolitesse (#PCDATA)>
+    <!ELEMENT nom (#PCDATA)>
+    <!ELEMENT paragraphe (#PCDATA)>
+    <!ELEMENT rue (#PCDATA)>
+    <!ELEMENT salutation (formulePolitesse, signature)?>
+    <!ELEMENT signature (#PCDATA)>
+    <!ELEMENT ville (#PCDATA | corr)*>
+    <!ELEMENT zone (#PCDATA | zone | paragraphe | salutation | adresse)*>
+    <!ELEMENT corr (#PCDATA)>
+
+    <!ATTLIST objet type CDATA #REQUIRED>
+    <!ATTLIST face type (recto|verso) #REQUIRED facs CDATA #IMPLIED >
+    <!ATTLIST zone type (entete|legende|timbre|tampon|message|destinataire) #REQUIRED 
+                   rend CDATA #IMPLIED>
+    <!ATTLIST nom type (expediteur|destinataire) #REQUIRED>
+    <!ATTLIST corr rend CDATA #IMPLIED
+                   cert CDATA #IMPLIED>
+]>
+
+<objet type="cartePostale">
+    <face type="recto" facs="CartePostale_r.png"/>
+    <face type="verso" facs="CartePostale_v.png">
+        <zone type="entete">
+            <zone type="legende" rend="centre haut">78 - Les Sables d'Olonne (Vendée) Le Port</zone>
+            <zone type="timbre" rend="droit haut">République française Postes, ct 25 Mont-de-Marsan</zone>
+            <zone type="tampon" rend="droit haut">85 Les Sables d'Olonne, Vendée, 26-7-1967</zone>
+        </zone>
+        <zone type="message">
+            <paragraphe>
+                Bientôt sur le chemin du retour. Avons eu du beau temps tout le mois de
+                juillet. Vous souhaite à tous la même chose.
+            </paragraphe>
+            <paragraphe>
+                J'espère que vous êtes tous en bonne santé. 
+                À chacun son tour, le beau temps et le repos.
+            </paragraphe>
+            <salutation>
+                <formulePolitesse>
+                    Avec d'affectueuses pensées et bons baisers à tous.
+                </formulePolitesse>
+                <signature>
+                    Marcelle
+                </signature>
+            </salutation>
+        </zone>
+        <zone type="destinataire">
+            <adresse>
+                <nom type="destinataire">Mme Veyssade Lucienne</nom>
+                <rue>31, rue du President Kennedy</rue>
+                <ville>Alfortville  <corr rend="rature" cert="basse">val ???</corr>) Val de Marne)</ville>
+            </adresse>
+        </zone>
+    </face>
+</objet>
