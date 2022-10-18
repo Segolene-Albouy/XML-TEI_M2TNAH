@@ -79,7 +79,7 @@ Les consignes détaillées concernant l'évaluation sont compilées dans [ce doc
 - HAROLD, Elliotte Rusty, MEANS, W. Scott, ENSARGUET, Philippe [et al.], [*XML en concentré*](https://www.oreilly.com/library/view/xml-in-a/0596007647/), Paris, O’Reilly, 2005.
 - KAY, Michael R., *XPath 2.0 programmer’s reference*, Indianapolis, IN, Wrox Press, 2004.
 - LAVIGNASSE, Sophie, « La DTD et son langage XML. Une application pour la lexicographie contemporaine », *Éla. Études de linguistique appliquée*, vol. nº137, 2005, pp. 73-94 (En ligne : [https://www.cairn.info/revue-ela-2005-1-page-73.htm](https://www.cairn.info/revue-ela-2005-1-page-73.htm)).
-- PALLUAULT, Florent, « Informatiser des descriptions complexes : l’utilisation de l’EAD et de la TEI pour lesmanuscrits et les livres anciens en France », *IFLA 2012* (Helsinki), (En ligne : [http://conference.ifla.org/past/2012/212-palluault-fr.pdf](http://conference.ifla.org/past/2012/212-palluault-fr.pdf)).
+- PALLUAULT, Florent, « Informatiser des descriptions complexes : l’utilisation de l’EAD et de la TEI pour les manuscrits et les livres anciens en France », *IFLA 2012* (Helsinki), (En ligne : [http://conference.ifla.org/past/2012/212-palluault-fr.pdf](http://conference.ifla.org/past/2012/212-palluault-fr.pdf)).
 - PIERAZZO, Elena, *Digital scholarly editing: theories, models and methods*, Farnham Burlington (Vt.), Ashgate, 2015, (En ligne : [https://hal.univ-grenoble-alpes.fr/hal-01182162/document](https://hal.univ-grenoble-alpes.fr/hal-01182162/document)).
 - RAHTZ, Sebastian et BURNARD, Lou, « *Reviewing the TEI ODD System* », ACM, 2013, p. 193 -196, (En ligne : [http://dx.doi.org/10.1145/2494266.2494321](http://dx.doi.org/10.1145/2494266.2494321)).
 - ROBINSON, Peter, « *Where We Are with Electronic Scholarly Editions, and Where We Want to Be* », *Jahrbuch für Computerphilologie*, vol. 5 / 5, 2003, p. 126-146., (En ligne : [http://computerphilologie.digital-humanities.de/jg03/robinson.html](http://computerphilologie.digital-humanities.de/jg03/robinson.html))
@@ -87,9 +87,12 @@ Les consignes détaillées concernant l'évaluation sont compilées dans [ce doc
 
 ## Éditions à consulter
 
+- [*Aratea Digital*](https://ivanadob.github.io/aratea-data/index.html) ;
 - [*Beta maṣāḥǝft*](http://betamasaheft.eu): *Manuscripts of Ethiopia and Eritrea* ;
+- [*Bodleian First Folio*](https://firstfolio.bodleian.ox.ac.uk/) : fac-similé numérique du premier folio des pièces de Shakespeare ;
+- [Les manuscrits de Madame Bovary](https://www.bovary.fr/) ;
 - [Les éditions électroniques de l’École nationale des chartes](http://elec.enc.sorbonne.fr/) ;
-- [Online Froissart](https://www.dhi.ac.uk/onlinefroissart/) ;
+- [*Online Froissart*](https://www.dhi.ac.uk/onlinefroissart/) ;
 - [*Perseus Digital Library*](http://www.perseus.tufts.edu/hopper/) ;
 - [*TEI project page*](https://tei-c.org/activities/projects/) ;
 - [*The Shelley-Godwin Archive*](http://shelleygodwinarchive.org/sc/oxford/frankenstein/volume/i/#/p1/mode/rdg).
@@ -100,4 +103,5 @@ Les consignes détaillées concernant l'évaluation sont compilées dans [ce doc
 - [Tutoriel pour générer une ODD avec ODDbyExample](http://teic.github.io/TCW/howtoGenerate-fr.html) ;
 - [Roma](https://romabeta.tei-c.org/) ;
 - [TEI Critical Apparatus Toolbox](http://teicat.huma-num.fr/) ;
+- [TEI Publisher](https://teipublisher.com/exist/apps/tei-publisher/index.html?tab=0) : plateforme pour la publication automatique de corpus TEI ;
 - [XPath tester](https://extendsclass.com/xpath-tester.html).
