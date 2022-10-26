@@ -22,9 +22,9 @@
 
 ## Liste des sujets possibles
 
-S’inscrire [sur le drive](https://docs.google.com/spreadsheets/d/1KfnAR0q_gE__UEmkgMqd-ST_TTk5b3qAlfGlCtO3VUc/edit?usp=sharing) avant le 6 décembre.
+S’inscrire [sur le drive](https://docs.google.com/spreadsheets/d/1i_QVVVziCi_vJUKWFlUH_KzJaBvMw9258KPYe1RAAuI/edit?usp=sharing) avant le 6 décembre.
 
-### I — Roman feuilleton : [Georges Sand, *Daniella*, La Presse](https://gallica.bnf.fr/html/und/presse-et-revues/la-daniella?mode=desktop)
+### I — Roman feuilleton : [Jules Verne, *Le tour du monde en 80 jours*, Le Temps](https://gallica.bnf.fr/html/und/presse-et-revues/le-tour-du-monde-en-80-jours)
 
 * Télécharger le texte via l’interface de Gallica ;
 * Nettoyer le texte (doubles espaces, problème sur les caractères accentués, coquilles…) ;
