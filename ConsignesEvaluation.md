@@ -4,25 +4,30 @@
 
 ## Consignes générales
 
-* Structurer en XML-TEI votre texte en vue d’une édition et en respectant le genre auquel appartient votre extrait **(/6)** ;
+* Structurer en XML-TEI votre texte en vue d’une édition et en respectant le genre auquel appartient votre extrait **(`/6`)** ;
 
-* Compléter de la manière la plus précise possible le `teiHeader` de votre édition, en fonction des éléments nécessaires à son établissement et à la compréhension du texte **(/4)** ;
+* Compléter de la manière la plus précise possible le `teiHeader` de votre édition, en fonction des éléments nécessaires à son établissement et à la compréhension du texte **(`/4`)** ;
 
-* Écrire une ODD adaptée à votre encodage et documentée **(/10)** :
-	- Générer une ODD à partir de `Roma` ou de `oddbyexample` (/1) ;
+* Écrire une ODD adaptée à votre encodage et documentée **(`/10`)** :
+	- Générer une ODD à partir de `Roma` ou de `oddbyexample` (`/1`) ;
 	- Votre ODD doit contenir au moins une règle **fonctionnelle** (et ne faisant pas partie des exemples du cours) et **documentée** (une description *a minima* en commentaire explicitant la fonction de la règle de validation) :
-		- Une règle contraignant l’usage d’un attribut et sa ou ses valeurs (`<attDef>`) (/1) ;
-		- Une règle contraignant l’enchaînement de certains éléments (`<content>`) (/1) ;
-		- Une règle contraignant la valeur d’un attribut ou l’usage d’un élément ou d’un attribut en fonction de son environnement (`<constraint>`) (/1).
+		- Une règle contraignant l’usage d’un attribut et sa ou ses valeurs (`<attDef>`) (`/1`) ;
+		- Une règle contraignant l’enchaînement de certains éléments (`<content>`) (`/1`) ;
+		- Une règle contraignant la valeur d’un attribut ou l’usage d’un élément ou d’un attribut en fonction de son environnement (`<constraint>`) (`/1`).
 	- À partir de votre ODD, générer la documentation HTML de votre projet :
-		- Présenter en introduction votre projet éditorial et ses exploitations possibles (/3) ;
-		- Documenter le fonctionnement de votre encodage et vos choix de balises (/3).
+		- Présenter en introduction votre projet éditorial et ses exploitations possibles (`/3`) ;
+		- Documenter le fonctionnement de votre encodage et vos choix de balises (`/3`).
 
 * Déposer l'ensemble des documents sur un *repository* GitHub
 
 ## Liste des sujets possibles
 
 S’inscrire [sur le drive](https://docs.google.com/spreadsheets/d/1i_QVVVziCi_vJUKWFlUH_KzJaBvMw9258KPYe1RAAuI/edit?usp=sharing) avant le 6 décembre.
+
+Pour les sujets personnels :
+* Extrait manuscrit à transcrire : entre 6000 et 10000 caractères (entre 2 et 5 feuillets) ;
+* Extrait dactylographié : entre 12000 et 20000 caractères ;
+* Extrait pour édition critique : au moins 3 extraits à comparer entre 2500 et 6000 caractères.
 
 ### I — Roman feuilleton : [Jules Verne, *Le tour du monde en 80 jours*, Le Temps](https://gallica.bnf.fr/html/und/presse-et-revues/le-tour-du-monde-en-80-jours)
 
