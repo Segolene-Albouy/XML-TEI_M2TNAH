@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <ab>
+            <lb/>Mais était-il encore temps pour moi,
+            <lb/>n'était-il pas trop tard. <del rend="overstrike">L'esprit
+            <lb/>a des paysages qui <gap reason="illegible"/> le contemple
+            <lb/><gap reason="illegible"/> ne <unclear reason="illegible" cert="medium">lui</unclear> est laissée qu'un temps et
+            <lb/>il lui faut qu'il profite de ce temps et
+            <lb/>pour les peindre ; il <gap reason="illegible"/> en <gap reason="illegible"/> <unclear reason="illegible" cert="low">j'avais</unclear>
+            <lb/>suivi le chemin.</del> Je me disais <unclear reason="illegible" cert="low">mon seul</unclear>
+            <lb/>mal est-il encore temps <unclear reason="illegible" cert="low">mis</unclear> dis-je
+            <lb/>encore a <gap reason="illegible"/> <del rend="overstrike">Certes</del> La maladie qui
+            <lb/><del rend="overstrike">m'avait rendu service</del> <unclear reason="illegible" cert="low">a</unclear> ne faisant
+            <lb/>comme un rude directeur de
+         </ab>
+         <pb/>
+      </body>
+  </text>
+</TEI>
