@@ -1,0 +1,950 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+        schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Le Pape tente de réconcilier les Français et les Anglais</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>
+                    Edition encodée par Ségolène Albouy, d'après
+                    <ref target="https://www.dhi.ac.uk/onlinefroissart">Online Froissart</ref>.
+                </p>
+            </publicationStmt>
+            <sourceDesc>
+                <listWit>
+                    <witness xml:id="A">
+                        Austin 48
+                    </witness>
+                    <witness xml:id="S">
+                        Stonyhurst 1
+                    </witness>
+                    <witness xml:id="P">
+                        Paris ms. fr. 2663
+                    </witness>
+                </listWit>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                Comment le
+                <app>
+                    <lem wit="A P">pappe</lem>
+                    <rdg wit="S">pape</rdg>
+                </app>
+                <app>
+                    <lem wit="P S">envoya</lem>
+                    <rdg wit="A">envoia</rdg>
+                </app>
+                ses cardinaulx en France pour
+                <app>
+                    <lem wit="P S">accorder</lem>
+                    <rdg wit="A">acorder</rdg>
+                </app>
+                les
+                <app>
+                    <lem wit="A">deux</lem>
+                    <rdg wit="S"/>
+                    <rdg wit="P">II</rdg>
+                </app>
+                roys de France et d’Angleterre
+                <app>
+                    <lem wit="A P">,</lem>
+                    <rdg wit="S"/>
+                </app>
+                et comment les
+                <app>
+                    <lem wit="P S">trieves</lem>
+                    <rdg wit="A">treves</rdg>
+                </app>
+                furent
+                <app>
+                    <lem wit="A P">eslongnees</lem>
+                    <rdg wit="S">esloingnees</rdg>
+                </app>
+                par
+                <app>
+                    <lem wit="A S">deux</lem>
+                    <rdg wit="P">II</rdg>
+                </app>
+                ans
+                <app>
+                    <lem wit="P S">ensuivant</lem>
+                    <rdg wit="A">ensuivans</rdg>
+                </app>
+                .
+            </p>
+
+            <p>
+                Or
+                <app>
+                    <lem wit="P S">se</lem>
+                    <rdg wit="A"/>
+                </app>
+                partirent ces seigneurs du siege de Tournay et s’en
+                rala chascun en son lieu. Le roy anglois s’en retourna a Gand
+                deléz madame la royne
+                <app>
+                    <lem wit="P S"/>
+                    <rdg wit="A">,</rdg>
+                </app>
+                sa femme
+                <app>
+                    <lem wit="A P">,</lem>
+                    <rdg wit="S"/>
+                </app>
+                et asséz tost aprés il
+                <app>
+                    <lem wit="P S">rappassa</lem>
+                    <rdg wit="A">rappaissa</rdg>
+                </app>
+                la mer
+                <app>
+                    <lem wit="P S">et toutes</lem>
+                    <rdg wit="A">ettoutes</rdg>
+                </app>
+                ses gens
+                <app>
+                    <lem wit="P S"/>
+                    <rdg wit="A">,</rdg>
+                </app>
+                excepté ceulx
+                <app>
+                    <lem wit="A P">que il</lem>
+                    <rdg wit="S">qu’il</rdg>
+                </app>
+                laissa et ordonna pour estre au parlement a Arras. Le conte de
+                Haynault s’en revint en son
+                <app>
+                    <lem wit="A P">païs</lem>
+                    <rdg wit="S">paÿs</rdg>
+                </app>
+                <app>
+                    <lem wit="A">,</lem>
+                    <rdg wit="S"/>
+                    <rdg wit="P">.</rdg>
+                </app>
+                <app>
+                    <lem wit="A S">et</lem>
+                    <rdg wit="P">Et</rdg>
+                </app>
+                ot adoncques une moult noble feste a Mons en Haynault et jouste de
+                <app>
+                    <lem wit="P S">chevalliers</lem>
+                    <rdg wit="A">chevalier</rdg>
+                </app>
+                , a la quelle messire
+                <app>
+                    <lem wit="A">Girard de Berchim</lem>
+                    <rdg wit="S">Gerard de Werthim</rdg>
+                    <rdg wit="P">Gerart de Verthim</rdg>
+                </app>
+                , seneschal de Haynault, fut et jousta
+                <app>
+                    <lem wit="A S"/>
+                    <rdg wit="P">,</rdg>
+                </app>
+                et
+                <app>
+                    <lem wit="P S">y</lem>
+                    <rdg wit="A"/>
+                </app>
+                fut
+                <app>
+                    <lem wit="A S">blecié</lem>
+                    <rdg wit="P">bleciéz</rdg>
+                </app>
+                tellement qu’il en fut mort, dont ce fut dommaige.
+            </p>
+
+            <p>
+                <app>
+                    <lem wit="A P">Si</lem>
+                    <rdg wit="S">Sy</rdg>
+                </app>
+                demoura de
+                <app>
+                    <lem wit="A P">luy</lem>
+                    <rdg wit="S">lui</rdg>
+                </app>
+                <app>
+                    <lem wit="P S">un</lem>
+                    <rdg wit="A">ung</rdg>
+                </app>
+                <app>
+                    <lem wit="A S">beau</lem>
+                    <rdg wit="P">beaulx</rdg>
+                </app>
+                filz nommé Jehan, qui depuis fut bon
+                <app>
+                    <lem wit="A S">chevalier</lem>
+                    <rdg wit="P">chevallier</rdg>
+                </app>
+                et
+                <app>
+                    <lem wit="P S">hardy,</lem>
+                    <rdg wit="A">hardi.</rdg>
+                </app>
+                <app>
+                    <lem wit="P S">mais</lem>
+                    <rdg wit="A">Mais</rdg>
+                </app>
+                pou dura
+                <app>
+                    <lem wit="A P">aussi</lem>
+                    <rdg wit="S">aussy</rdg>
+                </app>
+                en santé, dont ce fut
+                <app>
+                    <lem wit="P S">grant</lem>
+                    <rdg wit="A"/>
+                </app>
+                <app>
+                    <lem wit="A P">dommaige</lem>
+                    <rdg wit="S">dommage</rdg>
+                </app>
+                . Le roy de France donna a toutes manieres de gens
+                <app>
+                    <lem wit="A S">d’armes</lem>
+                    <rdg wit="P"/>
+                </app>
+                congié
+                <app>
+                    <lem wit="A S"/>
+                    <rdg wit="P">,</rdg>
+                </app>
+                et puis s’en vint demourer
+                <app>
+                    <lem wit="A"/>
+                    <rdg wit="P S">,</rdg>
+                </app>
+                <app>
+                    <lem wit="A S">jouer</lem>
+                    <rdg wit="P">jouez</rdg>
+                </app>
+                et
+                <app>
+                    <lem wit="P S">refreschir</lem>
+                    <rdg wit="A">rafreschir</rdg>
+                </app>
+                en la ville de Lisle
+                <app>
+                    <lem wit="A P">,</lem>
+                    <rdg wit="S"/>
+                </app>
+                et la le vindrent veoir ceulx de Tournay
+                <app>
+                    <lem wit="A S">,</lem>
+                    <rdg wit="P"/>
+                </app>
+                qui moult le
+                <app>
+                    <lem wit="A P">desiroient</lem>
+                    <rdg wit="S">desiroyent</rdg>
+                </app>
+                <app>
+                    <lem wit="S P"/>
+                    <rdg wit="A">a veoir</rdg>
+                </app>
+                <app>
+                    <lem wit="A S">, lesquelz</lem>
+                    <rdg wit="P">. Lesquelx</rdg>
+                </app>
+                le dit roy
+                <app>
+                    <lem wit="P S">receut</lem>
+                    <rdg wit="A">reçut</rdg>
+                </app>
+                moult voulentiers et
+                <app>
+                    <lem wit="P S">lieement</lem>
+                    <rdg wit="A">liement</rdg>
+                </app>
+                <app>
+                    <lem wit="A S"/>
+                    <rdg wit="P">,</rdg>
+                </app>
+                et leur fist et donna graces pour tant qu’ilz s’estoient
+                <app>
+                    <lem wit="A P">si</lem>
+                    <rdg wit="S">sy</rdg>
+                </app>
+                <app>
+                    <lem wit="P S">bellement</lem>
+                    <rdg wit="A"/>
+                </app>
+                <app>
+                    <lem wit="A P"/>
+                    <rdg wit="S">,</rdg>
+                </app>
+                <app>
+                    <lem wit="P S">honnourablement</lem>
+                    <rdg wit="A">honnorablement</rdg>
+                </app>
+                et vaillamment
+                <app>
+                    <lem wit="A P">tenus et deffendus</lem>
+                    <rdg wit="S">tenuz et deffenduz</rdg>
+                </app>
+                contre leurs
+                <app>
+                    <lem wit="A">ennemis</lem>
+                    <rdg wit="S">annemis</rdg>
+                    <rdg wit="P">ennemys</rdg>
+                </app>
+                <app>
+                    <lem wit="A P">, si que</lem>
+                    <rdg wit="S">. Syques</rdg>
+                </app>
+                riens on n’avoit
+                <app>
+                    <lem wit="P S">prins</lem>
+                    <rdg wit="A">pris</rdg>
+                </app>
+                ne conquesté
+                <app>
+                    <lem wit="P S">sur</lem>
+                    <rdg wit="A">ur</rdg>
+                </app>
+                eulx. La grace
+                <app>
+                    <lem wit="P S">qu’il leur fist</lem>
+                    <rdg wit="A"/>
+                </app>
+                fut
+                <app>
+                    <lem wit="P S">qu’il</lem>
+                    <rdg wit="A">que le roy</rdg>
+                </app>
+                leur
+                <app>
+                    <lem wit="A S">rendy</lem>
+                    <rdg wit="P">rendit</rdg>
+                </app>
+                franchement leur loy
+                <app>
+                    <lem wit="A S">que perdue</lem>
+                    <rdg wit="P">, que pardue</rdg>
+                </app>
+                avoient de grant temps, dont ilz furent moult joyeulx
+                <app>
+                    <lem wit="A">,</lem>
+                    <rdg wit="S">.</rdg>
+                    <rdg wit="P"/>
+                </app>
+                <app>
+                    <lem wit="A P">car</lem>
+                    <rdg wit="S">Car</rdg>
+                </app>
+                messire
+                <app>
+                    <lem wit="P S">Godemart</lem>
+                    <rdg wit="A">Godemar</rdg>
+                </app>
+                du Fay
+                <app>
+                    <lem wit="P S"/>
+                    <rdg wit="A">,</rdg>
+                </app>
+                et plusieurs autres
+                <app>
+                    <lem wit="A S">chevaliers</lem>
+                    <rdg wit="P">chevalliers</rdg>
+                </app>
+                estranges devant lui
+                <app>
+                    <lem wit="P S"/>
+                    <rdg wit="A">,</rdg>
+                </app>
+                en avoient esté gouverneurs.
+                <app>
+                    <lem wit="A P">Si</lem>
+                    <rdg wit="S">Sy</rdg>
+                </app>
+                <app>
+                    <lem wit="P S">refirent entr’eulx prevosts</lem>
+                    <rdg wit="A">firent entre eulx prevost</rdg>
+                </app>
+                et juréz
+                <app>
+                    <lem wit="A S"/>
+                    <rdg wit="P">,</rdg>
+                </app>
+                selon leurs usaiges
+                <app>
+                    <lem wit="A">anciennes</lem>
+                    <rdg wit="S">anciens</rdg>
+                    <rdg wit="P">anciemes</rdg>
+                </app>
+                et franchises.
+            </p>
+
+            <p>
+                Quant le roy de France ot ordonné une partie de
+                <app>
+                    <lem wit="P S">ses besoingnes</lem>
+                    <rdg wit="A">ces besongnes</rdg>
+                </app>
+                , il se
+                <app>
+                    <lem wit="P S">party lui</lem>
+                    <rdg wit="A">parti, luy</rdg>
+                </app>
+                et ses gens
+                <app>
+                    <lem wit="P S"/>
+                    <rdg wit="A">,</rdg>
+                </app>
+                de Lisle et se mist au chemin devers France pour revenir a Paris. Or vint le temps et la
+                <app>
+                    <lem wit="A P">saison</lem>
+                    <rdg wit="S">sayson</rdg>
+                </app>
+                que
+                <app>
+                    <lem wit="A S"/>
+                    <rdg wit="P">le</rdg>
+                </app>
+                parlement estoit ordonnéz et instituéz en la bonne cité d’Arras
+                <app>
+                    <lem wit="A S">,</lem>
+                    <rdg wit="P">.</rdg>
+                </app>
+
+                <app>
+                    <lem wit="A">et</lem>
+                    <rdg wit="S">sy</rdg>
+                    <rdg wit="P">Si</rdg>
+                </app>
+                y
+                <app>
+                    <lem wit="A P">envoia</lem>
+                    <rdg wit="S">envoya</rdg>
+                </app>
+                le
+                <app>
+                    <lem wit="A P">pappe</lem>
+                    <rdg wit="S">pape</rdg>
+                </app>
+                Clement VIe en legacion deux de ses
+                <app>
+                    <lem wit="A S">cardinaulx</lem>
+                    <rdg wit="P">cardinalx</rdg>
+                </app>
+                <app>
+                    <lem wit="A">, et</lem>
+                    <rdg wit="S">.</rdg>
+                    <rdg wit="P">:</rdg>
+                </app>
+                <app>
+                    <lem wit="A"/>
+                    <rdg wit="S">Ce</rdg>
+                    <rdg wit="P">ce</rdg>
+                </app>
+                fut le cardinal de
+                <app>
+                    <lem wit="A P">Napples</lem>
+                    <rdg wit="S">Naples</rdg>
+                </app>
+                <app>
+                    <lem wit="P S">et cellui</lem>
+                    <rdg wit="A">et celluy</rdg>
+                </app>
+                de Clermont, qui de
+                <app>
+                    <lem wit="P S">premiers vindrent</lem>
+                    <rdg wit="A">premier furent</rdg>
+                </app>
+                a Paris, ou ilz furent grandement festiéz du roy de France
+                <app>
+                    <lem wit="A P">. Et</lem>
+                    <rdg wit="S">et</rdg>
+                </app>
+                puis
+                <app>
+                    <lem wit="P S">s’en</lem>
+                    <rdg wit="A"/>
+                </app>
+                <app>
+                    <lem wit="A">chevauchierent</lem>
+                    <rdg wit="S">cheuchierent</rdg>
+                    <rdg wit="P">chevaucherent</rdg>
+                </app>
+                et alerent devers
+                <app>
+                    <lem wit="A P">Artois</lem>
+                    <rdg wit="S">Artoys</rdg>
+                </app>
+                jusques a la bonne cité d’Arras, ou le dit parlement devoit estre. A ce dit parlement
+                <app>
+                    <lem wit="A S"/>
+                    <rdg wit="P">,</rdg>
+                </app>
+                depar le roy de France
+                <app>
+                    <lem wit="A S"/>
+                    <rdg wit="P">,</rdg>
+                </app>
+                furent le conte d’Alençon, le duc de Bourbon, le conte de Flandres
+                <app>
+                    <lem wit="P S">et</lem>
+                    <rdg wit="A">,</rdg>
+                </app>
+                le conte de
+                <app>
+                    <lem wit="A P">Blois</lem>
+                    <rdg wit="S">Bloys</rdg>
+                </app>
+                <app>
+                    <lem wit="A"/>
+                    <rdg wit="S">,</rdg>
+                    <rdg wit="P">.</rdg>
+                </app>
+                <app>
+                    <lem wit="A S">et</lem>
+                    <rdg wit="P">Et</rdg>
+                </app>
+                des
+                <app>
+                    <lem wit="P S">prelas</lem>
+                    <rdg wit="A">prelatz</rdg>
+                </app>
+                <app>
+                    <lem wit="A S"/>
+                    <rdg wit="P">,</rdg>
+                </app>
+                l’arcevesque de Sens, l’evesque de Beauvais et l’evesque
+                <app>
+                    <lem wit="A">d’Aucerre</lem>
+                    <rdg wit="S">d’Auceurre</rdg>
+                    <rdg wit="P">d’Auserre</rdg>
+                </app>
+                . Et depar le roy d’Angleterre y furent l’evesque de
+                <app>
+                    <lem wit="P S">et</lem>
+                    <rdg wit="A">,</rdg>
+                </app>
+                l’evesque de Durennes, le conte de Warvich, qui moult estoit
+                <app>
+                    <lem wit="A P">saige</lem>
+                    <rdg wit="S">saiges</rdg>
+                </app>
+                homs et vaillant, et messire Robert
+                <app>
+                    <lem wit="P S">d’Artoys</lem>
+                    <rdg wit="A">d’Artois</rdg>
+                </app>
+                <app>
+                    <lem wit="A P">,</lem>
+                    <rdg wit="S"/>
+                </app>
+                dit conte de Richemont, messire Jehan de Haynault et messire Henry de Flandres.
+                <app>
+                    <lem wit="P S">Auquel</lem>
+                    <rdg wit="A">Au quel</rdg>
+                </app>
+                parlement
+                <app>
+                    <lem wit="P S">y</lem>
+                    <rdg wit="A">il</rdg>
+                </app>
+                ot plusieurs
+                <app>
+                    <lem wit="A P">traictiéz</lem>
+                    <rdg wit="S">traittiéz</rdg>
+                </app>
+                et langaiges mis avant. Car ilz parlementerent plus de XV jours
+                <app>
+                    <lem wit="A">,</lem>
+                    <rdg wit="S"/>
+                    <rdg wit="P">.</rdg>
+                </app>
+                <app>
+                    <lem wit="A S">mais</lem>
+                    <rdg wit="P">Mais</rdg>
+                </app>
+                <app>
+                    <lem wit="A S">riens</lem>
+                    <rdg wit="P">ren</rdg>
+                </app>
+                n’y fut accordé ne affermé
+                <app>
+                    <lem wit="A P">, car</lem>
+                    <rdg wit="S">. Car</rdg>
+                </app>
+                les Anglois demandoient et les
+                <app>
+                    <lem wit="A S">François</lem>
+                    <rdg wit="P">Françoys</rdg>
+                </app>
+                ne
+                <app>
+                    <lem wit="A P">vouloient</lem>
+                    <rdg wit="S">vouloyent</rdg>
+                </app>
+                riens donner
+                <app>
+                    <lem wit="A P">,</lem>
+                    <rdg wit="S"/>
+                </app>
+                fors tant
+                <app>
+                    <lem wit="A P">seulement</lem>
+                    <rdg wit="S">seullement</rdg>
+                </app>
+                <app>
+                    <lem wit="S">bailler et rendre</lem>
+                    <rdg wit="A"/>
+                    <rdg wit="P">rendre et baillier</rdg>
+                </app>
+                la conté de Pontieu, qui fut donnee en
+                <app>
+                    <lem wit="P S">mariaige</lem>
+                    <rdg wit="A">mariage</rdg>
+                </app>
+                a madame Ysabel, royne d’Angleterre, fille
+                <app>
+                    <lem wit="P S">du</lem>
+                    <rdg wit="A">au</rdg>
+                </app>
+                roy de France, avecques le roy d’Angleterre. Ceste chose ne vouldrent mie les
+                <app>
+                    <lem wit="A P">Anglois</lem>
+                    <rdg wit="S">Angloys</rdg>
+                </app>
+                faire ne accorder
+                <app>
+                    <lem wit="P S">,</lem>
+                    <rdg wit="A"/>
+                </app>
+                ne
+                <app>
+                    <lem wit="A P">aussi</lem>
+                    <rdg wit="S">aussy</rdg>
+                </app>
+                accepter
+                <app>
+                    <lem wit="P S">. Ains</lem>
+                    <rdg wit="A">, ains</rdg>
+                </app>
+                se departirent ces seigneurs
+                <app>
+                    <lem wit="A">de costé</lem>
+                    <rdg wit="S">d’un cousté</rdg>
+                    <rdg wit="P">, d'un consté</rdg>
+                </app>
+                et d’autre de ce parlement
+                <app>
+                    <lem wit="A P">,</lem>
+                    <rdg wit="S"/>
+                </app>
+                sans
+                <app>
+                    <lem wit="A S">riens</lem>
+                    <rdg wit="P">rens</rdg>
+                </app>
+                faire ne
+                <app>
+                    <lem wit="A S">exploittier</lem>
+                    <rdg wit="P">exploitier</rdg>
+                </app>
+                <app>
+                    <lem wit="A P">,</lem>
+                    <rdg wit="S"/>
+                </app>
+                fors tant
+                <app>
+                    <lem wit="A P">seulement</lem>
+                    <rdg wit="S">seullement</rdg>
+                </app>
+                que les
+                <app>
+                    <lem wit="P S">trieves</lem>
+                    <rdg wit="A">treves</rdg>
+                </app>
+                qui avoient
+                <app>
+                    <lem wit="P S">este prinses</lem>
+                    <rdg wit="A">esté prises</rdg>
+                </app>
+                entre les deux roys devant Tournay
+                <app>
+                    <lem wit="A P"/>
+                    <rdg wit="S">,</rdg>
+                </app>
+                furent
+                <app>
+                    <lem wit="A">eslongnees</lem>
+                    <rdg wit="S">proloingees</rdg>
+                    <rdg wit="P">prolonguees</rdg>
+                </app>
+                a deux ans
+                <app>
+                    <lem wit="A S">ensuivans</lem>
+                    <rdg wit="P">ensuivant</rdg>
+                </app>
+                <app>
+                    <lem wit="A">,</lem>
+                    <rdg wit="S"/>
+                    <rdg wit="P">.</rdg>
+                </app>
+                <app>
+                    <lem wit="A S">et</lem>
+                    <rdg wit="P">Et</rdg>
+                </app>
+                fut tout ce que les cardinaulx
+                <app>
+                    <lem wit="P S"/>
+                    <rdg wit="A">,</rdg>
+                </app>
+                que le
+                <app>
+                    <lem wit="P S">pape</lem>
+                    <rdg wit="A">pappe</rdg>
+                </app>
+                Clement VIe
+                <app>
+                    <lem wit="A">avoient envoiéz</lem>
+                    <rdg wit="S">avoit envoyéz</rdg>
+                    <rdg wit="P">avoit envoiéz</rdg>
+                </app>
+                en legacion
+                <app>
+                    <lem wit="P S"/>
+                    <rdg wit="A">,</rdg>
+                </app>
+                y
+                <app>
+                    <lem wit="A S">porent</lem>
+                    <rdg wit="P">pourent</rdg>
+                </app>
+                faire
+                <app>
+                    <lem wit="A S"/>
+                    <rdg wit="P">,</rdg>
+                </app>
+                ne empetrer. Et puis aprés s’en rala chascun des diz seigneurs en son
+                lieu et en sa contree
+                <app>
+                    <lem wit="P S">. Et</lem>
+                    <rdg wit="A">et</rdg>
+                </app>
+                les cardinaulx revindrent et passerent parmy le
+                <app>
+                    <lem wit="A P">païs</lem>
+                    <rdg wit="S">paÿs</rdg>
+                </app>
+                de Haynault,
+                <app>
+                    <lem wit="P S">ou ilz furent grandement et honnourablement</lem>
+                    <rdg wit="A">honnorablement et grandement. Ilz furent</rdg>
+                </app>
+                <app>
+                    <lem wit="A S">receuz</lem>
+                    <rdg wit="P">receus</rdg>
+                </app>
+                et festiéz du conte de Haynault, de madame la
+                <app>
+                    <lem wit="A P">contesse</lem>
+                    <rdg wit="S">contesce</rdg>
+                </app>
+                <app>
+                    <lem wit="A S"/>
+                    <rdg wit="P">,</rdg>
+                </app>
+                et des seigneurs du
+                <app>
+                    <lem wit="A P">païs</lem>
+                    <rdg wit="S">paÿs</rdg>
+                </app>
+                <app>
+                    <lem wit="A S"/>
+                    <rdg wit="P">,</rdg>
+                </app>
+                en la bonne ville de
+                <app>
+                    <lem wit="P S">Vallenciennes</lem>
+                    <rdg wit="A">Valenciennes</rdg>
+                </app>
+                .
+            </p>
+
+            <p>
+                Or nous deporterons de
+                <app>
+                    <lem wit="A S">parler</lem>
+                    <rdg wit="P">parlez</rdg>
+                </app>
+                de la matiere des deux roys
+                <app>
+                    <lem wit="P S"/>
+                    <rdg wit="A">,</rdg>
+                </app>
+                tant
+                <app>
+                    <lem wit="P S">que</lem>
+                    <rdg wit="A">comme</rdg>
+                </app>
+                les
+                <app>
+                    <lem wit="A P">treves</lem>
+                    <rdg wit="S">trieves</rdg>
+                </app>
+                <app>
+                    <lem wit="A S">dureront</lem>
+                    <rdg wit="P">durerent</rdg>
+                </app>
+                <app>
+                    <lem wit="P S">,</lem>
+                    <rdg wit="A"/>
+                </app>
+                qui furent asséz bien tenues, excepté les marches
+                <app>
+                    <lem wit="A P">loingtaines</lem>
+                    <rdg wit="S">longtaines</rdg>
+                </app>
+                <app>
+                    <lem wit="A S">, et</lem>
+                    <rdg wit="P">. Et</rdg>
+                </app>
+                entrerons en la grant matiere et
+                <app>
+                    <lem wit="A P">histoire</lem>
+                    <rdg wit="S">hystoire</rdg>
+                </app>
+                de Bretaigne, qui grandement enlumine ce livre
+                <app>
+                    <lem wit="A S"/>
+                    <rdg wit="P">,</rdg>
+                </app>
+                pour les
+                <app>
+                    <lem wit="P S">beaulx faiz</lem>
+                    <rdg wit="A">beaux fais</rdg>
+                </app>
+                d’armes et
+                <app>
+                    <lem wit="P S">grandes</lem>
+                    <rdg wit="A">belles</rdg>
+                </app>
+                <app>
+                    <lem wit="A S">adventures</lem>
+                    <rdg wit="P">advantures</rdg>
+                </app>
+                qui y sont advenues et ramenteues, si comme vous
+                <app>
+                    <lem wit="A S">pourrés</lem>
+                    <rdg wit="P">pourréz</rdg>
+                </app>
+                ensuivant
+                <app>
+                    <lem wit="P S">ouyr</lem>
+                    <rdg wit="A">oir</rdg>
+                </app>
+                et entendre. Et pour ce que vous
+                <app>
+                    <lem wit="A S">sachiéz</lem>
+                    <rdg wit="P">saichiéz</rdg>
+                </app>
+                veritablement le commencement et la racine de ceste guerre
+                <app>
+                    <lem wit="A P"/>
+                    <rdg wit="S">cy</rdg>
+                </app>
+                et dont elle s’esmut, je vous
+                <app>
+                    <lem wit="A S"/>
+                    <rdg wit="P">je vous</rdg>
+                </app>
+                diray et
+                <app>
+                    <lem wit="A S">escheveray</lem>
+                    <rdg wit="P">escheneray</rdg>
+                </app>
+                de point en point
+                <app>
+                    <lem wit="P S">,</lem>
+                    <rdg wit="A">.</rdg>
+                </app>
+                <app>
+                    <lem wit="S">sy</lem>
+                    <rdg wit="A">Si</rdg>
+                    <rdg wit="P">si</rdg>
+                </app>
+                en
+                <app>
+                    <lem wit="A S">dirés</lem>
+                    <rdg wit="P">diréz</rdg>
+                </app>
+                vostre entente et quelle cause et droit messire Charles de
+                <app>
+                    <lem wit="A P">Blois</lem>
+                    <rdg wit="S">Bloys</rdg>
+                </app>
+                ot ou grant heritaige de Bretaigne
+                <app>
+                    <lem wit="A P">.</lem>
+                    <rdg wit="S"/>
+                </app>
+                <app>
+                    <lem wit="A P">Et</lem>
+                    <rdg wit="S">et</rdg>
+                </app>
+                d’autre part le conte de Montfort
+                <app>
+                    <lem wit="A P"/>
+                    <rdg wit="S">,</rdg>
+                </app>
+                qui en fist fait contre
+                <app>
+                    <lem wit="P S">lui</lem>
+                    <rdg wit="A">luy</rdg>
+                </app>
+                , dont tant
+                <app>
+                    <lem wit="P S">de rencontres,</lem>
+                    <rdg wit="A"/>
+                </app>
+                de batailles et de grans faiz d’armes sont
+                <app>
+                    <lem wit="A S">advenues</lem>
+                    <rdg wit="P">ad venues</rdg>
+                </app>
+                en la duchié de Bretaigne et es marches
+                <app>
+                    <lem wit="A P">voisines</lem>
+                    <rdg wit="S">voysynes</rdg>
+                </app>
+                .
+            </p>
+
+            <p>
+                Cy fine la premiere partie de ces
+                <app>
+                    <lem wit="A">premieres</lem>
+                    <rdg wit="S"/>
+                    <rdg wit="P">presentes</rdg>
+                </app>
+                croniques.
+                <app>
+                    <lem wit="A S">Et cy aprés s’ensuit la seconde partie</lem>
+                    <rdg wit="P"/>
+                </app>
+                <app>
+                    <lem wit="A P"/>
+                    <rdg wit="S">,</rdg>
+                </app>
+                <app>
+                    <lem wit="A S">qui commence a parler des guerres de Bretaigne.</lem>
+                    <rdg wit="P"/>
+                </app>
+            </p>
+
+        </body>
+    </text>
+</TEI>
