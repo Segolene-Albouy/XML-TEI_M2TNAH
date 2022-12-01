@@ -3,159 +3,159 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-   <teiHeader>
-      <fileDesc>
-         <titleStmt>
-            <title>La Pharsale</title>
-            <author>Lucain</author>
-         </titleStmt>
-         <publicationStmt>
-            <p>LUCAIN, La guerre civile: la Pharsale. Tome I, Livres I-V, 
-               éds. Abel Bourgery et Paul Jal, Paris, France, Les Belles Lettres, 1997, xxviii+169 p.</p>
-         </publicationStmt>
-         <sourceDesc>
-            <listWit>
-               <witness xml:id="V">
-                  Vossianus lat. XIX Q.51
-               </witness>
-               <witness xml:id="Va">
-                  Université de Leyde, Vossianus lat. XIX Q.51
-               </witness>
-               <witness xml:id="M">
-                  Université de Montpellier, ms H113
-               </witness>
-               <witness xml:id="M1">
-                  Université de Montpellier, ms H113
-               </witness>
-               <witness xml:id="m">
-                  Université de Montpellier, ms H113
-               </witness>
-               <witness xml:id="Z">
-                  Bibliothèque nationale de France, ms. lat. 10314
-               </witness>
-               <witness xml:id="Z1">
-                  Bibliothèque nationale de France, ms. lat. 10314
-               </witness>
-               <witness xml:id="z">
-                  Bibliothèque nationale de France, ms. lat. 10314
-               </witness>
-               <witness xml:id="P">
-                  Bibliothèque nationale de France, ms. lat. 7502
-               </witness>
-               <witness xml:id="P1">
-                  Bibliothèque nationale de France, ms. lat. 7502
-               </witness>
-               <witness xml:id="p">
-                  Bibliothèque nationale de France, ms. lat. 7502
-               </witness>
-               <witness xml:id="U">
-                  Université de Leyde, Vossianus lat. XIX f.63
-               </witness>
-               <witness xml:id="u">
-                  Université de Leyde, Vossianus lat. XIX f.63
-               </witness>
-               <witness xml:id="G">
-                  Bibliothèque royale de Belgique, burgundicae 5330,
-               </witness>
-               <witness xml:id="Ga">
-                  Bibliothèque royale de Belgique, burgundicae 5330,
-               </witness>
-               <witness xml:id="S">
-                  Bibliothèque nationale de France, ms. lat. 13045
-               </witness>
-               <witness xml:id="Q">
-                  Bibliothèque nationale de France, ms. lat. 7900 A
-               </witness>
-               <witness xml:id="C">
-                  Lemmes du codex Bernensis 370
-               </witness>
-               <witness xml:id="Ca">
-                  Annotations ou commentaires du codex Bernensis 370
-               </witness>
-               <witness xml:id="ν">
-                  Fragments répartis entre le Vindobonensem (lat.rec 85) et Neapolitanum (IV a 8)
-               </witness>
-               <witness xml:id="μ">
-                  Fragments des transcriptions du Palatinus 24
-               </witness>
-               <witness xml:id="λ">
-                  Fragments issu de Bibliothèque nationale de France, ms. lat. 10403
-               </witness>
-               <witness xml:id="F">
-                  Bibliothèque du Vatican, ms 3284
-               </witness>
-               <witness xml:id="L"/>
-               <witness xml:id="A">
-                  Bibliothèque nationale de France, ms. lat. nouvelles acquisitions 1626
-               </witness>
-               <witness xml:id="B">
-                  Biblitohèque nationale de Bernes, ms 45
-               </witness>
-               <witness xml:id="E"/>
-               <witness xml:id="N">
-                  Bibliothèque nationale de France, ms. lat. 17901
-               </witness>
-               <witness xml:id="N1">
-                  Bibliothèque nationale de France, ms. lat. 17901
-               </witness>
-               <witness xml:id="PR">
-                  Priscianus (corpus grammatical latin de Keil)
-               </witness>
-               <witness xml:id="IS">
-                  Les Origines, Isidores
-               </witness>
-               <witness xml:id="LAC.">
-                  Thébaïdes de Lactantius Placidus
-               </witness>
-            </listWit>
-         </sourceDesc>
-      </fileDesc>
-
-   </teiHeader>
-   <text>
-      <body>
-         <lg>
-            <l>Iam gelidas Caesar cursu superauerat Alpes</l>
-            <l>ingentisque animo motus bellumque futurum</l>
-            <l>ceperat. Vt uentum. est parui Rubiconis ad undas,</l>
-            <l>ingens uisa duci Patriae trepidantis imago</l>
-            <l>clara per obscuram uoltu maestissima noctem,</l>
-            <l>turrigero canos effundens uertice crines,</l>
-            <l>caesarie lacera nudisque adstare lacertis</l>
-            <l>et gemitu permixta loqui : "Quo tenditis ultra ?</l>
-            <l>quo fertis mea signa, uiri? Si iure uenitis,</l>
-            <l>si ciues, huc usque licet." Tunc perculit horror</l>
-            <l>membra ducis, riguere comae, gressumque cohercens</l>
-            <l>languor in extrema tenuit uestigia ripa,</l>
-            <l>Mox ait: "0 magnae qui moenia prospicis Vrbis</l>
-            <l>Tarpeia de rupe, Tonans, Phrygiique penates</l>
-            <l>gentis Iuleae et rapti secreta Quirini</l>
-            <l>et residens celsa Latiaris Iuppiter Alba</l>
-            <l>Vestalesque foci summique o numinis instar,</l>
-            <l>Roma, faue coeptis; te furialibus armis</l>
-            <l>persequor ; en adsum, uictor terraque marique,</l>
-            <l>Caesar, ubique tuus (liceat modo, nunc quoque), miles,</l>
-            <l>Ille erit, ille nocens, qui me tibi fecerit hostem."</l>
-            <l>Inde moras soluit belli tumidumque per amnem</l>
-            <l>signat tulit propere ; sicut squalentihus aruis</l>
-            <l>aestiferae Libyes uiso leo comminus hoste</l>
-            <l>subsedit dubius, totam dum colligit iram;</l>
-            <l>mox ubi se saeuae stimulauit uerbere caudae</l>
-            <l>erexitque iubam et uasto graue murmur hiatu</l>
-            <l>infremuit, tunc, torta leuis si lancea Mauri</l>
-            <l>haereat aut latum subeant uenabula pectus,</l>
-            <l>per ferrum tanti securus uolneris exit.</l>
-            <l>Fonte cadit modico paruisque inpellitur undis</l>
-            <l>puniceus Rubicon, cum feruida canduit aestas,</l>
-            <l>perque imas serpit ualles et Gallica certus</l>
-            <l>limes ab Ausoniis disterminat arua colonis.</l>
-            <l>Tum uires praebebat hiemps, atque auxerat undas</l>
-            <l>tertia iam grauido pluuialis Cynthia cornu</l>
-            <l>et madidis euri resolutae flatibus Alpes.</l>
-            <l>Primus in obliquumn sonipes opponitur amnem</l>
-            <l>excepturus aquas ; molli turn cetera rumpit</l>
-            <l>turba uado faciles iarn fracti fluminis undas</l>
-         </lg>
-      </body>
-   </text>
+      <teiHeader>
+            <fileDesc>
+                  <titleStmt>
+                        <title>La Pharsale</title>
+                        <author>Lucain</author>
+                  </titleStmt>
+                  <publicationStmt>
+                        <p>LUCAIN, La guerre civile: la Pharsale. Tome I, Livres I-V, 
+                              éds. Abel Bourgery et Paul Jal, Paris, France, Les Belles Lettres, 1997, xxviii+169 p.</p>
+                  </publicationStmt>
+                  <sourceDesc>
+                        <listWit>
+                              <witness xml:id="V">
+                                    Vossianus lat. XIX Q.51
+                              </witness>
+                              <witness xml:id="Va">
+                                    Université de Leyde, Vossianus lat. XIX Q.51
+                              </witness>
+                              <witness xml:id="M">
+                                    Université de Montpellier, ms H113
+                              </witness>
+                              <witness xml:id="M1">
+                                    Université de Montpellier, ms H113
+                              </witness>
+                              <witness xml:id="m">
+                                    Université de Montpellier, ms H113
+                              </witness>
+                              <witness xml:id="Z">
+                                    Bibliothèque nationale de France, ms. lat. 10314
+                              </witness>
+                              <witness xml:id="Z1">
+                                    Bibliothèque nationale de France, ms. lat. 10314
+                              </witness>
+                              <witness xml:id="z">
+                                    Bibliothèque nationale de France, ms. lat. 10314
+                              </witness>
+                              <witness xml:id="P">
+                                    Bibliothèque nationale de France, ms. lat. 7502
+                              </witness>
+                              <witness xml:id="P1">
+                                    Bibliothèque nationale de France, ms. lat. 7502
+                              </witness>
+                              <witness xml:id="p">
+                                    Bibliothèque nationale de France, ms. lat. 7502
+                              </witness>
+                              <witness xml:id="U">
+                                    Université de Leyde, Vossianus lat. XIX f.63
+                              </witness>
+                              <witness xml:id="u">
+                                    Université de Leyde, Vossianus lat. XIX f.63
+                              </witness>
+                              <witness xml:id="G">
+                                    Bibliothèque royale de Belgique, burgundicae 5330,
+                              </witness>
+                              <witness xml:id="Ga">
+                                    Bibliothèque royale de Belgique, burgundicae 5330,
+                              </witness>
+                              <witness xml:id="S">
+                                    Bibliothèque nationale de France, ms. lat. 13045
+                              </witness>
+                              <witness xml:id="Q">
+                                    Bibliothèque nationale de France, ms. lat. 7900 A
+                              </witness>
+                              <witness xml:id="C">
+                                    Lemmes du codex Bernensis 370
+                              </witness>
+                              <witness xml:id="Ca">
+                                    Annotations ou commentaires du codex Bernensis 370
+                              </witness>
+                              <witness xml:id="ν">
+                                    Fragments répartis entre le Vindobonensem (lat.rec 85) et Neapolitanum (IV a 8)
+                              </witness>
+                              <witness xml:id="μ">
+                                    Fragments des transcriptions du Palatinus 24
+                              </witness>
+                              <witness xml:id="λ">
+                                    Fragments issu de Bibliothèque nationale de France, ms. lat. 10403
+                              </witness>
+                              <witness xml:id="F">
+                                    Bibliothèque du Vatican, ms 3284
+                              </witness>
+                              <witness xml:id="L"/>
+                              <witness xml:id="A">
+                                    Bibliothèque nationale de France, ms. lat. nouvelles acquisitions 1626
+                              </witness>
+                              <witness xml:id="B">
+                                    Biblitohèque nationale de Bernes, ms 45
+                              </witness>
+                              <witness xml:id="E"/>
+                              <witness xml:id="N">
+                                    Bibliothèque nationale de France, ms. lat. 17901
+                              </witness>
+                              <witness xml:id="N1">
+                                    Bibliothèque nationale de France, ms. lat. 17901
+                              </witness>
+                              <witness xml:id="PR">
+                                    Priscianus (corpus grammatical latin de Keil)
+                              </witness>
+                              <witness xml:id="IS">
+                                    Les Origines, Isidores
+                              </witness>
+                              <witness xml:id="LAC.">
+                                    Thébaïdes de Lactantius Placidus
+                              </witness>
+                        </listWit>
+                  </sourceDesc>
+            </fileDesc>
+            
+      </teiHeader>
+      <text>
+            <body>
+                  <lg>
+                        <l n="183">Iam gelidas Caesar cursu superauerat Alpes</l>
+                        <l n="184">ingentisque animo motus bellumque futurum</l>
+                        <l n="185">ceperat. Vt uentum. est parui Rubiconis ad undas,</l>
+                        <l n="186">ingens uisa duci Patriae trepidantis imago</l>
+                        <l n="187">clara per obscuram uoltu maestissima noctem,</l>
+                        <l n="188">turrigero canos effundens uertice crines,</l>
+                        <l n="189">caesarie lacera nudisque adstare lacertis</l>
+                        <l n="190">et gemitu permixta loqui : "Quo tenditis ultra ?</l>
+                        <l n="191">quo fertis mea signa, uiri? Si iure uenitis,</l>
+                        <l n="192">si ciues, huc usque licet." Tunc perculit horror</l>
+                        <l n="193">membra ducis, riguere comae, gressumque cohercens</l>
+                        <l n="194">languor in extrema tenuit uestigia ripa,</l>
+                        <l n="195">Mox ait: "O magnae qui moenia prospicis Vrbis</l>
+                        <l n="196">Tarpeia de rupe, Tonans, Phrygiique penates</l>
+                        <l n="197">gentis Iuleae et rapti secreta Quirini</l>
+                        <l n="198">et residens celsa Latiaris Iuppiter Alba</l>
+                        <l n="199">Vestalesque foci summique o numinis instar,</l>
+                        <l n="200">Roma, faue coeptis; te furialibus armis</l>
+                        <l n="201">persequor ; en adsum, uictor terraque marique,</l>
+                        <l n="202">Caesar, ubique tuus (liceat modo, nunc quoque), miles,</l>
+                        <l n="203">Ille erit, ille nocens, qui me tibi fecerit hostem."</l>
+                        <l n="204">Inde moras soluit belli tumidumque per amnem</l>
+                        <l n="205">signat tulit propere ; sicut squalentihus aruis</l>
+                        <l n="206">aestiferae Libyes uiso leo comminus hoste</l>
+                        <l n="207">subsedit dubius, totam dum colligit iram;</l>
+                        <l n="208">mox ubi se saeuae stimulauit uerbere caudae</l>
+                        <l n="209">erexitque iubam et uasto graue murmur hiatu</l>
+                        <l n="210">infremuit, tunc, torta leuis si lancea Mauri</l>
+                        <l n="211">haereat aut latum subeant uenabula pectus,</l>
+                        <l n="212">per ferrum tanti securus uolneris exit.</l>
+                        <l n="213">Fonte cadit modico paruisque inpellitur undis</l>
+                        <l n="214">puniceus Rubicon, cum feruida canduit aestas,</l>
+                        <l n="215">perque imas serpit ualles et Gallica certus</l>
+                        <l n="216">limes ab Ausoniis disterminat arua colonis.</l>
+                        <l n="217">Tum uires praebebat hiemps, atque auxerat undas</l>
+                        <l n="218">tertia iam grauido pluuialis Cynthia cornu</l>
+                        <l n="219">et madidis euri resolutae flatibus Alpes.</l>
+                        <l n="220">Primus in obliquumn sonipes opponitur amnem</l>
+                        <l n="221">excepturus aquas ; molli turn cetera rumpit</l>
+                        <l n="222">turba uado faciles iarn fracti fluminis undas</l>
+                  </lg>
+            </body>
+      </text>
 </TEI>
