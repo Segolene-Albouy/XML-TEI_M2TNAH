@@ -17,8 +17,8 @@ Ce cours est largement inspiré des [supports fournis par Ariane Pinche dans ce 
 | 23 novembre  | 15h30-17h30 | Éditer un texte : description des sources manuscrites              |
 | 30 novembre  | 15h30-17h30 | Éditer un texte : encodage d'une édition critique                  |
 | 7 décembre   | 15h30-17h30 | Les schémas XML : initiation à l'ODD                               |
-| 14 décembre  | 15h30-17h30 | Les schémas XML : ODD personnalisations avancées                   |
-| 4 janvier    | 15h30-17h30 | Les schémas XML : Mise en pratique                                 |
+| 14 décembre  | 15h30-17h30 | Les schémas XML : documenter son ODD                   |
+| 4 janvier    | 15h30-17h30 | Les schémas XML : définir des règles de validation                                 |
 
 ## Évaluation
 
