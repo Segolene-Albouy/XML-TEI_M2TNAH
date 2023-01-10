@@ -1,0 +1,1595 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="RNG_Froissart.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="RNG_Froissart.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI SYSTEM "DTD_Froissart.dtd">
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  
+  <!-- HEADER -->
+  <teiHeader>
+    <!-- Description bibliographique du fichier numérique ainsi que de sa source (physique ou non) -->
+    <fileDesc>
+      <!-- Titre et responsabilités liées au document encodé -->
+      <titleStmt>
+        <title>Chroniques</title>
+        <author>Jean Froissart</author>
+        <principal xml:id="phk">Paul, Hector Kervegan</principal>
+        <respStmt xml:id="tof">
+          <resp>Sélection, alignement des témoins et première édition en ligne par</resp>
+          <orgName>
+            <ref target="https://www.dhi.ac.uk/onlinefroissart">The Online Froissart. A digital edition of the Chronicles of Jean Froissart</ref>
+          </orgName>
+        </respStmt>
+        <respStmt>
+          <resp>Responsables du projet Online Froissart</resp>
+          <persName>
+            <forename>Peter</forename>
+            <surname>Ainsworth</surname>
+          </persName>
+          <persName>
+            <forename>Godfried</forename>
+            <surname>Croenen</surname>
+          </persName>
+        </respStmt>
+        <respStmt>
+          <resp>Institutions partenaires du Online Froissart</resp>
+          <orgName>University of Sheffield</orgName>
+          <orgName>University of Liverpool</orgName>
+          <orgName>AHRC. Art and Humanities Research Council</orgName>
+          <orgName>The Digital Humanities Institute</orgName>
+          <orgName>ATLIF. Laboratoire Analyse et Traitement Informatique de la Langue Française</orgName>
+          <orgName>CNRS. Centre National de la Recherche Scientifique</orgName>
+        </respStmt>
+      </titleStmt>
+      <!-- Informations sur la publication/distribution du document numérique (l'encodage) -->
+      <publicationStmt>
+        <publisher>École nationale des Chartes</publisher>
+        <pubPlace>Paris, France</pubPlace>
+        <date when-iso="2022-01-31" type="date-de-rendu">31 janvier 2022</date>
+      </publicationStmt>
+      
+      <!-- Informations concernant la source dont est issue l'encodage : description bibliographique -->
+      <sourceDesc>
+        <!-- la description des 3 témoins, chacun contenant un msDesc pour le décrire -->
+        <listWit>
+          <witness xml:id="atw">
+            <msDesc>
+              <msIdentifier>
+                <placeName>
+                  <country>Belgique</country>
+                  <settlement>Anvers</settlement>
+                </placeName>
+                <institution>Museum Plantin-Moretus</institution>
+                <repository>Collection des manuscrits</repository>
+                <idno>M 15.6</idno>
+              </msIdentifier>
+              <msContents>
+                <textLang>Moyen français</textLang>
+              </msContents>
+              <physDesc>
+                <objectDesc>
+                  <supportDesc>
+                    <support>parchemin</support>
+                    <extent>350 folio</extent>
+                  </supportDesc>
+                </objectDesc>
+              </physDesc>
+              <history>
+                <origin>
+                  <origDate type="date-range">1475-1485</origDate>
+                </origin>
+              </history>
+              <additional>
+                <adminInfo>
+                  <recordHist>
+                    <source>
+                      <ref target="https://anet.be/record/opacmpm/c:lvd:14057240/F">Anet Departement Bibliotheek</ref>
+                    </source>
+                  </recordHist>
+                </adminInfo>
+              </additional>
+            </msDesc>
+          </witness>
+          <witness xml:id="brl">
+            <msDesc>
+              <msIdentifier>
+                <placeName>
+                  <country>Allemagne</country>
+                  <settlement>Berlin</settlement>
+                </placeName>
+                <institution>Staatsbibliothek zu Berlin - Preussischer Kulturbesitz</institution>
+                <repository>Département des Manuscrits</repository>
+                <idno>Dep. Breslau 1</idno>
+                <msName>Froissart de Breslau</msName>
+              </msIdentifier>
+              <msContents>
+                <textLang>Moyen français</textLang>
+              </msContents>
+              <physDesc>
+                <objectDesc>
+                  <supportDesc>
+                    <support>parchemin</support>
+                    <extent>343 folio</extent>
+                  </supportDesc>
+                </objectDesc>
+              </physDesc>
+              <history>
+                <origin>
+                  <origDate type="precise">1468-1469</origDate>
+                </origin>
+              </history>
+              <additional>
+                <adminInfo>
+                  <recordHist>
+                    <source>
+                      <ref target="http://medium-avance.irht.cnrs.fr/ark:/63955/md44pk02gf53">Medium - Répertoire des manuscrits reproduits ou recensés</ref>
+                    </source>
+                  </recordHist>
+                </adminInfo>
+              </additional>
+            </msDesc>
+            <note>Le témoin de Berlin est le plus ancien des trois témoins utilisés dans cette édition critique</note>
+          </witness>
+          <witness xml:id="brn">
+            <msDesc>
+              <msIdentifier>
+                <placeName>
+                  <country>Suisse</country>
+                  <settlement>Berne</settlement>
+                </placeName>
+                <institution>Burgerbibliothek Bern - Bibliothèque de la Bourgeoisie</institution>
+                <repository>Archives</repository>
+                <collection>Section Bongarsiana/Codices</collection>
+                <idno>Cod. A 14</idno>
+              </msIdentifier>
+              <msContents>
+                <textLang>Moyen français</textLang>
+              </msContents>
+              <physDesc>
+                <objectDesc>
+                  <supportDesc>
+                    <support>parchemin</support>
+                    <extent>II + 336 folio
+                      <dimensions unit="cm">
+                        <height>44</height>
+                        <width>34,5</width>
+                        <depth>10</depth>
+                      </dimensions>
+                    </extent>
+                  </supportDesc>
+                </objectDesc>
+              </physDesc>
+              <history>
+                <origin>
+                  <origDate type="date-range">1470-1490</origDate>
+                </origin>
+                <provenance>Anciennement propriété du Comte Alexandre de Donha, bourgeois de Berne, il en fait don à la bibliothèque en 1697</provenance>
+              </history>
+              <additional>
+                <adminInfo>
+                  <recordHist>
+                    <source>
+                      <ref target="http://katalog.burgerbib.ch/detail.aspx?ID=147296">Bibliothèque de la Bourgeoisie - Catalogue en ligne des Archives</ref>
+                    </source>
+                  </recordHist>
+                </adminInfo>
+              </additional>
+            </msDesc>
+          </witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    
+    <!-- Informations concernant l'encodage du texte: relation entre texte encodé et sa source -->
+    <encodingDesc>
+      <editorialDecl>
+        <!-- principes éditoriaux suivis pendant l'encodage -->
+        <p>L'alignement des témoins a été réalisé avec l'aide de l'algorithme de Dekker de <ref target="https://collatex.net/">Collatex</ref>. Cet alignement a été repris ensuite pour constituer l'édition critique qui suit.</p>
+        <p>L'édition critique et l'alignement des témoins cherchent à permettre l'étude la plus précise possible de la variance et des similitudes entre les versions :<list>
+          <item>La structuration du texte en paragraphes (&lt;p&gt;) a été abandonnée : les trois textes sont insérés dans un conteneur &lt;ab&gt; 
+            et les changements de paragraphes sont signalés par des &lt;milestone&gt;, pour permettre un alignement des témoins phrase par phrase.</item>
+          <item>Pour cet encodage, on considère que les différences au niveau de la structure de la phrase sont plus importantes que les différences orthographiques. L'encodage suit ce principe:
+            quand la même phrase est dans un ordre différent dans différents témoins, cette phrase est encodée comme un élément entier, 
+            plutôt que de rassembler les mêmes mots de la phrase dans un seul élément &lt;app&gt;(ce qui permettrait de mettre en avant les différences orthographiques entre ces mêmes mots).</item>
+          <item>Pour permettre l'étude de variance la plus précise possible, l'encodage suit un principe de modularité: lorsque 2 témoins sont semblables et diffèrent du 3e témoin, 
+            alors ces 2 témoins sont encodés dans un seul élément &lt;rdg&gt;. Les variations au sein de ces 2 témoins sont signalées dans un &lt;app&gt; à l'intérieur du &lt;rdg&gt;.
+            L'édition est donc construite en variations/sous-variations.</item>
+          <item>L'élément &lt;rdgGrp&gt; est utilisé pour rassembler deux lectures très proches ; cependant, pour privilégier l'étude de la variation entre les témoins
+            et pour coller au plus près de ces variations, l'utilisation de &lt;rdg&gt; rassemblant plusieurs témoins et contenant un ou plusieurs &lt;app&gt; (comme décrit au dessus) est privilégiée.</item>
+        </list>
+        </p>
+        <p>Pour chaque élément &lt;app&gt;, un attribut "@corresp" est utilisé pour préciser la nature de la différence entre les témoins. Les valeurs possible pour cet attribut sont:<list>
+          <item xml:id="orth">différence orthographique</item>
+          <item xml:id="punct">différence de ponctuation</item>
+          <item xml:id="sentence-order">différence dans l'ordre des mots dans un bloc de texte</item>
+          <item xml:id="word-diff">des mots différents sont utilisés dans un même bloc de texte dans les différents témoins</item>
+          <item xml:id="add-words">un témoin présente un ou plusieurs mots qui ne se trouvent pas dans les autres</item>
+          <item xml:id="text-segmentation">la séparation du texte en paragraphes et pages est différente d'un témoin à l'autre</item>
+          <item xml:id="ornementation">la décoration du manuscrit varie d'un témoin à l'autre</item>
+        </list>
+        </p>
+        <segmentation>
+          <p>Pour mieux aligner les textes et mettre en avant les variations entre les témoins, les paragraphes ne sont pas contenus dans des &lt;p&gt;.
+            Le passage d'un paragraphe à l'autre est signalé par un &lt;milestone unit="tei:p"/&gt; et par un &lt;lb/&gt;.
+            Cette méthode est suggérée par Beshero-Bondar, Cayless, Vigilanti (2019: 3.10)
+            <bibl>
+              <author>
+                <persName>Beshero-Bondar</persName>
+                <persName>Cayless</persName>
+                <persName>Viglianti</persName>
+              </author>
+              <title>Document Modeling with the TEI Critical Apparatus</title>
+              <date>2019</date>
+              <ref target="http://bit.ly/crit-app-panel"/>
+            </bibl>
+          </p>
+        </segmentation>
+      </editorialDecl>
+      <projectDesc>
+        <p>Encodage réalisé dans le cadre du cours de TEI du M2 TNAH de l'ENC, 2021-2022.</p>
+      </projectDesc>
+      <variantEncoding method="parallel-segmentation" location="internal"/>
+    </encodingDesc>
+    
+    <!-- Aspects non bibliographiques du texte numérique : langues, contexte de production, participants... -->
+    <profileDesc>
+      <creation>
+        <!-- informations sur la création du texte originel -->
+        <title>Chroniques</title>
+        <origDate type="date-range">XIVe siècle</origDate>
+        <country>France</country>
+        <lang>Moyen français</lang>
+      </creation>
+      <abstract>
+        <p>Les Chroniques de Froissart couvrent les années 1322 à 1400 et décrivent les évènements de la première moitié de la Guerre de Cent Ans.
+          Ce récit en prose s'ouvre sur les événements qui ont précédé la déposition d'Édouard II en 1326 et couvre la période allant jusqu'à 1400.</p>
+      </abstract>
+      <particDesc>
+        <listPerson>
+          <!-- personnages dans le passage -->
+          <head>Personnages dans le passage encodé</head>
+          <person xml:id="djdb">
+            <persName type="contemporary-name" resp="#tof" cert="high">
+              <forename>Jean</forename>
+              <nameLink>de</nameLink>
+              <surname>Berry</surname>
+            </persName>
+            <persName type="text-name">
+              <roleName type="nobility">duc</roleName>
+              <nameLink>de</nameLink>
+              <surname>
+                <app corresp="#orth">
+                  <lem wit="#brl #brn">Berry</lem>
+                  <rdg wit="#atw">
+                    <choice>
+                      <orig>Berri</orig>
+                      <orig>Berry</orig>
+                    </choice>
+                  </rdg>
+                </app>
+              </surname>
+            </persName>
+            <note source="Online Froissart">Le duc Jean de Berry (1340-1416), troisième fils du roi Jean II de France et de Bonne de Luxembourg, frère du roi Charles V de France et
+              oncle du roi Charles VI. Il a épousé Jeanne d'Armagnac, fille du comte Jean Ier et sœur du comte Jean II. Jean de Berry, avec son frère
+              Philippe, duc de Bourgogne, étaient des figues dominantes dans le royaume de France et des personnages centraux de la politique française
+              durant la majeure partie du règne de Charles VI, d'abord du fait de la position d'infériorité du roi, et ensuite à cause de sa folie.</note>
+          </person>
+          <person xml:id="mjda">
+            <persName type="contemporary-name" resp="#tof" cert="high">
+              <forename>Jeanne</forename>
+              <nameLink>d'</nameLink>
+              <surname>Armagnac</surname>
+            </persName>
+            <persName type="text-name">
+              <addName type="honorific">madame</addName>
+              <forename>
+                <app corresp="#orth">
+                  <lem wit="#atw #brl">Jehanne</lem>
+                  <rdg wit="#brn">Jehenne</rdg>
+                </app>
+              </forename>
+              <nameLink>d'</nameLink>
+              <surname>
+                <app corresp="#orth">
+                  <lem wit="#brl">Armeignach</lem>
+                  <rdg wit="#atw">Ermignac</rdg>
+                  <rdg wit="#brn">Armignac</rdg>
+                </app>
+              </surname>
+            </persName>
+            <note source="Online Froissart">Première femme du duc Jean de Berry, qu'elle épousa en 1360. Elle est la fille de Jean Ier, comte d'Armgnac.
+              Elle mourut le 15 mars 1388.</note>
+          </person>
+          <person xml:id="cgfb">
+            <persName type="contemporary-name" resp="#tof" cert="high">
+              <forename>Gaston</forename>
+              <genName>III</genName>
+              <nameLink>de</nameLink>
+              <surname>Foix-Béarn</surname>
+              <addName>Fébus</addName>
+            </persName>
+            <persName type="text-name">
+              <roleName type="honorific">conte</roleName>
+              <app corresp="#orth">
+                <lem wit="#brl">
+                  <forename>Gascoing</forename>
+                  <surname>
+                    <nameLink>de</nameLink>Foiz</surname>
+                  <surname type="alternate-orthograph">
+                    <nameLink>de</nameLink>Foix</surname>
+                </lem>
+                <rdg wit="#atw #brn">
+                  <forename>Gascon</forename>
+                  <surname>
+                    <nameLink>de</nameLink>Foix</surname>
+                </rdg>
+              </app>
+            </persName>
+            <note source="Online Froissart">Gascon III comte de Foix, aussi connu sous le nom de Fébus (1331-1391). ll est le fils de Gaston II de Foix et
+              d'Aliénor de Comminges, dont Froissart a visité la cour en 1388. Gaston est né en 1331 et a succédé à son père en 1343. Le 4 août 1348, il
+              a épousé Agnès de Navarre, la fille du comte Philippe d'Évreux et de Jeanne, la reine de Navarre (qui est
+              elle même la fille de Louis X de France). Gaston est mort en 1391. Il est l'autheur d'un célèbre traité de chasse intitulé Livre de chasse.</note>
+          </person>
+          <person xml:id="fjda">
+            <persName type="contemporary-name" resp="#phk" cert="high">
+              <forename>Jeanne</forename>
+              <genName>II</genName>
+              <nameLink>d'</nameLink>
+              <forename>Auvergne</forename>
+            </persName>
+            <persName type="text-name">
+              <roleName>
+                <app corresp="#word-diff">
+                  <lem wit="#atw #brl">la fille</lem>
+                  <rdg wit="#brn">le filz</rdg>
+                </app>
+              </roleName>
+            </persName>
+          </person>
+          <person xml:id="cjdb">
+            <persName type="contemporary-name" resp="#phk" cert="high">
+              <forename>Jean</forename>
+              <genName>II</genName>
+              <nameLink>d'</nameLink>
+              <forename>Auvergne</forename>
+            </persName>
+            <persName type="text-name">
+              <roleName type="nobility">conte</roleName>
+              <forename>Jehan</forename>
+              <nameLink>de</nameLink>
+              <surname>
+                <app corresp="#orth">
+                  <lem wit="#brl #brn">Boulongne</lem>
+                  <rdg wit="#atw">Bouloingne</rdg>
+                </app>
+              </surname>
+            </persName>
+          </person>
+          <person xml:id="rcha">
+            <persName type="contemporary-name" resp="#phk" cert="high">
+              <forename>Charles</forename>
+              <genName>VI</genName>
+            </persName>
+            <persName type="text-name">
+              <roleName type="nobility">roy de France</roleName>
+            </persName>
+          </person>
+          <person xml:id="dpdb">
+            <persName type="contemporary-name" resp="#phk" cert="high">
+              <forename>Philippe</forename>
+              <genName>II</genName>
+              <nameLink>de</nameLink>
+              <forename>Bourgogne</forename>
+            </persName>
+            <persName type="text-name">
+              <roleName type="nobility">duc</roleName>
+              <nameLink>de</nameLink>
+              <surname>
+                <app corresp="#orth">
+                  <lem wit="#atw #brl">Bourgoingne</lem>
+                  <rdg wit="#brn">Bourgongne</rdg>
+                </app>
+              </surname>
+            </persName>
+            <note source="Online Froissart">Philippe "le Hardi", duc de Bourgogne (1342-1404, est le quatrième fils de Jean II de France
+              et de Bonne de Luxembourg. Le duc de Bourgogne est une figure proéminente du gouvernement français durant le règne de son neveu Charles VI,
+              et surtout après 1392, quand le roi a commencé à souffrir de crises de folie qui donnent aux ducs de Berry et de Bourgogne l'opportunité de prendre
+              le pouvoir aux Marmousets, les administrateurs de Charles VI. Philippe épouse Margaret de Male, comtesse de Frandres. Ce marriage finit par réunir le duché 
+              de Bourgogne et des Artois. Cette union ramène aussi les comtés de Flandres, de Nevers et de Rethel sous le contrôle du duc de Bourgogne. Cette alliance 
+              maritale, ainsi que les mariages des descendants du duc de Bourgogne, furent la base du grand duché de Bourgogne, un État quasi-indépendant plus qu'un fiel de la couronne française.</note>
+          </person>
+          <person xml:id="fjdb">
+            <persName type="contemporary-name" resp="#phk" cert="high">
+              <forename>Jean</forename>
+              <genName>II</genName>
+              <nameLink>de</nameLink>
+              <forename>Berry</forename>
+            </persName>
+            <persName type="text-name">
+              <forename>Jehan</forename>
+            </persName>
+          </person>
+          <person xml:id="sbdr">
+            <persName type="contemporary-name" resp="#phk" cert="high">
+              <forename>Bureau</forename>
+              <nameLink>de la</nameLink>
+              <surname>Rivière</surname>
+            </persName>
+            <persName type="text-name">
+              <roleName type="nobility">sire</roleName>
+              <nameLink>de la</nameLink>
+              <placeName>Riviere</placeName>
+              <roleName type="nobility">messire</roleName>
+              <surname>
+                <app corresp="#orth">
+                  <lem wit="#brl">Burel</lem>
+                  <rdg wit="#atw #brn">Brueil</rdg>
+                </app>
+              </surname>
+            </persName>
+          </person>
+          <person xml:id="cdas">
+            <persName type="contemporary-name" resp="#phk" cert="medium">
+              <forename>Jean</forename>
+              <nameLink>de la</nameLink>
+              <surname>Personne</surname>
+            </persName>
+            <persName type="text-name">
+              <roleName type="nobility">conte</roleName>
+              <nameLink>d'</nameLink>
+              <surname>
+                <app corresp="#orth">
+                  <lem wit="#brl">Assy</lem>
+                  <rdg wit="#atw #brn">Acy</rdg>
+                </app>
+              </surname>
+            </persName>
+          </person>
+          <person xml:id="egdv">
+            <persName type="contemporary-name" resp="#phk" cert="high">
+              <forename>Guillaume</forename>
+              <genName>VI</genName>
+              <nameLink>de</nameLink>
+              <forename>Vienne</forename>
+            </persName>
+            <persName type="text-name">
+              <roleName type="ecclesiastic">evesque</roleName>
+              <nameLink>d'</nameLink>
+              <placeName>
+                <app corresp="#orth">
+                  <lem wit="#atw #brl">Authun</lem>
+                  <rdg wit="#brn">Autun</rdg>
+                </app>
+              </placeName>
+            </persName>
+          </person>
+          <person xml:id="mgdt">
+            <persName type="contemporary-name" resp="#phk" cert="high">
+              <forename>Guillaume</forename>
+              <nameLink>de la</nameLink>
+              <surname>Trémoille</surname>
+            </persName>
+            <persName type="text-name">
+              <roleName type="nobility">messire</roleName>
+              <forename>
+                <app corresp="#orth">
+                  <lem wit="#brl">Guillemme</lem>
+                  <rdg wit="#atw">Guillaume</rdg>
+                  <rdg wit="#brn">Guillame</rdg>
+                </app>
+              </forename>
+              <nameLink>de la</nameLink>
+              <surname>Trimoulle</surname>
+            </persName>
+          </person>
+          <person xml:id="cjdx">
+            <persName type="contemporary-name" resp="#phk" cert="high">
+              <forename>Jean</forename>
+              <genName>III</genName>
+              <nameLink>de</nameLink>
+              <forename>Sancerre</forename>
+            </persName>
+            <persName type="text-name">
+              <roleName type="nobility">conte</roleName>
+              <forename>Jehan</forename>
+              <nameLink>de</nameLink>
+              <surname>Xancerre</surname>
+            </persName>
+          </person>
+          <person xml:id="pclv">
+            <persName type="contemporary-name" resp="#tof" cert="high">
+              <forename>Clément</forename>
+              <genName>VII</genName>
+            </persName>
+            <persName type="text-name">
+              <roleName>pape</roleName>
+              <forename>Clement</forename>
+            </persName>
+            <note source="Online Froissart">L'antipape Clément VII est né Robert de Genève (1342-1394). Il est le fil d'Amadeus III, comte de Genève et de Mathilde, fille
+              de Robert VII, comte de Boulogne et d'Auvergne et grand-parent du roi Jean II de France. Il est fait évêque de Thérouanne en 1361, archêveque de Cambrai en 1368 et
+              cardinal en 1371. Il est élu en tant que Pape Clément VII à Fondi en 1378 par les cardinaux français en oppisition à Urbain VI, et devient le premier antipape du grand schisme.
+              Plus tard, il fut reconnu comme antipape plutôt que comme pape, et son nom fut donné à un pape "légitime" du XVIe siècle. Clément a résidé à Avignon. Froissart voit en lui le "vrai"
+              pape et reconnaît son soutient au roi de France. Il est mort en 1394.</note>
+          </person>
+          <person xml:id="mldx">
+            <persName type="contemporary-name" resp="#phk" cert="high">
+              <forename>Louis</forename>
+              <genName>de</genName>
+              <surname>Sancerre</surname>
+            </persName>
+            <persName type="text-name">
+              <forename>Loÿs</forename>
+              <nameLink>de</nameLink>
+              <forename>Xancerre</forename>
+              <roleName type="nobility">mareschal de France</roleName>
+            </persName>
+          </person>
+          <person xml:id="djdg">
+            <persName type="contemporary-name" resp="#phk" cert="high">
+              <forename>Jean</forename>
+              <nameLink>de</nameLink>
+              <surname>Gand</surname>
+            </persName>
+            <persName type="text-name">
+              <roleName type="nobility">duc</roleName>
+              <nameLink>de</nameLink>
+              <forename>Lancastre</forename>
+            </persName>
+          </person>
+          <person xml:id="hcde">
+            <persName type="contemporary-name" resp="#phk" cert="high">
+              <forename>Henri</forename>
+              <genName>IV</genName>
+              <roleName type="nobility">roi d'Angleterre</roleName>
+            </persName>
+            <persName type="text-name">
+              <forename>Henry</forename>
+              <roleName type="nobility">conte</roleName>
+              <nameLink>d'</nameLink>
+              <forename>
+                <app corresp="#orth">
+                  <lem wit="#brl #brn">Erby</lem>
+                  <rdg wit="#atw">Erbi</rdg>
+                </app>
+              </forename>
+            </persName>
+          </person>
+          <listRelation>
+            <head>Liste des relations entre les personnages dans l'extrait encodé</head>
+            <relation name="married" mutual="#djdb #mjda">
+              <desc>Jeanne d'Armignac est la première femme du duc de Berry</desc>
+            </relation>
+            <relation name="guardian" active="#cgfb" passive="#fjda">
+              <desc>Gaston de Foix est le gardien de Jeanne, comtesse d'Auvergne et de Boulogne</desc>
+            </relation>
+            <relation name="parent" active="#cjdb" passive="#fjda">
+              <desc>Le conte Jean de Boulogne est le père de Jeanne, comtesse d'Auvergne et de Boulogne</desc>
+            </relation>
+            <relation name="uncle" active="#djdb" passive="#rcha">
+              <desc>Le duc Jean de Berry est l'oncle du roi de France</desc>
+            </relation>
+            <relation name="brother" mutual="#dpdb #djdb">
+              <desc>Philippe II le Hardi, duc de Bourgogne, est le frère du duc de Berry</desc>
+            </relation>
+            <relation name="parent" active="#djdb" passive="#fjdb">
+              <desc>Jean II de Berry est le fils du duc de Berry</desc>
+            </relation>
+            <relation name="cousin" mutual="#rcha #fjdb">
+              <desc>Jean II de Berry est le cousin du roi de France</desc>
+            </relation>
+            <relation name="ally" mutual="#rcha #cdas #sbdr">
+              <desc>Bureau de la Rivière et Jean de la Personne (le conte d'Assy) sont des alliés du roi de France</desc>
+            </relation>
+            <relation name="ally" mutual="#dpdb #egdv #mgdt">
+              <desc>Guillaume VI de Vienne (l'évêque d'Autun) et Guillaume de la Trémoille sont des alliés du duc de Bourgogne</desc>
+            </relation>
+            <relation name="ally" mutual="#djdb #cjdx">
+              <desc>Jean de Sancerre est un allié du duc de Berry</desc>
+            </relation>
+            <relation name="parent" active="#djdg" passive="#hcde">
+              <desc>Henri IV est le fils du duc de Lancastre</desc>
+            </relation>
+            <listRelation>
+              <relation name="cousin" mutual="#pclv #fjda">
+                <desc>Dans Antwerp M 15.6, Clément VII est cousin de Jeanne II d'Auvergne.</desc>
+              </relation>
+              <relation name="cousin" mutual="#pclv #cjdb">
+                <desc>Dans le manuscrit de Berlin (Dep. Breslau I), Clément VII est cousin du conte Jean de Boulogne, père de Jeanne II d'Auvergne.</desc>
+              </relation>
+            </listRelation>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <settingDesc>
+        <listPlace>
+          <head>Lieux dans le passage encodé</head>
+          <place xml:id="avg">
+            <placeName type="text-name">Avignon</placeName>
+          </place>
+          <place xml:id="nim">
+            <placeName type="contemporary-name">Nîmes</placeName>
+            <placeName type="text-name">
+              <app>
+                <lem wit="#brn #brl">Nismes</lem>
+                <rdg wit="#atw">Nimes</rdg>
+              </app>
+            </placeName>
+          </place>
+          <place xml:id="mtp">
+            <placeName type="text-name">Montpellier</placeName>
+          </place>
+          <place xml:id="bsr">
+            <placeName type="contemporary-name">Béziers</placeName>
+            <placeName type="text-name">Besiers</placeName>
+          </place>
+          <place xml:id="crs">
+            <placeName type="text-name">Carcassonne</placeName>
+          </place>
+          <place xml:id="tls">
+            <placeName type="contemporary-name">Toulouse</placeName>
+            <placeName type="text-name">Thoulouse</placeName>
+          </place>
+          <place xml:id="otz">
+            <placeName type="contemporary-name">Orthez</placeName>
+            <placeName type="text-name">Orthaiz en<app>
+              <lem wit="#brl">Berne</lem>
+              <rdg wit="#atw #brn">Bierne</rdg>
+            </app>
+            </placeName>
+          </place>
+          <place xml:id="bdx">
+            <placeName type="contemporary-name">Bordeaux</placeName>
+            <placeName type="text-name">
+              <app>
+                <lem wit="#brl #brn">Bourdeaulx</lem>
+                <rdg wit="#atw">Bourdeaulz</rdg>
+              </app>
+            </placeName>
+          </place>
+          <place xml:id="nrb">
+            <placeName type="contemporary-name">Narbonne</placeName>
+            <placeName type="text-name">
+              <app>
+                <lem wit="#brl">Liebourne</lem>
+                <rdg wit="#atw">Lierbonne</rdg>
+                <rdg wit="#brn">Narbonne</rdg>
+              </app>
+            </placeName>
+          </place>
+          <place xml:id="nnt">
+            <placeName type="contemporary-name">Nonette</placeName>
+            <placeName type="text-name">la Nonnette en Auvergne</placeName>
+          </place>
+        </listPlace>
+      </settingDesc>
+    </profileDesc>
+  </teiHeader>
+  
+  
+  <!-- CORPS DU TEXTE -->
+  <text>
+    <body>
+      <ab type="SHF-chapter" n="3A-306">
+        <app corresp="#text-segmentation">
+          <lem wit="#brl">
+            <pb n="370 v"/>
+          </lem>
+          <rdg wit="#atw" lev="0">
+            <pb n="340 v"/>
+          </rdg>
+          <rdg wit="#brn" lev="0">
+            <pb n="333 r"/>
+          </rdg>
+          <witDetail wit="#atw #brl #brn" type="precision-about-page-numbering">Les pages des manuscrits contiennent du texte avant ce qui a été encodé; l'élément 'pb' sert ici à indiquer les pages où commençent l'encodage</witDetail>
+        </app>Le<persName ref="#djdb">duc de<app corresp="#orth">
+          <lem wit="#brn #brl">Berry</lem>
+          <rdg wit="#atw" lev="1">Berri</rdg>
+        </app>
+        </persName>
+        <app corresp="#punct">
+          <lem wit="#atw #brl">,</lem>
+          <rdg wit="#brn" lev="4"/>
+        </app>
+        <persName ref="#mjda">madame<app corresp="#orth">
+          <lem wit="#atw #brl">Jehanne</lem>
+          <rdg wit="#brn" lev="1">Jehenne</rdg>
+        </app>
+          <app corresp="#orth">
+            <lem wit="#brl">d'Armeignach</lem>
+            <rdg wit="#atw" lev="3">d'Ermignac</rdg>
+            <rdg wit="#brn" lev="2">d'Armignac</rdg>
+          </app>
+        </persName>
+        <app corresp="#sentence-order">
+          <lem wit="#brl">sa premiere femme trespassee</lem>
+          <rdgGrp corresp="#punct #word-diff">
+            <rdg wit="#atw" lev="23">trespassee, sa premiere femme</rdg>
+            <rdg wit="#brn" lev="21">trespassee sa premiere</rdg>
+          </rdgGrp>
+        </app>
+        <app corresp="#punct">
+          <lem wit="#atw #brl">,</lem>
+          <rdg wit="#brn" lev="4"/>
+        </app>avoit grant<app corresp="#orth">
+          <lem wit="#brl">ymagination</lem>
+          <rdg wit="#atw #brn" lev="1">ymaginacion</rdg>
+        </app>
+        <app corresp="#punct">
+          <lem wit="#brl">. Et bien le</lem>
+          <rdg wit="#atw #brn" lev="3">et bien le</rdg>
+        </app>
+        <app corresp="#orth">
+          <lem wit="#brl">moustra</lem>
+          <rdg wit="#atw #brn" lev="1">monstra</rdg>
+        </app>que secondement il<app corresp="#orth">
+          <lem wit="#brl">fust</lem>
+          <rdg wit="#atw" lev="1">feust</rdg>
+          <rdg wit="#brn" lev="1">fut</rdg>
+        </app>
+        <app corresp="#word-diff">
+          <lem wit="#brl">remarié</lem>
+          <rdg wit="#atw #brn" lev="2">marié</rdg>
+        </app>. Car<app corresp="#word-diff">
+          <lem wit="#brl">tantost que</lem>
+          <rdgGrp corresp="#word-diff">
+            <rdg wit="#atw" lev="7">tost comme</rdg>
+            <rdg wit="#brn" lev="9"><pb n="333 v"/>trestost comme</rdg>
+          </rdgGrp>
+        </app>il<app corresp="#orth">
+          <lem wit="#brl">pot</lem>
+          <rdg wit="#atw #brn" lev="2">peut</rdg>
+        </app>veoir<app corresp="#word-diff">
+          <lem wit="#brl">comment il</lem>
+          <rdg wit="#atw #brn" lev="8">qu'il</rdg>
+        </app>avoit<app corresp="#orth">
+          <lem wit="#brl">failly</lem>
+          <rdg wit="#atw" lev="1">faily</rdg>
+          <rdg wit="#brn" lev="1">failli</rdg>
+        </app>
+        <app corresp="#add-words">
+          <lem wit="#brl">a la fille de Castille,</lem>
+          <rdg wit="#atw #brn" lev="22"/>
+        </app>il ne fut oncques<app corresp="#word-diff">
+          <lem wit="#brn #brl">aise</lem>
+          <rdg wit="#atw" lev="2">avisé</rdg>
+        </app>ne<app corresp="#word-diff">
+          <lem wit="#brl">n'ot repos</lem>
+          <rdgGrp corresp="#orth">
+            <rdg wit="#atw" lev="9">eut</rdg>
+            <rdg wit="#brn" lev="9">eust</rdg>
+          </rdgGrp>
+        </app>
+        <app corresp="#punct">
+          <lem wit="#atw #brl">. Mais</lem>
+          <rdg wit="#brn" lev="3">mais</rdg>
+        </app>
+        <app corresp="#add-words">
+          <lem wit="#brl"/>
+          <rdg wit="#atw #brn" lev="4">il</rdg>
+        </app>mist<app corresp="#sentence-order">
+          <lem wit="#brl">en oeuvre clers</lem>
+          <rdgGrp corresp="#orth">
+            <rdg wit="#atw" lev="12">clers en oeuvre</rdg>
+            <rdg wit="#brn" lev="12">clers en euvre</rdg>
+          </rdgGrp>
+        </app>et<app corresp="#orth">
+          <lem wit="#brl">messagiers</lem>
+          <rdg wit="#atw #brn" lev="1">messaigiers</rdg>
+        </app>pour<app corresp="#orth">
+          <lem wit="#brl">envoier</lem>
+          <rdg wit="#atw #brn" lev="1">envoyer</rdg>
+        </app>devers le<persName ref="#cgfb">conte<app corresp="#orth">
+          <lem wit="#brl">Gascoing</lem>
+          <rdg wit="#atw #brn" lev="2">Gascon</rdg>
+        </app>de<app corresp="#orth">
+          <lem wit="#brl">Fois</lem>
+          <rdg wit="#atw #brn" lev="1">Foix</rdg>
+        </app>
+        </persName>
+        <app corresp="#punct">
+          <lem wit="#atw #brl">,</lem>
+          <rdg wit="#brn" lev="4"/>
+        </app>
+        <app corresp="#orth">
+          <lem wit="#brl">quy</lem>
+          <rdg wit="#atw #brn" lev="1">qui</rdg>
+        </app>avoit en garde<persName ref="#fjda">
+          <app corresp="#word-diff">
+            <lem wit="#atw #brl">la fille</lem>
+            <rdg wit="#brn" lev="3">le filz</rdg>
+          </app></persName>
+        au<persName ref="#cjdb">conte Jehan de<app corresp="#orth">
+          <lem wit="#brn #brl">Boulongne</lem>
+          <rdg wit="#atw" lev="1">Bouloingne</rdg>
+        </app>
+        </persName>
+        et avoit<app corresp="#add-words">
+          <lem wit="#brl">ja</lem>
+          <rdg wit="#atw #brn" lev="4"/>
+        </app>eue plus de<app corresp="#orth">
+          <lem wit="#brl">noeuf</lem>
+          <rdg wit="#atw" lev="1">neuf</rdg>
+          <rdg wit="#brn" lev="5">IX</rdg>
+        </app>ans. Et pour tant que le<persName ref="#djdb">duc de<app corresp="#orth">
+          <lem wit="#brn #brl">Berry</lem>
+          <rdg wit="#atw" lev="1">Berri</rdg>
+        </app>
+        </persName>ne pouoit<app corresp="#sentence-order">
+          <lem wit="#brn #brl">a ce mariage parvenir</lem>
+          <rdg wit="#atw" lev="15">parvenir a ce mariage</rdg>
+        </app>fors par<app corresp="#word-diff">
+          <lem wit="#brl">les dangiers</lem>
+          <rdg wit="#atw #brn" lev="2">le dangier</rdg>
+        </app>du<persName ref="#cgfb">conte de<app corresp="#orth">
+          <lem wit="#brl">Fois</lem>
+          <rdg wit="#atw #brn" lev="1">Foix</rdg>
+        </app>
+        </persName>. Car au fort le dit<persName ref="#cgfb">conte</persName>ne pour pere<app corresp="#punct">
+          <lem wit="#brl"/>
+          <rdg wit="#atw #brn" lev="4">,</rdg>
+        </app>ne pour mere<app corresp="#punct">
+          <lem wit="#brl"/>
+          <rdg wit="#atw #brn" lev="4">,</rdg>
+        </app>
+        <app corresp="#add-words">
+          <lem wit="#atw #brl">ne</lem>
+          <rdg wit="#brn" lev="2"/>
+        </app>pour pape<app corresp="#punct">
+          <lem wit="#brl"/>
+          <rdg wit="#atw #brn" lev="4">,</rdg>
+        </app>ne pour amy que la<persName ref="#fjda">damoiselle</persName>eust<app corresp="#punct">
+          <lem wit="#atw #brl">,</lem>
+          <rdg wit="#brn" lev="4"/>
+        </app>il n'en<app corresp="#orth">
+          <lem wit="#brl">euist</lem>
+          <rdg wit="#atw #brn" lev="1">eust</rdg>
+        </app>riens fait<app corresp="#punct #word-diff #text-segmentation">
+          <lem wit="#brl">, se bien<pb n="371 r"/>ne lui feust</lem>
+          <rdgGrp corresp="#orth">
+            <rdg wit="#atw" lev="13">s'il ne lui fut bien</rdg>
+            <rdg wit="#brn" lev="14">s'il ne lui fust bien</rdg>
+          </rdgGrp>
+        </app>venu a<app corresp="#add-words">
+          <lem wit="#brl">sa</lem>
+          <rdg wit="#atw #brn" lev="4"/>
+        </app>plaisance. Il en parla au<persName ref="#rcha">roy de France</persName>, son nepveu, et au <persName ref="#dpdb">duc de<app corresp="#orth">
+          <lem wit="#atw #brl">Bourgoingne</lem>
+          <rdg wit="#brn" lev="1">Bourgongne</rdg>
+        </app>
+        </persName>, son frere<app corresp="#punct">
+          <lem wit="#brl">. Et leur</lem>
+          <rdg wit="#atw #brn" lev="2">, et leur</rdg>
+        </app>
+        <app corresp="#word-diff">
+          <lem wit="#brl">requist moult</lem>
+          <rdg wit="#atw #brn" lev="12">pria</rdg>
+        </app>affectueusement<app corresp="#orth">
+          <lem wit="#brl">que ilz</lem>
+          <rdg wit="#atw #brn" lev="2">qu'ilz</rdg>
+        </app>s'en voulsissent chargier<app corresp="#sentence-order #orth">
+          <lem wit="#brl">, avecques luy et embesoingnier</lem>
+          <rdgGrp corresp="#orth">
+            <rdg wit="#atw" lev="25">et embesoignier avecques lui</rdg>
+            <rdg wit="#brn" lev="25">et embesongnier avecques lui</rdg>
+          </rdgGrp>
+        </app>. Le<persName ref="#rcha">roy de France</persName>en<app corresp="#orth">
+          <lem wit="#brl">ot</lem>
+          <rdg wit="#atw #brn" lev="2">eut</rdg>
+        </app>bon<app corresp="#orth #punct">
+          <lem wit="#brl">rys,</lem>
+          <rdg wit="#atw #brn" lev="2">ris</rdg>
+        </app>pour tant que le<persName ref="#djdb">duc de Berry</persName>estoit ja tout<app corresp="#orth #punct">
+          <lem wit="#brl">anchien,</lem>
+          <rdg wit="#atw #brn" lev="2">ancien</rdg>
+        </app>et<app corresp="#orth">
+          <lem wit="#brl">luy</lem>
+          <rdg wit="#atw #brn" lev="1">lui</rdg>
+        </app>
+        <app corresp="#orth">
+          <lem wit="#brn #brl">dist</lem>
+          <rdg wit="#atw" lev="1">dit</rdg>
+        </app>:<app corresp="#orth">
+          <lem wit="#brl">"Beaulx oncles</lem>
+          <rdg wit="#atw #brn" lev="4">"Bel oncle</rdg>
+        </app>, que feréz vous<app corresp="#word-diff">
+          <lem wit="#brl">de une si<persName ref="#fjda">jenne femme</persName></lem>
+          <rdgGrp corresp="#add-words">
+            <rdg wit="#atw" lev="5">d'une<persName ref="#fjda">fillette</persName>
+            </rdg>
+            <rdg wit="#brn" lev="7">d'une telle<persName ref="#fjda">fillette</persName>
+            </rdg>
+          </rdgGrp>
+        </app>
+        <app corresp="#punct word-diff">
+          <lem wit="#brl #brn">?<persName ref="#fjda">Elle</persName>
+          </lem>
+          <rdg wit="#atw" lev="3">qui</rdg>
+        </app>n'a que<app corresp="#orth">
+          <lem wit="#brl">douze</lem>
+          <rdg wit="#atw #brn" lev="5">XII</rdg>
+        </app>ans et vous en avéz<app corresp="#orth">
+          <lem wit="#brl">soixante</lem>
+          <rdg wit="#atw #brn" lev="8">LX</rdg>
+        </app>
+        <app corresp="#punct">
+          <lem wit="#brn #brl">.</lem>
+          <rdg wit="#atw" lev="1">?</rdg>
+        </app>Par ma foy,<app corresp="#word-diff">
+          <lem wit="#brn #brl">c'est</lem>
+          <rdg wit="#atw" lev="10">il me semble</rdg>
+        </app>grant<app corresp="#orth word-diff">
+          <lem wit="#brn #brl">folie pour</lem>
+          <rdg wit="#atw" lev="5">follie de</rdg>
+        </app>vous de penser a telle<app corresp="#word-diff">
+          <lem wit="#brl">besoigne</lem>
+          <rdg wit="#atw #brn" lev="6">chose</rdg>
+        </app>.<app corresp="#orth">
+          <lem wit="#atw #brl">Faittes</lem>
+          <rdg wit="#brn" lev="1">Faictes</rdg>
+        </app>
+        <app corresp="#orth">
+          <lem wit="#brn #brl">ent</lem>
+          <rdg wit="#atw" lev="1">en</rdg>
+        </app>parler pour<persName ref="#fjdb">Jehan</persName>
+        <app corresp="#punct">
+          <lem wit="#brl"/>
+          <rdg wit="#atw #brn" lev="4">,</rdg>
+        </app>beau cousin vostre filz,<app corresp="#orth">
+          <lem wit="#brl">quy</lem>
+          <rdg wit="#atw #brn" lev="1">qui</rdg>
+        </app>est<app corresp="#orth">
+          <lem wit="#brn #brl">jenne</lem>
+          <rdg wit="#atw" lev="1">jeune</rdg>
+        </app>et a venir<app corresp="#punct">
+          <lem wit="#brn #brl">. La</lem>
+          <rdg wit="#atw" lev="2">, la</rdg>
+        </app>chose est<app corresp="#add-words">
+          <lem wit="#brl">trop</lem>
+          <rdg wit="#atw #brn" lev="4"/>
+        </app>mieulx pareille a<app corresp="#orth #ornementation">
+          <lem wit="#brl"><witDetail wit="#brl">Enluminure ou miniature, signalée mais non consultable depuis Online Froissart</witDetail>luy</lem>
+          <rdg wit="#atw #brn" lev="4">lui</rdg>
+        </app>que a vous." "Monseigneur,"<app corresp="#orth">
+          <lem wit="#brl">respondi</lem>
+          <rdg wit="#atw #brn" lev="1">respondit</rdg>
+        </app>le<persName ref="#djdb">duc de<app corresp="#orth">
+          <lem wit="#brn #brl">Berry</lem>
+          <rdg wit="#atw" lev="1">Berri</rdg>
+        </app>
+        </persName>, "on en a parlé<app corresp="#punct">
+          <lem wit="#brl">,</lem>
+          <rdg wit="#atw #brn" lev="4"/>
+        </app>mais le<persName ref="#cgfb">conte de<app corresp="#orth">
+          <lem wit="#brl">Foiz</lem>
+          <rdg wit="#atw #brn" lev="1">Foix</rdg>
+        </app>
+        </persName>n'y<app corresp="#word-diff">
+          <lem wit="#brl">a voulu</lem>
+          <rdgGrp corresp="#orth">
+            <rdg wit="#atw" lev="4">vault</rdg>
+            <rdg wit="#brn" lev="4">veult</rdg>
+          </rdgGrp>
+        </app>entendre pour la cause de ce que<persName ref="#cjdb">mon filz</persName>descend de ceulx<app corresp="#orth #punct">
+          <lem wit="#brl">d'Armeignach. Et</lem>
+          <rdg wit="#atw" lev="4">d'Armignac et</rdg>
+          <rdg wit="#brn" lev="8">de Armignac</rdg>
+        </app>ilz sont en guerre et en hayne et ont esté<app corresp="#orth">
+          <lem wit="#atw #brl">long temps</lem>
+          <rdg wit="#brn" lev="1">longtemps</rdg>
+        </app>ensemble. Se la<persName ref="#fjda">fille</persName>est<app corresp="#orth">
+          <lem wit="#brn #brl">jenne</lem>
+          <rdg wit="#atw" lev="1">jeune</rdg>
+        </app>, je<app corresp="#orth">
+          <lem wit="#brl">la espargneray</lem>
+          <rdgGrp corresp="#orth">
+            <rdg wit="#atw" lev="4">l'espareigneray</rdg>
+            <rdg wit="#brn" lev="2">l'espargneray</rdg>
+          </rdgGrp>
+        </app>
+        <app corresp="#orth">
+          <lem wit="#atw #brl">trois</lem>
+          <rdg wit="#brn" lev="1">troiz</rdg>
+        </app>ou quatre ans<app corresp="#word-diff">
+          <lem wit="#brl">, voire si longuement</lem>
+          <rdg wit="#atw #brn" lev="19">tant</rdg>
+        </app>qu'elle sera femme<app corresp="#orth #word-diff">
+          <lem wit="#atw #brl">parfaitte et</lem>
+          <rdg wit="#brn" lev="4">parfaicte</rdg>
+        </app>
+        <app corresp="#add-words">
+          <lem wit="#brl">fourmee</lem>
+          <rdg wit="#atw" lev="1">formee</rdg>
+          <rdg wit="#brn" lev="5"/>
+        </app>." Voire,"<app corresp="#word-diff">
+          <lem wit="#brl">respondy</lem>
+          <rdg wit="#atw" lev="8">dit</rdg>
+          <rdg wit="#brn" lev="2">respondit</rdg>
+        </app>le<persName ref="#rcha">roy</persName>,<app corresp="#punct add-words">
+          <lem wit="#brl">"<persName ref="#djdb">beaulx oncles</persName></lem>
+          <rdg wit="#atw" lev="0">"</rdg>
+          <rdg wit="#brn" lev="0">"<persName ref="#djdb">bel oncle</persName></rdg>
+        </app>
+        <app corresp="#orth">
+          <lem wit="#brl #brn">mais</lem>
+          <rdg wit="#atw" lev="1">maiz</rdg>
+        </app>elle ne vous<app corresp="#orth">
+          <lem wit="#brn #brl">espargnera</lem>
+          <rdg wit="#atw" lev="2">espareignera</rdg>
+        </app>pas." Et puis dist le<persName ref="#rcha">roy</persName>tout en<app corresp="#orth">
+          <lem wit="#brl">ryant</lem>
+          <rdg wit="#atw #brn" lev="1">riant</rdg>
+        </app>:<app corresp="#punct #add-words #word-diff">
+          <lem wit="#brl">"Or ça,<persName ref="#djdb">beaulx oncles</persName></lem>
+          <rdg wit="#atw #brn" lev="6">"<persName ref="#djdb">Bel oncle</persName>
+          </rdg>
+        </app>,<app corresp="#orth">
+          <lem wit="#brl">puisque</lem>
+          <rdg wit="#atw #brn" lev="1">puis que</rdg>
+        </app>nous veons que<app corresp="#word-diff">
+          <lem wit="#brl">si tres</lem>
+          <rdg wit="#atw" lev="6">tant</rdg>
+          <rdg wit="#brn" lev="5">si</rdg>
+        </app>grande affection vous y avéz<app corresp="#punct">
+          <lem wit="#brn #brl"/>
+          <rdg wit="#atw" lev="4">,</rdg>
+        </app>nous y<app corresp="#orth">
+          <lem wit="#atw #brl">entendrons</lem>
+          <rdg wit="#brn" lev="1">entenderons</rdg>
+        </app>
+        <app corresp="#add-words">
+          <lem wit="#brl">moult</lem>
+          <rdg wit="#atw #brn" lev="4"/>
+        </app>voulentiers."<app corresp="#add-words #text-segmentation">
+          <lem wit="#brn #brl"><milestone unit="tei:p"/><lb/>Depuis</lem>
+          <rdg wit="#atw" lev="8">Et depuis</rdg>
+        </app>ne demoura<app corresp="#orth">
+          <lem wit="#brn #brl">gaires</lem>
+          <rdg wit="#atw" lev="3">guerres</rdg>
+        </app>de temps que le<persName ref="#rcha">roy</persName>ordonna le<persName ref="#sbdr">sire de la Riviere, messire<app corresp="#orth">
+          <lem wit="#brl">Burel</lem>
+          <rdg wit="#atw #brn" lev="3">Brueil</rdg>
+        </app>
+        </persName>, son souverain<app corresp="#add-words">
+          <lem wit="#brl">chevallier</lem>
+          <rdg wit="#atw #brn" lev="9"/>
+        </app>
+        <app corresp="#add-words">
+          <lem wit="#atw #brl">et</lem>
+          <rdg wit="#brn" lev="4"/>
+        </app>maistre d'ostel et<app corresp="#orth">
+          <lem wit="#brl">chambellan</lem>
+          <rdg wit="#atw" lev="2">chambrelan</rdg>
+          <rdg wit="#brn" lev="3">chambrelain</rdg>
+        </app>
+        <app corresp="#punct">
+          <lem wit="#brn #brl">,</lem>
+          <rdg wit="#atw" lev="4"/>
+        </app>pour<app corresp="#orth">
+          <lem wit="#brn #brl">aler</lem>
+          <rdg wit="#atw" lev="1">aller</rdg>
+        </app>en ce voyage<app corresp="#punct">
+          <lem wit="#brl">. Et avecques</lem>
+          <rdg wit="#atw #brn" lev="3">et avecques</rdg>
+        </app>
+        <app corresp="#orth">
+          <lem wit="#brl">luy</lem>
+          <rdg wit="#atw #brn" lev="1">lui</rdg>
+        </app>le<persName ref="#cdas">conte<app corresp="#orth">
+          <lem wit="#brl">d'Assy</lem>
+          <rdg wit="#atw #brn" lev="2">d'Acy</rdg>
+        </app>
+        </persName>. Et le<persName ref="#dpdb">duc de<app corresp="#orth">
+          <lem wit="#atw #brl">Bourgoingne</lem>
+          <rdg wit="#brn" lev="1">Bourgongne</rdg>
+        </app>
+        </persName>y ordonna pour<app corresp="#orth">
+          <lem wit="#brl">luy</lem>
+          <rdg wit="#atw #brn" lev="1">lui</rdg>
+        </app>et en son nom<persName ref="#egdv">l'evesque<app corresp="#orth">
+          <lem wit="#atw #brl">d'Authun</lem>
+          <rdg wit="#brn" lev="1">d'Autun</rdg>
+        </app>
+        </persName>et<persName ref="#mgdt">messire<app corresp="#orth">
+          <lem wit="#brl">Guillemme</lem>
+          <rdg wit="#atw" lev="2">Guillaume</rdg>
+          <rdg wit="#brn" lev="2">Guillame</rdg>
+        </app>de la Trimoulle</persName>
+        <app corresp="#punct">
+          <lem wit="#brl">et</lem>
+          <rdg wit="#atw #brn" lev="3">. Et</rdg>
+        </app>le<persName ref="#djdb">duc de Berry</persName>y ordonna<app corresp="#add-words">
+          <lem wit="#brn #brl">et</lem>
+          <rdg wit="#atw" lev="4"/>
+        </app>en<app corresp="#orth">
+          <lem wit="#brl">prya</lem>
+          <rdg wit="#atw #brn" lev="1">pria</rdg>
+        </app>le conte<persName ref="#cjdx">Jehan de Xancerre</persName>
+        <app corresp="#punct orth">
+          <lem wit="#atw #brl">ung</lem>
+          <rdg wit="#brn" lev="3">, un</rdg>
+        </app>grant<app corresp="#punct #orth">
+          <lem wit="#brl">, sage</lem>
+          <rdg wit="#atw #brn" lev="3">saige</rdg>
+        </app>et vaillant<app corresp="#orth">
+          <lem wit="#brn #brl">chevallier</lem>
+          <rdg wit="#atw" lev="1">chevalier</rdg>
+        </app>.<app corresp="#text-segmentation">
+          <lem wit="#brn #brl">
+            <milestone unit="tei:p"/>
+            <lb/>
+          </lem>
+          <rdg wit="#atw" lev="13"/>
+        </app>Ces<app corresp="#orth">
+          <lem wit="#brn #brl">cinq</lem>
+          <rdg wit="#atw" lev="1">cincq</rdg>
+        </app>seigneurs pour venir<app corresp="#word-diff">
+          <lem wit="#brl">devers</lem>
+          <rdg wit="#atw #brn" lev="2">vers</rdg>
+        </app>le<persName ref="#cgfb">conte de<app corresp="#orth">
+          <lem wit="#brl">Fois</lem>
+          <rdg wit="#atw #brn" lev="1">Foix</rdg>
+        </app>
+        </persName>et<app corresp="#add-words">
+          <lem wit="#brn #brl"/>
+          <rdg wit="#atw" lev="3">pour</rdg>
+        </app>requerir<app corresp="#word-diff">
+          <lem wit="#brl">en</lem>
+          <rdg wit="#atw #brn" lev="2">ou</rdg>
+        </app>nom<app corresp="#text-segmentation #add-words">
+          <lem wit="#brn #brl">de mariage</lem>
+          <rdg wit="#atw" lev="12">
+            <pb n="341 r"/>et</rdg>
+        </app>pour le<persName ref="#djdb">duc de Berry</persName>ceste<app corresp="#orth">
+          <lem wit="#brn #brl">jenne</lem>
+          <rdg wit="#atw" lev="1">jeune</rdg>
+        </app>
+        <persName ref="#fjda">dame</persName>
+        <app corresp="#add-words">
+          <lem wit="#brn #brl"/>
+          <rdg wit="#atw" lev="8">a mariage</rdg>
+        </app>
+        <app corresp="#punct">
+          <lem wit="#atw #brl">,</lem>
+          <rdg wit="#brn" lev="4"/>
+        </app>se partirent de leurs lieux et se devoient trouver en<placeName ref="#avg">Avignon</placeName>
+        <app corresp="#sentence-order #orth">
+          <lem wit="#brl">deléz le pape comme ils firent. Ce<persName ref="#pclv">pape Clement</persName>, quy cousin estoit du<persName ref="#cjdb">pere</persName>a la<persName ref="#fjda">damoiselle</persName>, les retint la bien quinze jours</lem>
+          <rdgGrp corresp="#orth">
+            <rdg wit="#atw" lev="22">ainsi comme ilz deléz le <persName ref="#pclv">pape Clement</persName>bien XV jours, qui cousin germain estoit a la<persName ref="#fjda">damoiselle</persName></rdg>
+            <rdg wit="#brn" lev="22">aussi comme ilz delez le <persName ref="#pclv">pape Clement</persName>bien XV jours, qui cousin germain estoit a la<persName ref="#fjda">damoiselle</persName>,</rdg>
+          </rdgGrp>
+        </app>
+        <app corresp="#punct">
+          <lem wit="#brl">. Et environ la</lem>
+          <rdg wit="#atw #brn" lev="2">, et environ la</rdg>
+        </app>
+        <app corresp="#orth">
+          <lem wit="#brl">Chandelleur</lem>
+          <rdg wit="#atw" lev="1">Chandeller</rdg>
+          <rdg wit="#brn" lev="1">Chandeleur</rdg>
+        </app>ilz se<app corresp="#word-diff">
+          <lem wit="#brn #brl">departirent</lem>
+          <rdg wit="#atw" lev="2">partirent</rdg>
+        </app>
+        <app corresp="#add-words">
+          <lem wit="#brl">tous</lem>
+          <rdg wit="#atw #brn" lev="3"/>
+        </app>d'<placeName ref="#avg">Avignon</placeName>et prindrent le chemin de<placeName ref="#nim">
+          <app corresp="#orth">
+            <lem wit="#brn #brl">Nismes</lem>
+            <rdg wit="#atw" lev="1">Nimes</rdg>
+          </app>
+        </placeName>et de<placeName ref="#mtp">Montpellier</placeName>
+        <app corresp="#punct #orth">
+          <lem wit="#brl">. Si chevauchierent</lem>
+          <rdgGrp corresp="#orth">
+            <rdg wit="#brn" lev="6">et chevaucerent</rdg>
+            <rdg wit="#atw" lev="6">et chevaulcherent</rdg>
+          </rdgGrp>
+        </app>a petites journees et a grans<app corresp="#punct #word-diff">
+          <lem wit="#brl">frais. Si</lem>
+          <rdg wit="#atw #brn" lev="4">fraiz et</rdg>
+        </app>passerent<placeName ref="#bsr">Besiers</placeName>et vindrent a<placeName ref="#crs">
+          <app corresp="#text-segmentation">
+            <lem wit="#atw #brl">Carcassonne</lem>
+            <rdg wit="#brn" lev="2">Carcasson<pb n="334 r"/>ne</rdg>
+          </app>
+        </placeName>
+        <app corresp="#punct #word-diff">
+          <lem wit="#brl">. Et la</lem>
+          <rdg wit="#atw" lev="7">ou</rdg>
+          <rdg wit="#brn" lev="6">et</rdg>
+        </app>
+        <app corresp="#add-words">
+          <lem wit="#brn #brl"/>
+          <rdg wit="#atw" lev="4">ilz</rdg>
+        </app>trouverent<app corresp="#add-words">
+          <lem wit="#brl">ilz</lem>
+          <rdg wit="#atw #brn" lev="4"/>
+        </app>messire<persName ref="#mldx">Loÿs de Xancerre</persName>, mareschal de France,<app corresp="#sentence-order #add-words #ornementation">
+          <lem wit="#brl">quy moult grandement<witDetail wit="#brl">Enluminure ou miniature, signalée mais non consultable depuis Online Froissart</witDetail>les recueilly, ce fut raison.</lem>
+          <rdg wit="#atw #brn" lev="12">qui les recueillit grandement</rdg>
+        </app>
+        <app corresp="#add-words">
+          <lem wit="#brl #brn">
+            <app corresp="#punct">
+              <lem wit="#brl">Et</lem>
+              <rdg wit="#brn" lev="3">, et</rdg>
+            </app>parla a<app corresp="#orth">
+              <lem wit="#brl">eulz</lem>
+              <rdg wit="#brn" lev="1">eulx</rdg>
+            </app>assez du<persName ref="#cgfb">conte de<app corresp="#orth #punct">
+              <lem wit="#brl">Fois,</lem>
+              <rdg wit="#brn" lev="2">Foix</rdg>
+            </app>
+            </persName>de son estat et de son affaire. Car il y avoit esté<app corresp="#add-words">
+              <lem wit="#brl">de<placeName ref="#crs">Carcassonne</placeName>
+              </lem>
+              <rdg wit="#brn" lev="3"/>
+            </app>n'avoit point passé deux<app corresp="#orth">
+              <lem wit="#brl">mois</lem>
+              <rdg wit="#brn" lev="1">moix</rdg>
+            </app>
+          </lem>
+          <rdg wit="#atw"/>
+        </app>.<app corresp="#add-words">
+          <lem wit="#brl">Ilz<pb n="371 v"/></lem>
+          <rdgGrp corresp="#orth">
+            <rdg wit="#atw" lev="0">Ilz</rdg>
+          </rdgGrp>
+          <rdg wit="#brn" lev="3">De<placeName ref="#crs">Carcassonne</placeName>, il</rdg>
+        </app>se<app corresp="#word-diff">
+          <lem wit="#brl">departirent</lem>
+          <rdgGrp corresp="#orth">
+            <rdg wit="#brn" lev="3">partyrent</rdg>
+            <rdg wit="#atw" lev="2">partirent</rdg>
+          </rdgGrp>
+        </app>
+        <app corresp="#add-words">
+          <lem wit="#brl #brn"/>
+          <rdg wit="#atw" lev="5">de la</rdg>
+        </app>et vindrent<app corresp="#add-words">
+          <lem wit="#brl">en la cité de</lem>
+          <rdg wit="#atw #brn" lev="12">a</rdg>
+        </app>
+        <placeName ref="#tls">Thoulouse</placeName>
+        <app corresp="#punct">
+          <lem wit="#brl">,</lem>
+          <rdg wit="#atw #brn" lev="4"/>
+        </app>et la s'arresterent<app corresp="#punct #orth">
+          <lem wit="#brl">. Et envoierent</lem>
+          <rdg wit="#atw #brn" lev="4">et envoyerent</rdg>
+        </app>leurs<app corresp="#word-diff">
+          <lem wit="#brl">messages</lem>
+          <rdg wit="#atw #brn" lev="2">messagiers</rdg>
+        </app>
+        <app corresp="#add-words">
+          <lem wit="#brl #brn"/>
+          <rdg wit="#atw" lev="5">devant</rdg>
+        </app>
+        <app corresp="#orth">
+          <lem wit="#atw #brl">devers</lem>
+          <rdg wit="#brn" lev="1">deverz</rdg>
+        </app>le<app corresp="#orth">
+          <lem wit="#brl"><persName ref="#cgfb">conte de Fois</persName></lem>
+          <rdg wit="#atw #brn" lev="13">
+            <persName ref="#cgfb">conte de Foix</persName>
+          </rdg>
+        </app>
+        <app corresp="#punct #orth">
+          <lem wit="#brl">, quy</lem>
+          <rdg wit="#brn" lev="3">qui</rdg>
+          <rdg wit="#atw" lev="1">, qui</rdg>
+        </app>
+        se tenoit a<placeName ref="#otz">Orthaiz en<app corresp="#orth">
+          <lem wit="#brl">Berne</lem>
+          <rdg wit="#atw #brn" lev="1">Bierne</rdg>
+        </app>
+        </placeName>. Si<app corresp="#orth">
+          <lem wit="#brn #brl">s'entamerent</lem>
+          <rdg wit="#atw" lev="1">s'entammerent</rdg>
+        </app>les traittiéz de ce mariage, mais ilz<app corresp="#add-words">
+          <lem wit="#brl"/>
+          <rdg wit="#atw #brn" lev="4">y</rdg>
+        </app>furent moult<app corresp="#word-diff">
+          <lem wit="#brl">loingtains</lem>
+          <rdg wit="#atw #brn" lev="6">longuement</rdg>
+        </app>
+        <app corresp="#punct">
+          <lem wit="#atw #brl">, car</lem>
+          <rdg wit="#brn" lev="2">. Car</rdg>
+        </app>
+        <app corresp="#word-diff">
+          <lem wit="#brl">de</lem>
+          <rdg wit="#atw #brn" lev="1">du</rdg>
+        </app>commencement le<persName ref="#cgfb">conte de<app corresp="#orth">
+          <lem wit="#brl">Fois</lem>
+          <rdg wit="#atw #brn" lev="1">Foix</rdg>
+        </app>
+        </persName>fut<app corresp="#add-words">
+          <lem wit="#brl"/>
+          <rdg wit="#atw #brn" lev="4">moult</rdg>
+        </app>froit<app corresp="#add-words">
+          <lem wit="#brl">et dur</lem>
+          <rdg wit="#atw #brn" lev="6"/>
+        </app>pour<app corresp="#word-diff">
+          <lem wit="#atw #brl">ce</lem>
+          <rdg wit="#brn" lev="4">tant</rdg>
+        </app>que le<persName ref="#djdg">duc de Lancastre</persName>
+        <app corresp="#punct">
+          <lem wit="#atw #brl">,</lem>
+          <rdg wit="#brn" lev="4"/>
+        </app>
+        <app corresp="#orth">
+          <lem wit="#brl">quy</lem>
+          <rdg wit="#atw #brn" lev="1">qui</rdg>
+        </app>
+        <app corresp="#sentence-order">
+          <lem wit="#brl">pour ce temps se tenoit</lem>
+          <rdg wit="#atw #brn" lev="19">se tenoit pour le temps a</rdg>
+        </app>a<placeName ref="#bdx">
+          <app corresp="#orth">
+            <lem wit="#brl #brn">Bourdeaulx</lem>
+            <rdg wit="#atw" lev="1">Bourdeaulz</rdg>
+          </app>
+        </placeName>ou a<app corresp="#orth #punct #add-words">
+          <lem wit="#brl"><placeName ref="#nrb">Liebourne</placeName>, en</lem>
+          <rdg wit="#atw" lev="0"><placeName ref="#nrb">Lierbonne</placeName>,</rdg>
+          <rdg wit="#brn" lev="0"><placeName ref="#nrb">Narbonne</placeName></rdg>
+        </app>faisoit parler et<app corresp="#orth">
+          <lem wit="#brl">pryer</lem>
+          <rdg wit="#atw #brn" lev="1">prier</rdg>
+        </app>pour son filz<app corresp="#add-words">
+          <lem wit="#brl">messire</lem>
+          <rdg wit="#atw #brn" lev="6"/>
+        </app>
+        <persName ref="#hcde">Henry, conte<app corresp="#orth punct">
+          <lem wit="#brn #brl">d'Erby.</lem>
+          <rdg wit="#atw" lev="2">d'Erbi,</rdg>
+        </app>
+        </persName>
+        <app corresp="#punct">
+          <lem wit="#brl">Si</lem>
+          <rdg wit="#atw" lev="1">si</rdg>
+          <rdg wit="#brn" lev="1">Sy</rdg>
+        </app>fut<app corresp="#orth">
+          <lem wit="#atw #brl">telle fois</lem>
+          <rdg wit="#brn" lev="2">tele foiz</rdg>
+        </app>
+        <app corresp="#word-diff">
+          <lem wit="#atw #brl">pour</lem>
+          <rdg wit="#brn" lev="3">que</rdg>
+        </app>le<app corresp="#orth">
+          <lem wit="#brn #brl">loingtain</lem>
+          <rdg wit="#atw" lev="1">longtain</rdg>
+        </app>sejour<app corresp="#word-diff">
+          <lem wit="#brl">que l'</lem>
+          <rdg wit="#atw #brn" lev="3">qu'</rdg>
+        </app>on veoit<app corresp="#sentence-order">
+          <lem wit="#brl">advenir, que on disoit que le mariage pour lequel ces seigneurs s'arresterent en la bonne cité de</lem>
+          <rdg wit="#atw #brn" lev="55">a ces seigneurs faire qu'on disoit que le mariage pour lequel ilz sejournoient a</rdg>
+        </app>
+        <placeName ref="#tls">Thoulouse</placeName>
+        <app corresp="#punct">
+          <lem wit="#brl">,</lem>
+          <rdg wit="#atw #brn" lev="4"/>
+        </app>ne se feroit point<app corresp="#punct">
+          <lem wit="#brl">, et</lem>
+          <rdg wit="#atw #brn" lev="2">. Et</rdg>
+        </app>tout leur estat et<app corresp="#add-words">
+          <lem wit="#brl">toutes</lem>
+          <rdg wit="#atw #brn" lev="4"/>
+        </app>les ordonnances,<app corresp="#orth">
+          <lem wit="#brl">responses</lem>
+          <rdg wit="#atw #brn" lev="1">responces</rdg>
+        </app>et<app corresp="#orth">
+          <lem wit="#brl">traittiés</lem>
+          <rdg wit="#atw" lev="1">traittiéz</rdg>
+          <rdg wit="#brn" lev="2">traitiéz</rdg>
+        </app>du<persName ref="#cgfb">conte de<app corresp="#orth #punct">
+          <lem wit="#brl">Fois,</lem>
+          <rdg wit="#atw #brn" lev="2">Foix</rdg>
+        </app>
+        </persName>de jour en jour<app corresp="#orth">
+          <lem wit="#brl">et de septmaine en septmaine,</lem>
+          <rdg wit="#atw #brn" lev="5">, de sepmaine en sepmaine</rdg>
+        </app>ilz<app corresp="#orth">
+          <lem wit="#brl">envoierent</lem>
+          <rdg wit="#atw" lev="2">envoioient</rdg>
+          <rdg wit="#brn" lev="3">envoyoient</rdg>
+        </app>soingneusement devers le<persName ref="#djdb">duc de Berry</persName>
+        <app corresp="#punct">
+          <lem wit="#atw #brl">,</lem>
+          <rdg wit="#brn" lev="4"/>
+        </app>
+        <app corresp="#orth">
+          <lem wit="#brl">quy</lem>
+          <rdg wit="#atw #brn" lev="1">qui</rdg>
+        </app>se tenoit a<placeName ref="#nnt">la Nonnette en Auvergne</placeName>. Et le<persName ref="#djdb">duc</persName>
+        <app corresp="#punct #orth">
+          <lem wit="#brl">, quy</lem>
+          <rdg wit="#atw #brn" lev="3">qui</rdg>
+        </app>n'avoit autre desir fors que les choses approchassent,<app corresp="#add-words">
+          <lem wit="#brl #brn"/>
+          <rdg wit="#atw" lev="5">souvent</rdg>
+        </app>
+        <app corresp="#add-words #word-diff">
+          <lem wit="#brl">escripsoit</lem>
+          <rdg wit="#atw" lev="9"/>
+          <rdg wit="#brn" lev="2">rescripvoit</rdg>
+        </app>devers<app corresp="#orth">
+          <lem wit="#atw #brl">eulz</lem>
+          <rdg wit="#brn" lev="1">eulx</rdg>
+        </app>
+        <app corresp="#punct">
+          <lem wit="#brl">,</lem>
+          <rdg wit="#atw #brn" lev="4"/>
+        </app>et<app corresp="#sentence-order">
+          <lem wit="#brl #brn">les raffreschissoit souvent</lem>
+          <rdg wit="#atw" lev="14">souvent les raffreschissoit de</rdg>
+        </app>
+        <app corresp="#orth">
+          <lem wit="#brl">nouveaulz</lem>
+          <rdg wit="#atw #brn" lev="1">nouveaulx</rdg>
+        </app>
+        <app corresp="#orth">
+          <lem wit="#brn #brl">messages</lem>
+          <rdg wit="#atw" lev="1">messaiges</rdg>
+        </app>
+        <app corresp="#punct">
+          <lem wit="#brl">. En</lem>
+          <rdg wit="#atw #brn" lev="3">en</rdg>
+        </app>
+        <app corresp="#word-diff">
+          <lem wit="#brl">eulz</lem>
+          <rdg wit="#atw" lev="3">leur</rdg>
+          <rdg wit="#brn" lev="1">eulx</rdg>
+        </app>
+        <app corresp="#orth">
+          <lem wit="#brl #brn">signiffiant</lem>
+          <rdg wit="#atw" lev="1">seigniffiant</rdg>
+        </app>que<app corresp="#word-diff">
+          <lem wit="#brl">par nul moyen</lem>
+          <rdg wit="#atw #brn" lev="9">nullement</rdg>
+        </app>
+        <app corresp="#add-words">
+          <lem wit="#brn #brl">ilz</lem>
+          <rdg wit="#atw" lev="4"/>
+        </app>ne<app corresp="#add-words">
+          <lem wit="#brn #brl">cessassent point</lem>
+          <rdg wit="#atw" lev="7">cessasent</rdg>
+        </app>que la<app corresp="#word-diff">
+          <lem wit="#brl">besoingne</lem>
+          <rdg wit="#atw" lev="7">chose</rdg>
+          <rdg wit="#brn" lev="1">besongne</rdg>          
+        </app>ne se<app corresp="#orth #text-segmentation">
+          <lem wit="#brl">fesist.</lem>
+          <rdg wit="#atw" lev="1">feist.<milestone unit="tei:p"/>
+            <lb/>
+          </rdg>
+          <rdg wit="#brn" lev="2">feïst.</rdg>
+        </app>Le<persName ref="#cgfb">conte de<app corresp="#orth">
+          <lem wit="#brl">Foiz</lem>
+          <rdg wit="#atw #brn" lev="1">Foix</rdg>
+        </app>
+        </persName>,<app corresp="#orth">
+          <lem wit="#brl">quy</lem>
+          <rdg wit="#atw #brn" lev="1">qui</rdg>
+        </app>estoit<app corresp="#orth">
+          <lem wit="#brn #brl">sage</lem>
+          <rdg wit="#atw" lev="1">saige</rdg>
+        </app>
+        <app corresp="#add-words">
+          <lem wit="#brl"/>
+          <rdg wit="#atw #brn" lev="3">homme</rdg>
+        </app>et<app corresp="#orth">
+          <lem wit="#atw #brl">soubtil</lem>
+          <rdg wit="#brn" lev="1">subtil</rdg>
+        </app>
+        <app corresp="#punct #orth">
+          <lem wit="#brl">, et quy</lem>
+          <rdg wit="#atw #brn" lev="3">et qui</rdg>
+        </app>veoit<app corresp="#orth">
+          <lem wit="#brl">l'ardent</lem>
+          <rdg wit="#atw #brn" lev="1">l'ardant</rdg>
+        </app>desir du<persName ref="#djdb">duc de Berry</persName>
+        <app corresp="#punct #orth">
+          <lem wit="#brn #brl">, traittoit sagement</lem>
+          <rdg wit="#atw" lev="4">traitoit saigement</rdg>
+        </app>et bellement et si froidement mena<app corresp="#word-diff">
+          <lem wit="#brl">ses</lem>
+          <rdg wit="#atw" lev="2">le</rdg>
+          <rdg wit="#brn" lev="1">ces</rdg>
+        </app>procés que par<app corresp="#word-diff">
+          <lem wit="#brl">l'accord</lem>
+          <rdg wit="#atw #brn" lev="2">accord</rdg>
+        </app>de tous<app corresp="#punct">
+          <lem wit="#brl">, et</lem>
+          <rdg wit="#atw #brn" lev="2">et</rdg>
+        </app>
+        <app corresp="#orth">
+          <lem wit="#brn #brl">encoires</lem>
+          <rdg wit="#atw" lev="1">encores</rdg>
+        </app>a<app corresp="#orth">
+          <lem wit="#brl">grans prieres</lem>
+          <rdg wit="#atw #brn" lev="2">grant priere</rdg>
+        </app>
+        <persName ref="#cgfb">il</persName>
+        <app corresp="#orth">
+          <lem wit="#brl">ot</lem>
+          <rdg wit="#atw" lev="2">eut</rdg>
+          <rdg wit="#brn" lev="3">eust</rdg>
+        </app>
+        <app corresp="#orth">
+          <lem wit="#brl">trente mille</lem>
+          <rdg wit="#atw #brn" lev="12">XXXM</rdg>
+        </app>frans pour les<app corresp="#add-words">
+          <lem wit="#brl">dix</lem>
+          <rdg wit="#atw #brn" lev="4"/>
+        </app>ans<app corresp="#orth">
+          <lem wit="#brl">que<persName ref="#cgfb">il</persName></lem>
+          <rdg wit="#atw #brn" lev="1">qu'<persName ref="#cgfb">il</persName></rdg>
+        </app>
+        <app corresp="#add-words">
+          <lem wit="#brn #brl">avoit</lem>
+          <rdg wit="#atw" lev="2">l'avoit</rdg>
+        </app>
+        <app corresp="#orth">
+          <lem wit="#brl">gardé</lem>
+          <rdg wit="#atw #brn" lev="2">gardee</rdg>
+        </app>la<persName ref="#fjda">damoiselle</persName>
+        <app corresp="#punct">
+          <lem wit="#brl"/>
+          <rdg wit="#atw #brn" lev="4">,</rdg>
+        </app>
+        <app corresp="#orth #punct">
+          <lem wit="#brn #brl">nourrie et tenu son estat.</lem>
+          <rdg wit="#atw" lev="3">nourie et tenue son estat</rdg>
+        </app>
+        <app corresp="#add-words #sentence-order">
+          <lem wit="#brn #brl">Encoires se plus<app corresp="#add-words">
+            <lem wit="#brl">il</lem>
+            <rdg wit="#brn" lev="4"/>
+          </app>en eust demandé<app corresp="#punct">
+            <lem wit="#brl">,</lem>
+            <rdg wit="#brn" lev="4"/>
+          </app>plus en eust eu</lem>
+          <rdg wit="#atw">et eut plus eul s'il eut demandé</rdg>
+        </app>
+        <app corresp="#punct">
+          <lem wit="#brl">. Mais</lem>
+          <rdg wit="#atw" lev="3">mais</rdg>
+          <rdg wit="#brn" lev="2">, mais</rdg>
+        </app>
+        <app corresp="#orth #word-diff">
+          <lem wit="#brl">moiennement il volt</lem>
+          <rdg wit="#atw #brn" lev="5">moyennement il en voult</rdg>
+        </app>ouvrer<app corresp="#orth">
+          <lem wit="#atw #brl">sur</lem>
+          <rdg wit="#brn" lev="1">sus</rdg>
+        </app>la conclusion de ceste matiere affin<app corresp="#orth">
+          <lem wit="#brl">que on luy</lem>
+          <rdg wit="#atw #brn" lev="3">qu'on lui</rdg>
+        </app>en sceust gré<app corresp="#punct">
+          <lem wit="#brl">. Et</lem>
+          <rdg wit="#atw #brn" lev="3">et</rdg>
+        </app>
+        <app corresp="#add-words">
+          <lem wit="#brn #brl">aussi</lem>
+          <rdg wit="#atw" lev="5"/>
+        </app>que le<persName ref="#djdb">duc de<app corresp="#orth">
+          <lem wit="#brn #brl">Berry</lem>
+          <rdg wit="#atw" lev="1">Berri</rdg>
+        </app>
+        </persName>sentist que il<app corresp="#orth">
+          <lem wit="#brl">faisoit</lem>
+          <rdg wit="#atw" lev="3">feist</rdg>
+          <rdg wit="#brn" lev="4">feïst</rdg>
+        </app>aucune chose pour<persName ref="#cgfb">
+          <app corresp="#orth">
+            <lem wit="#brn #brl">luy</lem>
+            <rdg wit="#atw" lev="1">lui</rdg>
+          </app>
+        </persName>.</ab>
+    </body>
+  </text>
+</TEI>
