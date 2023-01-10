@@ -52,6 +52,7 @@ Les consignes détaillées concernant l'évaluation sont compilées dans [ce doc
 - BURGHART, Marjorie, [Éditer des sources historiques en ligne grâce à XML – Un guide pratique](http://mutec.huma-num.fr/sites/www.mutec-shs.fr/files/Guide%20Editer%20des%20sources%20historiques%20%20gr%C3%A2ce%20a%20XML.pdf) ;
 - BURGHART, Marjorie, PIERAZZO, Elena et al., [*Online course: Digital Scholarly Editions: Manuscripts, Texts, and TEI Encoding – Digital Editing of Medieval Manuscripts*](https://www.digitalmanuscripts.eu/digital-editing-of-medieval-texts-a-textbook/) ;
 - CAMPS, Jean-Baptiste, [Structuration des données et des documents : balisage XML](https://halshs.archives-ouvertes.fr/cel-01706530) ;
+- CARTON, Olivier, [Cours XML - Chapitre 7. Schematron](https://www.irif.fr/~carton/Enseignement/XML/Cours/Schematron/index.html) ;
 - CHATEAU, Emmanuel, [L'encodage des textes](http://www.desgodets.net/edition-des-cours/model), Cours de Desgodets, 2012 ;
 - Consortium ORIFLAMMS, [Spécification au format XML-TEI pour l'alignement texte-image. Bonnes pratiques d'encodage](https://oriflamms.hypotheses.org/1510), 2016 ;
 - CONSENTIN, Magali, [Cours XML](http://magali.contensin.free.fr/html/XML/index.php), 2007 ;
