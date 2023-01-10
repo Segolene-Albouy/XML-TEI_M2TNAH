@@ -7,18 +7,18 @@ Ce cours est largement inspiré des [supports fournis par Ariane Pinche dans ce 
 
 | Date         | Horaire     | Sujet                                                              |
 |--------------|-------------|--------------------------------------------------------------------|
-| 28 septembre | 15h30-17h30 | Encoder le texte : les langages à balises                          |
-| 5 octobre    | 15h30-17h30 | Contraindre le XML : la *Document Type Definition*                 |
+| 28 septembre | 15h30-17h30 | Encoder le texte : les langages à balises |
+| 5 octobre    | 15h30-17h30 | Contraindre le XML : la *Document Type Definition* |
 | 12 octobre   | 15h30-17h30 | Décrire les documents patrimoniaux : la *Text Encoding Initiative* |
-| 19 octobre   | 15h30-17h30 | Anatomie d'un document TEI : parties et composants                 |
-| 26 octobre   | 15h30-17h30 | Les TEI *guidelines* : modules, modèles, macros, etc.              |
-| 9 novembre   | 15h30-17h30 | Localisation dans le document : XPath                              |
-| 16 novembre  | 15h30-17h30 | Éditer un texte : initiation à l’édition scientifique              |
-| 23 novembre  | 15h30-17h30 | Éditer un texte : description des sources manuscrites              |
-| 30 novembre  | 15h30-17h30 | Éditer un texte : encodage d'une édition critique                  |
-| 7 décembre   | 15h30-17h30 | Les schémas XML : initiation à l'ODD                               |
-| 14 décembre  | 15h30-17h30 | Les schémas XML : documenter son ODD                   |
-| 4 janvier    | 15h30-17h30 | Les schémas XML : définir des règles de validation                                 |
+| 19 octobre   | 15h30-17h30 | Anatomie d'un document TEI : parties et composants |
+| 26 octobre   | 15h30-17h30 | Les TEI *guidelines* : modules, modèles, macros, etc. |
+| 9 novembre   | 15h30-17h30 | Éditer un texte : initiation à l’édition scientifique |
+| 16 novembre  | 15h30-17h30 | Éditer un texte : description des sources manuscrites |
+| 23 novembre  | 15h30-17h30 | Éditer un texte : encodage d'une édition |
+| 30 novembre  | 15h30-17h30 | Localisation dans le document : XPath |
+| 7 décembre   | 15h30-17h30 | Les schémas XML : initiation à l'ODD |
+| 14 décembre  | 15h30-17h30 | Les schémas XML : documenter son ODD |
+| 4 janvier    | 15h30-17h30 | Les schémas XML : définir des règles de validation |
 
 ## Évaluation
 
