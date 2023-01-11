@@ -1,0 +1,3 @@
+# Edition numérique
+
+Ce projet consiste en l'édition en `XML TEI` de la vie de saint Sixte (folios 87ra à 88va) du manuscrit [Français 412](https://archivesetmanuscrits.bnf.fr/ark:/12148/cc50522d) conservé à la Bibliothèque nationale de France et disponible en [version numérisée](https://gallica.bnf.fr/ark:/12148/btv1b84259980/f183.image) par Ségolène Albouy. Une version en ligne de cette édition existe à l'adresse suivante : [edition-saint-sixte](https://segolene-albouy.github.io/)
