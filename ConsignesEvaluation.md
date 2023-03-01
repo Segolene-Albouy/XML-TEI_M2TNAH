@@ -18,7 +18,11 @@
 		- Présenter en introduction votre projet éditorial et ses exploitations possibles (`/3`) ;
 		- Documenter le fonctionnement de votre encodage et vos choix de balises (`/3`).
 
-* Déposer l'ensemble des documents sur un *repository* GitHub
+* Déposer l'ensemble des documents sur un *repository* GitHub (`+1` bonus) :
+	- [Créer un *repository*](https://github.com/new) public ou privé ;
+	- Ajouter un README et le remplir de manière sommaire ;
+	- Y déposer les fichiers TEI, ODD, DTD, HTML et éventuellement images de l'encodage ;
+	- Ajouter `Segolene-Albouy` en collaborateur : Settings > Collaborators > Manage access > Add people.
 
 ## Liste des sujets possibles
 
