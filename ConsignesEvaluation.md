@@ -9,12 +9,12 @@
 * Écrire une ODD adaptée à votre encodage et documentée **(/10)** :
     - Générer une ODD à partir de `Roma` ou de `oddbyexample` ;
     - Rédiger une documentation structurée :
-    		- Présenter en introduction votre projet éditorial et ses **exploitations possibles** (/4) ;
-        	- Expliciter les **choix de balises** effectués pour permettre une valorisation ultérieure de l'encodage (/3). 
+        - Présenter en introduction votre projet éditorial et ses **exploitations possibles** (/4) ;
+        - Expliciter les **choix de balises** effectués pour permettre une valorisation ultérieure de l'encodage (/3). 
     - Votre ODD doit contenir au moins une règle **fonctionnelle** (et ne faisant pas partie des exemples du cours), **documentée** (une description *a minima* en commentaire explicitant la fonction de la règle de validation) et **justifiée** par le projet éditorial (oblige à se conformer à votre modélisation du texte) :
-        	- Une règle contraignant l’usage d’un attribut et sa ou ses valeurs (`<attDef>`) (/1) ;
-        	- Une règle contraignant l’enchaînement de certains éléments (`<content>`) (/1) ;
-        	- Une règle contraignant la valeur d’un attribut ou l’usage d’un élément ou d’un attribut en fonction de son environnement (`<constraint>` + `<s:rule>`) (/1).
+        - Une règle contraignant l’usage d’un attribut et sa ou ses valeurs (`<attDef>`) (/1) ;
+        - Une règle contraignant l’enchaînement de certains éléments (`<content>`) (/1) ;
+        - Une règle contraignant la valeur d’un attribut ou l’usage d’un élément ou d’un attribut en fonction de son environnement (`<constraint>` + `<s:rule>`) (/1).
 
 * Déposer l'ensemble des documents sur un *repository* GitHub (`+1` bonus) :
 	- [Créer un *repository*](https://github.com/new) public ou privé ;
