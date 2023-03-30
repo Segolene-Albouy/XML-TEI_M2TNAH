@@ -1,7 +1,7 @@
 # Cours XML-TEI
 
-Ce *repository* constitue un dépôt pour le contenu pédagogique du cours XML TEI du M2 Technologies Numériques Appliquées à l'Histoire à l'École des chartes (2022/2023).
-Ce cours est largement inspiré des [supports fournis par Ariane Pinche dans ce *repository*](https://github.com/ArianePinche/coursTNAH_XML-TEI).
+Ce *repository* constitue un dépôt pour le contenu pédagogique du cours XML TEI du M2 Technologies Numériques Appliquées à l'Histoire à l'École des chartes.
+Ce cours est inspiré des [supports fournis par Ariane Pinche dans ce *repository*](https://github.com/ArianePinche/coursTNAH_XML-TEI).
 
 ## Programme du cours
 
@@ -28,13 +28,13 @@ Les consignes détaillées concernant l'évaluation sont compilées dans [ce doc
 * Compléter de la manière la plus précise possible le `teiHeader` de votre édition, en fonction des éléments nécessaires à son établissement et à la compréhension du texte **(/4)** ;
 * Écrire une ODD adaptée à votre encodage et documentée **(/10)** :
     - Générer une ODD à partir de `Roma` ou de `oddbyexample` ;
-    - Votre ODD doit contenir au moins une règle **fonctionnelle** (et ne faisant pas partie des exemples du cours), **documentée** (une description *a minima* en commentaire explicitant la fonction de la règle de validation) et **justifiée** par le projet éditorial (oblige à se conformer à votre modélisation du texte) :
+    - Rédiger une documentation structurée :
+        - Présenter en introduction votre projet éditorial et ses **exploitations possibles** (/4) ;
+        - Expliciter les **choix de balises** effectués pour permettre une valorisation ultérieure de l'encodage (/3). 
+    - Définir *a minima* 3 règles **fonctionnelle** (ne faisant pas partie des exemples du cours), **documentée** (une description *a minima* en commentaire explicitant la fonction de la règle de validation) et **justifiée** par le projet éditorial (oblige à se conformer à votre modélisation du texte) :
         - Une règle contraignant l’usage d’un attribut et sa ou ses valeurs (`<attDef>`) (/1) ;
         - Une règle contraignant l’enchaînement de certains éléments (`<content>`) (/1) ;
         - Une règle contraignant la valeur d’un attribut ou l’usage d’un élément ou d’un attribut en fonction de son environnement (`<constraint>` + `<s:rule>`) (/1).
-    - À partir de votre ODD, générer la documentation HTML de votre projet :
-        - Présenter en introduction votre projet éditorial et ses **exploitations possibles** (/4) ;
-        - Expliciter les **choix de balises** effectués pour permettre une valorisation ultérieure de l'encodage (/3). 
 
 **Date de rendu** : au plus tard le 25 janvier.
 
