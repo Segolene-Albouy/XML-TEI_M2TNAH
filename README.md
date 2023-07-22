@@ -62,7 +62,7 @@ Les consignes détaillées concernant l'évaluation sont compilées dans [ce doc
 - Les Bibliothèques Virtuelles Humanistes, [Manuel d’encodage XML-TEI Renaissance et temps modernes (Imprimés - manuscrits)](http://www.bvh.univ-tours.fr/XML-TEI/index.asp) ;
 - POUPEAU, Gautier, [L'édition critique des sources historiques : du support papier au Web](https://www.lespetitescases.net/node/1088), 2008 ;
 - Master MIAGE Université de Nantes, [Ingénierie XML : concepts de base](https://miage.univ-nantes.fr/miage/D2X1/chapitre_presentation/chapitre.htm) ;
-- [*TEI by Example*](https://teibyexample.org/TBE.htm) ;
+- [*TEI by Example*](https://teibyexample.org/exist/TBE.htm) ;
 - [*TEI GitHub repository*](https://github.com/TEIC/TEI) ;
 - [*TEI guidelines*](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/index.html) ;
 - W3School, [*XML Tutorial*](https://www.w3schools.com/xml/default.asp) ;
