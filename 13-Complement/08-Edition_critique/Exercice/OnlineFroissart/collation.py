@@ -1,10 +1,10 @@
 from collatex import *
 
-with open('./witnesses/Austin-48.txt') as f:
+with open('witnesses/Austin-48.txt') as f:
     austin = " ".join(f.readlines())
-with open('./witnesses/Paris-fr-2663.txt') as f:
+with open('witnesses/Paris-fr-2663.txt') as f:
     paris = " ".join(f.readlines())
-with open('./witnesses/Stonyhurst-1.txt') as f:
+with open('witnesses/Stonyhurst-1.txt') as f:
     stonyhurst = " ".join(f.readlines())
 
 collation = Collation()

@@ -7,18 +7,18 @@ Ce cours est inspiré des [supports fournis par Ariane Pinche dans ce *repositor
 
 | Date         | Horaire     | Sujet                                                              |
 |--------------|-------------|--------------------------------------------------------------------|
-| 28 septembre | 15h30-17h30 | Encoder le texte : les langages à balises |
-| 5 octobre    | 15h30-17h30 | Contraindre le XML : la *Document Type Definition* |
-| 12 octobre   | 15h30-17h30 | Décrire les documents patrimoniaux : la *Text Encoding Initiative* |
-| 19 octobre   | 15h30-17h30 | Anatomie d'un document TEI : parties et composants |
-| 26 octobre   | 15h30-17h30 | Les TEI *guidelines* : modules, modèles, macros, etc. |
-| 9 novembre   | 15h30-17h30 | Éditer un texte : initiation à l’édition scientifique |
-| 16 novembre  | 15h30-17h30 | Éditer un texte : description des sources manuscrites |
-| 23 novembre  | 15h30-17h30 | Éditer un texte : encodage d'une édition |
-| 30 novembre  | 15h30-17h30 | Localisation dans le document : XPath |
-| 7 décembre   | 15h30-17h30 | Les schémas XML : initiation à l'ODD |
-| 14 décembre  | 15h30-17h30 | Les schémas XML : documenter son ODD |
-| 4 janvier    | 15h30-17h30 | Les schémas XML : définir des règles de validation |
+| 4 octobre    | 15h30-17h30 | Encoder le texte : les langages à balises                          |
+| 10 octobre ? | 15h30-17h30 | Contraindre le XML : la *Document Type Definition*                 |
+| 18 octobre   | 15h30-17h30 | Décrire les documents patrimoniaux : la *Text Encoding Initiative* |
+| 25 octobre   | 15h30-17h30 | Anatomie d'un document TEI : parties et composants                 |
+| 8 novembre   | 15h30-17h30 | Les TEI *guidelines* : modules, modèles, macros, etc.              |
+| 15 novembre  | 15h30-17h30 | Éditer un texte : initiation à l’édition scientifique            |
+| 22 novembre  | 15h30-17h30 | Éditer un texte : description des sources manuscrites              |
+| 29 novembre  | 15h30-17h30 | Éditer un corpus : création d'une chaîne de traitement             |
+| 6 décembre   | 15h30-17h30 | Localisation dans le document : XPath                              |
+| 13 décembre  | 15h30-17h30 | Les schémas XML : initiation à l'ODD                              |
+| 20 décembre  | 15h30-17h30 | Les schémas XML : documenter son ODD                              |
+| 10 janvier   | 15h30-17h30 | Les schémas XML : définir des règles de validation                |
 
 ## Évaluation
 
@@ -31,12 +31,12 @@ Les consignes détaillées concernant l'évaluation sont compilées dans [ce doc
     - Rédiger une documentation structurée :
         - Présenter en introduction votre projet éditorial et ses **exploitations possibles** (/4) ;
         - Expliciter les **choix de balises** effectués pour permettre une valorisation ultérieure de l'encodage (/3). 
-    - Définir *a minima* 3 règles **fonctionnelle** (ne faisant pas partie des exemples du cours), **documentée** (une description *a minima* en commentaire explicitant la fonction de la règle de validation) et **justifiée** par le projet éditorial (oblige à se conformer à votre modélisation du texte) :
+    - Définir *a minima* 3 règles **fonctionnelles** (ne faisant pas partie des exemples du cours), **documentées** (une description *a minima* en commentaire explicitant la fonction de la règle de validation) et **justifiées** par le projet éditorial (oblige à se conformer à votre modélisation du texte) :
         - Une règle contraignant l’usage d’un attribut et sa ou ses valeurs (`<attDef>`) (/1) ;
         - Une règle contraignant l’enchaînement de certains éléments (`<content>`) (/1) ;
         - Une règle contraignant la valeur d’un attribut ou l’usage d’un élément ou d’un attribut en fonction de son environnement (`<constraint>` + `<s:rule>`) (/1).
 
-**Date de rendu** : au plus tard le 25 janvier.
+**Date de rendu** : au plus tard le **31 janvier**.
 
 # Pour aller plus loin
 
