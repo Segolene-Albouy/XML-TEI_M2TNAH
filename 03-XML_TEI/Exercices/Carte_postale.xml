@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<objet type="cartePostale">
+    <face type="verso">
+        <zone type="message">
+            <paragraphe>
+                Bientôt sur le chemin du retour. Avons eu du beau temps tout le mois de
+                juillet. Vous souhaite à tous la même chose.
+            </paragraphe>
+            <paragraphe>
+                J'espère que vous êtes tous en bonne santé. 
+                À chacun son tour, le beau temps et le repos.
+            </paragraphe>
+            <salutation>
+                <formulePolitesse>
+                    Avec d'affectueuses pensées et bons baisers à tous.
+                </formulePolitesse>
+                <signature>
+                    Marcelle
+                </signature>
+            </salutation>
+        </zone>
+        <zone>
+            <adresse>
+                <nom>Mme Veyssade Lucienne</nom>
+                <rue>31, rue du President Kennedy</rue>
+                <ville>Alfortville Val de Marne</ville>
+            </adresse>
+        </zone>
+    </face>
+</objet>
