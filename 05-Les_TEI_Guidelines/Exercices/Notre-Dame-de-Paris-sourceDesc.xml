@@ -9,7 +9,10 @@
                   <titleStmt>
                         <title>Notre Dame de Paris</title>
                         <author>Victor Hugo</author>
-                        <editor>Paul Meurice</editor>
+                        <respStmt>
+                              <resp>Encodage</resp>
+                              <persName>Moi</persName>
+                        </respStmt>
                   </titleStmt>
                   <publicationStmt>
                         <distributor facs="https://fr.wikisource.org/wiki/Notre-Dame_de_Paris/Livre_deuxième">Wikisource</distributor>
@@ -30,7 +33,7 @@
                                     <publisher>Librairie Ollendorff</publisher>
                                     <date>1904</date>
                                     <pubPlace>Paris</pubPlace>
-                                    <distributor  facs="https://gallica.bnf.fr/ark:/12148/bpt6k1264641j/f12.image">
+                                    <distributor facs="https://gallica.bnf.fr/ark:/12148/bpt6k1264641j/f12.image">
                                           BnF
                                     </distributor>
                                     <availability>

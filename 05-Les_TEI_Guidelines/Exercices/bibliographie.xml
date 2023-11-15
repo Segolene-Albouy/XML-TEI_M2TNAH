@@ -25,8 +25,8 @@
       <listBibl>
          <bibl>
             <title level="a">Conseils pour l’édition des textes médiévaux</title>
-            <title type="m">Fascicule III</title>
-            <title type="j">Textes littéraires</title>
+            <title level="m">Fascicule III</title>
+            <title level="j">Textes littéraires</title>
             <author>
                <persName>
                   <forename>BOURGAIN</forename>
