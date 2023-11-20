@@ -24,14 +24,18 @@ Ce cours est inspiré des [supports fournis par Ariane Pinche dans ce *repositor
 
 Les consignes détaillées concernant l'évaluation sont compilées dans [ce document](https://github.com/Segolene-Albouy/XML-TEI_M2TNAH/blob/main/ConsignesEvaluation.md).
 
-* Structurer en XML-TEI votre texte en vue d’une édition et en respectant le genre auquel appartient votre extrait **(/6)** ;
+* Choisir entre 2 et 5 extraits au contenu similaire (par similitude de format, par rapprochement thématique, par contexte de production) : par exemple, 3 lettres/décrets/articles/poèmes/ etc. ;
+* Structurer et encoder vos extraits en XML-TEI en accord avec l'exploitation textuelle visée par votre projet éditorial **(/6)** :
+	- Choisir un mode de structuration de ses extraits (`teiCorpus`, fichier unique, plusieurs fichiers, etc.) ;
+	- Définir un *template* unique pour l'ensemble des extraits ;
+	- Encoder les extraits dans ce *template* en suivant la même structure et les mêmes balises. 
 * Compléter de la manière la plus précise possible le `teiHeader` de votre édition, en fonction des éléments nécessaires à son établissement et à la compréhension du texte **(/4)** ;
 * Écrire une ODD adaptée à votre encodage et documentée **(/10)** :
     - Générer une ODD à partir de `Roma` ou de `oddbyexample` ;
     - Rédiger une documentation structurée :
         - Présenter en introduction votre projet éditorial et ses **exploitations possibles** (/4) ;
         - Expliciter les **choix de balises** effectués pour permettre une valorisation ultérieure de l'encodage (/3). 
-    - Définir *a minima* 3 règles **fonctionnelles** (ne faisant pas partie des exemples du cours), **documentées** (une description *a minima* en commentaire explicitant la fonction de la règle de validation) et **justifiées** par le projet éditorial (oblige à se conformer à votre modélisation du texte) :
+    - Définir *a minima* 3 règles **fonctionnelles** (ne faisant pas partie des exemples du cours), **documentées** (une description *a minima* en commentaire explicitant la fonction de la règle de validation) et **justifiée** par le projet éditorial (oblige à se conformer à votre modélisation du texte) :
         - Une règle contraignant l’usage d’un attribut et sa ou ses valeurs (`<attDef>`) (/1) ;
         - Une règle contraignant l’enchaînement de certains éléments (`<content>`) (/1) ;
         - Une règle contraignant la valeur d’un attribut ou l’usage d’un élément ou d’un attribut en fonction de son environnement (`<constraint>` + `<s:rule>`) (/1).
