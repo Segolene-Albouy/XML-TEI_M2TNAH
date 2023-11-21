@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<teiCorpus version="3.3.0" xmlns="http://www.tei-c.org/ns/1.0">
+      <teiHeader>
+            <fileDesc>
+                  <titleStmt>
+                        <title>Titre du corpus</title>
+                  </titleStmt>
+                  <publicationStmt>
+                        <p>Information sur la publication du corpus</p>
+                  </publicationStmt>
+                  <sourceDesc>
+                        <p>Information sur la source du corpus</p>
+                  </sourceDesc>
+            </fileDesc>
+      </teiHeader>
+      <TEI>
+            <teiHeader>
+                  <fileDesc>
+                        <titleStmt>
+                              <title>Titre du texte 1</title>
+                        </titleStmt>
+                        <publicationStmt>
+                              <p>Information sur la publication du texte 1</p>
+                        </publicationStmt>
+                        <sourceDesc>
+                              <p>Information sur la source du texte 1</p>
+                        </sourceDesc>
+                  </fileDesc>
+            </teiHeader>
+            <text>
+                  <body>
+                        <p>Texte 1</p>
+                  </body>
+            </text>
+      </TEI>
+      <TEI>
+            <teiHeader>
+                  <fileDesc>
+                        <titleStmt>
+                              <title>Titre du texte 2</title>
+                        </titleStmt>
+                        <publicationStmt>
+                              <p>Information sur la publication du texte 2</p>
+                        </publicationStmt>
+                        <sourceDesc>
+                              <p>Information sur la source du texte 2</p>
+                        </sourceDesc>
+                  </fileDesc>
+            </teiHeader>
+            <text>
+                  <body>
+                        <p>Texte 2</p>
+                  </body>
+            </text>
+      </TEI>
+</teiCorpus>
+
+
