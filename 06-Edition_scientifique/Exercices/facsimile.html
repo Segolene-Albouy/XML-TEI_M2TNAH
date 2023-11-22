@@ -1,0 +1,171 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:tei="http://www.tei-c.org/ns/1.0">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="application-name" content="Interfaxim">
+      <meta name="author" content="Timothé &amp; Ségolène ALBOUY">
+      <meta name="description" content="Interactive facsimile">
+      <meta name="keywords" content="XSLT,XML,TEI">
+      <title>Cantilène de sainte Eulalie</title>
+      <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/symbola" type="text/css">
+      <style>
+                              body {
+                                    font-family: 'SymbolaRegular', serif;
+                              }
+                              
+                              h1 {
+                                    text-align: center;
+                              }
+                              
+                              .tabs {
+                                    overflow: auto;
+                                    border: 1px solid darkgrey;
+                                    background-color: gainsboro;
+                                    margin: 5px 0px;
+                              }
+                              
+                              .tabs button {
+                                    background-color: inherit;
+                                    padding: 0.5em;
+                                    float: left;
+                                    border: none;
+                                    outline: none;
+                                    cursor: pointer;
+                                    transition: 0.3s;
+                                    font-size: 1em;
+                              }
+                              
+                              .tabs button:hover {
+                                    background-color: silver;
+                              }
+                              
+                              .tabs button.active {
+                                    background-color: darkgrey;
+                              }
+                              
+                              .section-wrapper {
+                                    position: relative;
+                              }
+                              
+                              div.zone {
+                                    position: absolute;
+                              }
+                              
+                              div.zone > span {
+                                    position: relative;
+                                    display: block;
+                                    overflow-y: auto;
+                                    visibility: hidden;
+                                    background-color: white;
+                                    font-family: 'SymbolaRegular', serif;
+                                    padding: 0px 5px;
+                              }
+                              
+                              .zone:hover span {
+                                    visibility: visible;
+                              }
+                              
+                              /* Original version (ov) */
+                              .ov {
+                                    color: crimson;
+                              }
+                              
+                              /* Regularized version (rv) */
+                              .rv {
+                                    color: mediumseagreen;
+                              }
+                              
+                              /* Not shown (ns) */
+                              .ns {
+                                    display: none;
+                              }
+                        </style>
+   </head>
+   <body>
+      <h1>Cantilène de sainte Eulalie</h1>
+      <div id="tabs-versions" class="tabs"><button id="rvBtn" onclick="changeVersion(event, 'rv')">Regularized version</button><button id="ovBtn" onclick="changeVersion(event, 'ov')">Original version</button></div>
+      <div id="tabs-sections" class="tabs"><button onclick="changeSection(event, 1)">
+            Page 1</button></div>
+      <div class="section-wrapper" data-section="1"><img src="Eulalie_numerisation_sm.jpeg"><div class="zone-list">
+            <div class="zone" style="top: 74px; left: 172px; height: 77px; width: 360px;"><span style="top: 77px;">Buona pulcella fut <span class="ov">e</span><span class="rv">E</span>ulalia.</span></div>
+            <div class="zone" style="top: 93px; left: 537px; height: 52px; width: 394px;"><span style="top: 52px;">Bel a<span class="ov">u</span><span class="rv">v</span>ret corps, bellezour anima.</span></div>
+            <div class="zone" style="top: 164px; left: 173px; height: 28px; width: 384px;"><span style="top: 28px;">Voldrent la veintre li <span class="ov">d</span><span class="rv">D</span><span class="ov">ō</span><span class="rv">eo</span> inimi,</span></div>
+            <div class="zone" style="top: 156px; left: 563px; height: 35px; width: 382px;"><span style="top: 35px;">Voldrent la faire diaule servir.</span></div>
+            <div class="zone" style="top: 205px; left: 175px; height: 41px; width: 426px;"><span style="top: 41px;">Elle no'nt eskoltet les mals conselliers</span></div>
+            <div class="zone" style="top: 196px; left: 607px; height: 51px; width: 346px;"><span style="top: 51px;">Qu'elle <span class="ov">d</span><span class="rv">D</span><span class="ov">ō</span><span class="rv">eo</span> raneiet, chi maent sus en ciel,</span></div>
+            <div class="zone" style="top: 263px; left: 177px; height: 37px; width: 399px;"><span style="top: 37px;">Ne por or ned argent ne paramenz</span></div>
+            <div class="zone" style="top: 255px; left: 578px; height: 59px; width: 399px;"><span style="top: 59px;">Por manatce regiel ne preiement.</span></div>
+            <div class="zone" style="top: 310px; left: 176px; height: 37px; width: 424px;"><span style="top: 37px;">Niule cose non la pouret omque pleier</span></div>
+            <div class="zone" style="top: 297px; left: 605px; height: 49px; width: 336px;"><span style="top: 49px;">La polle sempre non amast lo <span class="ov">d</span><span class="rv">D</span><span class="ov">ō</span><span class="rv">eo</span> menestier.</span></div>
+            <div class="zone" style="top: 365px; left: 178px; height: 44px; width: 351px;"><span style="top: 44px;">E por o fut presentede Maximiien,</span></div>
+            <div class="zone" style="top: 356px; left: 534px; height: 47px; width: 404px;"><span style="top: 47px;">Chi rex eret a cels dis soure pagiens.</span></div>
+            <div class="zone" style="top: 414px; left: 182px; height: 45px; width: 408px;"><span style="top: 45px;">Il li enortet, dont lei nonque chielt,</span></div>
+            <div class="zone" style="top: 406px; left: 591px; height: 48px; width: 351px;"><span style="top: 48px;">Qued elle fuiet lo nom chrestiien.</span></div>
+            <div class="zone" style="top: 466px; left: 183px; height: 38px; width: 363px;"><span style="top: 38px;">Ell'ent adunet lo suon element:</span></div>
+            <div class="zone" style="top: 459px; left: 552px; height: 45px; width: 414px;"><span style="top: 45px;">Melz sostendreiet les empedementz</span></div>
+            <div class="zone" style="top: 508px; left: 182px; height: 51px; width: 355px;"><span style="top: 51px;">Qu'elle perdesse sa virginitet</span></div>
+            <div class="zone" style="top: 511px; left: 540px; height: 40px; width: 437px;"><span style="top: 40px;">Por o's furet morte a grand honestet.</span></div>
+            <div class="zone" style="top: 566px; left: 187px; height: 42px; width: 473px;"><span style="top: 42px;">Enz enl fou lo getterent com arde tost.</span></div>
+            <div class="zone" style="top: 557px; left: 666px; height: 40px; width: 308px;"><span style="top: 40px;">Elle colpes non auret, por o nos coist.</span></div>
+            <div class="zone" style="top: 617px; left: 174px; height: 41px; width: 524px;"><span style="top: 41px;">A czo nos voldret concreidre li rex pagiens.</span></div>
+            <div class="zone" style="top: 601px; left: 699px; height: 52px; width: 294px;"><span style="top: 52px;">Ad une spede li roveret tolir lo chief.</span></div>
+            <div class="zone" style="top: 668px; left: 181px; height: 43px; width: 423px;"><span style="top: 43px;">La domnizelle celle kose non contredist</span></div>
+            <div class="zone" style="top: 665px; left: 614px; height: 37px; width: 352px;"><span style="top: 37px;">Volt lo seule lazsier, si ruovet Krist.</span></div>
+            <div class="zone" style="top: 716px; left: 178px; height: 47px; width: 390px;"><span style="top: 47px;">In figure de colomb volat a ciel.</span></div>
+            <div class="zone" style="top: 718px; left: 570px; height: 33px; width: 393px;"><span style="top: 33px;">Tuit oram que por nos degnet preier</span></div>
+            <div class="zone" style="top: 779px; left: 173px; height: 35px; width: 387px;"><span style="top: 35px;">Qued auisset de nos Christusmercit</span></div>
+            <div class="zone" style="top: 767px; left: 566px; height: 41px; width: 397px;"><span style="top: 41px;">Post la mort et a lui nos laist venir</span></div>
+            <div class="zone" style="top: 829px; left: 298px; height: 32px; width: 365px;"><span style="top: 32px;">Par souue clementia.</span></div>
+         </div>
+      </div><script>
+                              function changeVersion(e, ver) {
+                              var ovnodes = document.getElementsByClassName("ov");
+                              var rvnodes = document.getElementsByClassName("rv");
+                              if (ver === "ov") {
+                              for (var i = 0; i < ovnodes.length; i++) {
+                              var el = ovnodes[i];
+                              el.style.display = "inline";
+                              }
+                              for (var i = 0; i < rvnodes.length; i++) {
+                              var el = rvnodes[i];
+                              el.style.display = "none";
+                              }
+                              } else if (ver === "rv") {
+                              for (var i = 0; i < ovnodes.length; i++) {
+                              var el = ovnodes[i];
+                              el.style.display = "none";
+                              }
+                              for (var i = 0; i < rvnodes.length; i++) {
+                              var el = rvnodes[i];
+                              el.style.display = "inline";
+                              }
+                              }
+                              var btnVersions = document.querySelectorAll("#tabs-versions button");
+                              for (var i = 0; i < btnVersions.length; i++) {
+                              var el = btnVersions[i];
+                              el.className = el.className.replace(" active", "");
+                              }
+                              e.currentTarget.className += " active";
+                              }
+                              
+                              function changeSection(e, sec) {
+                              var sections = document.getElementsByClassName("section-wrapper");
+                              for (var i = 0; i < sections.length; i++) {
+                              var el = sections[i];
+                              if (el.dataset.section == sec)
+                              el.style.display = "inline-block";
+                              else el.style.display = "none";
+                              }
+                              var btnSections = document.querySelectorAll("#tabs-sections button");
+                              for (var i = 0; i < btnSections.length; i++) {
+                              var el = btnSections[i];
+                              el.className = el.className.replace(" active", "");
+                              }
+                              e.currentTarget.className += " active";
+                              }
+                              
+                              document.getElementById("rvBtn").click();
+                              document.querySelector("#tabs-sections button:first-child").click();
+                        </script></body>
+</html>
