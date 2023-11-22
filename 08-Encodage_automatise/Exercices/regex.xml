@@ -13,22 +13,22 @@
 			<sourceDesc>
 				<p>
 					********************************************************
-					DC.Title                  = LE CID, TRAGÉDIE
-					DC.Author                 = CORNEILLE, Pierre
-					DC.Creator                = FIEVRE, Paul
-					DC.Publisher              = FIEVRE, Paul
-					DC.Subject                = Tragédie
-					DC.Subject.Classification = 842
-					DC.Description            = Edition du texte cité en titre
-					DC.Publisher              = FIEVRE, Paul
-					DC.Date.Modified          = Version du texte du 06/07/2022 à 08:13:23.
-					DC.Coverage               = Espagne
-					DC.Type                   = text
-					DC.Format                 = text/txt
-					DC.Identifier             = http://www.theatre-classique.fr/pages/txt/CORNEILLEP_CID.txt
-					DC.Source                 = http://gallica.bnf.fr/ark:/12148/bpt6k70143z
-					DC.Language scheme        = UTF-8 content=fr
-					DC.Rights                 = Théâtre Classique, (creative commons CC BY-NC-ND)
+					DC.Title                  = fileDesc/titleStmt/title
+					DC.Author                 = fileDesc/titleStmt/author
+					DC.Creator                = fileDesc/titleStmt/editor, respStmt
+					DC.Publisher              = fileDesc/publicationStmt/publisher
+					DC.Subject                = profileDesc/textClass/keywords/term
+					DC.Subject.Classification = profileDesc/textClass/keywords/term@key
+					DC.Description            = profileDesc/abstract
+					DC.Date.Modified          = fileDesc/publicationStmt/date
+					DC.Coverage               = profileDesc/textDesc
+					DC.Type                   = "text"
+					DC.Format                 = "text/txt"
+					DC.Identifier             = fileDesc/publicationStmt/idno
+					DC.Source                 = fileDesc/sourceDesc
+					DC.Language scheme        = @xml:lang ou profileDesc/langUsage/
+					DC.Rights                 = fileDesc/publicationStmt/availability
+					DC.Relation               = fileDesc/seriesStmt/
 					***************************************************************
 				</p>
 			</sourceDesc>
