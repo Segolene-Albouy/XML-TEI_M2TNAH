@@ -39,36 +39,36 @@
       </teiHeader>
       <facsimile>
             <surface>
-                  <graphic url='Eulalie_numerisation.jpeg' width='2526px' height='3905px' />       
-                  <zone xml:id="l1" ulx="440" uly="191" lrx="1337" lry="362" />
-                  <zone xml:id="l2" ulx="1354" uly="240" lrx="2336" lry="361" />
-                  <zone xml:id="l3" ulx="460" uly="402" lrx="1412" lry="482" />
-                  <zone xml:id="l4" ulx="1427" uly="389" lrx="2351" lry="479" />
-                  <zone xml:id="l5" ulx="467" uly="508" lrx="1507" lry="616" />
-                  <zone xml:id="l6" ulx="1523" uly="509" lrx="2379" lry="614" />
-                  <zone xml:id="l7" ulx="470" uly="659" lrx="1443" lry="752" />
-                  <zone xml:id="l8" ulx="1458" uly="645" lrx="2411" lry="740" />
-                  <zone xml:id="l9" ulx="474" uly="780" lrx="1512" lry="876" />
-                  <zone xml:id="l10" ulx="1525" uly="762" lrx="2419" lry="862" />
-                  <zone xml:id="l11" ulx="465" uly="924" lrx="1340" lry="1009" />
-                  <zone xml:id="l12" ulx="1349" uly="910" lrx="2349" lry="1001" />
-                  <zone xml:id="l13" ulx="471" uly="1045" lrx="1479" lry="1139" />
-                  <zone xml:id="l14" ulx="1490" uly="1035" lrx="2349" lry="1134" />
-                  <zone xml:id="l15" ulx="477" uly="1175" lrx="1391" lry="1264" />
-                  <zone xml:id="l16" ulx="1404" uly="1172" lrx="2428" lry="1262" />
-                  <zone xml:id="l17" ulx="473" uly="1315" lrx="1323" lry="1403" />
-                  <zone xml:id="l18" ulx="1344" uly="1300" lrx="2420" lry="1384" />
-                  <zone xml:id="l19" ulx="470" uly="1432" lrx="1668" lry="1532" />
-                  <zone xml:id="l20" ulx="1683" uly="1414" lrx="2430" lry="1504" />
-                  <zone xml:id="l21" ulx="467" uly="1558" lrx="1752" lry="1654" />
-                  <zone xml:id="l22" ulx="1758" uly="1522" lrx="2453" lry="1628" />
-                  <zone xml:id="l23" ulx="474" uly="1678" lrx="1529" lry="1774" />
-                  <zone xml:id="l24" ulx="1547" uly="1678" lrx="2446" lry="1766" />
-                  <zone xml:id="l25" ulx="485" uly="1821" lrx="1427" lry="1917" />
-                  <zone xml:id="l26" ulx="1435" uly="1819" lrx="2455" lry="1905" />
-                  <zone xml:id="l27" ulx="482" uly="1968" lrx="1412" lry="2049" />
-                  <zone xml:id="l28" ulx="1428" uly="1947" lrx="2392" lry="2026" />
-                  <zone xml:id="l29" ulx="790" uly="2096" lrx="1586" lry="2165" />
+                  <graphic url='Eulalie_numerisation_sm.jpeg' width='1000px' height='1546px' />
+                  <zone xml:id="l1" ulx="172" uly="74" lrx="532" lry="151" />
+                  <zone xml:id="l2" ulx="537" uly="93" lrx="931" lry="145" />
+                  <zone xml:id="l3" ulx="173" uly="164" lrx="557" lry="192" />
+                  <zone xml:id="l4" ulx="563" uly="156" lrx="945" lry="191" />
+                  <zone xml:id="l5" ulx="175" uly="205" lrx="601" lry="246" />
+                  <zone xml:id="l6" ulx="607" uly="196" lrx="953" lry="247" />
+                  <zone xml:id="l7" ulx="177" uly="263" lrx="576" lry="300" />
+                  <zone xml:id="l8" ulx="578" uly="255" lrx="977" lry="314" />
+                  <zone xml:id="l9" ulx="176" uly="310" lrx="600" lry="347" />
+                  <zone xml:id="l10" ulx="605" uly="297" lrx="941" lry="346" />
+                  <zone xml:id="l11" ulx="178" uly="365" lrx="529" lry="409" />
+                  <zone xml:id="l12" ulx="534" uly="356" lrx="938" lry="403" />
+                  <zone xml:id="l13" ulx="182" uly="414" lrx="590" lry="459" />
+                  <zone xml:id="l14" ulx="591" uly="406" lrx="942" lry="454" />
+                  <zone xml:id="l15" ulx="183" uly="466" lrx="546" lry="504" />
+                  <zone xml:id="l16" ulx="552" uly="459" lrx="966" lry="504" />
+                  <zone xml:id="l17" ulx="182" uly="508" lrx="537" lry="559" />
+                  <zone xml:id="l18" ulx="540" uly="511" lrx="977" lry="551" />
+                  <zone xml:id="l19" ulx="187" uly="566" lrx="660" lry="608" />
+                  <zone xml:id="l20" ulx="666" uly="557" lrx="974" lry="597" />
+                  <zone xml:id="l21" ulx="174" uly="617" lrx="698" lry="658" />
+                  <zone xml:id="l22" ulx="699" uly="601" lrx="993" lry="653" />
+                  <zone xml:id="l23" ulx="181" uly="668" lrx="604" lry="711" />
+                  <zone xml:id="l24" ulx="614" uly="665" lrx="966" lry="702" />
+                  <zone xml:id="l25" ulx="178" uly="716" lrx="568" lry="763" />
+                  <zone xml:id="l26" ulx="570" uly="718" lrx="963" lry="751" />
+                  <zone xml:id="l27" ulx="173" uly="779" lrx="560" lry="814" />
+                  <zone xml:id="l28" ulx="566" uly="767" lrx="963" lry="808" />
+                  <zone xml:id="l29" ulx="298" uly="829" lrx="663" lry="861" />
             </surface>            
       </facsimile>
       <text>
