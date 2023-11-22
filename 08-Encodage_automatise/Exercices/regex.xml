@@ -27,7 +27,7 @@
 					DC.Format                 = text/txt
 					DC.Identifier             = http://www.theatre-classique.fr/pages/txt/CORNEILLEP_CID.txt
 					DC.Source                 = http://gallica.bnf.fr/ark:/12148/bpt6k70143z
-					DC.Language scheme        = UTF-8 content=fr
+					DC.Language               = UTF-8 content=fr
 					DC.Rights                 = Théâtre Classique, (creative commons CC BY-NC-ND)
 					***************************************************************
 				</p>

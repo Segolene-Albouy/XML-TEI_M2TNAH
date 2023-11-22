@@ -30,7 +30,7 @@
                                           <desc type="geo">
                                                 Localisation par l’iconographie : Cambrai (cf <bibl corresp="#Stones-2013">Stones, 2013</bibl>)
                                           </desc>
-                                          <desc  type="geo">
+                                          <desc type="geo">
                                                 Localisation par le contenu : Nord de la France, Pays-Bas méridionaux ou
                                                 Champagne (d’après les lieux cités). Mons, Hainaut (d’après les saints du
                                                 calendrier).
@@ -114,7 +114,7 @@
                                           </listPerson>
                                           <listEvent>
                                                 <event>
-                                                      <label>Acquisinition par la BnF</label>
+                                                      <label>Acquisition par la BnF</label>
                                                       <desc>entre à la BnF avec les mss de Lancelot en <date when="1732">1732</date></desc>
                                                 </event>
                                           </listEvent>
