@@ -68,7 +68,7 @@
                                                   <width unit="mm"/>
                                                   <height unit="mm"/>
                                                 </extent>
-                                                <foliation><!-- type de cahier, nombre de folios--></foliation>
+                                                <foliation><!-- système de numérotation des folios/pages --></foliation>
                                           </supportDesc>
                                           <layoutDesc>
                                                 <!-- disposition du texte sur le folio -->
