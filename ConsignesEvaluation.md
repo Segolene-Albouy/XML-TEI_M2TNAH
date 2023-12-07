@@ -6,7 +6,7 @@
 
 * Choisir entre 2 et 5 extraits au contenu similaire (par similitude de format, par rapprochement thématique, par contexte de production) : par exemple, 3 lettres/décrets/articles/poèmes/ etc. ;
 * Structurer et encoder vos extraits en XML-TEI en accord avec l'exploitation textuelle visée par votre projet éditorial **(/6)** :
-	- Choisir un mode de structuration de ses extraits (`teiCorpus`, fichier unique, plusieurs fichiers, etc.) ;
+	- Choisir un mode de structuration de ses extraits dans un unique fichier (`teiCorpus`, unique `teiHeader`, `xi:include`, etc.) ;
 	- Définir un *template* unique pour l'ensemble des extraits ;
 	- Encoder les extraits dans ce *template* en suivant la même structure et les mêmes balises. 
 * Compléter de la manière la plus précise possible le `teiHeader` de votre édition, en fonction des éléments nécessaires à son établissement et à la compréhension du texte **(/4)** ;
