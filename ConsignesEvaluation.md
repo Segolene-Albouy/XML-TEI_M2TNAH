@@ -31,8 +31,8 @@
 S’inscrire [sur le drive](https://docs.google.com/spreadsheets/d/1cMZdlgMOwvWzK7Oq27pIV6aDWl4R24QnyyFUNXCjQRY/edit?usp=sharing) avant le 6 décembre.
 
 Pour les sujets personnels : de 3 à 5 extraits courts à encoder
-* Extraits manuscrits à transcrire : entre entre 500 et 1500 caractères ;
-* Extraits dactylographiés : entre 750 et 7000 caractères.
+* Extraits manuscrits à transcrire : entre entre 500 et 2500 caractères ;
+* Extraits dactylographiés : entre 1500 et 7000 caractères.
 
 
 <!-- ### I — Roman feuilleton : [Jules Verne, *Le tour du monde en 80 jours*, Le Temps](https://gallica.bnf.fr/html/und/presse-et-revues/le-tour-du-monde-en-80-jours)
