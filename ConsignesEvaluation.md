@@ -6,7 +6,7 @@
 
 * Choisir entre 2 et 5 extraits au contenu similaire (par similitude de format, par rapprochement thématique, par contexte de production) : par exemple, 3 lettres/décrets/articles/poèmes/ etc. ;
 * Structurer et encoder vos extraits en XML-TEI en accord avec l'exploitation textuelle visée par votre projet éditorial **(/6)** :
-	- Choisir un mode de structuration de ses extraits (`teiCorpus`, fichier unique, plusieurs fichiers, etc.) ;
+	- Choisir un mode de structuration de ses extraits dans un unique fichier (`teiCorpus`, unique `teiHeader`, `xi:include`, etc.) ;
 	- Définir un *template* unique pour l'ensemble des extraits ;
 	- Encoder les extraits dans ce *template* en suivant la même structure et les mêmes balises. 
 * Compléter de la manière la plus précise possible le `teiHeader` de votre édition, en fonction des éléments nécessaires à son établissement et à la compréhension du texte **(/4)** ;
@@ -31,8 +31,8 @@
 S’inscrire [sur le drive](https://docs.google.com/spreadsheets/d/1cMZdlgMOwvWzK7Oq27pIV6aDWl4R24QnyyFUNXCjQRY/edit?usp=sharing) avant le 6 décembre.
 
 Pour les sujets personnels : de 3 à 5 extraits courts à encoder
-* Extraits manuscrits à transcrire : entre entre 500 et 1500 caractères ;
-* Extraits dactylographiés : entre 750 et 7000 caractères.
+* Extraits manuscrits à transcrire : entre entre 500 et 2500 caractères ;
+* Extraits dactylographiés : entre 1500 et 7000 caractères.
 
 
 <!-- ### I — Roman feuilleton : [Jules Verne, *Le tour du monde en 80 jours*, Le Temps](https://gallica.bnf.fr/html/und/presse-et-revues/le-tour-du-monde-en-80-jours)
