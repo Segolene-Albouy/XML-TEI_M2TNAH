@@ -27,7 +27,7 @@
                         <schemaSpec ident="oddbyexample" start="TEI ">
                         <moduleRef key="tei"/>
                         <moduleRef key="textstructure" include="TEI text body div"/>
-                        <moduleRef key="core" include="p date head author title publisher pubPlace bibl l lg"/>
+                        <moduleRef key="core" include="p date head author title publisher pubPlace bibl l lg alexandrin"/>
                         <moduleRef key="header" include="teiHeader fileDesc titleStmt editionStmt edition publicationStmt sourceDesc profileDesc creation langUsage language"/>
 
                         <elementSpec ident="l" mode="change">
@@ -53,7 +53,23 @@
                                                 <dataRef key="teidata.count"/>
                                           </datatype>
                                     </attDef>
-                                    <attDef ident="rime" mode="add" ns="http://www.exemple.com/ns/nonTEI">
+                              </attList>
+                        </elementSpec>
+                              
+                        <elementSpec ident="alexandrin" mode="add" ns="custom_namespace">
+                              <!-- CRÉATION D'UN ÉLÉMENT NON-TEI -->
+                              <gloss xml:lang="fr">Alexandrins</gloss>
+                              <desc>Vers de 12 pieds</desc>
+                              <classes>
+                                    <memberOf key="model.lLike"/>
+                                    <memberOf key="macro.paraContent"/>
+                              </classes>
+                              <content>
+                                    <textNode/>
+                              </content>
+                              <attList>
+                                    <!-- CRÉATION D'UN ATTRIBUT NON-TEI -->
+                                    <attDef ident="rime" mode="add" ns="custom_namespace">
                                           <valList mode="add" type="closed">
                                                 <valItem ident="A"/>
                                                 <valItem ident="B"/>     
@@ -63,7 +79,7 @@
                               </attList>
                         </elementSpec>
 
-                        <elementSpec ident="lg" mode="change">
+                        <elementSpec ident="lg" mode="change" ns="custom_namespace">
                               <gloss xml:lang="fr">Groupement de vers</gloss>
                               <desc>Sert à structurer un poème</desc>
                               <content>
@@ -76,22 +92,24 @@
                                           <!-- Soit 2 line groups (@sizain) -->
                                           <elementRef key="lg" minOccurs="2" maxOccurs="2"/>
                                           <!-- Soit 3 ou 4 vers (@quatrain et @tercet) -->
-                                          <elementRef key="l" minOccurs="3" maxOccurs="4"/>
+                                          
+                                          <!-- MENTION D'UN ÉLÉMENT NON-TEI -->
+                                          <elementRef key="alexandrin" minOccurs="3" maxOccurs="4"/>
                                     </alternate>
                               </content>
-
+                              
                               <!-- Un groupement de vers doit contenir des vers -->
                               <constraintSpec scheme="schematron" ident="verse">
                                     <constraint>
-                                          <s:assert test="count(.//tei:l) > 1">
-                                                Un lg doit contenir parmi ses descendants au moins deux l
+                                          <s:ns prefix="ns" uri="custom_namespace"/>
+                                          <s:assert test="count(.//ns:alexandrin) > 1">
+                                                Un lg doit contenir parmi ses descendants au moins deux alexandrins
                                           </s:assert>
                                     </constraint>
                               </constraintSpec>
                               <!-- Un sonnet ne peut contenir que 3 groupements de vers : 2 quatrains, un sizain -->
                               <constraintSpec scheme="schematron" ident="sonnet">
                                     <constraint xmlns:tei="http://www.tei-c.org/ns/1.0">
-                                          <!--<s:ns prefix="tei" uri="http://www.tei-c.org/ns/1.0"/>-->
                                           <s:rule context="tei:lg[@type='sonnet']">
                                                 <s:assert test="count(tei:lg)=3 and count(tei:lg[@type='quatrain'])=2 and count(tei:lg[@type='sizain'])=1">
                                                       Les lg[@type='sonnet'] doivent contenir trois lg, dont deux de @type="quatrain" et un de @type="sizain"
@@ -122,6 +140,10 @@
                                           </valList>
                                     </attDef>
                               </attList>
+                              
+                              <!-- POUR SUPPRIMER LES ERREURS, SUPPRIMER LE <pattern> contenant 
+                                   "must contain at least one child l, lg, or gap element." -->
+                              
                         </elementSpec>
 
                         <classRef key="model.physDescPart"/>
