@@ -31,18 +31,6 @@
                         <moduleRef key="header" include="teiHeader fileDesc titleStmt editionStmt edition publicationStmt sourceDesc profileDesc creation langUsage language"/>
 
                         <elementSpec ident="l" mode="change">
-                              <!-- Les vers doivent avoir un attribut @n dont la valeur est supérieure de 1 au vers précédent -->
-                              <constraintSpec scheme="schematron" ident="numerotation">
-                                    <constraint>
-                                          <s:ns prefix="tei" uri="http://www.tei-c.org/ns/1.0"/>
-                                          <s:rule context="tei:l[position() != 1]">
-                                                <s:assert test="number(@n) = number(preceding-sibling::tei:l[1]/@n) + 1">
-                                                      La numérotation doit être continue.
-                                                </s:assert>
-                                          </s:rule>
-                                    </constraint>
-                              </constraintSpec>
-
                               <attList>
                                     <!-- L'attribut @n est requis et doit contenir un nombre -->
                                     <attDef ident="n" mode="change" usage="req">
@@ -98,37 +86,16 @@
                                     </alternate>
                               </content>
                               
-                              <!-- Un groupement de vers doit contenir des vers -->
-                              <constraintSpec scheme="schematron" ident="verse">
+                              <!-- Un groupement de vers doit contenir des alexandrins (NON-TEI) -->
+                              <!--<constraintSpec scheme="schematron" ident="verse">
                                     <constraint>
                                           <s:ns prefix="ns" uri="custom_namespace"/>
                                           <s:assert test="count(.//ns:alexandrin) > 1">
                                                 Un lg doit contenir parmi ses descendants au moins deux alexandrins
                                           </s:assert>
                                     </constraint>
-                              </constraintSpec>
-                              <!-- Un sonnet ne peut contenir que 3 groupements de vers : 2 quatrains, un sizain -->
-                              <constraintSpec scheme="schematron" ident="sonnet">
-                                    <constraint xmlns:tei="http://www.tei-c.org/ns/1.0">
-                                          <s:rule context="tei:lg[@type='sonnet']">
-                                                <s:assert test="count(tei:lg)=3 and count(tei:lg[@type='quatrain'])=2 and count(tei:lg[@type='sizain'])=1">
-                                                      Les lg[@type='sonnet'] doivent contenir trois lg, dont deux de @type="quatrain" et un de @type="sizain"
-                                                </s:assert>
-                                          </s:rule>
-                                    </constraint>
-                              </constraintSpec>
-                              <!-- Un lg[@type="sonnet"] doit commencer par un titre -->
-                              <constraintSpec scheme="schematron" ident="title">
-                                    <constraint>
-                                          <s:ns prefix="tei" uri="http://www.tei-c.org/ns/1.0"/>
-                                          <s:rule context="tei:lg[@type='sonnet']">
-                                                <s:assert test="*[1]=tei:head">
-                                                      Le premier élément d'un lg[@type='sonnet'] doit être head
-                                                </s:assert>
-                                          </s:rule>
-                                    </constraint>
-                              </constraintSpec>
-
+                              </constraintSpec>-->
+                              
                               <attList>
                                     <!-- Seules quatre valeurs d'attribut sont autorisées pour les lg[@type] -->
                                     <attDef ident="type" mode="change">
@@ -141,8 +108,8 @@
                                     </attDef>
                               </attList>
                               
-                              <!-- POUR SUPPRIMER LES ERREURS, SUPPRIMER LE <pattern> contenant 
-                                   "must contain at least one child l, lg, or gap element." -->
+                              <!-- POUR SUPPRIMER LES ERREURS, DANS LE FICHIER RNG DE SORTIE SUPPRIMER
+                                   Le <pattern> contenant "must contain at least one child l, lg, or gap element." -->
                               
                         </elementSpec>
 

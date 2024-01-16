@@ -66,19 +66,19 @@
                         <elementSpec ident="lg" mode="change">
                               <gloss xml:lang="fr">Groupement de vers</gloss>
                               <desc>Sert à structurer un poème</desc>
-                              <content>
+                              <!--<content>
                                     <alternate>
-                                          <!-- Soit un titre et 3 line groups (@sonnet) -->
+                                          <!-\- Soit un titre et 3 line groups (@sonnet) -\->
                                           <sequence preserveOrder="true">
                                                 <elementRef key="head" minOccurs="1" maxOccurs="1"/>
                                                 <elementRef key="lg" minOccurs="3" maxOccurs="3"/>
                                           </sequence>
-                                          <!-- Soit 2 line groups (@sizain) -->
+                                          <!-\- Soit 2 line groups (@sizain) -\->
                                           <elementRef key="lg" minOccurs="2" maxOccurs="2"/>
-                                          <!-- Soit 3 ou 4 vers (@quatrain et @tercet) -->
+                                          <!-\- Soit 3 ou 4 vers (@quatrain et @tercet) -\->
                                           <elementRef key="l" minOccurs="3" maxOccurs="4"/>
                                     </alternate>
-                              </content>
+                              </content>-->
 
                               <!-- Un groupement de vers doit contenir des vers -->
                               <constraintSpec scheme="schematron" ident="verse">
@@ -91,7 +91,6 @@
                               <!-- Un sonnet ne peut contenir que 3 groupements de vers : 2 quatrains, un sizain -->
                               <constraintSpec scheme="schematron" ident="sonnet">
                                     <constraint xmlns:tei="http://www.tei-c.org/ns/1.0">
-                                          <!--<s:ns prefix="tei" uri="http://www.tei-c.org/ns/1.0"/>-->
                                           <s:rule context="tei:lg[@type='sonnet']">
                                                 <s:assert test="count(tei:lg)=3 and count(tei:lg[@type='quatrain'])=2 and count(tei:lg[@type='sizain'])=1">
                                                       Les lg[@type='sonnet'] doivent contenir trois lg, dont deux de @type="quatrain" et un de @type="sizain"
