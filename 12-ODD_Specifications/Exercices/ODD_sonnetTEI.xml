@@ -30,6 +30,43 @@
                         <moduleRef key="core" include="p date head author title publisher pubPlace bibl l lg"/>
                         <moduleRef key="header" include="teiHeader fileDesc titleStmt editionStmt edition publicationStmt sourceDesc profileDesc creation langUsage language"/>
 
+                        <elementSpec ident="lg" mode="change">
+                              <gloss xml:lang="fr">Groupement de vers</gloss>
+                              <desc>Sert à structurer un poème</desc>
+
+                              <!-- Un groupement de vers doit contenir des vers -->
+                              <constraintSpec scheme="schematron" ident="verse">
+                                    <constraint>
+                                          <s:assert test="count(.//tei:l) > 1">
+                                                Un lg doit contenir parmi ses descendants au moins deux l
+                                          </s:assert>
+                                    </constraint>
+                              </constraintSpec>
+                              
+                              <!-- Un lg[@type="sonnet"] doit commencer par un titre -->
+                              <constraintSpec scheme="schematron" ident="title">
+                                    <constraint>
+                                          <s:ns prefix="tei" uri="http://www.tei-c.org/ns/1.0"/>
+                                          <s:rule context="tei:lg[@type='sonnet']">
+                                                <s:assert test="*[1]=tei:head">
+                                                      Le premier élément d'un lg[@type='sonnet'] doit être head
+                                                </s:assert>
+                                          </s:rule>
+                                    </constraint>
+                              </constraintSpec>
+                              
+                              <!-- Un sonnet ne peut contenir que 3 groupements de vers : 2 quatrains, un sizain -->
+                              <constraintSpec scheme="schematron" ident="sonnet">
+                                    <constraint xmlns:tei="http://www.tei-c.org/ns/1.0">
+                                          <s:rule context="tei:lg[@type='sonnet']">
+                                                <s:assert test="count(tei:lg)=3 and count(tei:lg[@type='quatrain'])=2 and count(tei:lg[@type='sizain'])=1">
+                                                      Les lg[@type='sonnet'] doivent contenir trois lg, dont deux de @type="quatrain" et un de @type="sizain"
+                                                </s:assert>
+                                          </s:rule>
+                                    </constraint>
+                              </constraintSpec>
+                        </elementSpec>
+                              
                         <elementSpec ident="l" mode="change">
                               <!-- Les vers doivent avoir un attribut @n dont la valeur est supérieure de 1 au vers précédent -->
                               <constraintSpec scheme="schematron" ident="numerotation">
@@ -42,7 +79,7 @@
                                           </s:rule>
                                     </constraint>
                               </constraintSpec>
-
+                              
                               <attList>
                                     <!-- L'attribut @n est requis et doit contenir un nombre -->
                                     <attDef ident="n" mode="change" usage="req">
@@ -52,73 +89,6 @@
                                           <datatype minOccurs="1" maxOccurs="1">
                                                 <dataRef key="teidata.count"/>
                                           </datatype>
-                                    </attDef>
-                                    <attDef ident="rime" mode="add" ns="http://www.exemple.com/ns/nonTEI">
-                                          <valList mode="add" type="closed">
-                                                <valItem ident="A"/>
-                                                <valItem ident="B"/>     
-                                                <valItem ident="C"/>   
-                                          </valList>
-                                    </attDef>
-                              </attList>
-                        </elementSpec>
-
-                        <elementSpec ident="lg" mode="change">
-                              <gloss xml:lang="fr">Groupement de vers</gloss>
-                              <desc>Sert à structurer un poème</desc>
-                              <!--<content>
-                                    <alternate>
-                                          <!-\- Soit un titre et 3 line groups (@sonnet) -\->
-                                          <sequence preserveOrder="true">
-                                                <elementRef key="head" minOccurs="1" maxOccurs="1"/>
-                                                <elementRef key="lg" minOccurs="3" maxOccurs="3"/>
-                                          </sequence>
-                                          <!-\- Soit 2 line groups (@sizain) -\->
-                                          <elementRef key="lg" minOccurs="2" maxOccurs="2"/>
-                                          <!-\- Soit 3 ou 4 vers (@quatrain et @tercet) -\->
-                                          <elementRef key="l" minOccurs="3" maxOccurs="4"/>
-                                    </alternate>
-                              </content>-->
-
-                              <!-- Un groupement de vers doit contenir des vers -->
-                              <constraintSpec scheme="schematron" ident="verse">
-                                    <constraint>
-                                          <s:assert test="count(.//tei:l) > 1">
-                                                Un lg doit contenir parmi ses descendants au moins deux l
-                                          </s:assert>
-                                    </constraint>
-                              </constraintSpec>
-                              <!-- Un sonnet ne peut contenir que 3 groupements de vers : 2 quatrains, un sizain -->
-                              <constraintSpec scheme="schematron" ident="sonnet">
-                                    <constraint xmlns:tei="http://www.tei-c.org/ns/1.0">
-                                          <s:rule context="tei:lg[@type='sonnet']">
-                                                <s:assert test="count(tei:lg)=3 and count(tei:lg[@type='quatrain'])=2 and count(tei:lg[@type='sizain'])=1">
-                                                      Les lg[@type='sonnet'] doivent contenir trois lg, dont deux de @type="quatrain" et un de @type="sizain"
-                                                </s:assert>
-                                          </s:rule>
-                                    </constraint>
-                              </constraintSpec>
-                              <!-- Un lg[@type="sonnet"] doit commencer par un titre -->
-                              <constraintSpec scheme="schematron" ident="title">
-                                    <constraint>
-                                          <s:ns prefix="tei" uri="http://www.tei-c.org/ns/1.0"/>
-                                          <s:rule context="tei:lg[@type='sonnet']">
-                                                <s:assert test="*[1]=tei:head">
-                                                      Le premier élément d'un lg[@type='sonnet'] doit être head
-                                                </s:assert>
-                                          </s:rule>
-                                    </constraint>
-                              </constraintSpec>
-
-                              <attList>
-                                    <!-- Seules quatre valeurs d'attribut sont autorisées pour les lg[@type] -->
-                                    <attDef ident="type" mode="change">
-                                          <valList mode="add" type="closed">
-                                                <valItem ident="quatrain"/>
-                                                <valItem ident="sizain"/>
-                                                <valItem ident="sonnet"/>
-                                                <valItem ident="tercet"/>
-                                          </valList>
                                     </attDef>
                               </attList>
                         </elementSpec>
