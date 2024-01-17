@@ -1,84 +1,84 @@
-<assert test="@title">
-	L'élément doit avoir l'attribut @title renseigné
-</assert>
-<assert test="count(*)=2 and count(name)=1 and count(gender)=1">
-	L'élément doit avoir pour enfant un élément name et un élément gender
-</assert>
-<assert test="*[1]=name">
-	L'élément enfant name doit apparaître en premier
-</assert>
-
-<assert test="(@title='Mr' and gender='Male') or @title!='Mr'">
-	Si l'attribut @title a pour valeur "Mr", alors le gender doit être "Male"
-</assert>
-<rule context="person[@title='Mr']">
-    <assert test="gender='Male'">
-    	Si l'attribut @title a pour valeur "Mr", alors le gender doit être "Male"
-    </assert>
-</rule>
-
-<assert test="ancestor::tei:l">L'élément doit être contenu dans un élément l</assert>
-
-<rule context="tei:TEI//tei:cb">
-      <assert test="matches(@facs, concat('#c', @n))">
-            Le "column begining" doit référencer une zone de facsimilé correspondante à son rang d'apparition @n
-            avec @facs='#c[@n]'
-      </assert>
-</rule>
-
-<pattern>
-      <rule context="@wit">
-            <let name="wits" value="for $w in tokenize(., '\s+') return substring-after($w, '#')"/>
-            <assert test="every $wit in $wits satisfies $wit = //tei:TEI//tei:listWit//@xml:id">
-                  Chaque référence dans l'attribut @wit doit correspondre à l'identifiant d'un witness dans le listWit
-            </assert>
-      </rule>
-</pattern>
-
-<pattern>
-      <rule context="tei:TEI//tei:body//tei:placeName">
-            <let name="ref" value="substring-after(@ref, '#')"/>
-            <assert test="@ref and $ref = //tei:TEI//tei:settingDesc//tei:place/@xml:id">
-                  la valeur @ref du &lt;placeName&gt; doit être renseignée
-                  et correspondre à une &lt;place&gt; déclarée dans le &lt;settingDesc&gt;
-            </assert>
-      </rule>
-</pattern>
-
-<schema>
-      <let name="mots" value="'test,hello'"/>
-      <let name="match" value="replace($mots, ',', '|')"/>
-      <pattern>
-            <rule context="//tei:title">
-                  <report test="matches(text(), $match)" role="warn">
-                        Les mots suivants sont prohibés dans les titres
-                        <value-of select="$mots"/>
-                  </report>
-            </rule>
-      </pattern>
-</schema>
-
-<pattern abstract="true" id="majuscule">
-      <rule context="$el" role="information">
-            <let name="firstNodeIsElement" value="node()[1] instance of element()"/>
-            <report test="(not($firstNodeIsElement) and (not(matches(., '^[A-Z|0-9]'))))">
-                  L'élément &lt;<value-of select="$el"/>&gt; doit commencer par une majuscule.
-            </report>
-      </rule>
-</pattern>
-<pattern is-a="majuscule">
-      <param name="el" value="title"/>
-</pattern>
-<pattern is-a="majuscule">
-      <param name="el" value="li"/>
-</pattern>
-
-<assert test="name(following-sibling::*[1]) = 'lb'">
-      L'élément doit être suivi d'un &lt;ln&gt;
-</assert>
-
-<s:rule context="tei:TEI//tei:body//tei:persName">
-      <s:assert test="@ref and matches(@ref, '^#[a-zA-Z]+$')">
-            L'attribut @ref doit être renseigné à l'aide un identifiant constitué uniquement de lettres <!-- important de mettre ^ et $ si c'est l'intégralité de la valeur qu'on vise -->
+<example xmlns:s="http://purl.oclc.org/dsdl/schematron">
+      <s:assert test="@title">
+      	L'élément doit avoir l'attribut @title renseigné
       </s:assert>
-</s:rule>
+      
+      <s:assert test="count(*)=2 and count(name)=1 and count(gender)=1">
+      	L'élément doit avoir pour enfant un élément name et un élément gender
+      </s:assert>
+      
+      <s:assert test="*[1]=name">
+      	L'élément enfant name doit apparaître en premier
+      </s:assert>
+      
+      <s:assert test="(@title='Mr' and gender='Male') or @title!='Mr'">
+      	Si l'attribut @title a pour valeur "Mr", alors le gender doit être "Male"
+      </s:assert>
+      
+      <s:rule context="person[@title='Mr']">
+          <s:assert test="gender='Male'">
+          	Si l'attribut @title a pour valeur "Mr", alors le gender doit être "Male"
+          </s:assert>
+      </s:rule>
+      
+      <s:assert test="ancestor::tei:l">L'élément doit être contenu dans un élément l</s:assert>
+      
+      <s:rule context="tei:cb">
+            <s:assert test="matches(@facs, concat('#c', @n))">
+                  L'attribut @facs d'un column beginning doit avoir pour valeur
+                  la même valeur que son attribut @n précédé de "#c" (@facs='#c[@n]')
+            </s:assert>
+      </s:rule>
+      
+      <s:pattern>
+            <s:rule context="@wit">
+                  <let name="wits" value="for $w in tokenize(., '\s+') return substring-after($w, '#')"/>
+                  <s:assert test="every $wit in $wits satisfies $wit = tei:TEI//tei:listWit//@xml:id">
+                        Chaque référence dans l'attribut @wit doit correspondre à l'identifiant d'un witness dans le listWit
+                  </s:assert>
+            </s:rule>
+      </s:pattern>
+      
+      <s:pattern>
+           <s:rule context="tei:TEI//tei:body//tei:placeName">
+                 <let name="ref" value="substring-after(@ref, '#')"/>
+                 <s:assert test="@ref and $ref = tei:TEI//tei:settingDesc//tei:place/@xml:id">
+                       la valeur @ref du &lt;placeName&gt; doit être renseignée
+                       et correspondre à une &lt;place&gt; déclarée dans le &lt;settingDesc&gt;
+                 </s:assert>
+           </s:rule>
+      </s:pattern>
+      
+      <s:rule context="//tei:title">
+            <let name="mots" value="'test,hello'"/>
+            <let name="match" value="replace($mots, ',', '|')"/>
+            <report test="matches(text(), $match)" role="warn">
+                  Les mots suivants sont prohibés dans les titres
+                  <value-of select="$mots"/>
+            </report>
+      </s:rule>
+      
+      <s:pattern abstract="true" id="majuscule">
+            <s:rule context="$el" role="information">
+                  <let name="firstNodeIsElement" value="node()[1] instance of element()"/>
+                  <report test="(not($firstNodeIsElement) and (not(matches(., '^[A-Z|0-9]'))))">
+                        L'élément &lt;<value-of select="$el"/>&gt; doit commencer par une majuscule.
+                  </report>
+            </s:rule>
+      </s:pattern>
+      
+      <s:pattern is-a="majuscule">
+            <param name="el" value="title"/>
+      </s:pattern>
+      
+      <s:assert test="name(following-sibling::*[1]) = 'lb'">
+            L'élément doit être suivi d'un lb
+      </s:assert>
+      
+      <s:rule context="tei:TEI//tei:body//tei:persName">
+            <s:assert test="@ref and matches(@ref, '^#[a-zA-Z]+$')">
+                  L'attribut @ref doit être renseigné à l'aide un identifiant constitué uniquement de lettres
+                  <!-- important de mettre ^ et $ si c'est l'intégralité de la valeur qu'on vise -->
+            </s:assert>
+      </s:rule>
+</example>

@@ -33,6 +33,20 @@
                         <elementSpec ident="lg" mode="change">
                               <gloss xml:lang="fr">Groupement de vers</gloss>
                               <desc>Sert à structurer un poème</desc>
+                              
+                              <content>
+                                    <alternate>
+                                          <!-- Soit un titre et 3 line groups (@sonnet) -->
+                                          <sequence>
+                                                <elementRef key="head" minOccurs="1" maxOccurs="1"/>
+                                                <elementRef key="lg" minOccurs="3" maxOccurs="3"/>
+                                          </sequence>
+                                          <!-- Soit 2 line groups (@sizain) -->
+                                          <elementRef key="lg" minOccurs="2" maxOccurs="2"/>
+                                          <!-- Soit 3 ou 4 vers (@quatrain et @tercet) -->
+                                          <elementRef key="l" minOccurs="3" maxOccurs="4"/>
+                                    </alternate>
+                              </content>
 
                               <!-- Un groupement de vers doit contenir des vers -->
                               <constraintSpec scheme="schematron" ident="verse">
@@ -43,12 +57,23 @@
                                     </constraint>
                               </constraintSpec>
                               
+                              <!-- Si un <lg> en contient un autre, il doit en contenir au moins 2 -->
+                              <constraintSpec scheme="schematron" ident="verse">
+                                    <constraint>
+                                          <s:rule context="tei:lg">
+                                                <s:assert test="count(tei:lg) != 1">
+                                                      Si elle contient des sous-strophes, 
+                                                      une strophe doit en contenir au moins deux
+                                                </s:assert>
+                                          </s:rule>
+                                    </constraint>
+                              </constraintSpec>
+                              
                               <!-- Un lg[@type="sonnet"] doit commencer par un titre -->
                               <constraintSpec scheme="schematron" ident="title">
                                     <constraint>
-                                          <s:ns prefix="tei" uri="http://www.tei-c.org/ns/1.0"/>
                                           <s:rule context="tei:lg[@type='sonnet']">
-                                                <s:assert test="*[1]=tei:head">
+                                                <s:assert test="*[1] = tei:head">
                                                       Le premier élément d'un lg[@type='sonnet'] doit être head
                                                 </s:assert>
                                           </s:rule>
@@ -57,7 +82,7 @@
                               
                               <!-- Un sonnet ne peut contenir que 3 groupements de vers : 2 quatrains, un sizain -->
                               <constraintSpec scheme="schematron" ident="sonnet">
-                                    <constraint xmlns:tei="http://www.tei-c.org/ns/1.0">
+                                    <constraint>
                                           <s:rule context="tei:lg[@type='sonnet']">
                                                 <s:assert test="count(tei:lg)=3 and count(tei:lg[@type='quatrain'])=2 and count(tei:lg[@type='sizain'])=1">
                                                       Les lg[@type='sonnet'] doivent contenir trois lg, dont deux de @type="quatrain" et un de @type="sizain"
@@ -71,9 +96,9 @@
                               <!-- Les vers doivent avoir un attribut @n dont la valeur est supérieure de 1 au vers précédent -->
                               <constraintSpec scheme="schematron" ident="numerotation">
                                     <constraint>
-                                          <s:ns prefix="tei" uri="http://www.tei-c.org/ns/1.0"/>
                                           <s:rule context="tei:l[position() != 1]">
-                                                <s:assert test="number(@n) = number(preceding-sibling::tei:l[1]/@n) + 1">
+                                                <s:let name="prev_n" value="preceding-sibling::tei:l[1]"/>
+                                                <s:assert test="number(@n) = number($prev_n/@n) + 1">
                                                       La numérotation doit être continue.
                                                 </s:assert>
                                           </s:rule>
