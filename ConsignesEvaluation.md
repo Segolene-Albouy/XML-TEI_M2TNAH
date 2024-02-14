@@ -1,6 +1,6 @@
 # Evaluation XML-TEI – TNAH | 2023-2024
 
-**À rendre le 25 janvier 2023**
+**À rendre le 23 février 2024**
 
 ## Consignes générales
 
