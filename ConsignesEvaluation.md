@@ -20,7 +20,7 @@
         - Une règle contraignant l’enchaînement de certains éléments (`<content>`) (/1) ;
         - Une règle contraignant la valeur d’un attribut ou l’usage d’un élément ou d’un attribut en fonction de son environnement (`<constraint>` + `<s:rule>`) (/1).
 
-* Déposer l'ensemble des documents sur un *repository* GitHub (`+1` bonus) :
+* Déposer l'ensemble des documents sur un *repository* GitHub :
 	- [Créer un *repository*](https://github.com/new) public ou privé ;
 	- Ajouter un README et le remplir de manière sommaire ;
 	- Y déposer les fichiers TEI, ODD, DTD, HTML et éventuellement images de l'encodage ;
