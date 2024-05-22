@@ -72,6 +72,17 @@
       </s:rule>
 </s:pattern>
 
+<s:pattern>
+   <s:rule context="tei:TEI//tei:text//tei:div">
+      <s:assert test="tei:head">Un élément div dans le text doit
+	 obligatoirement disposer d'un élément head.</s:assert>
+      <s:assert test="@n">Un élément div dans le text doit
+	 obligatoirement disposer d'un attribut @n.</s:assert>
+      <s:assert test="matches(@n, '^[1-9]\d*$')">L'attribut @n doit être un
+	 entier positif.</s:assert>
+   </s:rule>
+</s:pattern>
+
 <s:assert test="name(following-sibling::*[1]) = 'lb'">
       L'élément doit être suivi d'un &lt;ln&gt;
 </s:assert>
